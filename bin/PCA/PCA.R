@@ -212,23 +212,19 @@ head(tab)
 ## Add metadata and PCA results in a same happy object
 pcametaMix <- tab %>%
   left_join(mixplate, by=c("sample.id" = "sample_name"))
-
-# see how it looks
-head(pcametaMix)
-
+head(pcametaMix) # see how it looks
 ## Plot raw PCA
 p <- ggplot(data = pcametaMix, aes(x=PC1, y=PC2)) + geom_point(size = 1) +
   ylab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[1], "%")) +
   xlab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[2], "%"))
 p
-
 ## Without the samples CHIS_L43, sequencing error in this sample  
+## PCA by Race and scale
 p.PCA.A <-pcametaMix %>% 
   filter(accession_ID != "CHIS_L43") %>%
   filter(state!= "")%>%
   ggplot(aes(x=PC1, y=PC2)) + geom_point(size = 2, aes(colour=state, shape=Race)) +
-  # 9 color-blind friendly colors
-  scale_colour_manual(values=c("grey60", 
+  scale_colour_manual(values=c("grey60", # 9 color-blind friendly colors
                                "#75a842",
                                "#36dee6",
                                "#52bd85",
@@ -238,44 +234,32 @@ p.PCA.A <-pcametaMix %>%
                                "#b6b638",
                                "#89863c",
                                "#FFEA00")) + 
-  # better points shapes
-  scale_shape_manual(values = c(15,17,1,6)) +
+  scale_shape_manual(values = c(15,17,1,6)) + # better points shapes
   labs(colour = "Mexican State") +
   theme(text = element_text(size = 15)) +
   ylab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[1], "%")) +
   xlab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[2], "%")) +
   theme_bw()
 p.PCA.A
-
-
-
-
-
-
-
-# replace all instances of "_" and "Extra" with "Local", Regional and National in the column 'scale'.
-pcametaMix$scale <- gsub("_L", "Local", pcametaMix$scale)
-pcametaMix$scale <- gsub("_R", "Regional", pcametaMix$scale)
-pcametaMix$scale <- gsub("_N", "National", pcametaMix$scale)
-pcametaMix$scale <- gsub("Extra", "National", pcametaMix$scale)
-pcametaMix$scale <- gsub("_E", "National", pcametaMix$scale)
-
-# filtrar pcametaMix
+## Replace all instances of "_" and "Extra" with "Local", Regional 
+## and National in the column 'scale'.
+pcametaMix$scale <- gsub("_L", "Local"       , pcametaMix$scale)
+pcametaMix$scale <- gsub("_R", "Regional"    , pcametaMix$scale)
+pcametaMix$scale <- gsub("_N", "National"    , pcametaMix$scale)
+pcametaMix$scale <- gsub("Extra", "National" , pcametaMix$scale)
+pcametaMix$scale <- gsub("_E", "National"    , pcametaMix$scale)
+## Filter pcametaMix
 df_filtrada <- pcametaMix %>%
   filter(!scale %in% c("_F", "_X"))
-
-
-#PCA by Race and scale 
+## PCA by Race and scale 
 p.PCA.B = df_filtrada %>% 
   filter(accession_ID != "CHIS_L43") %>%
   filter(scale!= "")%>%
   ggplot(aes(x=PC1, y=PC2)) + geom_point(size = 2, aes(colour=scale, shape=Race)) +
-  # 3 color-blind friendly colors
-  scale_colour_manual(values=c("#CC33CC", 
+  scale_colour_manual(values=c("#CC33CC",     # 3 color-blind friendly colors
                                "#0033FF",
                                "#00FF00")) + 
-  # better points shapes
-  scale_shape_manual(values = c(15,17,1,6)) +
+  scale_shape_manual(values = c(15,17,1,6)) + # better points shapes
   labs(colour = "Scale") +
   theme(text = element_text(size = 15)) +
   ylab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[1], "%")) +
