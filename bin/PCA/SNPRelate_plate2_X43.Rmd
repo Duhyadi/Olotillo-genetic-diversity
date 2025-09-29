@@ -1,0 +1,207 @@
+---
+title: "SNPRelate for plate 2"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = '/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g2')
+```
+
+The instructions of this script are based on the following links:
+
+[Tutorial](https://www.bioconductor.org/packages/devel/bioc/vignettes/SNPRelate/inst/doc/SNPRelate.html#principal-component-analysis-pca)
+[Documentation](https://rdrr.io/bioc/SNPRelate/man/snpgdsPCA.html)
+
+# PCA with SNPRelate for plate 2
+## 1. Libraries
+```{r}
+# Load the R packages: gdsfmt and SNPRelate
+
+library(gdsfmt) # useful tool for reading, writing and manipulating genetic data stored in GDS format
+library(SNPRelate) # a library in R that is used for the analysis and visualization of genetic data
+library(dplyr)
+library(ggplot2)
+```
+
+## Load VCF 
+```{r}
+vcfP2.fn <- "../out60g2/P2_filtered_without_CHIS_L43_6.vcf.recode.vcf"
+```
+
+## Reformat 
+```{r}
+# The SNPRelate function snpgdsVCF2GDS is used to convert VCF (Variant Call Format) files into the GDS (Genomic Data Structure) format.
+snpgdsVCF2GDS(vcfP2.fn, "../out60g2/P2_filtered_without_CHIS_L43_6.vcf.recode.gds", method="biallelic.only")
+```
+
+## Summary 
+```{r}
+snpgdsSummary("../out60g2/P2_filtered_without_CHIS_L43_6.vcf.recode.gds")
+```
+
+## Data Analysis
+```{r}
+# open a GDS file with function snpgds and assign it to an object
+genofileP2 <- snpgdsOpen("../out60g2/P2_filtered_without_CHIS_L43_6.vcf.recode.gds")
+```
+
+## Explore the file a bit more, what are the sample names?
+```{r}
+# Check sample.ids
+read.gdsn(index.gdsn(genofileP2, "sample.id"))
+```
+
+## Save sample names to an object
+```{r}
+# Obtener nombres muestras del gdsn
+sample.id <- read.gdsn(index.gdsn(genofileP2, "sample.id"))
+sample.id
+```
+
+## Get metadata:
+```{r}
+fullmetP2<-read.delim("../meta/plate2_fullmeta.txt")
+```
+
+## Sample names follow are the same in our metada and genofile, but they are in different order:
+```{r}
+# in our genofile
+sample.id
+
+#in the metadata
+fullmetP2$sample_name
+```
+
+We will use this metadata later to colour our PCA, so knowing that the sample names are the same makes us happy. Look at all those useful variables!
+
+```{r}
+head(fullmetP2)
+```
+
+## Run PCA
+```{r}
+# PCA
+pcaP2<- snpgdsPCA(genofileP2, num.thread=2)
+```
+
+## Estimate the % of variation explained by the first commponents:
+```{r}
+pc.percent <- pcaP2$varprop*100
+head(round(pc.percent, 2))
+
+x<-round(pc.percent, 2)
+sum(x[1:4])
+sum(x[1:10])
+sum(x[1:30])
+```
+
+Now we are taking the results of the first 2 componets of the PCA into a data frame, and we can add to that dataframe other useful columns from our metadata.
+
+```{r}
+# get PCA results of first 2 componets into a df
+tab <- data.frame(sample.id = pcaP2$sample.id,
+    PC1 = pcaP2$eigenvect[,1],    # the first eigenvector
+    PC2 = pcaP2$eigenvect[,2],    # the second eigenvector
+    stringsAsFactors = FALSE)
+head(tab)
+```
+
+## Add our metadata and pca results in a same happy object
+```{r}
+# add metadata to pca
+pcametaP2 <- tab %>%
+              left_join(fullmetP2, by=c("sample.id" = "sample_name"))
+
+# see how it looks
+head(pcametaP2)
+```
+
+## Plot raw PCA
+```{r}
+p <- ggplot(data = pcametaP2, aes(x=PC1, y=PC2)) + geom_point(size = 1) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%"))
+p
+```
+
+
+## Color by Estado
+
+```{r}
+# plot
+p <- ggplot(data = pcametaP2, aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=state)) +
+     # 9 color-blind friendly colors
+     scale_colour_manual(values=c("#f97e8c", 
+                                "#75a842",
+                                "#36dee6",
+                                "#52bd85",
+                                "#b94656",
+                                "#6780d8",
+                                "#c69c39",
+                                "#b6b638",
+                                "#89863c")) + 
+     labs(colour = "Mexican State") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+p
+```
+
+
+```{r}
+# plot
+p <- ggplot(data = pcametaP2, aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=state)) +
+     # 9 color-blind friendly colors
+     scale_colour_manual(values=c("#f97e8c", 
+                                "#75a842",
+                                "#36dee6",
+                                "#52bd85",
+                                "#b94656",
+                                "#6780d8",
+                                "#c69c39",
+                                "#b6b638",
+                                "#89863c")) + 
+  geom_text(aes(label=sample.id)) +
+     labs(colour = "Mexican State") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+p
+```
+
+## Color by local, regional and national pools
+
+```{r}
+# plot
+p <- ggplot(data = pcametaP2, aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=scale)) +
+     scale_color_manual(name = "Origin of parental \n populations",
+                        values = c("darkorchid1", "yellowgreen", "dodgerblue", "grey"),
+                        breaks = c("Local", "Regional", "National", "Extra"),
+                        labels = c("Local", "Regional", "National", "Not included")) +
+       theme(text = element_text(size = 15)) +
+        ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+        xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%"))
+     theme_bw()
+p
+```
+
+
+
+
+
+
+
+
+
+
+

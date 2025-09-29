@@ -1,0 +1,630 @@
+---
+title: "SNPRelate_mixplate_clean"
+output: html_document
+---
+
+# Title: PCA using SNP Relate.
+# Star date: maybe in August 2023...
+# Previous modification: Thu 26/Jun/2024. Coacalco, Estado de México (18:31 PM) by Duhyadi.  
+# Last modification: Tue 30/Jul/2024. Verxoix, Switzerland (21:44 PM) by Duhyadi. 
+# Authors: Duhyadi Oliva García & Alicia Mastretta Yanes.
+# aquie en casa de Sharon, repitiendo el pca porque para el articulo debe quedar una figuara bonita. Sabado 28 de junio en Brenfort, Londres. 1: 12 pm.
+# parece que ESTE SCRIPT SE VA A CONVERTIR EN EL BUENOEL BUEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEENO 28 DE JUNIO DE 2025 
+
+
+# Tener la raíz fija en /home/duhyadi/Documents/paper1_final_tipodryad y usar rutas relativas desde allí en todos los chunks de código R dentro del archivo .Rmd.
+```{r}
+knitr::opts_knit$set(root.dir = '/home/duhyadi/Documents/paper1_final_tipodryad')
+```
+
+# Load filtered VCF:
+```{r}
+vcfMix.fn <- "data/mixplates_filtered_2x.vcf.gz"
+```
+
+
+
+# PCA with SNPRelate for mixplate 
+
+```{r}
+library(gdsfmt)
+```
+
+
+
+## Load libraries
+```{r}
+library(tidyverse)
+# useful tool for reading, writing and manipulating genetic data stored in GDS format
+library(gdsfmt) 
+# a library in R that is used for the analysis and visualization of genetic data
+library(SNPRelate) 
+library(dplyr)
+library(ggplot2)
+library(dplyr)
+```
+
+## 2. Load filtered VCF:
+```{r}
+#vcfMix.fn <- "../out60g7/mixplates_filtered_2x.vcf.gz"
+```
+
+## 3. Convert VCF to GDS format: 
+```{r}
+# the SNPRelate function snpgdsVCF2GDS is used to convert VCF (Variant Call Format) files into the GDS (Genomic Data Structure) format.
+# snpgdsVCF2GDS(vcfMix.fn, "../out60g7/mixplates_filtered_2x.gds", method="biallelic.only")
+
+## note: this is commented because the gds file has already been generated once and it is not necessary to generate it again, unless the vcf file is modified.
+```
+
+## 4.  Summary of GDS:
+```{r}
+# summary
+snpgdsSummary("../out60g7/mixplates_filtered_2X.gds")
+```
+mixplates_filtered_2x.gds
+
+```{r}
+# open a GDS file with function snpgds and assign it to an object
+genofileMix <- snpgdsOpen("../out60g7/mixplates_filtered_2x.gds")
+```
+
+### What are the sample names? Explore the file a bit more:
+```{r}
+# check sample.ids
+read.gdsn(index.gdsn(genofileMix, "sample.id"))
+```
+## note: confirmado no está el de Tonalá 
+
+### Save sample names to an object:
+```{r}
+# obtain the name of the samples from the gdsn
+sample.id <- read.gdsn(index.gdsn(genofileMix, "sample.id"))
+sample.id
+```
+
+### Get metadata #1:
+# 1)join meta of the plate 1 and 2 
+# 2)add column race 
+# 3)delete blank for plate 1 and 2
+```{r}
+# 1) join fullmeta for plate 1 and plate2 
+placa1 <- read.csv("../meta/plate1_fullmeta.txt", sep='\t')
+placa2 <- read.csv("../meta/plate2_fullmeta.txt", sep='\t')
+mixplate <- rbind(placa1, placa2)
+
+## note: the previous txt files (plate1_fulllmeta.txt and plate2_fullmeta.txt), lost the race column, we believe they should have it, when creating them. To solve this, we would have to review the script used for it (in bash), created by Alicia. The file for plate 1 was made by Alicia and the one for plate 2 by Duhyadi.
+
+# 2) add the race column and name all rows as Olotillo
+mixplate <- mixplate %>%
+  add_column(Race = "Olotillo")
+# 3) delete blanks for plate 1 and 2
+mixplate <- mixplate %>%
+  filter(sample_name != "BLANK")
+```
+
+## Get metadata #2: the accession name is changed to the extra samples, these are those with the letter E (Extra). These samples should not include the letter E, as the label of the accessions was constructed according to the number of field collections. Field collections being #47. The additional accessions were named as extras when they were sent for sequencing. 
+**Note**: this change allows the unique function to be used to account for different accessions. In addition, this change allows the corresponding race name to be added: for not everything is Olotillo. There is Mix, Dzit-bacal and Tuxpeño.       
+```{r}
+# sample_name           change accession_ID
+# CAM_E13_1  + CAM_E14_1  = CAM_E54  #origin, Hugo Perales. R.
+# CAM_E15_1  + CAM_E16    = CAM_E55  #origin, Hugo Perales. R.
+# CAM_E21_1  + CAM_E22_1  = CAM_E58  #origin, Hugo Perales. R.
+# CAM_E25_1  + CAM_E26_1  = CAM_E60  #origin, Hugo Perales. R.
+# CHIS_E9_1  + CHIS_E10_1 = CHIS_E52 #origin, Hugo Perales. R. 
+# CHIS_E23_1 + CHIS_E24_1 = CHIS_E59 #origin, Hugo Perales. R.
+# ROO_E11_1  + ROO_E12_1  = ROO_E53  #origin, Hugo Perales. R.
+# SLP_E3_1   + SLP_E4_1   = SLP_E49  #origin, CIMMYTMA29498.
+# SLP_E7_1   + SLP_E8_1   = SLP_E51  #origin, CIMMYTMA29464.
+# HGO_E5_1   + HGO_E6_1   = HGO_E50  #origin, CIMMYTMA29343.
+# VER_E1_1   + VER_E2_1   = VER_E48  #origin, CIMMYTMA29569.
+# VER_E17_1  + VER_E18_1  = VER_E56  #origin, CIMMYTMA29586.
+# VER_E19_1  + VER_E20_1  = VER_E57  #origin, CIMMYTMA29535.
+
+#CAMPECHE
+# CAM_E13_1 + CAM_E14_1 = CAM_E54
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E13_1'] <- 'CAM_E54'
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E14_1'] <- 'CAM_E54'
+# CAM_E15_1 + CAM_E16   = CAM_E55
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E15_1'] <- 'CAM_E55'
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E16'  ]   <-'CAM_E55'
+# CAM_E21_1 + CAM_E22_1 = CAM_E58
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E21_1'] <- 'CAM_E58'
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E22_1'] <- 'CAM_E58'
+# CAM_E25_1 + CAM_E26_1 = CAM_E60
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E25_1'] <- 'CAM_E60'
+mixplate$accession_ID[mixplate$sample_name == 'CAM_E26_1'] <- 'CAM_E60'
+
+# CHIAPAS
+# CHIS_E9_1  + CHIS_E10_1 = CHIS_E52
+mixplate$accession_ID[mixplate$sample_name == 'CHIS_E9_1' ]  <- 'CHIS_E52'
+mixplate$accession_ID[mixplate$sample_name == 'CHIS_E10_1']  <- 'CHIS_E52'
+# CHIS_E23_1 + CHIS_E24_1 = CHIS_E59
+mixplate$accession_ID[mixplate$sample_name == 'CHIS_E23_1' ]  <- 'CHIS_E59'
+mixplate$accession_ID[mixplate$sample_name == 'CHIS_E24_1' ]  <- 'CHIS_E59'
+
+#QINTANA ROO
+# ROO_E11_1 + ROO_E12_1 = ROO_E53
+mixplate$accession_ID[mixplate$sample_name == 'ROO_E11_1'] <- 'ROO_E53'
+mixplate$accession_ID[mixplate$sample_name == 'ROO_E12_1'] <- 'ROO_E53'
+
+#SAN LUIS POTOSÍ
+# SLP_E3_1   + SLP_E4_1   = SLP_E49  #origin, CIMMYTMA29498.
+mixplate$accession_ID[mixplate$sample_name == 'SLP_E3_1'] <- 'SLP_E49'
+mixplate$accession_ID[mixplate$sample_name == 'SLP_E4_1'] <- 'SLP_E49'
+# SLP_E7_1   + SLP_E8_1   = SLP_E51  #origin, CIMMYTMA29464.
+mixplate$accession_ID[mixplate$sample_name == 'SLP_E7_1'] <- 'SLP_E51'
+mixplate$accession_ID[mixplate$sample_name == 'SLP_E8_1'] <- 'SLP_E51'
+
+#HIDALGO
+# HGO_E5 + HGO_E6 = HGO_E50
+mixplate$accession_ID[mixplate$sample_name == 'HGO_E5_1'] <- 'HGO_E50'
+mixplate$accession_ID[mixplate$sample_name == 'HGO_E6_1'] <- 'HGO_E50'
+
+#VERACRUZ
+# VER_E1_1 + VER_E2_1 = VER_E48
+mixplate$accession_ID[mixplate$sample_name == 'VER_E1_1'] <- 'VER_E48'
+mixplate$accession_ID[mixplate$sample_name == 'VER_E2_1'] <- 'VER_E48'
+# VER_E17_1 + VER_E18_1 = VER_E56
+mixplate$accession_ID[mixplate$sample_name == 'VER_E17_1'] <- 'VER_E56'
+mixplate$accession_ID[mixplate$sample_name == 'VER_E18_1'] <- 'VER_E56'
+# VER_E19_1 + VER_E20_1 = VER_E57
+mixplate$accession_ID[mixplate$sample_name == 'VER_E19_1'] <- 'VER_E57'
+mixplate$accession_ID[mixplate$sample_name == 'VER_E20_1'] <- 'VER_E57'
+```
+
+## Get metadata 3:
+```{r}
+# change race in some samples
+mixplate$Race[mixplate$accession_ID == 'CHIS_L38'] <- 'Mix'
+mixplate$Race[mixplate$accession_ID == "ROO_E53" ] <- 'Dzit-bacal'
+mixplate$Race[mixplate$accession_ID == "CAM_E54" ] <- 'Dzit-bacal'
+mixplate$Race[mixplate$accession_ID == "CAM_E55" ] <- 'Dzit-bacal'
+mixplate$Race[mixplate$accession_ID == "CAM_E58" ] <- 'Tuxpeño'
+mixplate$Race[mixplate$accession_ID == "CAM_E60" ] <- 'Tuxpeño'
+```
+
+## Get metadata 4: add the state of Campeche for all samples
+```{r}
+mixplate$state[mixplate$sample_name == "CAM_E25_1"] <- 'Campeche'
+mixplate$state[mixplate$sample_name == "CAM_E22_1"] <- 'Campeche'
+mixplate$state[mixplate$sample_name == "CAM_E26_1"] <- 'Campeche'
+mixplate$state[mixplate$sample_name == "CAM_E21_1"] <- 'Campeche'
+mixplate$state[mixplate$sample_name == "CAM_E25_1"] <- 'Campeche'
+mixplate$state[mixplate$sample_name == "CAM_E26_1"] <- 'Campeche'
+```
+
+## Get metadata 5: add the state Chiapas 
+```{r}
+# fill in the missing spaces in the 'state' column
+chis_rows <- grep("CHIS", mixplate$accession_ID)
+mixplate$state[chis_rows] <- "Chiapas"
+```
+
+## Get metadata 6: add the state Veracruz 
+```{r}
+# fill in the missing spaces in the 'state' column
+vera_rows <- grep("VER", mixplate$accession_ID)
+mixplate$state[vera_rows] <- "Veracruz"
+```
+
+## Get metadata 7: add Mexico for all rows in country variable
+```{r}
+mixplate$country <- "México"
+```
+
+## Convert the data frame to csv
+```{r}
+write.csv(mixplate, "pca8ene24_meta_mixplate", row.names = FALSE)
+```
+
+## Chunks created for calculating pi and D by race and scale
+## Start, jun/13/2024 
+## Because the meta was always wrong...I don't know what I meant by this, the point is, next line...
+## Para el calculo de pi y D, en vcftools era necesario tener para cada una de las razas y escalas archivos txt por separado, de esta manera se puede usar el argumento keep... 
+## Note add Tuesday, July 30, 2024. Verxoix, Switzerland (11:04 PM) by Duhyadi. 
+
+## By race
+## By Dzit-bacal
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'race' contiene la palabra 'Dzit-bacal'
+dzit_samples <- mixplate[mixplate$Race == "Dzit-bacal", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_dzi <- dzit_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_dzi, file = "mixplate_dzitbacal.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## Mix 
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'race' contiene la palabra 'Mix'
+mix_samples <- mixplate[mixplate$Race == "Mix", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_mix <- mix_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_mix, file = "mixplate_mix.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## By Olotillo 
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'race' contiene la palabra 'Olotillo'
+olotillo_samples <- mixplate[mixplate$Race == "Olotillo", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_olo <- olotillo_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_olo, file = "mixplate_olotillo.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## By Tuxpeño
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'race' contiene la palabra 'Tuxpeño'
+tuxpeño_samples <- mixplate[mixplate$Race == "Tuxpeño", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_tux <- tuxpeño_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_tux, file = "mixplate_tuxpeño.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## By Mix
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'race' contiene la palabra 'Dzit-bacal'
+mix_samples <- mixplate[mixplate$Race == "Mix", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_mix <- mix_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_mix, file = "mixplate_mix.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## By scale
+```{r}
+# replace all instances of "_" and "Extra" with "Local", Regional and National in the column 'scale'.
+mixplate$scale <- gsub("_L", "Local", mixplate$scale)
+mixplate$scale <- gsub("_R", "Regional", mixplate$scale)
+mixplate$scale <- gsub("_N", "National", mixplate$scale)
+mixplate$scale <- gsub("Extra", "National", mixplate$scale)
+mixplate$scale <- gsub("_E", "National", mixplate$scale)
+```
+
+## Local
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'scale' contiene la palabra 'Local'
+local_samples <- mixplate[mixplate$scale == "Local", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_local <- local_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_local, file = "mixplate_local.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## Regional 
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'scale' contiene la palabra 'Local'
+regional_samples <- mixplate[mixplate$scale == "Regional", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_regional <- regional_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_regional, file = "mixplate_regional.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## National
+```{r}
+setwd("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta")
+getwd()
+
+# Filtra las filas donde 'scale' contiene la palabra 'National'
+national_samples <- mixplate[mixplate$scale == "National", ]
+
+# Extrae los nombres de las muestras de la columna 'sample_name'
+sample_names_national <- national_samples$sample_name
+
+# Escribe los nombres de las muestras en un archivo de texto
+write.table(sample_names_national, file = "mixplate_national.txt", row.names = FALSE, col.names = FALSE, quote = FALSE)
+```
+
+## Sample names follow are the same in our metada and genofile, but they are in different order:
+```{r}
+#in our genofile
+sample.id
+#in the metadata
+mixplate$sample_name
+```
+
+We will use this metadata later to colour our PCA, so knowing that the sample names are the same makes us happy. Look at all those useful variables!
+
+```{r}
+head(mixplate)
+```
+
+## Run PCA
+```{r}
+# PCA
+pcaMix<- snpgdsPCA(genofileMix, num.thread=2)
+```
+
+## Estimate the % of variation explained by the first commponents:
+```{r}
+pc.percent <- pcaMix$varprop*100
+head(round(pc.percent, 2))
+
+x<-round(pc.percent, 2)
+sum(x[1:4])
+sum(x[1:10])
+sum(x[1:30])
+```
+
+Now we are taking the results of the first 2 componets of the PCA into a data frame, and we can add to that dataframe other useful columns from our metadata.
+
+```{r}
+# get PCA results of first 2 componets into a df
+tab <- data.frame(sample.id = pcaMix$sample.id,
+    PC1 = pcaMix$eigenvect[,3],    # the first eigenvector
+    PC2 = pcaMix$eigenvect[,4],    # the second eigenvector
+    stringsAsFactors = FALSE)
+head(tab)
+```
+
+## Add our metadata and pca results in a same happy object
+
+```{r}
+# add metadata to pca
+pcametaMix <- tab %>%
+              left_join(mixplate, by=c("sample.id" = "sample_name"))
+
+# see how it looks
+head(pcametaMix)
+```
+
+
+## Fixes in pcametaMix, adding latitude, longitude and altitude. This data will be taken from TableS1_meta.csv
+```{r}
+# load metadata
+tableS1 <- read.csv("/LUSTRE/Genetica/common/olotillo/olotilloGBS/meta/TableS1_meta.csv", header = TRUE)
+
+# rename the variable ID to accession_ID
+tableS1 <- tableS1 %>%
+  rename(accession_ID = ID)
+
+# remove latitude, longitude and altitude to pcametaMix
+ pcametaMix <- pcametaMix %>%
+  select(-latitude, -longitude, -altitude)
+ 
+# combine longitude, latitude and altitude information from tableS1 into pcametaMix using 'accession_ID' as key
+merged_df <- left_join(pcametaMix, tableS1 %>% select(accession_ID, latitude, longitude, altitude), by = "accession_ID")
+```
+
+## Contabilizar olotillos 
+```{r}
+states <- unique(merged_df$state)
+
+for (state in states) {
+  print(state)
+  print(table(merged_df[merged_df$state == state,]$Race))
+}
+
+```
+
+
+## Plot raw PCA
+```{r}
+p <- ggplot(data = merged_df, aes(x=PC1, y=PC2)) + geom_point(size = 1) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%"))
+p
+```
+
+## Color by state
+```{r}
+# plot
+p <- ggplot(data = merged_df, aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=state)) +
+     # 9 color-blind friendly colors
+     scale_colour_manual(values=c("#f97e8c", 
+                                "#75a842",
+                                "#36dee6",
+                                "#52bd85",
+                                "#b94656",
+                                "#6780d8",
+                                "#c69c39",
+                                "#b6b638",
+                                "#89863c",
+                              "#FFEA00")) + 
+     labs(colour = "Mexican State") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+p
+```
+
+```{r}
+# plot
+p <- ggplot(data = merged_df, aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=state)) +
+     # 9 color-blind friendly colors
+     scale_colour_manual(values=c("#f97e8c", 
+                                "#75a842",
+                                "#36dee6",
+                                "#52bd85",
+                                "#b94656",
+                                "#6780d8",
+                                "#c69c39",
+                                "#b6b638",
+                                "#89863c",
+                                "#FFEA00")) + 
+  geom_text(aes(label=sample.id)) +
+     labs(colour = "Mexican State") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+p
+```
+
+## Without the samples CHIS_L43, sequencing error in this sample  
+```{r}
+p.PCA.A <-merged_df %>% 
+filter(accession_ID != "CHIS_L43") %>%
+  filter(state!= "")%>%
+ggplot(aes(x=PC1, y=PC2)) + geom_point(size = 2, aes(colour=state, shape=Race)) +
+  # 9 color-blind friendly colors
+     scale_colour_manual(values=c("grey60", 
+                                "#75a842",
+                                "#36dee6",
+                                "#52bd85",
+                                "#b94656",
+                                "#6780d8",
+                                "#c69c39",
+                                "#b6b638",
+                                "#89863c",
+                              "#FFEA00")) + 
+       # better points shapes
+       scale_shape_manual(values = c(15,17,1,6)) +
+     labs(colour = "Mexican State") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+p.PCA.A
+```
+
+## By race 
+```{r}
+merged_df %>% 
+filter(accession_ID != "CHIS_L43") %>%
+  filter(state!= "")%>%
+ggplot(aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=Race)) +
+     # 4 color-blind friendly colors
+     scale_colour_manual(values=c("#f97e8c", 
+                                "#75a842",
+                                "#36dee6",
+                                "#52bd85")) + 
+     labs(colour = "Race") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+```
+
+
+
+
+##  Trash 4 de julio 2023 
+```{r}
+RVMix <- snpgdsPCA(genofileMix)
+```
+
+```{r}
+plot(RVMix$eigenvect[,2], RVMix$eigenvect[,1], xlab="PC 2", ylab="PC 1",
+col=rgb(0,0,150, 50, maxColorValue=255), pch=19)
+```
+
+####2enero24###############################################
+
+###PCA for scale: local, regional and national 
+
+#1. Homegenize the scale variable 
+_L = Local
+Local = Local
+
+_R = Regional 
+Regional = Regional
+
+_N = National 
+National = National 
+
+```{r}
+# replace all instances of "_" and "Extra" with "Local", Regional and National in the column 'scale'.
+merged_df$scale <- gsub("_L", "Local", merged_df$scale)
+merged_df$scale <- gsub("_R", "Regional", merged_df$scale)
+merged_df$scale <- gsub("_N", "National", merged_df$scale)
+merged_df$scale <- gsub("Extra", "National", merged_df$scale)
+merged_df$scale <- gsub("_E", "National", merged_df$scale)
+```
+
+## By scale
+```{r}
+merged_df %>% 
+filter(accession_ID != "CHIS_L43") %>%
+  filter(state!= "")%>%
+ggplot(aes(x=PC1, y=PC2)) + 
+     geom_point(size = 1, aes(colour=scale)) +
+     # 4 color-blind friendly colors
+     scale_colour_manual(values=c("#f97e8c", 
+                                "#75a842",
+                                "#36dee6")) + 
+     labs(colour = "scale") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+```
+
+#PCA by Race and scale 
+```{r}
+p.PCA.B = merged_df %>% 
+filter(accession_ID != "CHIS_L43") %>%
+  filter(state!= "")%>%
+ggplot(aes(x=PC1, y=PC2)) + 
+     geom_point(size = 2, aes(colour=scale, shape=Race)) +
+     # 9 color-blind friendly colors
+     scale_colour_manual(values=c("#CC33CC", 
+                                "#0033FF",
+                                "#00FF00")) + 
+       # better points shapes
+       scale_shape_manual(values = c(15,17,1,6)) +
+     labs(colour = "Scale") +
+     theme(text = element_text(size = 15)) +
+  ylab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[1], "%")) +
+  xlab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[2], "%")) +
+     theme_bw()
+p.PCA.B
+```
+
+```{r}
+library(cowplot)
+plot.joinPCAs = plot_grid(p.PCA.A, p.PCA.B, labels = c("a)", "b)"), ncol = 1)
+plot.joinPCAs
+ggsave(plot= plot.joinPCAs, file= "pca_plot.pdf", width = 20, height = 23  , units = "cm")
+getwd()
+```
+
+
+```{r}
+
+```
+
