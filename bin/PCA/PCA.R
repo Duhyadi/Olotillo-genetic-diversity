@@ -40,7 +40,7 @@ sample.id
 ----------------
 
 # METADATA
-# GET METADATA #1
+# Get metadata #1
 ## 1.1. Join meta of the plate 1 and 2. 
 ## 1.2. Add column race. 
 ## 1.3. Delete blank for plate 1 and 2.
@@ -49,10 +49,8 @@ sample.id
 placa1 <- read.csv("meta/plate1_fullmeta.txt", sep='\t')
 placa2 <- read.csv("meta/plate2_fullmeta.txt", sep='\t')
 mixplate <- rbind(placa1, placa2)
-
 ## ** Note**: the previous txt files (plate1_fulllmeta.txt and plate2_fullmeta.txt),
 ## lost the race column, we believe they should have it, when creating them. 
-
 ## 1.2. Add the race column and name all rows as Olotillo.
 mixplate <- mixplate %>%
   add_column(Race = "Olotillo")
@@ -60,7 +58,7 @@ mixplate <- mixplate %>%
 mixplate <- mixplate %>%
   filter(sample_name != "BLANK")
 
-## GET METADATA #2: 
+## Get metadata #2: 
 ## The accession name is changed to the extra samples, 
 ## these are those with the letter E (Extra). 
 ## These samples should not include the letter E, as the label of 
@@ -138,7 +136,7 @@ mixplate$accession_ID[mixplate$sample_name == 'VER_E18_1'] <- 'VER_E56'
 mixplate$accession_ID[mixplate$sample_name == 'VER_E19_1'] <- 'VER_E57'
 mixplate$accession_ID[mixplate$sample_name == 'VER_E20_1'] <- 'VER_E57'
 
-## GET METADATA #3:
+## Get metadata #3:
 ## Change race in some samples
 mixplate$Race[mixplate$accession_ID == 'CHIS_L38'] <- 'Mix'
 mixplate$Race[mixplate$accession_ID == "ROO_E53" ] <- 'Dzit-bacal'
@@ -147,8 +145,9 @@ mixplate$Race[mixplate$accession_ID == "CAM_E55" ] <- 'Dzit-bacal'
 mixplate$Race[mixplate$accession_ID == "CAM_E58" ] <- 'Tuxpeño'
 mixplate$Race[mixplate$accession_ID == "CAM_E60" ] <- 'Tuxpeño'
 
-## GET METADATA #4: 
+## Get metadata #4: 
 ## Add the state
+
 ## CAMPECHE
 mixplate$state[mixplate$sample_name == "CAM_E25_1"] <- 'Campeche'
 mixplate$state[mixplate$sample_name == "CAM_E22_1"] <- 'Campeche'
@@ -167,7 +166,7 @@ mixplate$state[chis_rows] <- "Chiapas"
 vera_rows <- grep("VER", mixplate$accession_ID)
 mixplate$state[vera_rows] <- "Veracruz"
 
-## GET METADATA #5: 
+## Get metadata #5: 
 ## Add Mexico for all rows in country variable
 mixplate$country <- "México"
 
