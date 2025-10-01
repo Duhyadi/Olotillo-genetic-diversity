@@ -247,7 +247,6 @@ ggsave(# guardar en PNG
     dpi = 300  # pixel imagen
   )
 
------------
   
 
   
