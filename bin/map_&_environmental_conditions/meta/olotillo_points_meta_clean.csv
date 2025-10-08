@@ -1,0 +1,61 @@
+population_ID,sampled_by,source ,accesion_bank,collection_year,state,municipality,locality,latitude,longitude,altitude,species,colour ,Race,type
+CHIS_R01,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Cintalapa ,Corazón del Valle ,16.41680096,-93.98399715,784.852259,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_R02,Duhyadi Oliva García,field,,2018,Chiapas ,Villaflores ,Ricardo Flores Magón ,16.29907311,-93.59203858,712.9296236,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_R03,Duhyadi Oliva García,field,,2018,Chiapas ,Tonalá ,"Ejido ""Las Palmas"" ",16.05654558,-93.63617801,286.709438,Zea mays ssp. mays ,various,Mix,regional 
+CHIS_L04,Duhyadi Oliva García,field,,2018,Chiapas ,Ocozocuatla ,El Gavilán ,16.74958638,-93.45830996,767.6349655,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_R05,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Cintalapa ,Corazón del Valle ,16.41680096,-93.98399715,784.852259,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_R06,Duhyadi Oliva García,field,,2018,Chiapas ,Suchiapa ,"El Recreo ""Plan de Mulumi"" ",16.63448026,-93.1205578,427.5911362,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_R07,Duhyadi Oliva García,field,,2018,Chiapas ,Suchiapa ,"El Recreo ""Plan de Mulumi"" ",16.63448026,-93.1205578,427.5911362,Zea mays ssp. mays ,yellow,Olotillo,regional 
+CHIS_L08,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,"San Isidro, Ciénega Silviana_predio",16.67667,-93.41167,786,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_R09,Duhyadi Oliva García,field,,2018,Chiapas ,Suchiapa ,"Plan de Mulumi ejido ""Miguel Hidalgo Plan”",16.63548283,-93.12147537,444.338477,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_R10,Duhyadi Oliva García,field,,2018,Chiapas ,Cintalapa ,Villamorelos ,16.47827842,-93.92893905,704.2106468,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_R11,Duhyadi Oliva García,field,,2018,Chiapas ,El Parral ,El Parral ,16.36401651,-93.00194529,651.2208794,Zea mays ssp. mays ,white,Olotillo,regional 
+GRO_N12,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Ayutla ,La Lima ,16.794167,-99.013333,281,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N13,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,San Luis Acatlán,Yoloxochitl,16.8115278,-98.68422222,610,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N14,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,San Luis Acatlán,El Carmen ,16.8155,-98.76111111,287,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N15,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,San Luis Acatlán,Cuanacaxtitlan,16.7951944,-98.63719444,438,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N16,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,San Luis Acatlán,Yoloxochitl,16.8158056,-98.68438889,615,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N17,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Marquelia ,Cruz Verde ,16.7137222,-98.76347222,143,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N18,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Coyuca de Benítez ,Atoyaquillo,17.1046944,-100.0449722,175,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N19,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,San Luis Acatlán,Yoloxochitl,16.8155,-90.68991667,615,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N20,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Coyuca de Benítez ,Pueblo Viejo,17.0998889,-99.99258333,520,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N21,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Acapulco ,El Pelillo,18.3436111,-99.50847222,326,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N22,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,San Luis Acatlán,Yoloxochitl,16.8115278,-98.68405556,641,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N23,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Coyuca de Benítez ,La Lima ,16.9850833,-99.86388889,324,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N24,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Coyuca de Benítez ,Pueblo Viejo,17.0221111,-99.98516667,520,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N25,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Ayutla ,Ayutla ,16.6477778,-99.10011111,381,Zea mays ssp. mays ,white,Olotillo,national
+GRO_N26,Noel Orlando Gómez Montiel ,field,,2018,Guerrero ,Coyuca de Benítez ,Paso Real ,17.08425,-100.0758333,136,Zea mays ssp. mays ,white,Olotillo,national
+NAY_N27,Víctor Antonio Vidal Martínez ,field,,2019,Nayarit ,Ixtlán del Río,Cacalutan,21.1166833,-104.2615556,902,Zea mays ssp. mays ,white,Olotillo,national
+NAY_N28,Víctor Antonio Vidal Martínez ,field,,2019,Nayarit ,Ixtlán del Río ,"Los Sauces, Cacalutan",21.1313056,-104.2637222,784,Zea mays ssp. mays ,white,Olotillo,national
+NAY_N29,Víctor Antonio Vidal Martínez ,field,,2019,Nayarit ,Ixtlán del Río ,"Los Sauces, Cacalutan",21.1324167,-104.2629167,798,Zea mays ssp. mays ,white,Olotillo,national
+NAY_N30,Víctor Antonio Vidal Martínez ,field,,2019,Nayarit ,La Yesca ,Puente de Camotlán ,21.7060833,-104.0749444,1136,Zea mays ssp. mays ,white,Olotillo,national
+OAX_N31,Flavio Aragón Cuevas ,field,,2018,Oaxaca,Villa de Tututepec de Melchor ,Duva-Yoo,16.162556,-97.526056,512,Zea mays ssp. mays ,white,Olotillo,national
+OAX_N32,Flavio Aragón Cuevas ,field,,2018,Oaxaca,San Pedro Pochutla ,San Roque ,15.78819195,-96.46164785,182,Zea mays ssp. mays ,white,Olotillo,national
+CHIS_L33,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,"Rivera ""El Gavilán""",16.75153,-93.45709,757,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L34,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,Ejido San Rafael ,16.666931,-93.418475,785,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L35,Duhyadi Oliva García,field,,2018,Chiapas ,Ocozocuatla ,El Gavilán,16.74977,-93.46063,756,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L36,Duhyadi Oliva García,field,,2019,Chiapas ,Jiquipilas ,Benito Juárez ,16.782556,-93.608043,751,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L37,Duhyadi Oliva García,field,,2019,Chiapas ,Ocozocuatla ,San Jorge km 18 ,16.7129861,-93.52033333,784,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L38,Duhyadi Oliva García,field,,2019,Chiapas ,Ocozocuatla ,El Aguacero ,16.780436,-93.492936,775,Zea mays ssp. mays ,white,Mix,local
+CHIS_L39,Duhyadi Oliva García,field,,2019,Chiapas ,Ocozocuatla ,El Aguacero ,16.780436,-93.492936,775,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_R40,Duhyadi Oliva García,field,,2018,Chiapas ,Chiapa de Corzo ,Narciso Mendoza ,16.57778189,-92.98854284,435.0801469,Zea mays ssp. mays ,white,Olotillo,regional 
+CHIS_L41,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,Rancho El Pitutal,16.70745,-93.32761,932,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L42,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,Rancho San Isidro ,16.8562,-93.40551,972,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L43,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,Región Mazotho_ejido Ocozocuatla  ,16.757344,-93.4547,754,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L44,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,San Jorge km 18 ,16.71199,-93.51664,810,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L45,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,"La Borcelana, Ejido Ocozocuatla ",16.78669,-93.43072,841,Zea mays ssp. mays ,white,Olotillo,local
+CHIS_L46,Bulmaro Coutiño Estrada,field,,2018,Chiapas ,Ocozocuatla ,Ejido San Andrés,16.740278,-93.511111,725,Zea mays ssp. mays ,white,Olotillo,local
+NAY_N47,Víctor Antonio Vidal Martínez ,field,,2019,Nayarit ,La Yesca ,Huajimic ,21.6436944,-104.3425556,1211,Zea mays ssp. mays ,white,Olotillo,national
+VER_E48,Víctor Hugo Chávez ,bank ,CIMMYTMA29569,2007,Veracruz,Tantoyuca ,El Mezquite,21.3833,-98.25,126,Zea mays ssp. mays ,white,Olotillo,national
+SLP_E49,Víctor Hugo Chávez ,bank ,CIMMYTMA 29498,2007,San Luis Potosí,Xilitla,Apetzco,21.393081,-99.010927,872,Zea mays ssp. mays ,white,Olotillo,national
+HGO_E50,Víctor Hugo Chávez ,bank,CIMMYTMA29343,2007,Hidalgo ,Jaltocán,La Ilusión,21.141304,-98.54596,248,Zea mays ssp. mays ,white,Olotillo,national
+SLP_E51,Víctor Hugo Chávez ,bank,CIMMYTMA29464,2007,San Luis Potosí,Tampacan ,Chupadero ,21.4,-98.73,148,Zea mays ssp. mays ,white,Olotillo,national
+CHIS_E52,Hugo Perales Rivera ,field,,,Chiapas ,Comitán de Domínguez,Santa Elena Las Agujas ,16.36120704,-92.17921108,2089,Zea mays ssp. mays ,white,Olotillo,regional 
+ROO_E53,Hugo Perales Rivera ,field,,2016,Quintana Roo,Felipe Carrillo Puerto,Chumpón,20.00222,-87.81222,7,Zea mays ssp. mays ,white,Dzit-bacal,national
+CAM_E54,Hugo Perales Rivera ,field,,2015,Campeche,Puerto Campeche,,,,100,Zea mays ssp. mays ,white,Dzit-bacal,national
+CAM_E55,Hugo Perales Rivera ,field ,,2016,Campeche,Champoton,Pustunich,19.14444,-90.47861,55,Zea mays ssp. mays ,white,Dzit-bacal,national
+VER_E56,Víctor Hugo Chávez ,bank ,CIMMYTMA29586,2007,Veracruz,Benito Juárez,Azoquitipa,20.77,-98.18,458,Zea mays ssp. mays ,white,Olotillo,national
+VER_E57,Víctor Hugo Chávez ,bank,CIMMYTMA29535,2007,Veracruz,Ixcatepec,Ejido Ixcatepec ,21.2,-97.98,299,Zea mays ssp. mays ,white,Olotillo,national
+CAM_E58,Hugo Perales Rivera ,field,,2016,Campeche ,Escárcega ,Ejido La Victoria ,18.4931,-90.9221,100,Zea mays ssp. mays ,white,Tuxpeño,national
+CHIS_E59,Hugo Perales Rivera ,field ,,,Chiapas ,Comitán de Domínguez,Santa Elena Las Agujas ,16.36120704,-92.17921108,2089,Zea mays ssp. mays ,white,Olotillo,regional 
+CAM_E60,Hugo Perales Rivera ,field ,,2016,Campeche ,Champoton,Pixoyal,18.937363,-90.599887,100,Zea mays ssp. mays ,white,Tuxpeño,regional 

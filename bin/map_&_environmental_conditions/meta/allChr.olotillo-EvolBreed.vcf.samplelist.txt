@@ -1,0 +1,10 @@
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr10_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr1_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr2_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr3_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr4_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr5_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr6_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr7_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr8_gatk4.2.1.comGty.vcf.gz
+/LUSTRE/Genetica/common/olotillo/olotilloGBS/out60g/olotillo-EvolBreed_chr9_gatk4.2.1.comGty.vcf.gz
