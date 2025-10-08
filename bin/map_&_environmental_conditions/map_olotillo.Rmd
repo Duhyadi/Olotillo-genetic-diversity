@@ -1,14 +1,17 @@
 ---
-title: "olotillo_map"
+title: "Olotillo_map"
 output: html_document
 ---
+
 # Title: Plot map with maptools, rgeos and rgdal. 
-# Star date: maybe october 2023 by Alicia M. 
-# Previous modification: Mon 15/Apr/2024. Coacalco. Mexico (16:10 PM) by Duhyadi Oliva. 
-# Last modification: Mon 24/Jun/2024. Coacalco, Mexico (12:07 PM) by Duhyadi Oliva.  
-# Authors: Duhyadi Oliva García & Alicia Mastretta Yanes.
+# Star date: October 2023 by Alicia Mastretta-Yanes. 
+# Previous modification: Mon 24/Jun/2024. Coacalco, Mexico (12:07 PM) by Duhyadi Oliva.
+# Last modification: Wed 08/Oct/2025. Versoix, Switzerland (15:00 PM) by Duhyadi Oliva-García. 
+# Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
+
 --------
-## LOAD LIBRARIES
+
+# LOAD LIBRARIES
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -18,15 +21,15 @@ library(rgeos)
 library(rgdal) 
 ```
 
-## LOAD DATA: read shape and points 
+# LOAD DATA: read shape and points 
 ```{r}
-# mexico shape
+# Mexico shape
 mexico <- readOGR(dsn="destdv1gw", layer="destdv1gw")
-# olotillo, distribution shape 
+# Olotillo distribution shape 
 distribution <-readOGR(dsn="oloti_7cgw", layer="oloti_7cgw")
-# olotillo, Proyecto Global Maíces Nativos (PGMN)
+# Olotillo, Proyecto Global Maíces Nativos (PGMN)
 olotillo.PGMN <- read.csv("olotillo_PGMN_siagro.csv")
-# olotillo, samples 
+# Olotillo, samples 
 olotillo.points <- read.csv("meta/olotillo_points_meta_clean.csv")
 ```
 
