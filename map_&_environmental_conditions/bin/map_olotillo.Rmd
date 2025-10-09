@@ -3,28 +3,37 @@ title: "Olotillo_map"
 output: html_document
 ---
 
-# Title: Plot map with maptools, rgeos and rgdal. 
-# Star date: October 2023 by Alicia Mastretta-Yanes. 
+# Title: Plot map with maptools, rgeos and rgdal.
+
+# Star date: October 2023 by Alicia Mastretta-Yanes.
+
 # Previous modification: Mon 24/Jun/2024. Coacalco, Mexico (12:07 PM) by Duhyadi Oliva.
-# Last modification: Wed 08/Oct/2025. Versoix, Switzerland (15:00 PM) by Duhyadi Oliva-García. 
+
+# Last modification: Wed 08/Oct/2025. Versoix, Switzerland (15:00 PM) by Duhyadi Oliva-García.
+
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
 
---------
+------------------------------------------------------------------------
 
 # LOAD LIBRARIES
+
 ```{r}
 library(dplyr)
 library(ggplot2)
-library(gpclib)
-library(maptools) 
-library(rgeos) 
-library(rgdal) 
+#library(gpclib) # ya no funciona, se puede sustituir con el uso de sf 
+# library(maptools) # al igual que gpclib, el paquete maptools fue retirado de CRAN en 2023.
+# library(rgeos) # en proceso de retiro
+#library(rgdal) #el paquete rgdal también fue retirado oficialmente de CRAN en 2023 (junto con rgeos y maptools).
+library(sf)
 ```
+Note: Ya no se usa gpclib y maptools,la mayoría de sus funciones se han migrado a otros paquetes más modernos — principalmente sf, sp, y rgeos (aunque rgeos también está en proceso de retiro).
 
-# LOAD DATA: read shape and points 
+
+# LOAD DATA: read shape and points
+
 ```{r}
 # Mexico shape
-mexico <- readOGR(dsn="destdv1gw", layer="destdv1gw")
+Mexico <- readOGR(dsn="destdv1gw", layer="destdv1gw")
 # Olotillo distribution shape 
 distribution <-readOGR(dsn="oloti_7cgw", layer="oloti_7cgw")
 # Olotillo, Proyecto Global Maíces Nativos (PGMN)
@@ -34,9 +43,11 @@ olotillo.points <- read.csv("meta/olotillo_points_meta_clean.csv")
 ```
 
 ## PLOT
+
 Occurrence points for Olotillo, were collected in the field for, 2018-2019 : Duhyadi (Chiapas), Alicia (Chiapas), Bulmaro (Chiapas), Flavio (Oaxaca), Noé (Guerrero), Víctor (Nayarit) and Hugo (Chiapas-different year). Also include samples from CIMMYTM.
 
 ### Map 1: Potential distribution of olotillo according to Perales & Golicher (2014) + points for olotillo, from the Global Maize Project (CONABIO, 2011) + accessions sampled for this study by race.
+
 ```{r}
 # shape file for mexico and potential distribution
 map <- ggplot() + 
@@ -57,6 +68,7 @@ map + geom_point(data = olotillo.PGMN, # points-olo.PGMN
 ```
 
 ### Map 2: Potential distribution of olotillo according to Perales & Golicher (2014) + sampling points for Olotillo from the Global Maize Project (CONABIO, 2011). Figure 1 a of the paper 1. Distribution and environmental conditions where Olotillo is grown. a) Potential distribution of Olotillo according to Perales & Golicher (2014) and sampling points for Olotillo from the Global Maize Project (CONABIO, 2011)
+
 ```{r}
 # shape file for mexico and potential distribution
 map <- ggplot() + 
@@ -73,12 +85,14 @@ map + geom_point(data = olotillo.PGMN, # points-olo.PGMN
 ```
 
 ### Map 3: Map of Mexico highligthing states that were sampled (same colors than PCA)
+
 ```{r}
 library(broom)
 packageVersion("broom")
 ```
 
 #### Color by states
+
 ```{r}
 #install.packages("units")
 library(sf)
@@ -92,17 +106,6 @@ lapply(mexico_sf, class)
 print(mexico_sf)
 ```
 
-
-
-
-
-
-
-
-
-
-
-
 ```{r}
 # transform shape to df
 # broom package, convert statistical objects into Tidy Tibbles 
@@ -110,7 +113,8 @@ mexico_df <- broom::tidy(mexico, region = "ENTIDAD")
 lapply(mexico_df, class)
 ```
 
-### Pop data 
+### Pop data
+
 ```{r}
 # read the file plate1_fullmeta.txt
 pop.data <- read.table("meta/plate1_fullmeta.txt", sep = "\t", header = TRUE, stringsAsFactors = FALSE)
@@ -131,7 +135,6 @@ sampled.states
 ```{r}
 library(ggplot2)
 ```
-
 
 ```{r}
 # to get a names in the data frame
@@ -210,7 +213,9 @@ map3 + geom_point(data = olotillo.PGMN,
   scale_color_manual(values = c("purple", "green", "blue", "yellow"))  +
   theme()
 ```
+
 ########29Dic2023#######################################################
+
 ```{r}
 map3 <- ggplot() + 
         geom_polygon(data = mexico_df, show.legend=FALSE,
@@ -240,13 +245,11 @@ map3 + geom_point(data = olotillo.PGMN,
   theme()
 ```
 
-
 ```{r}
 map + geom_point(data = olotillo.points, size = 1,
            aes(x = longitude, y = latitude, shape= Race, color= Race)) 
 ```
+
 ```{r}
 olotillo.points$Race
 ```
-
-
