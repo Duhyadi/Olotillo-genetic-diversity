@@ -4,44 +4,37 @@ output: html_document
 ---
 
 # Title: Plot map with maptools, rgeos and rgdal.
-
-# Star date: October 2023 by Alicia Mastretta-Yanes.
-
-# Previous modification: Mon 24/Jun/2024. Coacalco, Mexico (12:07 PM) by Duhyadi Oliva.
-
-# Last modification: Wed 08/Oct/2025. Versoix, Switzerland (15:00 PM) by Duhyadi Oliva-García.
-
+# Star date: October 2023 by ALicia Mastretta-Yanes.
+# Previous modification: Wed 08/Oct/2025. Versoix, Switzerland (15:00 PM) by Duhyadi Oliva-García.
+# Last modification: Fri 10/Oct/2025. Geneva, Switzerland (16:28) by Duhyadi Oliva-
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
 
 ------------------------------------------------------------------------
 
 ```{r setup, include=FALSE}
-
-# Configuración inicial del proyecto -----------------------------------------
-
-# Cargar el paquete here (para rutas reproducibles)
+# Initial project setup-----------------------------------------
+# Load the package here (for reproducible routes)
 if (requireNamespace("here", quietly = TRUE)) {
   setwd(here::here())
-  message("📂 Directorio de trabajo fijado en: ", getwd())
+  message("📂  Working directory set to: ", getwd())
 } else {
-  stop("⚠️ El paquete 'here' no está instalado. Ejecuta install.packages('here')")
+  stop("⚠️ The 'here' package is not installed. Execute install.packages('here')")
 }
-
 ```
+
+------------------------------------------------------------------------
 
 # LOAD LIBRARIES
 ```{r}
 library(dplyr)
 library(ggplot2)
-#library(gpclib) # ya no funciona, se puede sustituir con el uso de sf 
-# library(maptools) # al igual que gpclib, el paquete maptools fue retirado de CRAN en 2023.
-# library(rgeos) # en proceso de retiro
-#library(rgdal) #el paquete rgdal también fue retirado oficialmente de CRAN en 2023 (junto con rgeos y maptools).
+# library(gpclib) # officially retired from CRAN in 2023, replace with sf
+# library(maptools) # like gpclib, the maptools package was removed from CRAN in 2023, replace with sf
+# library(rgeos) # in the process of retirement, replace with sf 
+#library(rgdal) # was also officially retired from CRAN in 2023 (along with rgeos and maptools, replace with sf 
 library(sf)
-
 ```
-Note: Ya no se usa gpclib y maptools,la mayoría de sus funciones se han migrado a otros paquetes más modernos — principalmente sf, sp, y rgeos (aunque rgeos también está en proceso de retiro).
-
+Note #1: gpclib and maptools are no longer used; most of their functions have been migrated to other, more modern packages — primarily sf, sp, and rgeos (although rgeos is also in the process of being retired).
 
 # LOAD DATA: read shape and points
 ```{r}
@@ -56,34 +49,28 @@ olotillo.PGMN <- read.csv(here::here("meta","olotillo_PGMN_siagro.csv"))
 # Olotillo, Proyecto Doctoral Poblaciones Evolutivas" 
 olotillo.points <- read.csv(here::here("meta", "olotillo_points_meta_clean.csv"))
 ```
-
-## PLOT
-
-Occurrence points for Olotillo, were collected in the field for, 2018-2019 : Duhyadi (Chiapas), Alicia (Chiapas), Bulmaro (Chiapas), Flavio (Oaxaca), Noé (Guerrero), Víctor (Nayarit) and Hugo (Chiapas-different year). Also include samples from CIMMYTM.
-
-### Map 1: Potential distribution of olotillo according to Perales & Golicher (2014) + points for olotillo, from the Global Maize Project (CONABIO, 2011) + accessions sampled for this study by race.
-
+Note #2: here::here. It's the safe way to call package here.
+# PLOT
+Occurrence points for Olotillo, were collected in the field for, 2018-2019 : Duhyadi Oliva-García(Chiapas), Alicia Mastretta-Yanes(Chiapas), Bulmaro Coutiño-Estrada (Chiapas), Flavio Aragón-Cuevas (Oaxaca), Noé Orlando-Gómez (Guerrero), Víctor Antonio Vidal Martínez (Nayarit) and Hugo Perales-Rivera (Chiapas-different year). Also include samples from CIMMYTM.
+## MAP #1 
+Potential distribution of olotillo according to Perales & Golicher (2014) + points for olotillo, from the Global Maize Project (CONABIO, 2011) + accessions sampled for this study by race.
 ```{r}
-# shape file for mexico and potential distribution
-map <- ggplot() + 
-       geom_polygon(data = mexico, # shape-mexico
-                    aes(x = long, y = lat, group = group), 
-                   colour = "grey", fill = NA) + theme_void() +
-  geom_polygon(data = distribution, size=0.2, # shape-distri.
-                    aes(x = long, y = lat, group = group), 
-                    colour = "blue", fill = NA) + theme_void()
-# shape file for olotillo, PGMN and and the collections for this study
-map + geom_point(data = olotillo.PGMN, # points-olo.PGMN
-                 size= 0.5, colour = "black",
-                 aes(x=longitud, y=latitud)) +
-  geom_point(data = olotillo.points, size=1.5, # points-study
-           aes(x = longitude, y = latitude, shape= Race, color= Race)) +
+map <- ggplot() +
+  geom_sf(data = mexico, colour = "grey", fill = NA) + # shape mexico
+  geom_sf(data = distribution, colour = "blue", fill = NA, size = 0.2) + # shape distribution
+  geom_point(data = olotillo.PGMN, aes(x = longitud, y = latitud), size = 0.5, colour = "black") +
+  geom_point(data = olotillo.points, aes(x = longitude, y = latitude, shape = Race, color = Race), size = 1.5) +
   scale_shape_manual(values = c(15, 17, 16, 18)) +
-  scale_color_manual(values = c("purple", "green", "red", "orange")) 
+  scale_color_manual(values = c("purple", "green", "red", "orange")) +
+  theme_void()
+
+map
 ```
 
-### Map 2: Potential distribution of olotillo according to Perales & Golicher (2014) + sampling points for Olotillo from the Global Maize Project (CONABIO, 2011). Figure 1 a of the paper 1. Distribution and environmental conditions where Olotillo is grown. a) Potential distribution of Olotillo according to Perales & Golicher (2014) and sampling points for Olotillo from the Global Maize Project (CONABIO, 2011)
 
+
+## MAP #2
+Potential distribution of olotillo according to Perales & Golicher (2014) + sampling points for Olotillo from the Global Maize Project (CONABIO, 2011). Figure 1 a of the paper 1. Distribution and environmental conditions where Olotillo is grown. a) Potential distribution of Olotillo according to Perales & Golicher (2014) and sampling points for Olotillo from the Global Maize Project (CONABIO, 2011)
 ```{r}
 # shape file for mexico and potential distribution
 map <- ggplot() + 
