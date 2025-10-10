@@ -15,8 +15,21 @@ output: html_document
 
 ------------------------------------------------------------------------
 
-# LOAD LIBRARIES
+```{r setup, include=FALSE}
 
+# Configuración inicial del proyecto -----------------------------------------
+
+# Cargar el paquete here (para rutas reproducibles)
+if (requireNamespace("here", quietly = TRUE)) {
+  setwd(here::here())
+  message("📂 Directorio de trabajo fijado en: ", getwd())
+} else {
+  stop("⚠️ El paquete 'here' no está instalado. Ejecuta install.packages('here')")
+}
+
+```
+
+# LOAD LIBRARIES
 ```{r}
 library(dplyr)
 library(ggplot2)
@@ -25,21 +38,23 @@ library(ggplot2)
 # library(rgeos) # en proceso de retiro
 #library(rgdal) #el paquete rgdal también fue retirado oficialmente de CRAN en 2023 (junto con rgeos y maptools).
 library(sf)
+
 ```
 Note: Ya no se usa gpclib y maptools,la mayoría de sus funciones se han migrado a otros paquetes más modernos — principalmente sf, sp, y rgeos (aunque rgeos también está en proceso de retiro).
 
 
 # LOAD DATA: read shape and points
-
 ```{r}
+# SHAPES
 # Mexico shape
-Mexico <- readOGR(dsn="destdv1gw", layer="destdv1gw")
+mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp"))
 # Olotillo distribution shape 
-distribution <-readOGR(dsn="oloti_7cgw", layer="oloti_7cgw")
+distribution <- st_read(here::here("shape","oloti_7cgw" ,"oloti_7cgw.shp"))
+# POINTS
 # Olotillo, Proyecto Global Maíces Nativos (PGMN)
-olotillo.PGMN <- read.csv("olotillo_PGMN_siagro.csv")
-# Olotillo, samples 
-olotillo.points <- read.csv("meta/olotillo_points_meta_clean.csv")
+olotillo.PGMN <- read.csv(here::here("meta","olotillo_PGMN_siagro.csv"))
+# Olotillo, Proyecto Doctoral Poblaciones Evolutivas" 
+olotillo.points <- read.csv(here::here("meta", "olotillo_points_meta_clean.csv"))
 ```
 
 ## PLOT
