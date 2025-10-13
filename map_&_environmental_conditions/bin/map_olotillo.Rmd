@@ -38,7 +38,7 @@ Note #1: gpclib and maptools are no longer used; most of their functions have be
 
 # LOAD DATA: read shape and points
 ```{r}
-# SHAPES
+# --- Load spatial layers and data ----------------------------------------
 # Mexico shape
 mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp"))
 # Olotillo distribution shape 
@@ -67,41 +67,37 @@ map <- ggplot() +
 map
 ```
 
-
-
 ## MAP #2
-Potential distribution of olotillo according to Perales & Golicher (2014) + sampling points for Olotillo from the Global Maize Project (CONABIO, 2011). Figure 1 a of the paper 1. Distribution and environmental conditions where Olotillo is grown. a) Potential distribution of Olotillo according to Perales & Golicher (2014) and sampling points for Olotillo from the Global Maize Project (CONABIO, 2011)
+## ------------------------------------------------------------------
+## 🗺️ Base map of Mexico with distribution and points of PGMN (Olotillo)
+## ------------------------------------------------------------------
+Climatic interpolation of Olotillo distribution according to Perales & Golicher (2014) + sampling points for Olotillo from the Global Maize Project (CONABIO, 2011). 
+**Figure 1.Distribution and environmental conditions where Olotillo is grown.** 
+**a)** Purple color shows the climatic interpolation of Olotillo distribution, restricted to the main altitude where it is grown, according to Perales & Golicher (2014). Black points are the sampling points of Olotillo from the Global Maize Project (GMP: CONABIO, 2011).
 ```{r}
-# shape file for mexico and potential distribution
-map <- ggplot() + 
-       geom_polygon(data = mexico, # shape-mexico
-                    aes(x = long, y = lat, group = group), 
-                   colour = "grey", fill = NA) + theme_void() +
-  geom_polygon(data = distribution, size=1, # shape-distri.
-                    aes(x = long, y = lat, group = group), 
-                    colour = "purple", fill = NA) + theme_void()
-# shape file for siagro and olotillo points  
-map + geom_point(data = olotillo.PGMN, # points-olo.PGMN 
-                 size= 0.5, colour = "black",
-                 aes(x=longitud, y=latitud)) 
+# --- Create the map --------------------------------------------------------
+map <- ggplot() +
+  geom_sf(data = mexico, colour = "grey", fill = NA, linewidth = 0.3) + # base polygon of Mexico
+  geom_sf(data = distribution, colour = "purple", fill = NA, linewidth = 0.6) + # distribution polygon
+  geom_point(                         # points of PGMN
+    data = olotillo.PGMN,
+    aes(x = longitud, y = latitud),
+    colour = "black",
+    size = 0.8
+  ) + 
+  theme_void() +                      # general style of the map
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold")
+  )  
+# --- Show map -----------------------------------------------------------
+map
 ```
 
-### Map 3: Map of Mexico highligthing states that were sampled (same colors than PCA)
-
-```{r}
-library(broom)
-packageVersion("broom")
-```
-
-#### Color by states
-
-```{r}
-#install.packages("units")
-library(sf)
-```
-
-### Sun 23 jun 2024
-
+## MAP #3
+## ------------------------------------------------------------------
+## 🗺️ Map of Mexico highligthing states that were sampled (same colors than PCA)
+## ------------------------------------------------------------------
+### Color by states
 ```{r}
 mexico_sf <- st_as_sf(mexico, region = "ENTIDAD")
 lapply(mexico_sf, class)
@@ -109,17 +105,39 @@ print(mexico_sf)
 ```
 
 ```{r}
-# transform shape to df
-# broom package, convert statistical objects into Tidy Tibbles 
-mexico_df <- broom::tidy(mexico, region = "ENTIDAD")
-lapply(mexico_df, class)
+# --- Transform shape to df -----------------------------------------------------------
+#mexico_df <- broom::tidy(mexico, region = "ENTIDAD") # broom, convert statistical objects into Tidy Tibbles
+#lapply(mexico_df, class)
 ```
+está intentando convertir el objeto sf (mexico) en un data.frame “aplanado”.
+Sin embargo:
 
-### Pop data
+broom::tidy() ya no soporta objetos sf — fue diseñado para modelos estadísticos (lm, glm, etc.), no para datos espaciales.
 
 ```{r}
+#---- Extraer coordenadas y atributos en formato data.frame ---------------------------
+# Extraer coordenadas y unirlas correctamente con los atributos
+coords <- st_coordinates(mexico) %>% as.data.frame()
+coords$ID <- as.numeric(rownames(coords))  # crear ID temporal
+# Convertir geometrías a data.frame (manteniendo atributos)
+mexico_df <- mexico %>%
+  st_drop_geometry() %>%              # eliminar geometría (mantiene atributos)
+  mutate(ID = row_number()) %>%       # crear ID de referencia
+  right_join(coords, by = "ID")       # unir con coordenadas
+
+# Verificar resultado
+head(mexico_df)
+```
+mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp"))
+### Pop data
+```{r}
 # read the file plate1_fullmeta.txt
-pop.data <- read.table("meta/plate1_fullmeta.txt", sep = "\t", header = TRUE, stringsAsFactors = FALSE)
+pop.data <- read.table(
+  here::here("meta", "plate1_fullmeta.txt"),
+  sep = "\t",
+  header = TRUE,
+  stringsAsFactors = FALSE
+)
 # order alphabetically pop.data
 pop.data <- pop.data[order(pop.data$sample_name),]
 # remove the first element, (DNA BLANK)
@@ -132,10 +150,6 @@ dim(pop.data)
 # make vector of states excluding where we sampled olotillos
 sampled.states<-unique(pop.data$state)
 sampled.states
-```
-
-```{r}
-library(ggplot2)
 ```
 
 ```{r}
@@ -169,18 +183,47 @@ map2 <- ggplot()  +
                                                 "#b6b638",
                                                 "#89863c",
                                                 # the rest leave blank
-                                                rep("white", 23)))# +
+                                                rep("white", 23)))
 
-
-#  geom_polygon(data = distribution, 
-                   # aes(x = long, y = lat, group = group), 
-                   # colour = "blue", fill = NA) + theme_void()
 map2 
 ```
 
+
 ```{r}
+# --- Map showing only sampled states -----------------------------------------
+map2 <- ggplot() +
+  geom_sf(
+    data = mexico_sf,
+    aes(fill = ENTIDAD),
+    colour = "grey40",
+    linewidth = 0.3
+  ) +
+  theme_void() +
+  theme(legend.position = "none") +
+  scale_fill_manual(
+    breaks = c(sampled.states, not.sampled),
+    values = c(
+      "grey60",     # base
+      "#75a842",    # verde
+      "#36dee6",    # turquesa
+      "#52bd85",    # verde medio
+      "#b94656",    # rojo
+      "#6780d8",    # azul
+      "#c69c39",    # dorado
+      "#b6b638",    # oliva
+      "#89863c",    # marrón verdoso
+      rep("white", 23)
+    )
+  ) +
+  ggtitle("Estados muestreados vs no muestreados") +
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 13)
+  )
+
+map2
 
 ```
+
 
 # Add sampling points of Olotillo from PGMN
 
