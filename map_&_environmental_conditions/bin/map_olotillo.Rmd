@@ -4,16 +4,16 @@ output: html_document
 ---
 
 # Title: Plot map with maptools, rgeos and rgdal.
-# Star date: October 2023 by ALicia Mastretta-Yanes.
-# Previous modification: Wed 08/Oct/2025. Versoix, Switzerland (15:00 PM) by Duhyadi Oliva-García.
-# Last modification: Fri 10/Oct/2025. Geneva, Switzerland (16:28) by Duhyadi Oliva-
+# Star date: October 2023 by Alicia Mastretta-Yanes.
+# Previous modification: Fri 10/Oct/2025. Versoix, Switzerland (16:28) by Duhyadi Oliva-García
+# Last modification: Mon 13/Oct/2025. Versoix, Switzerland (14:03) by Duhyadi Oliva-García.
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
 
 ------------------------------------------------------------------------
 
+# INITIAL PROJECT SETUP  
 ```{r setup, include=FALSE}
-# Initial project setup-----------------------------------------
-# Load the package here (for reproducible routes)
+# --- Load the package here (for reproducible routes) ----------------------------------------
 if (requireNamespace("here", quietly = TRUE)) {
   setwd(here::here())
   message("📂  Working directory set to: ", getwd())
@@ -38,24 +38,24 @@ Note #1: gpclib and maptools are no longer used; most of their functions have be
 
 # LOAD DATA: read shape and points
 ```{r}
-# --- Load spatial layers and data ----------------------------------------
-# Mexico shape
-mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp"))
-# Olotillo distribution shape 
-distribution <- st_read(here::here("shape","oloti_7cgw" ,"oloti_7cgw.shp"))
-# POINTS
-# Olotillo, Proyecto Global Maíces Nativos (PGMN)
-olotillo.PGMN <- read.csv(here::here("meta","olotillo_PGMN_siagro.csv"))
-# Olotillo, Proyecto Doctoral Poblaciones Evolutivas" 
-olotillo.points <- read.csv(here::here("meta", "olotillo_points_meta_clean.csv"))
+# --- Load spatial layers and data -----------------------------------------
+mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp")) # Mexico shape
+distribution <- st_read(here::here("shape","oloti_7cgw" ,"oloti_7cgw.shp")) # Olotillo distribution shape
+olotillo.PGMN <- read.csv(here::here("meta","olotillo_PGMN_siagro.csv")) # Olotillo, Proyecto Global Maíces Nativos (PGMN)
+olotillo.points <- read.csv(here::here("meta", "olotillo_points_meta_clean.csv")) # Olotillo, Proyecto Doctoral Poblaciones Evolutivas
 ```
 Note #2: here::here. It's the safe way to call package here.
-# PLOT
 Occurrence points for Olotillo, were collected in the field for, 2018-2019 : Duhyadi Oliva-García(Chiapas), Alicia Mastretta-Yanes(Chiapas), Bulmaro Coutiño-Estrada (Chiapas), Flavio Aragón-Cuevas (Oaxaca), Noé Orlando-Gómez (Guerrero), Víctor Antonio Vidal Martínez (Nayarit) and Hugo Perales-Rivera (Chiapas-different year). Also include samples from CIMMYTM.
+
+# PLOT
 ## MAP #1 
-Potential distribution of olotillo according to Perales & Golicher (2014) + points for olotillo, from the Global Maize Project (CONABIO, 2011) + accessions sampled for this study by race.
+## ------------------------------------------------------------------
+## 🗺️ Base map of Mexico with distribution...
+## ------------------------------------------------------------------
+Distribution of olotillo according to Perales & Golicher (2014) + points for olotillo, from the Global Maize Project (CONABIO, 2011) + accessions sampled for this study by race.
 ```{r}
-map <- ggplot() +
+# --- Create the map -----------------------------------------
+map1 <- ggplot() +
   geom_sf(data = mexico, colour = "grey", fill = NA) + # shape mexico
   geom_sf(data = distribution, colour = "blue", fill = NA, size = 0.2) + # shape distribution
   geom_point(data = olotillo.PGMN, aes(x = longitud, y = latitud), size = 0.5, colour = "black") +
@@ -63,8 +63,8 @@ map <- ggplot() +
   scale_shape_manual(values = c(15, 17, 16, 18)) +
   scale_color_manual(values = c("purple", "green", "red", "orange")) +
   theme_void()
-
-map
+# --- Show map -----------------------------------------
+map1
 ```
 
 ## MAP #2
@@ -75,71 +75,55 @@ Climatic interpolation of Olotillo distribution according to Perales & Golicher 
 **Figure 1.Distribution and environmental conditions where Olotillo is grown.** 
 **a)** Purple color shows the climatic interpolation of Olotillo distribution, restricted to the main altitude where it is grown, according to Perales & Golicher (2014). Black points are the sampling points of Olotillo from the Global Maize Project (GMP: CONABIO, 2011).
 ```{r}
-# --- Create the map --------------------------------------------------------
-map <- ggplot() +
+# --- Create the map -----------------------------------------
+map2 <- ggplot() +
   geom_sf(data = mexico, colour = "grey", fill = NA, linewidth = 0.3) + # base polygon of Mexico
-  geom_sf(data = distribution, colour = "purple", fill = NA, linewidth = 0.6) + # distribution polygon
-  geom_point(                         # points of PGMN
+  geom_sf(data = distribution, colour = "purple", fill = NA, linewidth = 0.6) + # distribution polygon 
+  geom_point(                          # points of PGMN
     data = olotillo.PGMN,
     aes(x = longitud, y = latitud),
     colour = "black",
     size = 0.8
   ) + 
-  theme_void() +                      # general style of the map
-  theme(
-    plot.title = element_text(hjust = 0.5, size = 14, face = "bold")
-  )  
-# --- Show map -----------------------------------------------------------
-map
+  theme_void()                        # general style of the map 
+# --- Show map -----------------------------------------
+map2
 ```
 
 ## MAP #3
 ## ------------------------------------------------------------------
 ## 🗺️ Map of Mexico highligthing states that were sampled (same colors than PCA)
 ## ------------------------------------------------------------------
-### Color by states
 ```{r}
+# --- Color by states -----------------------------------------
 mexico_sf <- st_as_sf(mexico, region = "ENTIDAD")
 lapply(mexico_sf, class)
 print(mexico_sf)
 ```
-
+### Convert shape to data frame: extract coordinates and attributes in data.frame format
 ```{r}
-# --- Transform shape to df -----------------------------------------------------------
-#mexico_df <- broom::tidy(mexico, region = "ENTIDAD") # broom, convert statistical objects into Tidy Tibbles
-#lapply(mexico_df, class)
-```
-está intentando convertir el objeto sf (mexico) en un data.frame “aplanado”.
-Sin embargo:
-
-broom::tidy() ya no soporta objetos sf — fue diseñado para modelos estadísticos (lm, glm, etc.), no para datos espaciales.
-
-```{r}
-#---- Extraer coordenadas y atributos en formato data.frame ---------------------------
-# Extraer coordenadas y unirlas correctamente con los atributos
+# ---- Extract coordinates and correctly join them with the attributes ---------------------
 coords <- st_coordinates(mexico) %>% as.data.frame()
-coords$ID <- as.numeric(rownames(coords))  # crear ID temporal
-# Convertir geometrías a data.frame (manteniendo atributos)
+coords$ID <- as.numeric(rownames(coords))   # create temporary ID
+# ---- Convert geometries to data.frame (maintaining attributes) ---------------------------
 mexico_df <- mexico %>%
-  st_drop_geometry() %>%              # eliminar geometría (mantiene atributos)
-  mutate(ID = row_number()) %>%       # crear ID de referencia
-  right_join(coords, by = "ID")       # unir con coordenadas
+  st_drop_geometry() %>%                    # delete geometry (maintains attributes)
+  mutate(ID = row_number()) %>%             # create reference ID
+  right_join(coords, by = "ID")             # join with coordinates
 
-# Verificar resultado
-head(mexico_df)
+                                                                
+head(mexico_df)                             # check result 
 ```
-mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp"))
 ### Pop data
 ```{r}
-# read the file plate1_fullmeta.txt
+# --- Read the file plate1_fullmeta.txt -----------------------------------------
 pop.data <- read.table(
   here::here("meta", "plate1_fullmeta.txt"),
   sep = "\t",
   header = TRUE,
   stringsAsFactors = FALSE
 )
-# order alphabetically pop.data
-pop.data <- pop.data[order(pop.data$sample_name),]
+pop.data <- pop.data[order(pop.data$sample_name),]  # order alphabetically pop.data
 # remove the first element, (DNA BLANK)
 pop.data <- pop.data[-1,]
 # check n samples
@@ -154,7 +138,6 @@ sampled.states
 
 ```{r}
 # to get a names in the data frame
-# unique(mexico_df$id) # code original Alicia
 unique(mexico_sf$ENTIDAD) # logica Duhyadi jun 2024
 # change to they way 
 sampled.states<-c("CAMPECHE", "CHIAPAS", "GUERRERO", "HIDALGO",
@@ -214,11 +197,7 @@ map2 <- ggplot() +
       "#89863c",    # marrón verdoso
       rep("white", 23)
     )
-  ) +
-  ggtitle("Estados muestreados vs no muestreados") +
-  theme(
-    plot.title = element_text(hjust = 0.5, face = "bold", size = 13)
-  )
+  ) 
 
 map2
 
