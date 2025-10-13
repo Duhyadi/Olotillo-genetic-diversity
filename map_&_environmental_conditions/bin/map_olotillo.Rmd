@@ -28,13 +28,8 @@ if (requireNamespace("here", quietly = TRUE)) {
 ```{r}
 library(dplyr)
 library(ggplot2)
-# library(gpclib) # officially retired from CRAN in 2023, replace with sf
-# library(maptools) # like gpclib, the maptools package was removed from CRAN in 2023, replace with sf
-# library(rgeos) # in the process of retirement, replace with sf 
-#library(rgdal) # was also officially retired from CRAN in 2023 (along with rgeos and maptools, replace with sf 
 library(sf)
 ```
-Note #1: gpclib and maptools are no longer used; most of their functions have been migrated to other, more modern packages — primarily sf, sp, and rgeos (although rgeos is also in the process of being retired).
 
 # LOAD DATA: read shape and points
 ```{r}
@@ -127,52 +122,23 @@ pop.data <- pop.data[order(pop.data$sample_name),]  # order alphabetically pop.d
 pop.data <- pop.data[-1,]                           # remove the first element, (DNA BLANK)
 dim(pop.data)                                       # check n samples
 ```
-
+### Make a vector 
 ```{r}
-# make vector of states excluding where we sampled olotillos
+# --- Make vector of states excluding where we sampled olotillos --------------------------
 sampled.states<-unique(pop.data$state)
 sampled.states
-```
-
-```{r}
 # to get a names in the data frame
-unique(mexico_sf$ENTIDAD) # logica Duhyadi jun 2024
+unique(mexico_sf$ENTIDAD) 
 # change to they way 
 sampled.states<-c("CAMPECHE", "CHIAPAS", "GUERRERO", "HIDALGO",
                   "NAYARIT", "OAXACA", "QUINTANA ROO", "SAN LUIS POTOSI",
                   "VERACRUZ DE IGNACIO DE LA LLAVE")
-
-# not.sampled<-unique(mexico_sf$id)[!unique(mexico_sf$id) %in% sampled.states] # code original Alicia
-
-not.sampled<-unique(mexico_sf$ENTIDAD)[!unique(mexico_sf$ENTIDAD) %in% sampled.states] #logica Duhyadi jun 2024  
-  
-## Map showing only sampled states
-
-map2 <- ggplot()  +
-       geom_polygon(data = mexico_sf, 
-                    aes(x = long, y = lat, group = group, fill =ENTIDAD ), #fill =id ),
-                    colour = "grey") + theme_void() +
-                    theme(legend.position="none") +
-                    scale_fill_manual(breaks = c(sampled.states, not.sampled),
-                                      values = c("grey60", # 9 color-blind friendly cols
-                                                "#75a842",
-                                                "#36dee6",
-                                                "#52bd85",
-                                                "#b94656",
-                                                "#6780d8",
-                                                "#c69c39",
-                                                "#b6b638",
-                                                "#89863c",
-                                                # the rest leave blank
-                                                rep("white", 23)))
-
-map2 
+not.sampled<-unique(mexico_sf$ENTIDAD)[!unique(mexico_sf$ENTIDAD) %in% sampled.states] 
 ```
 
-
 ```{r}
-# --- Map showing only sampled states -----------------------------------------
-map2 <- ggplot() +
+# --- Create the map showing only sampled states -----------------------------------------
+map3 <- ggplot() +
   geom_sf(
     data = mexico_sf,
     aes(fill = ENTIDAD),
@@ -197,81 +163,60 @@ map2 <- ggplot() +
     )
   ) 
 
-map2
-
+map3
 ```
-
 
 # Add sampling points of Olotillo from PGMN
-
 ```{r}
-map3 <- ggplot() + 
-        geom_polygon(data = mexico_df, show.legend=FALSE,
-              aes(x = long, y = lat, group = group, fill =id ), 
-              colour = "grey") + 
-              # theme(legend.position="none") +
-              scale_fill_manual(breaks = c(sampled.states, not.sampled),
-                                values = c("grey60", # 9 color-blind friendly cols
-                                          "#75a842",
-                                          "#36dee6",
-                                          "#52bd85",
-                                          "#b94656",
-                                          "#6780d8",
-                                          "#c69c39",
-                                          "#b6b638",
-                                          "#89863c",
-                                          # the rest leave blank
-                                          rep("white", 23))) + theme_void()
-#shape file for siagro and olotillo points  
-map3 + geom_point(data = olotillo.PGMN,
-                 size=0.4, colour = "black",
-                 aes(x=longitud, y=latitud)) +
-        geom_polygon(data = distribution, size=0.1,
-                    aes(x = long, y = lat, group = group), 
-                    colour = "pink", fill = NA) + 
-  geom_point(data = olotillo.points, size=1.5,
-           aes(x = longitude, y = latitude, shape= Race, color= Race)) +
+# --- Create the map showing only sampled states -----------------------------------------
+map3b <- ggplot() +
+  geom_sf(
+    data = mexico_sf,
+    aes(fill = ENTIDAD),
+    colour = "grey40",
+    linewidth = 0.3
+  ) +
+  theme_void() +
+  theme(legend.position = "none") +
+  scale_fill_manual(
+    breaks = c(sampled.states, not.sampled),
+    values = c(
+      "grey60",     # base
+      "#75a842",    # verde
+      "#36dee6",    # turquesa
+      "#52bd85",    # verde medio
+      "#b94656",    # rojo
+      "#6780d8",    # azul
+      "#c69c39",    # dorado
+      "#b6b638",    # oliva
+      "#89863c",    # marrón verdoso
+      rep("white", 23)
+    )
+  ) +
+  geom_point(
+    data = olotillo.PGMN,
+    aes(x = longitud, y = latitud),
+    colour = "black",
+    size = 0.6
+  ) +
+  geom_point(
+    data = olotillo.points,
+    aes(x = longitude, y = latitude, shape = Race, color = Race),
+    size = 1.6
+  ) +
   scale_shape_manual(values = c(15, 17, 16, 18)) +
-  scale_color_manual(values = c("purple", "green", "blue", "yellow"))  +
-  theme()
+  scale_color_manual(values = c("purple", "green", "blue", "orange")) +
+  theme_void() +
+  theme(legend.position = "bottom") +
+  guides(
+    shape = guide_legend(title = "Race"),
+    color = guide_legend(title = "Race")
+  )
+map3b
 ```
 
-########29Dic2023#######################################################
 
-```{r}
-map3 <- ggplot() + 
-        geom_polygon(data = mexico_df, show.legend=FALSE,
-              aes(x = long, y = lat, group = group, fill =id ), 
-              colour = "grey") + 
-              # theme(legend.position="none") +
-              scale_fill_manual(breaks = c(sampled.states, not.sampled),
-                                values = c("grey60", # 9 color-blind friendly cols
-                                          "#75a842",
-                                          "#36dee6",
-                                          "#52bd85",
-                                          "#b94656",
-                                          "#6780d8",
-                                          "#c69c39",
-                                          "#b6b638",
-                                          "#89863c",
-                                          # the rest leave blank
-                                          rep("white", 23))) + theme_void()
-#shape file for siagro and olotillo points  
-map3 + geom_point(data = olotillo.PGMN,
-                 size=0.4, colour = "black",
-                 aes(x=longitud, y=latitud)) + 
-  geom_point(data = olotillo.points, size=1.5,
-           aes(x = longitude, y = latitude, shape= Race, color= Race)) +
-  scale_shape_manual(values = c(15, 17, 16, 18)) +
-  scale_color_manual(values = c("purple", "green", "blue", "yellow"))  +
-  theme()
-```
 
-```{r}
-map + geom_point(data = olotillo.points, size = 1,
-           aes(x = longitude, y = latitude, shape= Race, color= Race)) 
-```
 
-```{r}
-olotillo.points$Race
-```
+
+
