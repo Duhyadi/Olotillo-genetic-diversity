@@ -124,10 +124,8 @@ pop.data <- read.table(
   stringsAsFactors = FALSE
 )
 pop.data <- pop.data[order(pop.data$sample_name),]  # order alphabetically pop.data
-# remove the first element, (DNA BLANK)
-pop.data <- pop.data[-1,]
-# check n samples
-dim(pop.data)
+pop.data <- pop.data[-1,]                           # remove the first element, (DNA BLANK)
+dim(pop.data)                                       # check n samples
 ```
 
 ```{r}
