@@ -1,0 +1,109 @@
+---
+title: "olotillo_climas_morphologia"
+output: html_document
+date: "2023-11-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+library(viridis)
+library(dplyr)
+```
+
+Este notebook explora los datos de diversidad morfológica y climática del olotillo, con los datos del PGMN. Los datos se descargaron del [https://app-siagro.conabio.gob.mx/id=79265ANGIO](https://app-siagro.conabio.gob.mx/id=79265ANGIO) y [https://app-siagro.conabio.gob.mx/id=79238ANGIO](https://app-siagro.conabio.gob.mx/id=79238ANGIO).
+
+Los datos morfológicos provienen del Proyecto Global de Maíces Nativos, y los datos climáticos provienen de:
+
+Precipitación anual periodo 2000:
+Valor extraído de la celda donde cae el punto del sitio en los rasters de Cuervo-Robayo A.P., C. Ureta, M.A. Gómez-Albores, A.K. Meneses-Mosquera, O. Téllez-Valdés, E. Martínez-Meyer, (27/08/2019). 'Bioclimas, periodo: 2000 (1980-2009)', edición: 1. Instituto de Biología, Universidad Nacional Autónoma de México. Estos mapas forman parte de la publicación: Cuervo-Robayo, A. P., Ureta, C., Gómez-Albores, M. A., Meneses-Mosquera, A. K., Téllez-Valdés, O., y E. Martínez-Meyer. (2020). One hundred years of climate change in Mexico. Plos One. https://doi.org/10.1371/ journal.pone.0209808 Ciudad de México, México.
+
+Temperatura media anual periodo 2000:
+Valor extraído de la celda donde cae el punto del sitio en los rasters de Cuervo-Robayo A.P., C. Ureta, M.A. Gómez-Albores, A.K. Meneses-Mosquera, O. Téllez-Valdés, E. Martínez-Meyer, (27/08/2019). 'Bioclimas, periodo: 2000 (1980-2009)', edición: 1. Instituto de Biología, Universidad Nacional Autónoma de México. Estos mapas forman parte de la publicación: Cuervo-Robayo, A. P., Ureta, C., Gómez-Albores, M. A., Meneses-Mosquera, A. K., Téllez-Valdés, O., y E. Martínez-Meyer. (2020). One hundred years of climate change in Mexico. Plos One. https://doi.org/10.1371/ journal.pone.0209808 Ciudad de México, México.
+
+Altitud tomada en el sitio al momento de la colecta (y revisada por CONABIO).
+
+Las categorías de rangos se realizaron tomando como base los rangos descritos en: Ruiz Corral, J.A., Durán Puga, N., Sánchez González, J.d.J., Ron Parra, J., González Eguiarte, D.R., Holland, J. and Medina García, G. (2008), Climatic Adaptation and Ecological Descriptors of 42 Mexican Maize Races . Crop Science, 48: 1502-1512. https://doi.org/10.2135/ cropsci2007.09.0518 
+
+```{r}
+olotillo<-read.csv("../data/maiz_raza_Olotillo.csv")
+tuxpeno<-read.csv("../data/maiz_raza_Tuxpeno.csv")
+```
+
+
+Distribución de datos de temperatura y precipitación:
+
+```{r}
+olotillo %>% ggplot(aes(x=temperatura, y=precipitacion)) +
+             geom_point()
+```
+
+Distribución precipitación
+
+```{r}
+olotillo %>% ggplot(aes(precipitacion)) +
+             geom_density()
+```
+
+Distribución precipitación por categorías
+
+```{r}
+olotillo %>% ggplot(aes(precipitacion, fill=cat_precipitacion)) +
+             geom_density(alpha=0.4)
+```
+
+Distribución temperatura:
+
+
+```{r}
+olotillo %>% ggplot(aes(temperatura)) +
+             geom_density()
+```
+Distribución temperatura por categorías
+```{r}
+olotillo %>% ggplot(aes(temperatura, fill=cat_temperatura)) +
+             geom_density(alpha=0.4)
+```
+
+
+Violin plot + puntos de la temperatura por categorias de precipitación
+```{r}
+#check category names
+unique(olotillo$cat_precipitacion)
+
+# order categorias precipitation levels from less to more rain
+olotillo$cat_precipitacion <- factor(olotillo$cat_precipitacion, levels= c("escasas", "poco abundantes", "intermedias" , "abundantes", "muy abundantes"))
+ 
+# violin plot of temperature by categoria precipitacion
+p<- olotillo %>% ggplot(aes(x=cat_precipitacion, y=temperatura)) + 
+             geom_violin() +
+             # add points on top of violin
+             geom_jitter(shape=16, position=position_jitter(0.2), 
+                         aes(color=precipitacion)) +
+             scale_color_continuous(type= "viridis", direction=-1) +
+             theme_light()
+
+p
+```
+
+Versión en inglés:
+```{r}
+p + labs(color="Annual rainfall (mm)") +
+    ylab("Temperature (°C)") +
+    xlab("Precipitation category (mm annual rainfall)") +
+    scale_x_discrete(breaks=c("escasas", "poco abundantes", "intermedias" , "abundantes", "muy abundantes"),
+                     labels=c("<540", ">450-650", ">650-850" , ">850-1,360", ">1,360"))
+  
+  
+  
+  
+```
+
+
+
+
+
+

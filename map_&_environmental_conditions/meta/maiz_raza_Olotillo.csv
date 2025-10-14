@@ -1,0 +1,1277 @@
+raza,estado,municipio,localidad,altitud,precipitacion,temperatura,color_grano,hileras_mazorca,longitud_promedio,cat_altitud,cat_temperatura,cat_precipitacion
+maíz raza olotillo,hidalgo,atlapexco,tenexco ii,206.0,1384,24,['amarillo naranja'],9.2,16.12,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zapotitlan de mendez,cerca de nanacatlán,920.0,2415,20,['blanco cremoso'],10.4,17.02,bajas,templada,muy abundantes
+maíz raza olotillo,puebla,zapotitlan de mendez,cerca de nanacatlán,920.0,2415,20,no disponible,no disponible,no disponible,bajas,templada,muy abundantes
+maíz raza olotillo,puebla,zapotitlan de mendez,cerca de nanacatlán,920.0,2415,20,"['azul', 'azul oscuro']",11.2,16.46,bajas,templada,muy abundantes
+maíz raza olotillo,puebla,zapotitlan de mendez,cerca de nanacatlán,920.0,2415,20,['azul oscuro'],10.4,17.44,bajas,templada,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de el paraje,287.0,1384,23,['blanco cremoso'],9.4,17.64,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de el paraje,287.0,1384,23,"['blanco cremoso', 'amarillo claro', 'amarillo medio', 'amarillo naranja']",9.8,16.15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tamarindo,723.0,1026,23,['amarillo claro'],9.4,16.265,bajas,semi-caliente,abundantes
+maíz raza olotillo,nuevo leon,general teran,ejido la purísima,339.0,705,22,['blanco cremoso'],12.32,15.224,bajas,semi-caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"cuesta amarilla, carretera el salto-abrevadero",103.0,1514,25,"['amarillo medio', 'naranja']",10.2,15.74,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,tuxtla gutierrez,534.0,970,25,"['blanco', 'amarillo claro']",no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,tuxtla gutierrez,534.0,970,25,['amarillo claro'],8,15.2,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,miramar,784.0,1039,23,"['blanco', 'amarillo claro']",10.2,21.02,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,miramar,784.0,1039,23,['blanco cremoso'],10.75,17.04,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el cimiento,784.0,1039,23,"['blanco cremoso', 'amarillo medio']",11.4,17.34,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,miramar,784.0,1039,23,['blanco cremoso'],10.1,19.745,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,rancho viejo,150.0,1343,24,"['amarillo', 'rojo naranja', 'blanco']",10,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,rancho viejo,150.0,1343,24,"['amarillo', 'rojo naranja', 'amarillo naranja']",9.2,18.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa maria tonameca,"la florida, al interior de terreno comunal, a 8 km de santa maría tonameca",33.0,1055,26,"['blanco', 'amarillo claro', 'azul oscuro']",11,15.5,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,amatlan de los reyes,amatlan,736.0,1829,22,"['blanco', 'rojo']",10,13.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"los naranjos, carretera san andrés-los naranjos",58.0,1426,25,['blanco cremoso'],11.6,16.7,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,teopisca,beníto juárez,2190.0,1215,15,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,beníto juárez,2190.0,1215,15,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,beníto juárez,2190.0,1215,15,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,beníto juárez,2190.0,1215,15,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,beníto juárez,2190.0,1215,15,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,beníto juárez,2190.0,1215,15,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio valencia,339.0,1084,25,no disponible,9.05263157894737,16.3578947368421,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,ometepec,cerca de huixtepec (al nnw de la localidad),391.0,1417,26,no disponible,no disponible,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,frontera comalapa,nicolás bravo,735.0,1346,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,atoyac de alvarez,santiago de la unión,808.0,1582,23,['blanco cremoso'],12.8,17.52,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,900.0,909,23,no disponible,11.9,18.285,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,cerca de pacú,462.0,993,26,"['amarillo medio', 'amarillo naranja']",9,18.69,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,vista al mar,1151.0,1007,22,['blanco cremoso'],9.6,15.44,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,volantón 8 km comitán,1908.0,1165,17,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"cerca de chalahuiapa, en el ejido de chalahuayapan",230.0,1339,23,['blanco cremoso'],9.6,18.01,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,el encino prieto,359.0,1162,26,['blanco cremoso'],13.2,16.8,bajas,caliente,abundantes
+maíz raza olotillo,quintana roo,jose maria morelos,ejido piedras negras,116.0,1121,25,['blanco'],10,14.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"la redonda, carretera tilapan-río tuxpan",61.0,1391,25,['blanco cremoso'],9.8,13.34,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,malinaltepec,rancho viejo,1069.0,1893,23,['blanco cremoso'],10.8,16.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,malinaltepec,rancho viejo,1069.0,1893,23,['amarillo medio'],12.4,15.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,metztitlan,tlaxco,1701.0,527,17,['blanco cremoso'],no disponible,no disponible,mediana altitud,fría,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"la candelaria, carretera catemaco-juan díaz covarrubias",484.0,1730,23,['blanco cremoso'],11,18.09,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,frontera comalapa,cerca de san caralampio,585.0,1339,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,274.0,1097,25,['amarillo medio'],9.68,15.024,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,angel albino corzo,colonia palestina,735.0,2133,24,"['blanco', 'amarillo claro']",11,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,angel albino corzo,colonia palestina,735.0,2133,24,"['blanco', 'amarillo claro']",12,15.1,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,nuevo leon,cadereyta jimenez,ejido la nutria,328.0,736,22,"['blanco', 'blanco cremoso']",13.1764705882353,16.8588235294118,bajas,semi-caliente,intermedias
+maíz raza olotillo,nuevo leon,cadereyta jimenez,ejido trancas y alvarado,328.0,736,22,['blanco cremoso'],12.08,16.944,bajas,semi-caliente,intermedias
+maíz raza olotillo,nuevo leon,cadereyta jimenez,ejido casas viejas,328.0,736,22,['blanco cremoso'],11.36,17.84,bajas,semi-caliente,intermedias
+maíz raza olotillo,tabasco,huimanguillo,"cerca de gustavo díaz ordaz primera sección, subregión de la chontalpa",112.0,2204,25,['blanco cremoso'],10.9,17.55,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,310.0,1083,25,['blanco'],10.7368421052632,14.3684210526316,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,no disponible,no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,las rosas,san isidro la cuchilla,1327.0,1334,21,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,morelos,ayala,el vergel,928.0,763,24,['blanco'],10,16.14,bajas,semi-caliente,intermedias
+maíz raza olotillo,morelos,tlaquiltenango,xicatlacotla,809.0,803,24,['blanco'],10.4,14.74,bajas,semi-caliente,intermedias
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,652.0,1022,24,['blanco'],9.7,19.045,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,126.0,1049,26,['blanco'],10.45,17.875,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocuilapa de juarez,948.0,1000,23,['amarillo claro'],10,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel coatlan,lindavista,1489.0,929,20,['blanco'],11.7,18.175,mediana altitud,templada,abundantes
+maíz raza olotillo,guerrero,tepecoacuilco de trujano,palula,666.0,733,26,['blanco cremoso'],12,15.1,bajas,caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,alpatlahuac,alpatlahua,1854.0,1054,15,"['amarillo claro', 'rojo']",10,16.2,altas,fría,abundantes
+maíz raza olotillo,hidalgo,jaltocan,la ilusión,109.0,1484,24,['amarillo'],10.8,14.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,la ilusión,109.0,1484,24,['amarillo'],8,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,río molino,751.0,1020,24,['blanco'],10.75,14.68,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,137.0,1291,24,['blanco cremoso'],11.4,21.33,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,137.0,1291,24,['blanco cremoso'],11.6,20.24,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,137.0,1291,24,['blanco cremoso'],11.6,20.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,137.0,1291,24,['blanco cremoso'],11.6,19.24,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,137.0,1291,24,['blanco cremoso'],11.4,16.45,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,137.0,1291,24,['blanco cremoso'],12.2,21.81,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huazalingo,santa maría,516.0,1522,23,"['blanco', 'jaspeado', 'rojo naranja']",10,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huazalingo,santa maría,516.0,1522,23,"['amarillo', 'amarillo naranja', 'amarillo', 'amarillo naranja']",10,15.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huazalingo,santa maría,516.0,1522,23,"['blanco', 'blanco']",10,18.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huazalingo,santa maría,516.0,1522,23,"['amarillo', 'amarillo naranja', 'blanco puro', 'amarillo', 'amarillo naranja', 'blanco puro']",10.8,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huazalingo,santa maría,516.0,1522,23,"['amarillo', 'amarillo naranja', 'blanco puro', 'amarillo', 'amarillo naranja', 'blanco puro']",10,11.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huazalingo,santa maría,516.0,1522,23,"['amarillo', 'rojo naranja', 'blanco', 'amarillo', 'rojo naranja', 'blanco']",10,16.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,jesus carranza,"vista hermosa, ejido vista hermosa",58.0,2526,25,"['blanco cremoso', 'amarillo claro']",12,18.15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,huehuetlan,tantocoy uno,411.0,1500,23,"['blanco', 'amarillo', 'azul']",10.8,21.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,335.0,1097,25,['blanco cremoso'],12,13.755,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de sesaltitla,270.0,1323,23,['blanco cremoso'],10.4,16.53,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,el parral,ejido el parral,644.0,1143,24,"['amarillo claro', 'rojo']",9,20,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,el parral,ejido el parral,644.0,1143,24,['blanco'],8,19,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,soyalo,colonia francisco sarabia,873.0,1111,23,['blanco'],10,22,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,soyalo,colonia francisco sarabia,873.0,1111,23,['blanco'],9,18.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,vicente guerrero,875.0,972,23,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,villa tierra,847.0,930,23,no disponible,10.65,19.95,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"coyol de gonzález, carretera hueyapan de ocampo-coyolito",55.0,1431,25,['blanco cremoso'],12.2,18.62,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"tulapan, carretera salto de eyipantla-abrevadero",80.0,1432,25,['blanco cremoso'],10.6,16.41,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"tulapan, carretera salto de eyipantla-abrevadero",80.0,1432,25,"['amarillo naranja', 'naranja']",10.6,15.76,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"tulapan, carretera salto de eyipantla-abrevadero",80.0,1432,25,['blanco cremoso'],10.6,16.57,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"santa rosa abata, carretera san andrés tuxtla-catemaco, desviación santa rosa abata",536.0,1782,23,['blanco cremoso'],13,18.26,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san andres huaxpaltepec,rancho viejo,226.0,1258,27,['blanco'],11,15.3,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,juquilita,1919.0,1098,17,"['blanco cremoso', 'azul oscuro']",10.2,19.595,altas,fría,abundantes
+maíz raza olotillo,guanajuato,atarjea,el charco,1638.0,511,18,"['blanco', 'rojo', 'azul oscuro']",11.6,16.5,mediana altitud,fría,poco abundantes
+maíz raza olotillo,chiapas,el bosque,el bosque,1341.0,1381,20,['blanco'],10,16.5,mediana altitud,templada,muy abundantes
+maíz raza olotillo,san luis potosi,xilitla,apetzco,876.0,1089,21,"['rojo', 'azul', 'blanco', 'rojo', 'azul', 'blanco']",10.4,16.2,bajas,templada,abundantes
+maíz raza olotillo,san luis potosi,xilitla,apetzco,876.0,1089,21,"['blanco', 'rojo naranja']",12.4,18.8,bajas,templada,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],10,14.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['amarillo claro'],11,14.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],11,13.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],12,15.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,"['blanco', 'amarillo claro']",12,15.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],9,12.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],8,15.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],9,15.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['blanco'],11,14.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,['amarillo claro'],11,18.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,"['blanco', 'amarillo claro']",11,18.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san jeronimo coatlan,san cristóbal honduras,1109.0,977,22,"['blanco', 'negro']",9,14.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san felipe usila,arroyo iguana,112.0,2057,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,coachumo común,319.0,1413,23,"['amarillo', 'rojo naranja']",10,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,coachumo común,319.0,1413,23,"['amarillo', 'jaspeado', 'azul']",10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,jardín del sur,669.0,970,24,['blanco cremoso'],9.5,18.76,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,jardín del sur,669.0,970,24,no disponible,9.96,16.472,bajas,semi-caliente,abundantes
+maíz raza olotillo,tabasco,huimanguillo,"ejido monte de oro, primera sección, subregión de la chontalpa",26.0,2140,26,['blanco cremoso'],12.2,15.84,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tuxpan,san josé el grande,68.0,1295,24,['blanco cremoso'],12,18.69,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,villa tierra,880.0,930,23,['blanco'],10.5555555555556,20.7944444444444,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,teopisca,san antonio y san josé,1711.0,1279,16,['amarillo claro'],12,21.6,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,suchiapa,cerca de pacú,453.0,991,26,"['amarillo claro', 'amarillo medio', 'amarillo naranja']",8,18.59,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,ejido calmecate,117.0,1352,24,['amarillo'],9.2,14.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,ejido calmecate,117.0,1352,24,"['amarillo', 'amarillo naranja']",10,16.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,atotonilco el grande,cerro colorado,1986.0,611,15,['blanco cremoso'],9,13.24,altas,fría,poco abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,236.0,1087,25,"['blanco', 'rojo']",10,16.9421052631579,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,beníto juárez,265.0,1326,23,['blanco cremoso'],9.4,14.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,700.0,1022,24,['blanco'],9.65,16.445,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,340.0,1097,25,['blanco cremoso'],10.5,17.015,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,teocelo,baxtla,1162.0,1732,20,['blanco cremoso'],10.6,19.76,bajas,templada,muy abundantes
+maíz raza olotillo,campeche,hopelchen,xmejia,158.0,1066,25,['blanco'],11,14.65,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"chuniapan de arriba, carretera salto de eyipantla-chuniapan de arriba",154.0,1632,24,['amarillo claro'],11.8,17.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"ohuilapan, carretera san andrés tuxtla-tilapan",112.0,1607,25,['blanco cremoso'],11.4,20.73,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san miguel panixtlahuaca,san miguel panixtlahuaca,1045.0,1313,23,['blanco'],9,17.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"ohuilapan, carretera san andrés tuxtla-tilapan",112.0,1607,25,['blanco cremoso'],10.4,21.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,xoloco,155.0,1567,24,['amarillo'],9.6,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,xoloco,155.0,1567,24,['amarillo'],10,17.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,xoloco,155.0,1567,24,"['amarillo', 'amarillo naranja']",9.6,19,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,xoloco,155.0,1567,24,['blanco'],10,20.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,814.0,1028,23,['blanco cremoso'],9.72,17.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de palma real,354.0,1529,23,['blanco cremoso'],9.6,16.67,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],12,15.7,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],9,16,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],8,17.3,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],11,16.4,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],9,16.8,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],11,18,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,pinotepa de don luis,pinotepa de don luis,419.0,1397,26,['blanco'],9,14.7,bajas,caliente,muy abundantes
+maíz raza olotillo,tabasco,tacotalpa,"colonia mexiquito, subregión de la sierra",57.0,2404,26,['blanco cremoso'],13.4,18.15,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tatahuicapan de juarez,"tatahuicapan, cabecera municipal",111.0,1767,25,['blanco cremoso'],12.4,19.15,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,los horcones,190.0,1049,25,"['blanco', 'amarillo claro']",10,13.63,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,santa rosa cintepec,486.0,1705,23,['blanco cremoso'],10.4,15.79,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,santa rosa cintepec,486.0,1705,23,['blanco cremoso'],10,14.65,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huazalingo,copaltitla,443.0,1490,23,"['amarillo', 'amarillo naranja', 'azul', 'amarillo', 'amarillo naranja', 'azul']",9.6,16.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,venustiano carranza,colonia flores magón,480.0,1110,25,['blanco'],8,18,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,colonia flores magón,480.0,1110,25,"['rojo', 'azul oscuro']",11,17.5,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,colonia flores magón,480.0,1110,25,['amarillo claro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,colonia flores magón,480.0,1110,25,['amarillo claro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,colonia flores magón,480.0,1110,25,['blanco'],10,19,bajas,caliente,abundantes
+maíz raza olotillo,puebla,hueytamalco,cerca del ejido palo gacho (al sur de palo gacho),513.0,2462,21,['blanco cremoso'],10.5,17.15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,tuxtla chico,ejido sur de guillen,190.0,2610,27,['blanco'],11,16,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,el encino prieto,365.0,1162,26,['blanco cremoso'],11.2,19.3,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,la independencia,emiliano zapata,1495.0,1275,18,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,puebla,xochitlan de vicente suarez,xochitlan,1051.0,2347,19,"['amarillo claro', 'rojo']",no disponible,no disponible,bajas,templada,muy abundantes
+maíz raza olotillo,chiapas,venustiano carranza,ejido soyatitán,855.0,1122,24,['blanco'],12,13.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,ejido soyatitán,855.0,1122,24,"['blanco', 'rojo']",10,18,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,739.0,977,24,no disponible,9.8,16.875,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,xochiapulco,"atzalán, aledaño al ejido atzalán",1590.0,1942,17,['blanco'],11,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"san juan seco, camino san juan seco-el chamizal",376.0,1696,24,['blanco cremoso'],10.2,18.77,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,cintalapa,cerca de villamorelos,704.0,790,24,['blanco'],10.4,16.35,bajas,semi-caliente,intermedias
+maíz raza olotillo,tamaulipas,hidalgo,ejido la trinidad,399.0,816,22,['amarillo claro'],8,18.6,bajas,semi-caliente,intermedias
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,729.0,1022,24,['blanco'],9.3,16.57,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,tenampulco,cerca de el chacal,82.0,1625,24,['blanco cremoso'],12.4444444444444,20.5111111111111,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan lalana,arroyo blanco,219.0,2350,24,['blanco'],11,26,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,castillo de teayo,el xuchitl,111.0,1250,24,['blanco cremoso'],11.4,17.66,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río gusano,1325.0,947,21,['blanco cremoso'],9.7,17.25,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río gusano,1325.0,947,21,no disponible,10.35,17.675,mediana altitud,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"benito juárez, comunidad benito juárez",188.0,1631,23,['blanco cremoso'],12.4,19.27,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,coalcomán,1031.0,1139,22,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,coalcomán,1031.0,1139,22,"['blanco', 'naranja']",no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,712.0,977,24,no disponible,9.05,18.855,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,san luis acatlan,cuanacaxtitlan,469.0,1734,26,['blanco cremoso'],11.6,15.3,bajas,caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,"chapulhuacanito, barrio kuakumol",158.0,1672,24,"['amarillo', 'rojo naranja']",10.8,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,chapulhuacanito,158.0,1672,24,['amarillo'],9.2,18.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"axochio, camino tilapan-río tuxtla, entre coyoltepec y la redonda",39.0,1402,25,['blanco cremoso'],12.6,17.57,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,los riegos,1580.0,1239,18,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,los riegos,1580.0,1239,18,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,692.0,977,24,no disponible,10.1,19.125,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el cacalote,1040.0,1031,21,['blanco'],9.5,12.72,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el cacalote,1040.0,1031,21,['blanco'],9.8,14.835,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,"santa cruz, barrio josé lópez portillo",123.0,1454,24,"['amarillo naranja', 'amarillo']",10.4,20.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,"santa cruz, barrio el mirador",123.0,1454,24,['amarillo'],10.2,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,584.0,969,24,"['blanco', 'amarillo claro']",9.8,16.575,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,584.0,969,24,['blanco cremoso'],9.9,15.25,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,"tzacuala, barrio chote",205.0,1321,24,"['amarillo', 'amarillo naranja', 'amarillo', 'amarillo naranja']",9.8,14.4,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de el paraje,293.0,1390,23,"['amarillo claro', 'amarillo medio', 'amarillo naranja']",9.6,16.02,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,ayotzintepec,monte mario,127.0,2345,24,['blanco'],12,22,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"santa rosa abata, carretera san andrés tuxtla-catemaco, desviación santa rosa abata",505.0,1782,23,['rojo'],10.4,18.64,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chiconamel,mohuijco,152.0,1388,24,['amarillo'],10.4,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,palma real,336.0,1548,23,"['amarillo', 'amarillo naranja']",8.4,15.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,el carmen,272.0,1580,26,['blanco cremoso'],12.4,15.8,bajas,caliente,muy abundantes
+maíz raza olotillo,nayarit,compostela,compostela,829.0,1282,22,"['blanco', 'amarillo claro']",no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el gavilán,750.0,931,24,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el gavilán,750.0,931,24,['rojo'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el gavilán,750.0,931,24,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el gavilán,750.0,931,24,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el gavilán,750.0,931,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chiconquiaco,"los naranjos, parte baja de chiconquiaco",1279.0,1611,18,['blanco cremoso'],12.6,17.73,mediana altitud,templada,muy abundantes
+maíz raza olotillo,oaxaca,santo domingo de morelos,santa maría bella vista,330.0,1042,25,['blanco cremoso'],9.9,18,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el caulote,185.0,1058,26,['amarillo claro'],9.9,17.905,bajas,caliente,abundantes
+maíz raza olotillo,coahuila de zaragoza,san pedro,san francisco de arriba,1117.0,207,21,no disponible,12.2,16.3,bajas,templada,escasas
+maíz raza olotillo,hidalgo,xochiatipan,tlaltecatla,332.0,1546,23,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",9.6,14.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,xochiatipan,tlaltecatla,332.0,1546,23,"['blanco', 'amarillo']",9.6,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,xochiatipan,tlaltecatla,332.0,1546,23,"['blanco', 'jaspeado', 'azul', 'blanco', 'jaspeado', 'azul']",9.2,17.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,humotitla coyuco,133.0,1341,24,['amarillo'],8.4,15.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,los coyotes,112.0,1455,24,['blanco cremoso'],9,19.95,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,actopan,esperanza,181.0,1026,25,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,la trinitaria,palo gordo,714.0,1128,24,"['blanco', 'amarillo claro']",13,16.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,ometepec,"cerca de san francisco (la palma, al ssw de la localidad)",269.0,1345,27,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,tecoanapa,xalpatlahuac,689.0,1668,24,['blanco cremoso'],9.2,14.94,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,macahuite,705.0,978,24,['blanco cremoso'],10.6,21.905,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,macahuite,705.0,978,24,['blanco cremoso'],9.7,17.05,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,las margaritas,lomantan,1770.0,1185,17,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"terán, zapata se localiza al interior de la localidad delegación terán",567.0,960,25,['azul oscuro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"terán, la colonia zapata se localiza al interior de la localidad delegación terán",567.0,960,25,"['blanco', 'azul oscuro']",no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"terán, ribera del carmen se localiza al interior de la delegación terán",567.0,960,25,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"terán, zapata se localiza al interior de la localidad delegación terán",567.0,960,25,['blanco'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"terán, ribera del carmen se localiza al interior de la delegación terán",567.0,960,25,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,san luis potosi,huehuetlan,la escalera,113.0,1566,24,"['amarillo naranja', 'amarillo naranja']",8.4,12.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"chalahuiapa, en el ejido de chalahuayapan",265.0,1348,23,['blanco cremoso'],8.4,18.64,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"chalahuiapa, en el ejido de chalahuayapan",265.0,1348,23,['blanco cremoso'],9,16.86,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"chalahuiapa, en el ejido de chalahuayapan",265.0,1348,23,['blanco cremoso'],9,16.11,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"chalahuiapa, en el ejido de chalahuayapan",265.0,1348,23,['blanco cremoso'],9.2,17.34,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,tecoanapa,tlayoyotepec,612.0,1679,25,['blanco cremoso'],10.8,16.66,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,río molino,766.0,1007,22,"['blanco cremoso', 'amarillo claro']",10.7,14.995,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,soteapan,"al sur de la localidad cerro de la palma, carretera federal libre a mecayapan",130.0,1722,25,"['naranja', 'rojo naranja']",11.8,13.88,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"tulapan, carretera salto de eyipantla-abrevadero",82.0,1465,25,['blanco cremoso'],11,18.45,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,arroyo hueso,1506.0,981,20,"['blanco', 'amarillo claro']",10.1,18.5,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,jiquipilas,ejido miguel hidalgo,538.0,910,24,['blanco'],10,15,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,falda del gachupín,807.0,1022,23,no disponible,9.55,16.455,bajas,semi-caliente,abundantes
+maíz raza olotillo,tamaulipas,san fernando,ejido juan antonio,48.0,612,23,['blanco cremoso'],10.64,15.54,bajas,semi-caliente,poco abundantes
+maíz raza olotillo,san luis potosi,tampamolon corona,río florido,88.0,1434,24,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atotonilco el grande,el contadero,1913.0,638,16,['blanco cremoso'],8.4,12.92,altas,fría,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,manuel maría contreras,101.0,1250,24,['blanco cremoso'],10.8,18.86,bajas,semi-caliente,abundantes
+maíz raza olotillo,morelos,tlaquiltenango,xicatlacotla,824.0,822,24,['blanco'],10.4,14.72,bajas,semi-caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,la candelaria,484.0,1730,23,['blanco cremoso'],9.4,14.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,la candelaria,484.0,1730,23,"['rojo naranja', 'rojo', 'rojo oscuro']",10.4,17.13,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,131.0,1534,24,"['amarillo medio', 'amarillo naranja']",8.8,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,131.0,1534,24,['blanco cremoso'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,malinaltepec,monte alegre,1693.0,1406,20,['blanco cremoso'],11.2,15.6,mediana altitud,templada,muy abundantes
+maíz raza olotillo,guerrero,tlacoachistlahuaca,cerca de tlacoachistlahuaca (al e de la localidad),416.0,1508,26,no disponible,no disponible,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,la independencia,zapata,1511.0,1277,18,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,"los ajos, sta. clara",126.0,1247,24,['amarillo'],9.2,14.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,"los ajos, sta. clara",126.0,1247,24,"['amarillo', 'blanco']",8.8,16.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,"los ajos, sta. clara",126.0,1247,24,"['blanco', 'amarillo', 'blanco', 'amarillo']",10,16.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,"los ajos, sta. clara",126.0,1247,24,['blanco'],10,19.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,"los ajos, sta. clara",126.0,1247,24,['blanco'],10,18,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,santa maría bella vista,331.0,1046,25,['blanco'],11,12.875,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,ayoco,242.0,1329,23,['blanco cremoso'],9.8,16.23,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"san pedro quimichostayo, camino a laguneta",487.0,1741,23,['blanco cremoso'],10.4,18.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,jiquipilas,jiquipilas,531.0,901,24,['blanco cremoso'],10,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,la trinitaria,carmen xhan,1232.0,1473,20,['blanco'],no disponible,no disponible,mediana altitud,templada,muy abundantes
+maíz raza olotillo,chiapas,la trinitaria,carmen xhan,1232.0,1473,20,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,muy abundantes
+maíz raza olotillo,chiapas,suchiapa,plan de munumi,458.0,1000,26,['blanco'],8.6,17.55,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de tlatlapango el grande,299.0,1390,23,['blanco cremoso'],9.4,17.69,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro jicayan,san josé yutatuyaa,269.0,1300,27,['amarillo claro'],9,16.5,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san pedro jicayan,san josé yutatuyaa,269.0,1300,27,['azul'],9,17.1,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,tataltepec de valdés,866.0,1465,24,['azul'],10,15.1,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,tataltepec de valdés,866.0,1465,24,['amarillo claro'],14,15.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,tataltepec de valdés,866.0,1465,24,['blanco'],15,18.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,chiapa de corzo,cerca de zapata 1,436.0,1009,26,"['blanco', 'blanco cremoso']",10,18.6285714285714,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,chiapa de corzo,cerca de zapata 1,436.0,1009,26,['amarillo claro'],11.6,21.61,bajas,caliente,abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,axtla de terrazas,96.0,1564,24,"['amarillo medio', 'amarillo naranja']",9.6,14.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,colonia hidalgo comitán,1917.0,1158,16,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chiconquiaco,"los naranjos, parte baja de chiconquiaco",1280.0,1611,18,"['blanco cremoso', 'amarillo claro', 'amarillo medio']",10.2,16.59,mediana altitud,templada,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"la chamizal, camino santa rosa cintepec-juan díaz cobarruvias",200.0,1607,24,['blanco cremoso'],13,16.21,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,los horcones,190.0,1049,25,['blanco cremoso'],12.4,13.93,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,santa maría tlapanalquiahuitl,943.0,1444,24,['amarillo claro'],12,15.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,santa maría tlapanalquiahuitl,943.0,1444,24,"['blanco', 'amarillo claro', 'rojo']",11,15.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,santa maría tlapanalquiahuitl,943.0,1444,24,['blanco'],12,17.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,santa maría tlapanalquiahuitl,943.0,1444,24,"['blanco', 'amarillo claro']",10,15.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,huehuetlan,tandzumadz,420.0,1501,23,"['blanco', 'amarillo', 'rojo naranja']",11.6,19,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,ejido de cuanacastitlán,732.0,1738,25,['blanco cremoso'],12,11,bajas,caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,chilocuil taman,289.0,1680,24,"['blanco', 'rojo', 'rojo naranja']",10.8,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,chilocuil taman,289.0,1680,24,"['azul', 'rojo naranja', 'amarillo', 'azul', 'rojo naranja', 'amarillo']",10.4,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,chilocuil taman,289.0,1680,24,"['amarillo', 'azul']",11.6,19.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,chilocuil taman,289.0,1680,24,"['blanco', 'azul']",10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,864.0,909,23,['amarillo naranja'],9.76,13.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['rojo'],10,15.8,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],11,17.6,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],10,19.1,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],9,17.4,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],10,16.4,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['amarillo claro'],8,12.6,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],11,15.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],10,16.5,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina mechoacan,santa catarina mechoacán,236.0,1309,27,['blanco'],10,17.2,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el tamarindo,562.0,1001,24,no disponible,10.05,17.29,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de el paraje,293.0,1390,23,['blanco cremoso'],10.2,15.97,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el llano,594.0,998,24,no disponible,10.2,18.855,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,san felipe orizatlan,taxiscoatitla,148.0,1533,24,"['amarillo', 'amarillo']",10.8,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"chuniapan de arriba, comunidad chuniapan de arriba",151.0,1627,24,['blanco cremoso'],13,18.03,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,venustiano carranza,paraíso grijalva,667.0,1248,25,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"yaltzi, tres lagunas",1859.0,1182,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,san luis potosi,tampacan,chililillo,195.0,1564,24,"['amarillo', 'amarillo naranja']",9.2,19.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,cuanacaxtitlan,473.0,1734,26,['azul oscuro'],12.4,15.9,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,cuanacaxtitlan,473.0,1734,26,['blanco cremoso'],10.4,16.9,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"el remolino, camino los naranjos-popotal",30.0,1354,25,['amarillo naranja'],11,16.53,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río aguacate,420.0,990,25,['blanco'],9.4,18.535,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,no disponible,no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,no disponible,no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,no disponible,no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,no disponible,no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,no disponible,no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,teopisca,campo santiago,2103.0,1219,15,no disponible,no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,tlatlapango grande,347.0,1495,23,"['amarillo', 'rojo naranja', 'blanco']",10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,cuetzalan del progreso,atalpa,565.0,2483,22,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,cuetzalan del progreso,atalpa,565.0,2483,22,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,los pocitos,1134.0,993,22,['blanco cremoso'],9.95,13.875,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san sebastian ixcapa,costatitlán,127.0,1256,27,"['azul oscuro', 'negro']",11,16.5,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,petatlan,murga,115.0,997,26,['amarillo claro'],12,11.7,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tamarindo,448.0,1032,24,"['blanco', 'amarillo claro']",9.9,17.325,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,amatenango de la frontera,"amatenango de la frontera (amatenango viejo), al interior del ejido amatenango de la frontera",902.0,2705,23,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,amatenango de la frontera,"amatenango de la frontera (amatenango viejo), al interior del ejido amatenango de la frontera",902.0,2705,23,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,la guadalupe,1028.0,1160,22,"['blanco', 'amarillo claro']",12,16.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,la guadalupe,1028.0,1160,22,['blanco'],8,20.4,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huazalingo,la ceiba,371.0,1456,23,"['amarillo', 'rojo naranja', 'blanco', 'amarillo', 'rojo naranja', 'blanco']",9.6,15.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tulcingo,cerca de tulcingo del valle,1107.0,690,23,"['azul', 'negro']",10,15.72,bajas,semi-caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,acayucan,"la esperanza malota, carretera veracruz-acayucan, desviación en vista hermosa",103.0,1537,25,['blanco cremoso'],12.4,14.25,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,acayucan,"la esperanza malota, carretera veracruz-acayucan, desviación en vista hermosa",103.0,1537,25,['blanco cremoso'],12.2,15.45,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,venustiano carranza,cerca de barrio san francisco,643.0,1120,25,['blanco'],8.4,17.05,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de la reforma,439.0,1533,23,"['blanco cremoso', 'negro']",9.6,16.82,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de la reforma,439.0,1533,23,"['amarillo medio', 'amarillo naranja']",10,15.98,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,yahualica,tepetitla,491.0,1538,22,['amarillo medio'],9.8,13.82,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,espinal,"plan de la noria, casa del productor",87.0,1571,24,['blanco cremoso'],11.4,19.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,espinal,"plan de la noria, casa del productor",87.0,1571,24,['blanco cremoso'],12.4,21.14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,las rosas,villa las rosas,1306.0,1329,21,['blanco'],10,14,mediana altitud,templada,abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,guaxcuaco,469.0,1542,23,"['blanco', 'rojo naranja']",11.6,22.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,guaxcuaco,469.0,1542,23,['amarillo'],10.8,19.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,xochiatipan,acanoa,698.0,1728,22,['amarillo medio'],9.2,15.45,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,"mecatlán, barrio axhumol",157.0,1747,24,"['amarillo', 'rojo naranja']",10.8,19.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,"mecatlán, barrio de atlajque",157.0,1747,24,['amarillo'],10,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,mecatlán,157.0,1747,24,['blanco'],9.6,17.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,tecpan de galeana,arroyo de la ordeña,141.0,1094,26,['blanco cremoso'],11.6,16,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,calnali,coamila,1210.0,757,19,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,intermedias
+maíz raza olotillo,hidalgo,atlapexco,"atlajco, barrio calixpa",250.0,1438,23,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",10.8,16.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,"atlajco, barrio xocotzintla",250.0,1438,23,"['amarillo', 'blanco', 'amarillo', 'blanco']",10.4,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,['blanco'],14,15.6,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,['amarillo claro'],11,15.2,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,['blanco'],11,17.2,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,"['blanco', 'rojo']",12,15.8,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,['blanco'],11,16.9,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,['amarillo claro'],13,15.5,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san juan lachao,san juan lachao pueblo viejo,2056.0,1221,17,['blanco'],12,16.2,altas,fría,abundantes
+maíz raza olotillo,hidalgo,atlapexco,"tlachapa, barrio arriba",208.0,1431,23,['amarillo'],10,18.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,"tlachapa, barrio naranjal",208.0,1431,23,['amarillo'],10.4,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,"tlachapa, barrio arriba",208.0,1431,23,"['amarillo', 'amarillo naranja', 'amarillo', 'amarillo naranja']",9.6,16.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,tlachapa,208.0,1431,23,"['blanco', 'blanco']",9.2,14.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,"tlachapa, barrio arriba",208.0,1431,23,"['amarillo', 'blanco']",9.6,15.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,tlachapa,208.0,1431,23,"['amarillo', 'amarillo naranja', 'amarillo', 'amarillo naranja']",8.8,14.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,las margaritas,1 de mayo,1671.0,1220,18,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,las margaritas,1 de mayo,1671.0,1220,18,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,las margaritas,1 de mayo,1671.0,1220,18,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,las margaritas,1 de mayo,1671.0,1220,18,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,las margaritas,1 de mayo,1671.0,1220,18,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,las margaritas,1 de mayo,1671.0,1220,18,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"pizapan, carretera san andrés-tilapan desviación los mérida",115.0,1569,25,['amarillo claro'],10.4,16.99,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chiconquiaco,"la vaquería, zona baja, chiconquiaco",1811.0,1676,14,"['blanco', 'azul']",13.4,16.01,altas,fría,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,898.0,964,23,no disponible,10.8,19.565,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa maria cortijo,santa maría cortijo,80.0,1194,27,"['blanco', 'amarillo claro', 'azul oscuro']",no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,ejido siete palmas,160.0,1209,24,['blanco'],11.2,17.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,ejido siete palmas,160.0,1209,24,['blanco'],10.4,18.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,ejido siete palmas,160.0,1209,24,['blanco'],10.4,15.4,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,ejido siete palmas,160.0,1209,24,['blanco'],10,15.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"la isla, comunidad ejido la isla",14.0,1392,24,['blanco cremoso'],11.8,20.15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"la isla, comunidad ejido la isla",14.0,1392,24,['blanco cremoso'],12,18.66,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"la isla, olmedo",14.0,1392,24,['blanco cremoso'],12.4,17.72,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,tecpan de galeana,papanoa,24.0,915,26,['blanco cremoso'],11.2,18.2,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,tecpan de galeana,papanoa,24.0,915,26,['amarillo claro'],8,20,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,yahualica,pepeyocatitla,221.0,1457,24,['blanco'],9,16.38,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guanajuato,xichu,llanetes,927.0,534,23,['blanco'],10.2,17.6,bajas,semi-caliente,poco abundantes
+maíz raza olotillo,guanajuato,xichu,llanetes,927.0,534,23,['azul oscuro'],12.8,15.4,bajas,semi-caliente,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"la redonda, carretera tilapan-río tuxpan",44.0,1391,25,['blanco cremoso'],12.4,17.2,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,malinaltepec,cerca de monte alegre,1705.0,1406,20,['blanco cremoso'],11,17,mediana altitud,templada,muy abundantes
+maíz raza olotillo,morelos,ayala,el vergel,933.0,763,24,['blanco'],10.4,14.98,bajas,semi-caliente,intermedias
+maíz raza olotillo,oaxaca,san bartolome loxicha,arroyo bejuco,574.0,1031,24,['blanco'],9.75,13.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,chiapa de corzo,francisco sarabia,434.0,1058,26,['blanco'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,chiapa de corzo,francisco sarabia,434.0,1058,26,['amarillo claro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,chiapa de corzo,francisco sarabia,434.0,1058,26,['amarillo claro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa maria tonameca,"santa maría tonameca, cabecera municipal, al interior de terreno comunal",37.0,1061,26,"['blanco', 'amarillo claro']",12,15.5,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,"calaco, ejido huecuatitla",362.0,1407,23,"['amarillo', 'rojo naranja', 'blanco']",9.2,15.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atotonilco el grande,"cerca de tezahuapa, (aledaños al ejido agua limpia)",2075.0,605,16,['blanco cremoso'],8.8,13.36,altas,fría,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,pahuatitla,429.0,1473,23,"['amarillo', 'rojo naranja']",11.2,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,xilitla,cerro quebrado,1213.0,866,19,"['azul', 'blanco', 'amarillo', 'azul', 'blanco', 'amarillo']",10.6,18.6,mediana altitud,templada,abundantes
+maíz raza olotillo,san luis potosi,xilitla,cerro quebrado,1213.0,866,19,"['blanco', 'rojo', 'rojo naranja']",11.6,18.8,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,chiapa de corzo,narciso mendoza,407.0,1039,26,['amarillo naranja'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"la chamizal, camino santa rosa cintepec-juan díaz cobarruvias",184.0,1582,24,['blanco cremoso'],11,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,ciudad valles,san felipe,163.0,1192,24,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,ciudad valles,san felipe,163.0,1192,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,895.0,994,23,['blanco cremoso'],10,16.19,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,895.0,994,23,['blanco'],9.8,15.655,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,santa cruz tepenixtlahuaca,463.0,1343,26,['blanco'],14,18.8,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,santa cruz tepenixtlahuaca,463.0,1343,26,['rojo'],11,15.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,santa cruz tepenixtlahuaca,463.0,1343,26,['blanco'],10,17,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,san vicente yogondoy,1463.0,953,20,['blanco cremoso'],8.9,14.88,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,1463.0,953,20,['blanco cremoso'],9.5,17.275,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,1463.0,953,20,"['blanco', 'amarillo claro']",10.45,15.155,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,río piedra,1463.0,953,20,"['blanco', 'amarillo claro']",9.2,19.5333333333333,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,el campanario,1463.0,953,20,['blanco'],9.5,16.755,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,san vicente yogondoy,1463.0,953,20,['blanco cremoso'],10.45,17.92,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,paraje bizjuane,997.0,929,22,"['blanco cremoso', 'amarillo claro']",10.1,17.53,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,la trinitaria,el salvador,1720.0,1364,17,['blanco'],12,14.6,mediana altitud,fría,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,platon sanchez,platón sánchez,62.0,1322,24,['amarillo'],10,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,la independencia,rio blanco,909.0,1579,22,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tlaola,chicohuaxtla,1194.0,2228,18,['blanco cremoso'],10,16.4857142857143,bajas,templada,muy abundantes
+maíz raza olotillo,guerrero,tixtla de guerrero,cerca de la localidad el durazno,1923.0,1176,18,['blanco cremoso'],10.8,19.3,altas,fría,abundantes
+maíz raza olotillo,chiapas,berriozabal,berriozabal,925.0,1000,23,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,berriozabal,berriozabal,925.0,1000,23,['blanco'],9,16.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,agua blanca de iturbide,ranchería potrero monroy,1792.0,1304,16,['amarillo naranja'],10.6,16.38,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,frontera comalapa,cerca de rodulfo figueroa,586.0,1319,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,"jusnajab, la laguna",1864.0,1142,16,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,la independencia,san marcos,1484.0,1270,18,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"rancho la playa, salida cerro de las flores",12.0,1298,24,['blanco cremoso'],12.2,18.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,chietla,cerca de derramadero,1182.0,720,23,['blanco cremoso'],9.33333333333333,14.7166666666667,bajas,semi-caliente,intermedias
+maíz raza olotillo,guerrero,leonardo bravo,los morros,2085.0,1395,17,['blanco cremoso'],9.2,23,altas,fría,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,307.0,1083,25,['blanco'],10.5,14.505,bajas,caliente,abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['blanco', 'amarillo']",10.8,18.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['amarillo', 'blanco']",9.33,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['amarillo', 'blanco', 'azul']",9.2,18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['amarillo', 'amarillo naranja', 'amarillo', 'amarillo naranja']",11.2,18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,['amarillo'],8,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,['amarillo'],9.6,14.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['amarillo', 'café']",10,15.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,['blanco'],11.6,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['amarillo', 'rojo naranja']",10,14.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,chalchocoyo,266.0,1628,23,"['amarillo', 'blanco']",9.6,14.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,los colorados,1086.0,929,22,no disponible,10.7,16.525,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,xochiatipan,el zapote,533.0,1726,22,"['blanco', 'amarillo claro']",9.4,14.23,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,691.0,985,24,['blanco cremoso'],10.08,17.584,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,eduardo neri,tenantla,1762.0,1125,19,no disponible,no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,san luis potosi,tanlajas,san josé xilatzen,314.0,1474,24,"['blanco cremoso', 'amarillo naranja']",11,18.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,villa terrazas,84.0,1552,24,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,axtla,84.0,1552,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,villa terrazas,84.0,1552,24,"['amarillo claro', 'rojo']",12,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,villa terrazas,84.0,1552,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,cuetzalan del progreso,santiago yancuitlalpan,508.0,2493,22,['amarillo naranja'],9.6,15.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"ohuilapan, comunidad ohuilapan",116.0,1607,25,['blanco cremoso'],10.2,17.37,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,los otates,119.0,1359,24,"['amarillo naranja', 'amarillo', 'rojo naranja']",10.8,16.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,paso ancho,175.0,1000,26,no disponible,10.1,19.125,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['amarillo claro'],8,17.7,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['blanco'],8,17.5,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['blanco'],8,18.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['blanco'],8,19.4,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['amarillo claro'],10,19.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,tlacamama,256.0,1295,27,"['blanco', 'rojo']",9,13.4,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['amarillo claro'],12,18.5,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['amarillo claro'],8,16.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san miguel tlacamama,san miguel tlacamama,256.0,1295,27,['blanco'],10,20.1,bajas,caliente,abundantes
+maíz raza olotillo,mexico,tejupilco,pantoja,1705.0,1058,19,['blanco'],10.8,18.27,mediana altitud,templada,abundantes
+maíz raza olotillo,puebla,xochiapulco,la manzanilla,1838.0,1384,16,"['blanco', 'rojo', 'azul oscuro']",no disponible,no disponible,altas,fría,muy abundantes
+maíz raza olotillo,puebla,xochiapulco,la manzanilla,1838.0,1384,16,"['blanco', 'azul oscuro']",no disponible,no disponible,altas,fría,muy abundantes
+maíz raza olotillo,hidalgo,agua blanca de iturbide,ranchería potrero monroy,1767.0,1304,16,['blanco cremoso'],11.2,16.65,mediana altitud,fría,abundantes
+maíz raza olotillo,hidalgo,agua blanca de iturbide,ranchería potrero monroy,1767.0,1304,16,['rojo'],12.8,15.64,mediana altitud,fría,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,643.0,974,24,['blanco'],9.2,13.245,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,604.0,962,24,['blanco'],9.55,19.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,el mezquite,93.0,1223,24,['blanco'],9.2,18.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,el mezquite,93.0,1223,24,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",9.6,14,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,la union de isidoro montes de oca,el chico,45.0,996,27,['blanco cremoso'],10.8,19.1,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,beníto juárez,267.0,1326,23,"['amarillo', 'jaspeado']",10.4,16.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,río molino,613.0,1020,24,['amarillo claro'],9.75,17.81,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tapanco,733.0,1026,23,['blanco cremoso'],10.15,17.875,bajas,semi-caliente,abundantes
+maíz raza olotillo,quintana roo,jose maria morelos,ejido tabasco,41.0,1187,25,['blanco'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,cerro toro,521.0,992,25,['blanco'],9.45,19.375,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,piedra cuache,369.0,1051,25,"['blanco', 'amarillo claro']",10.2,15.855,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,belem,585.0,1124,25,['blanco'],10,15,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,"belem, 3 km venustiano carranza",585.0,1124,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,tecomatlan,san miguel de lozano,1009.0,658,24,"['blanco cremoso', 'negro']",10,17.6333333333333,bajas,semi-caliente,intermedias
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],10,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido flores magón, aledaño a la localidad ricardo flores magón, a 25 km de cuetzalan y cerca de reyeshogpan",219.0,1908,24,['blanco'],9,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,"en el centro del ejido ricardo flores magón, aledaño a la localidad ricardo flores magón",219.0,1908,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,san juan seco de valencia,403.0,1721,23,['blanco cremoso'],9.4,17.3,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,"ensenada, chalco",102.0,1576,24,['amarillo'],8.8,17.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,"ensenada, chalco",102.0,1576,24,['amarillo'],9.6,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,"ensenada, chalco",102.0,1576,24,"['blanco', 'amarillo', 'blanco', 'amarillo']",10.4,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,papatlalillo,194.0,1171,24,['blanco'],11.2,15.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,papatlalillo,194.0,1171,24,['amarillo'],10.8,17.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"santa rosa cintepec, carretera catemaco-acayucan",479.0,1705,23,['blanco cremoso'],11,20.26,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé laguna,95.0,2243,25,['blanco'],11,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"benito juárez, comunidad benito juárez",196.0,1631,23,['blanco cremoso'],11.6,19.02,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa ana tututepec,443.0,1323,26,['blanco'],12,18,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa ana tututepec,443.0,1323,26,['blanco'],9,17.1,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa ana tututepec,443.0,1323,26,['amarillo claro'],11,18.2,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,chilapa de alvarez,ayahualulco,1420.0,1126,21,['blanco cremoso'],9.6,15.4,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san baltazar yatzachi el bajo,hidalgo yalalag,790.0,1040,23,"['blanco', 'azul oscuro']",9,15.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el caulote,160.0,1058,26,['blanco cremoso'],10.7,17.53,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"mazumiapan, carretera rincón de zapatero-el laurel",22.0,1318,25,['amarillo claro'],10.4,14.23,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"mazumiapan, carretera rincón de zapatero-el laurel",22.0,1318,25,['blanco cremoso'],10.8,16.05,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"mazumiapan, carretera rincón de zapatero-el laurel",22.0,1318,25,['blanco cremoso'],11.4,16.13,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tamarindo,440.0,1032,24,['blanco'],9.7,17.945,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,la candelaria,480.0,1730,23,['blanco cremoso'],10.6,12.9,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,la candelaria,480.0,1730,23,['blanco cremoso'],11.2,12.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tuxpan,"san josé el grande, 1 km de la congregación dirección noroeste",153.0,1308,23,['blanco cremoso'],10.4,20.55,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,santa martha loxicha,709.0,986,24,['blanco cremoso'],10.1,17.545,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa maria huatulco,bajos de coyula,19.0,1125,26,['amarillo claro'],11,17.2,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa maria huatulco,bajos de coyula,19.0,1125,26,['blanco'],11,14.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,440.0,997,25,['amarillo claro'],9.6,16.225,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,440.0,997,25,['amarillo medio'],8.7,17.525,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,salto de agua,buena vista,77.0,2255,26,"['blanco', 'azul']",12,17,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,salto de agua,buena vista,77.0,2255,26,['amarillo claro'],11,17,bajas,caliente,muy abundantes
+maíz raza olotillo,puebla,tilapa,colonia san miguel tilapa,1239.0,720,22,['blanco cremoso'],10.3333333333333,no disponible,mediana altitud,semi-caliente,intermedias
+maíz raza olotillo,hidalgo,san felipe orizatlan,texcatla,212.0,1686,24,['amarillo medio'],9.6,15.11,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,olinala,san lázaro,1769.0,931,20,['blanco cremoso'],12.4,18.2,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san mateo rio hondo,el cuachepil,2383.0,1184,15,"['blanco cremoso', 'amarillo claro']",9.85,16.38,altas,fría,abundantes
+maíz raza olotillo,guerrero,chilapa de alvarez,zoquiapa,1792.0,1140,19,['blanco cremoso'],10.8,17.2,mediana altitud,templada,abundantes
+maíz raza olotillo,hidalgo,yahualica,mecatlán,446.0,1557,23,['blanco'],10,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,yahualica,mecatlán,446.0,1557,23,"['amarillo', 'rojo naranja']",11.6,17.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,yahualica,mecatlán,446.0,1557,23,"['amarillo', 'amarillo naranja']",10.4,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,yahualica,mecatlán,446.0,1557,23,"['amarillo', 'amarillo naranja']",10.4,14.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,tuxtepec,868.0,2140,23,['azul oscuro'],11,16.16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,mecayapan,"al sur de la localidad cerro de la palma, carretera federal libre a mecayapan",153.0,1728,25,['blanco cremoso'],12,17.2,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,mecayapan,"al sur de la localidad cerro de la palma, carretera federal libre a mecayapan",153.0,1728,25,['blanco cremoso'],12.8,14.78,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,cerca de yoloxochitl,284.0,1574,26,['blanco cremoso'],13.6,17.6,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,cerca de yoloxochitl,284.0,1574,26,['blanco cremoso'],11.33,16,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,cerca de yoloxochitl,284.0,1574,26,['blanco cremoso'],11.33,19.83,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,los achotes,284.0,1574,26,['blanco cremoso'],11.33,18.66,bajas,caliente,muy abundantes
+maíz raza olotillo,guanajuato,xichu,organitos,1158.0,523,21,['blanco'],10,20.05,bajas,semi-caliente,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"coyoltepec, camino ejidal tilapan-río tuxtla",39.0,1401,25,['amarillo claro'],12.8,14.9,bajas,caliente,muy abundantes
+maíz raza olotillo,durango,mezquital,huazamota,601.0,829,25,"['blanco', 'amarillo claro']",10,17,bajas,caliente,intermedias
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,661.0,1028,23,['blanco cremoso'],9.35,17.135,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,"chalingo, barrio palmar",237.0,1320,23,"['amarillo', 'amarillo naranja', 'rojo naranja', 'amarillo', 'amarillo naranja', 'rojo naranja']",10.4,16.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,chalingo,237.0,1320,23,"['amarillo naranja', 'amarillo']",10,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,chalingo,237.0,1320,23,"['amarillo', 'amarillo naranja', 'rojo naranja', 'amarillo', 'amarillo naranja', 'rojo naranja']",9.6,13.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,tenampulco,cerca de el chacal,87.0,1625,24,['blanco cremoso'],12.6,18.91,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de la reforma,378.0,1569,23,['blanco cremoso'],10.2,17.21,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,olinala,olinala,1336.0,934,22,['blanco'],11.2,19.1,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,sayotitán,1001.0,1195,23,"['blanco', 'azul oscuro']",no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,santa úrsula,855.0,958,23,no disponible,9.6,17.85,bajas,semi-caliente,abundantes
+maíz raza olotillo,coahuila de zaragoza,general cepeda,pilar de richarson,1204.0,273,19,no disponible,10,15.05,mediana altitud,templada,escasas
+maíz raza olotillo,hidalgo,huautla,chalingo,227.0,1320,23,['amarillo medio'],9.2,16.06,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,los horcones,191.0,1060,25,['blanco cremoso'],10.3,15.01,bajas,caliente,abundantes
+maíz raza olotillo,puebla,tilapa,cerca de derramadero,1204.0,724,22,['blanco cremoso'],10,15,mediana altitud,semi-caliente,intermedias
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,162.0,1049,26,['blanco'],9.2,14.308,bajas,caliente,abundantes
+maíz raza olotillo,puebla,tlaola,chicohuaxtla,1199.0,2228,18,['blanco cremoso'],10.6666666666667,16.0333333333333,bajas,templada,muy abundantes
+maíz raza olotillo,guerrero,tecoanapa,cerca de buena vista de allende,401.0,1497,26,['blanco cremoso'],12.4,14.98,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,tlanempa común,107.0,1251,24,"['amarillo', 'rojo naranja', 'amarillo naranja']",11.2,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"la candelaria, carretera san andrés-acayucan. desviación la candelaria",493.0,1730,23,['blanco cremoso'],10,13.78,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,tenexco ii,302.0,1415,23,['blanco cremoso'],9.6,15.87,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro jicayan,san pedro jicayán,404.0,1390,26,['blanco'],9,18.1,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro jicayan,san pedro jicayán,404.0,1390,26,['amarillo claro'],8,17.1,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro jicayan,san pedro jicayán,404.0,1390,26,['azul'],9,17.1,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro jicayan,san pedro jicayán,404.0,1390,26,['amarillo claro'],8,16,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,las rosas,cerca de villa las rosas,1315.0,1332,20,"['amarillo claro', 'amarillo medio', 'amarillo naranja']",9.2,20.71,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,frontera comalapa,cerca de san caralampio,587.0,1335,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san juan bautista valle nacional,cerro marín,74.0,2421,25,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san antonio huitepec,san francisco yucucundo,2313.0,886,16,['blanco'],10,16.8,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,735.0,977,24,no disponible,11.1,17.275,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,tecoanapa,lagunillas,389.0,1489,26,['blanco cremoso'],12,16.06,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,el respondón,881.0,935,23,['blanco'],8.9,16.125,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,842.0,1028,23,['blanco cremoso'],9.27777777777778,17.7833333333333,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,atoyac de alvarez,rio santiago,695.0,1485,24,['blanco cremoso'],10,16.66,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,atoyac de alvarez,rio santiago,695.0,1485,24,['blanco'],12,17.26,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,rayon,"milpa vieja, ejido rayón",979.0,688,21,"['blanco cremoso', 'amarillo claro']",no disponible,no disponible,bajas,templada,intermedias
+maíz raza olotillo,chiapas,tuxtla gutierrez,emiliano zapata,912.0,1007,23,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,jardín del sur,611.0,970,24,['blanco cremoso'],9.6,17.47,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,coatempa,189.0,1318,23,['rojo naranja'],9.2,15.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,cualac,chiaucingo (chapancingo),1370.0,936,22,['blanco cremoso'],10.8,16.2,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa maria jacatepec,la joya,121.0,2249,25,['blanco cremoso'],11,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa maria jacatepec,la joya,121.0,2249,25,['blanco'],10,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa maria jacatepec,la joya,121.0,2249,25,['amarillo medio'],12,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,siete palmas,265.0,1205,24,['blanco'],9.6,18.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,siete palmas,265.0,1205,24,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",9.6,14.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,siete palmas,265.0,1205,24,['blanco'],8.8,16.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,siete palmas,265.0,1205,24,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",8.8,15,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,siete palmas,265.0,1205,24,['blanco'],8.8,16.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,siete palmas,265.0,1205,24,['blanco'],11.6,18.4,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de hueycotitla,308.0,1358,23,['blanco cremoso'],9.6,15.72,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,cerca de pacú,451.0,1001,26,['blanco'],8.22222222222222,19.2111111111111,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,cerca de pacú,451.0,1001,26,"['amarillo claro', 'amarillo medio', 'amarillo naranja']",8,16.8222222222222,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san pablo coatlan,villa tierra,877.0,932,23,['amarillo claro'],10.5,17.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,campeche,hecelchakan,cumpich,34.0,1161,25,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,547.0,969,24,['blanco cremoso'],9.44,20.092,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,547.0,969,24,['blanco'],9.6,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,547.0,969,24,['blanco'],10.2,15.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,metztitlan,la rivera,1740.0,553,17,['blanco cremoso'],11.2,14.73,mediana altitud,fría,poco abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,515.0,1022,24,['blanco cremoso'],9.75,17.92,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,san luis acatlan,horcasitas (atotonilco de hoscasitas),353.0,1657,26,['blanco cremoso'],12.5,18.25,bajas,caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,horcasitas (atotonilco de hoscasitas),353.0,1657,26,['blanco cremoso'],14.83,17.83,bajas,caliente,muy abundantes
+maíz raza olotillo,san luis potosi,guadalcazar,guadalcazar,1633.0,543,18,['blanco cremoso'],8.4,18.15,mediana altitud,fría,poco abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la chivela,1124.0,938,22,"['blanco', 'amarillo claro']",9.84,15.592,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tampacan,chupadero,179.0,1541,24,"['amarillo', 'amarillo naranja']",10.4,19.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,chupadero,179.0,1541,24,"['amarillo', 'amarillo naranja']",10,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,jonotla,san antonio rayón,148.0,1927,24,['blanco cremoso'],12.6,17.18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san marcos zacatepec,800.0,1247,24,"['blanco', 'amarillo claro']",14,18.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san marcos zacatepec,800.0,1247,24,['blanco'],13,17.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san marcos zacatepec,800.0,1247,24,['blanco'],14,17.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san marcos zacatepec,800.0,1247,24,['amarillo claro'],10,13.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san marcos zacatepec,800.0,1247,24,['amarillo claro'],12,18.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,563.0,970,24,['blanco cremoso'],9.55,17.315,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,563.0,970,24,['blanco cremoso'],9.92,18.172,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,río enmedio,563.0,970,24,['blanco'],10.3,14.53,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,ometepec,cerca de cochoapa (al e de la localidad),366.0,1449,26,no disponible,no disponible,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,156.0,1049,26,['blanco'],11.3,18.07,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,chapulhuacan,chapulhuacan,638.0,1374,23,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,morelos,coatetelco,coatetelco,973.0,909,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,zacapoaxtla,xalacapan,1637.0,1824,16,['blanco'],10,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,"xalacapan, 3 km de zacapoaxtla",1637.0,1824,16,['blanco'],10,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,"xalacapan, 3 km de zacapoaxtla",1637.0,1824,16,['blanco'],10,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,"xalacapan, 3 km de zacapoaxtla",1637.0,1824,16,"['blanco', 'amarillo claro', 'rojo', 'azul oscuro']",11,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,xalacapan,1637.0,1824,16,['blanco'],10,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"la esperanza, camino santa rosa cintepec-juan díaz cobarruvias",174.0,1556,25,['blanco cremoso'],11.6,19.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,534.0,1022,24,['blanco cremoso'],10.24,13.376,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,rivera de nambia,466.0,1007,26,['amarillo claro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,el tejocote,1041.0,900,22,['amarillo naranja'],10.08,15.86,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,el tejocote,1041.0,900,22,"['blanco', 'amarillo claro']",9.88,14.96,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,"barrio de abajo, quinicuano",706.0,1494,25,['blanco'],9,14.9,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,"barrio de abajo, quinicuano",706.0,1494,25,['blanco'],13,18.1,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,"barrio de abajo, quinicuano",706.0,1494,25,['amarillo claro'],13,17.3,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa cruz zenzontepec,"barrio de abajo, quinicuano",706.0,1494,25,['blanco'],11,15.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san josé ixtapan,733.0,1156,25,['blanco'],10,15.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san josé ixtapan,733.0,1156,25,['blanco'],11,17.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,san josé ixtapan,733.0,1156,25,['blanco'],9,15.4,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,zoquiapan,zoquiapan,1076.0,2366,19,"['blanco', 'azul oscuro']",10,no disponible,bajas,templada,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,zoquiapan,1076.0,2366,19,"['blanco', 'amarillo claro', 'azul oscuro']",10,no disponible,bajas,templada,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de tlatlapango el grande,356.0,1495,23,['blanco cremoso'],9.2,17.82,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['amarillo claro'],11,18.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['amarillo claro'],10,17.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['blanco'],10,16.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['blanco'],10,19.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['blanco'],9,21,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['blanco'],8,11.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,el zapotal,677.0,948,25,['amarillo claro'],10,17.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,san josé del peñasco,711.0,951,24,['blanco'],9.3,17.56,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,agua blanca de iturbide,san cornelio,1582.0,1472,17,['blanco cremoso'],13.4,17.5,mediana altitud,fría,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,llano de hombre,1189.0,1009,22,['amarillo claro'],11.3,12.975,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,jardín del sur,558.0,970,24,['amarillo claro'],10.3157894736842,11.3894736842105,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,zihuatanejo de azueta,agua de correa,380.0,1117,25,"['blanco', 'amarillo claro']",no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,santa martha loxicha,813.0,986,24,no disponible,9.45,19.165,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,acateno,cerca de la esmeralda (finca la esmeralda),104.0,1718,24,['blanco cremoso'],9.8,15.37,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,queretaro,pinal de amoles,ahuacatlán de guadalupe,1101.0,592,22,"['azul', 'azul oscuro']",13.4,18.2,bajas,semi-caliente,poco abundantes
+maíz raza olotillo,queretaro,pinal de amoles,ahuacatlán de guadalupe,1101.0,592,22,"['amarillo claro', 'amarillo naranja']",13,16.4,bajas,semi-caliente,poco abundantes
+maíz raza olotillo,guerrero,la union de isidoro montes de oca,la unión,71.0,963,27,['blanco cremoso'],12.8,17.1,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,teopisca,nuevo leon,1135.0,1267,22,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,zacapoaxtla,tahitic,1433.0,2081,17,"['blanco', 'amarillo claro', 'azul oscuro']",no disponible,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"el remolino, camino los naranjos-popotal",34.0,1354,25,"['amarillo naranja', 'naranja']",10.6,17.06,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,santa rosa abata,534.0,1782,23,['blanco cremoso'],11.4,18.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,santa úrsula,851.0,958,23,['blanco cremoso'],10.95,16.77,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,803.0,1028,23,no disponible,9.9,19.275,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,coxcatlan,barrio la palma,185.0,1536,24,['amarillo claro'],11,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,el comején,1113.0,954,21,"['blanco', 'amarillo medio']",9.9,17.46,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,huehuetlan,huehuetlán,373.0,1504,23,"['blanco', 'amarillo']",11.2,19.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,suchiapa,cerca de pacú,446.0,1001,26,['blanco cremoso'],8.4,18.59,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"cuesta amarilla, carretera el salto-abrevadero",99.0,1544,25,['blanco cremoso'],11.6,16.15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,acatlan de perez figueroa,tembladera del castillo,84.0,1972,25,"['blanco', 'amarillo claro']",11,20,bajas,caliente,muy abundantes
+maíz raza olotillo,puebla,acateno,ejido palo gacho,378.0,2044,23,['blanco cremoso'],10.75,14.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,acateno,ejido palo gacho,378.0,2044,23,['blanco cremoso'],10.5,15.6375,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,ometepec,"cerca de san francisco (la palma, al sw de la localidad)",279.0,1345,27,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,679.0,985,24,['blanco cremoso'],10.24,19.64,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,hueycuatitla,322.0,1498,23,"['amarillo', 'blanco', 'amarillo', 'blanco']",10,16.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,ranchería el sol,145.0,1707,24,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,ranchería el sol,145.0,1707,24,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,piedra grande,1209.0,1046,21,['blanco cremoso'],11.2,17.33,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,159.0,1049,26,"['blanco', 'amarillo claro']",9.95,14.91,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,huazalingo,otecoch,457.0,1500,23,['amarillo naranja'],8.8,15.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tilapa,colonia san miguel tilapa,1237.0,720,22,['blanco cremoso'],9.33333333333333,12.1166666666667,mediana altitud,semi-caliente,intermedias
+maíz raza olotillo,oaxaca,santa catarina loxicha,san antonio cofradía,856.0,940,24,"['blanco', 'amarillo claro']",9.4,16.525,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,molango de escamilla,molango,1615.0,617,17,"['blanco', 'amarillo claro', 'naranja']",no disponible,no disponible,mediana altitud,fría,poco abundantes
+maíz raza olotillo,oaxaca,putla villa de guerrero,jicaltepec,890.0,1634,23,['azul oscuro'],9.1,13.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,putla villa de guerrero,jicaltepec,890.0,1634,23,"['blanco', 'rojo']",10,17.1,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,morelos,coatetelco,cerca de coatetelco,971.0,907,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,atlapexco,"cochiscuatitla, teixcoapa",336.0,1443,23,['amarillo'],9.2,14.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,cochiscuatitla,336.0,1443,23,"['amarillo', 'amarillo']",10.4,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,"cochiscuatitla, caljtarepa",336.0,1443,23,"['amarillo', 'amarillo naranja']",10,15.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atlapexco,cochiscuatitla,336.0,1443,23,"['amarillo', 'blanco']",9.4,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,mexico,malinalco,san sebastian,2054.0,1129,17,['blanco'],8,15.04,altas,fría,abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,atoyaquillo,132.0,1130,26,['blanco cremoso'],13.2,18.5,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,atoyaquillo,132.0,1130,26,['blanco cremoso'],12,17,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,mazín chico,67.0,2240,25,['blanco'],11,18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,mazín chico,67.0,2240,25,['blanco'],12,22,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,mazín chico,67.0,2240,25,['blanco'],12,19,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,acateno,la palma,320.0,2056,23,['blanco cremoso'],13.1111111111111,17.0333333333333,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,809.0,1031,23,['blanco cremoso'],9.5,19.725,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,852.0,909,23,['blanco'],11.2,16.525,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,ejido coachumo,325.0,1413,23,"['amarillo', 'rojo naranja', 'blanco']",10,16.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,691.0,984,24,['amarillo naranja'],9.84,15.056,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,161.0,1049,26,['blanco'],11.95,15.665,bajas,caliente,abundantes
+maíz raza olotillo,puebla,zacapoaxtla,tatoxcac,1905.0,1249,15,"['blanco', 'amarillo claro', 'azul oscuro']",no disponible,20,altas,fría,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"santa rosa cintepec, carretera catemaco-acayucan",483.0,1705,23,['blanco cremoso'],10.2,17.1,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,san josé del peñasco,639.0,964,24,['blanco'],9.3,20.025,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,san josé del peñasco,639.0,964,24,['blanco cremoso'],9.7,18.81,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,río los peces,388.0,1084,25,['amarillo medio'],9.72,17.632,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,río los peces,388.0,1084,25,"['blanco', 'amarillo claro']",10.5,15.81,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,jilotepec,jilotepec,1369.0,1607,18,['blanco'],no disponible,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,arroyo seco,621.0,993,24,"['blanco', 'amarillo claro']",10.45,15.755,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tapanco,508.0,999,25,no disponible,9.8,16.805,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro sabroso,1203.0,981,22,['blanco cremoso'],10.5263157894737,20.2631578947368,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro sabroso,1203.0,981,22,['blanco cremoso'],9.8,18.67,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro sabroso,1203.0,981,22,['blanco cremoso'],9.9,21.655,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,xilitla,tlamaya,551.0,1367,22,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,653.0,997,24,no disponible,10.75,17.445,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,653.0,997,24,no disponible,10.4,17.12,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,653.0,997,24,['blanco cremoso'],9.9,18.87,bajas,semi-caliente,abundantes
+maíz raza olotillo,nayarit,bahia de banderas,la ceiba,82.0,1355,25,['blanco cremoso'],9.625,14.59375,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,mecayapan,"plan agrario, comunidad plan agrario",544.0,1658,23,['blanco cremoso'],11,18.57,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,tzimol,manuel velasco suárez,668.0,1063,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tampacan,totomoxtla,103.0,1564,24,"['amarillo', 'amarillo naranja', 'amarillo', 'amarillo naranja']",8.8,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,totomoxtla,103.0,1564,24,['amarillo'],10.8,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan guichicovi,chocolate,336.0,1938,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan guichicovi,chocolate,336.0,1938,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina juquila,santa maría yolotepec,1746.0,1248,18,['blanco'],12,17.3,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,el campanario,1189.0,907,22,['blanco'],9.2,16.73,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,río guayabal,442.0,1035,25,['blanco'],10.4,20.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,757.0,997,24,no disponible,9.75,17.425,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,757.0,997,24,['blanco cremoso'],10.05,16.82,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,757.0,997,24,"['blanco', 'amarillo claro']",10.1,17.795,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,865.0,923,23,"['blanco', 'amarillo claro']",8.8,13.83,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"cuesta de laja, comunidad cuesta de laja",153.0,1527,25,['blanco cremoso'],11.4,12.29,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,atoyac de alvarez,el cocuyachi,553.0,1414,24,['azul oscuro'],12.8,16.32,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,xilitla,nuevo miramar,1321.0,791,18,"['amarillo', 'rojo naranja', 'blanco']",12,22.4,mediana altitud,templada,intermedias
+maíz raza olotillo,san luis potosi,xilitla,nuevo miramar,1321.0,791,18,"['azul', 'azul']",10.8,16.4,mediana altitud,templada,intermedias
+maíz raza olotillo,chiapas,frontera comalapa,comalapa,655.0,1826,24,"['blanco', 'azul oscuro']",no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,frontera comalapa,comalapa,655.0,1826,24,"['amarillo claro', 'naranja']",14,14.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,la lima,316.0,1184,26,['blanco cremoso'],10,19.88,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,platon sanchez,tlalpani,163.0,1362,24,['amarillo'],10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,platon sanchez,tlalpani,163.0,1362,24,['amarillo'],9.6,14.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,platon sanchez,tlalpani,163.0,1362,24,['blanco'],10.8,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,platon sanchez,tlalpani,163.0,1362,24,['amarillo'],10,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,río los peces,368.0,1087,25,['blanco cremoso'],10.15,14.435,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,834.0,994,23,"['blanco', 'amarillo claro']",10.1,16.16,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,834.0,994,23,"['blanco', 'amarillo claro']",10,16.0736842105263,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,834.0,994,23,"['blanco', 'amarillo claro']",10.25,15.22,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"la gloria huiltepetl, camino santa rosa cintepec-juan díaz covarrubias",151.0,1553,25,['blanco cremoso'],13,17.12,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tuxpan,francisco i. madero,153.0,1308,23,['blanco cremoso'],12.2,18.74,bajas,semi-caliente,abundantes
+maíz raza olotillo,nuevo leon,montemorelos,ejido san agustín de los arroyos,303.0,715,22,['blanco cremoso'],11.2,16.576,bajas,semi-caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,la revancha,337.0,1537,23,"['amarillo', 'amarillo naranja']",9.6,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido poza azul,259.0,1221,23,"['amarillo', 'rojo naranja']",11.6,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido poza azul,259.0,1221,23,['blanco'],10.8,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido poza azul,259.0,1221,23,['blanco'],10,15.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido poza azul,259.0,1221,23,"['amarillo', 'rojo naranja']",9.6,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido poza azul,259.0,1221,23,['blanco'],9.6,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tamarindo,639.0,1031,24,['blanco'],9.6,15.55,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,cerro gordo,792.0,987,23,['blanco cremoso'],9.9,19.555,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,ocote seco,975.0,988,23,['blanco'],9.85,13.675,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santiago pinotepa nacional,"santa maría jicaltepec (jicaltepec), aproximadamente a 7 km de pinotepa nacional",512.0,1415,26,['blanco'],9,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,ocote seco,968.0,988,23,['blanco'],10.6,14.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san lorenzo texmelucan,"la ciénega, el carrizal",1343.0,1142,21,['blanco'],11,12.9,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san lorenzo texmelucan,el carrizal,1343.0,1142,21,['blanco'],9,15.3,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san lorenzo texmelucan,"la ciénega, el carrizal",1343.0,1142,21,['blanco'],no disponible,no disponible,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,huehuetlan,tanleab uno,485.0,1451,23,"['amarillo', 'rojo naranja', 'blanco']",10.8,18.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santo domingo de morelos,santa maría bella vista,387.0,1052,25,['blanco'],9.7,17.025,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san juan bautista valle nacional,santa fe y la mar,105.0,2485,25,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista valle nacional,santa fe y la mar,105.0,2485,25,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista valle nacional,santa fe y la mar,105.0,2485,25,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista valle nacional,santa fe y la mar,105.0,2485,25,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,tecpan de galeana,el pitero,22.0,1009,26,['blanco'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,611.0,974,24,['blanco'],8.85,17.78,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,rincón del venado,611.0,974,24,"['blanco', 'amarillo claro']",9.9,18.055,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,611.0,974,24,['blanco'],8.78947368421053,13.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,rincón del venado,611.0,974,24,['blanco cremoso'],9.78947368421053,19.8157894736842,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la primavera,611.0,974,24,['blanco cremoso'],8.6,17.3,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,611.0,974,24,['blanco'],8.9,16.525,bajas,semi-caliente,abundantes
+maíz raza olotillo,mexico,temascaltepec,el peñón,1770.0,1060,18,"['amarillo claro', 'rojo']",9.8,16.48,mediana altitud,templada,abundantes
+maíz raza olotillo,mexico,temascaltepec,el peñón,1770.0,1060,18,['amarillo claro'],9.4,17,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,miguel hidalgo,592.0,1105,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,llano zacatillo,1138.0,1009,22,['blanco cremoso'],9.6,17.615,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,francisco sarabia,1556.0,1308,18,no disponible,no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,francisco sarabia,1556.0,1308,18,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,comitan de dominguez,francisco sarabia,1556.0,1308,18,['amarillo claro'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"la gloria huiltepetl, camino santa rosa cintepec-juan díaz covarrubias",200.0,1556,25,['blanco cremoso'],12.2,16.17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la tixca,529.0,989,25,['blanco cremoso'],10.75,13.675,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,emiliano zapata,886.0,993,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,emiliano zapata,886.0,993,23,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,paso real,94.0,1129,27,['blanco cremoso'],13.6,18.6,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,atlapexco,tecacahuaco (piedra hueca),328.0,1487,23,['amarillo naranja'],9.4,14.11,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,tixtla de guerrero,almolonga,1696.0,1075,20,['blanco cremoso'],8.8,19.4,mediana altitud,templada,abundantes
+maíz raza olotillo,hidalgo,xochiatipan,cruzhica,313.0,1453,23,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",9.6,18.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,xochiatipan,cruzhica,313.0,1453,23,"['amarillo', 'rojo naranja']",9.6,18.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,marques de comillas,nuevo san isidro,136.0,3051,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,tamaulipas,palmillas,ej. palmillas,1281.0,526,19,"['blanco cremoso', 'amarillo claro', 'amarillo medio', 'naranja', 'azul']",12.4,16.356,mediana altitud,templada,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"rancho la playa, comunidad rancho la playa",12.0,1298,24,['blanco cremoso'],11.8,17.62,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,926.0,902,23,['blanco cremoso'],9.55,16.51,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé lagunas,89.0,2243,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé lagunas,89.0,2243,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé lagunas,89.0,2243,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé lagunas,89.0,2243,25,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé lagunas,89.0,2243,25,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,mecayapan,"huazuntlán, carretera mecayapan",72.0,1791,26,"['blanco cremoso', 'amarillo claro']",12.2,18.72,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,cerca de san josé terán,593.0,958,25,['blanco'],8.8,19.3,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,cerca de san josé terán,593.0,958,25,"['amarillo claro', 'amarillo medio']",8.4,19.64,bajas,caliente,abundantes
+maíz raza olotillo,san luis potosi,xilitla,la conchita,553.0,1347,22,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,malinaltepec,cerca de el carrizal,1531.0,1520,21,['blanco cremoso'],12.67,14.67,mediana altitud,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,santiago tuxtla,"sehualaca, carretera santiago tuxtla-ciudad isla",106.0,1588,25,['blanco cremoso'],11.8,19.37,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,san francisco loxicha,508.0,1051,24,['blanco'],10,15.725,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,san francisco loxicha,508.0,1051,24,"['blanco', 'amarillo claro']",9.5,16.15,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,san luis acatlan,ejido de yoloxochitl,686.0,1871,25,['blanco cremoso'],12.66,17.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,"cececapa, barrio bajo",137.0,1457,24,"['amarillo', 'amarillo naranja']",10,17.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,cececapa,137.0,1457,24,"['amarillo', 'amarillo naranja']",10.4,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,cececapa,137.0,1457,24,"['amarillo', 'amarillo naranja']",9,17.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,190.0,1083,25,"['blanco', 'amarillo claro']",9.7,16.56,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido ixcatepec,261.0,1205,23,['blanco'],9.2,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido ixcatepec,261.0,1205,23,"['amarillo', 'rojo naranja', 'amarillo naranja']",10.4,17.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ixcatepec,ejido ixcatepec,261.0,1205,23,['blanco'],10,16.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,163.0,1049,26,"['blanco', 'amarillo medio', 'azul']",11.6,17.5,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,"['blanco', 'amarillo claro']",10,19.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,['blanco'],10,18.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,"['blanco', 'azul oscuro']",11,15.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,['blanco'],10,16.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,totolapa,totolapa,661.0,954,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,codorniz,605.0,997,24,no disponible,9.75,21.285,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de tlatlapango el grande,352.0,1495,23,['blanco cremoso'],9,15.04,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el caulote,174.0,1058,26,['blanco cremoso'],10.1,17.7,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,san diego,76.0,1286,24,"['amarillo', 'blanco']",9.6,17.4,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,lemontitla,132.0,1460,24,['amarillo'],10.8,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,lemontitla,132.0,1460,24,['amarillo'],10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,lemontitla,132.0,1460,24,"['amarillo', 'amarillo naranja']",10.4,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,suchiapa,suchiapa,462.0,989,26,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,suchiapa,462.0,989,26,['amarillo naranja'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,suchiapa,462.0,989,26,['amarillo claro'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,suchiapa,462.0,989,26,['blanco'],9,16,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,suchiapa,suchiapa,462.0,989,26,['blanco'],12,14.7,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,portillo limón,1425.0,957,20,['amarillo medio'],10.6,15.6,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,mameyal,1028.0,988,23,['blanco'],9.75,13.07,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,coahuayutla de jose maria izazaga,cerca de platanillo,443.0,980,25,['blanco cremoso'],11.6,16.5,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,coahuayutla de jose maria izazaga,cerca de platanillo,443.0,980,25,['azul'],12,18.4,bajas,caliente,abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,191.0,1912,24,['blanco cremoso'],10,18.06,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,191.0,1912,24,['amarillo medio'],10,15.5833333333333,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tamiahua,el naranjalito,26.0,1266,24,['blanco cremoso'],13.8,15.81,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,san josé del peñasco,580.0,971,24,['blanco cremoso'],9.35,15.25,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,"ixteamel, barrio ahuehueyo",229.0,1662,23,"['amarillo', 'rojo naranja']",10.67,18.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,"ixteamel, barrio ahuehueyo",229.0,1662,23,"['amarillo', 'rojo naranja']",9.6,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,la independencia,la patria,1501.0,1276,18,no disponible,no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,chiapas,la independencia,la patria,1501.0,1276,18,['blanco'],no disponible,no disponible,mediana altitud,templada,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro peñasco,1037.0,977,23,['blanco'],10.25,14.465,bajas,semi-caliente,abundantes
+maíz raza olotillo,morelos,tlaquiltenango,huixastla,754.0,779,25,['blanco'],10.8,15.6,bajas,semi-caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de la ceiba,169.0,1308,24,['blanco cremoso'],10.8,16.52,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de la ceiba,169.0,1308,24,"['blanco', 'blanco cremoso']",8,17.06,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de la ceiba,169.0,1308,24,['blanco cremoso'],12.2,16.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de la ceiba,169.0,1308,24,['blanco cremoso'],11.6,15.62,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de la ceiba,169.0,1308,24,['blanco cremoso'],9.4,16.54,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,ricardo flores magón,133.0,1814,24,['blanco cremoso'],11,16.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,ricardo flores magón,133.0,1814,24,"['rojo', 'negro']",11.4,19.72,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,ricardo flores magón,133.0,1814,24,['blanco cremoso'],11.4,17.27,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,ricardo flores magón,133.0,1814,24,"['amarillo medio', 'amarillo naranja']",11,16.23,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,tuzamapan de galeana,ricardo flores magón,133.0,1814,24,['blanco cremoso'],11.2,19.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,zihuatanejo de azueta,vallecito,769.0,1259,24,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,tabasco,balancan,"ejido arroyo el triunfo, primera sección, subregión de los ríos",59.0,1586,26,['blanco cremoso'],12.6,18.9,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,angel albino corzo,nuevo guerrero,641.0,1975,24,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,el parral,parral,647.0,1132,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,el parral,colonia el parral,647.0,1132,24,"['blanco', 'amarillo claro']",9,16.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,el parral,colonia el parral,647.0,1132,24,['amarillo claro'],9,18.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san cristobal de las casas,san cristóbal de las casas,2136.0,1210,14,['amarillo claro'],10,17.9,altas,fría,abundantes
+maíz raza olotillo,chiapas,chenalho,chenalho,1542.0,1397,18,['amarillo naranja'],12,18.5,mediana altitud,templada,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,san baltazar loxicha,986.0,933,23,['amarillo naranja'],10.2,15.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,san baltazar loxicha,986.0,933,23,['blanco cremoso'],10.5,20.07,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,san baltazar loxicha,986.0,933,23,['blanco cremoso'],9.8,21.055,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,san bartolome loxicha,1126.0,1028,21,no disponible,10.1,12.255,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,villaflores,colonia 16 de septiembre,541.0,1259,25,['blanco'],8,16.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,llano liso,1103.0,1009,22,['amarillo medio'],11.04,15.492,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,frontera comalapa,ejido sinaloa,595.0,1328,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,rancho del tepetate,110.0,1668,24,['amarillo claro'],10,14.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tamazunchale,rancho del tepetate,110.0,1668,24,"['blanco', 'azul oscuro']",12,15.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,887.0,999,23,['blanco'],9.9,13.51,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro de horno,887.0,999,23,['blanco'],10.8,14.99,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"popotal, comunidad el popotal",24.0,1235,25,['blanco cremoso'],11.4,15.25,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,tlapa de comonfort,tres caminos,1868.0,936,19,['blanco cremoso'],12.4,19.2,altas,templada,abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,chiliatl,167.0,1486,24,['amarillo'],10,16.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,chiliatl,167.0,1486,24,['blanco'],10,18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,chiliatl,167.0,1486,24,['blanco'],10,14.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,sebastopol,26.0,2217,25,['blanco'],13,22,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,sebastopol,26.0,2217,25,['blanco'],11,22,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,sebastopol,26.0,2217,25,['blanco'],12,20,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,yogondoy,896.0,895,23,['naranja'],10,16.5157894736842,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,yogondoy,896.0,895,23,['blanco cremoso'],9.45,17.425,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,matlapa,papatlas,118.0,1585,24,"['amarillo', 'amarillo naranja']",10,16.25,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,papatlas,118.0,1585,24,"['azul', 'azul']",10,12.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,papatlas,118.0,1585,24,"['amarillo', 'blanco']",10,14.67,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,papatlas,118.0,1585,24,"['amarillo', 'amarillo naranja', 'blanco']",9.33,17.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,la trinitaria,chihuahua,1062.0,1308,22,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,morelos,tlaquiltenango,xicatlacotla,865.0,798,24,['blanco'],10.2,15.5,bajas,semi-caliente,intermedias
+maíz raza olotillo,oaxaca,san bartolome loxicha,el tamarindo,465.0,1032,24,['blanco'],9.9,16.625,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,metztitlan,tlaxco ( san antonio),1728.0,541,16,['blanco cremoso'],no disponible,no disponible,mediana altitud,fría,poco abundantes
+maíz raza olotillo,chiapas,acala,acala,423.0,1076,26,['blanco'],8,15,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,acala,acala,423.0,1076,26,['blanco'],10,21,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,acala,acala,423.0,1076,26,['blanco'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,acala,acala,423.0,1076,26,['blanco'],11,15.2,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,604.0,1023,24,['blanco'],8.9,17.445,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,ahuacapan,73.0,1461,25,"['amarillo claro', 'rojo']",11.8,21.3,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,matlapa,290.0,1596,23,"['amarillo medio', 'amarillo naranja']",9.6,11.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,nuevo leon,doctor arroyo,comunidad bolsa y flores,1689.0,486,18,"['blanco cremoso', 'amarillo claro']",10.5,15.78,mediana altitud,fría,poco abundantes
+maíz raza olotillo,morelos,coatlan del rio,michapa,1191.0,999,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,cerro tabla,1046.0,950,21,['amarillo medio'],10.1,16.612,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,río machete,1136.0,1028,21,"['blanco', 'amarillo claro']",11.5789473684211,11.5631578947368,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la chivela,1117.0,938,22,['blanco cremoso'],9.45,18.15,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la chivela,1117.0,938,22,no disponible,13.2,15.375,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,yahualica,pepeyocatitla,220.0,1457,24,['blanco'],9.2,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,yahualica,pepeyocatitla,220.0,1457,24,"['amarillo', 'amarillo naranja']",9.6,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,ometepec,cerca de huixtepec (al n de la localidad),362.0,1411,26,no disponible,no disponible,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,"xilita, 2 km de xalacapa y 5 de zacapoaxtla",1506.0,2010,17,"['blanco', 'rojo', 'azul oscuro']",12,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,"xilita, 2 km de xalacapa y 5 de zacapoaxtla",1506.0,2010,17,"['blanco', 'amarillo claro', 'rojo']",11,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,puebla,zacapoaxtla,"xilita, 2 km de xalacapa y 5 de zacapoaxtla",1506.0,2010,17,"['blanco', 'rojo', 'azul oscuro']",no disponible,no disponible,mediana altitud,fría,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,yoloxochitl,611.0,1846,25,['amarillo claro'],10,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,"['blanco', 'rojo naranja']",10.67,16.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,"['amarillo', 'blanco']",10,13.67,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,"['blanco', 'rojo naranja']",10,18.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,['amarillo'],11,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,"['amarillo', 'amarillo naranja']",11.6,18.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,['amarillo'],10.5,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,"['amarillo', 'blanco']",10,18.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,matlapa,texquitote segundo,323.0,1634,23,"['amarillo', 'blanco', 'amarillo', 'blanco']",9.5,18.25,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,san miguel totolapan,san miguel totolapan,322.0,1099,27,['amarillo claro'],13,13.7,bajas,muy caliente,abundantes
+maíz raza olotillo,oaxaca,concepcion papalo,concepción pápalo,2141.0,777,16,['blanco'],11,13.1,altas,fría,intermedias
+maíz raza olotillo,oaxaca,concepcion papalo,concepción pápalo,2141.0,777,16,['blanco'],11,14.7,altas,fría,intermedias
+maíz raza olotillo,san luis potosi,axtla de terrazas,temalacaco,120.0,1571,24,['amarillo'],10.4,17.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,temalacaco,120.0,1571,24,['amarillo'],10.8,18.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,axtla de terrazas,temalacaco,120.0,1571,24,['amarillo'],10,18.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el chilar,203.0,1088,25,['blanco cremoso'],10.7,16.65,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tamiahua,el naranjalito,50.0,1266,24,['blanco cremoso'],11.8,17.35,bajas,semi-caliente,abundantes
+maíz raza olotillo,queretaro,jalpan de serra,saldiveña,735.0,824,23,"['amarillo claro', 'amarillo medio', 'negro']",10.6,18.15,bajas,semi-caliente,intermedias
+maíz raza olotillo,chiapas,amatenango de la frontera,colonia guerrero,705.0,2110,24,"['blanco', 'naranja']",12,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,malinaltepec,llano pantanoso,1533.0,1422,20,['blanco cremoso'],10,16.83,mediana altitud,templada,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,192.0,1893,24,"['amarillo medio', 'amarillo naranja']",9.6,14.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,192.0,1893,24,['blanco cremoso'],12.8,16.82,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,192.0,1893,24,"['amarillo medio', 'amarillo naranja']",10.4,17.34,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,192.0,1893,24,['azul oscuro'],12,16.65,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,la corrala,138.0,1474,24,"['amarillo', 'amarillo naranja']",10.4,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,la corrala,138.0,1474,24,"['amarillo', 'amarillo naranja']",10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,atotonilco el grande,cerro colorado,1980.0,611,15,['blanco cremoso'],9.2,12.76,altas,fría,poco abundantes
+maíz raza olotillo,oaxaca,santa maria tonameca,la unión del palmar,22.0,1034,26,['blanco'],9,16.7,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el caulote,180.0,1058,26,"['blanco', 'amarillo claro']",9.9,19.37,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,magdalena loxicha,383.0,1029,25,['amarillo claro'],10.5,15.85,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,el naranjo,el platanito,1050.0,1183,20,['blanco cremoso'],11.6,15.75,bajas,templada,abundantes
+maíz raza olotillo,guanajuato,xichu,la laborcilla,1318.0,534,20,"['blanco cremoso', 'negro']",11.6,17.95,mediana altitud,templada,poco abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tamiahua,el naranjalito,35.0,1266,24,['blanco cremoso'],11.8,14.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"santa rosa cintepec. carretera san andrés-acayucan, tramo catemaco-covarrubias",442.0,1699,23,['blanco cremoso'],12.6,14.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,huautla,santo domingo,390.0,1352,23,['amarillo naranja'],9.4,14.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,tamoyón 1,151.0,1350,24,['amarillo'],10.8,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huautla,tamoyón 1,151.0,1350,24,"['amarillo naranja', 'amarillo', 'jaspeado']",10,17.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,tecpan de galeana,paso de la parota,127.0,1076,26,['blanco cremoso'],11.2,17.5,bajas,caliente,abundantes
+maíz raza olotillo,coahuila de zaragoza,cuatro cienegas,estanque de norias,1266.0,318,19,no disponible,11,13.87,mediana altitud,templada,escasas
+maíz raza olotillo,nayarit,tepic,tepic,957.0,1271,21,['blanco'],no disponible,no disponible,bajas,templada,abundantes
+maíz raza olotillo,chiapas,amatenango de la frontera,tapizala dos,686.0,2173,24,"['amarillo claro', 'naranja']",12,13.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,ciudad del maiz,rancho las azucenas,1313.0,564,19,['blanco cremoso'],10.4,14.55,mediana altitud,templada,poco abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,el caulote,198.0,1058,26,['blanco'],9.7,18.14,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,coyuca de benitez,pueblo viejo,488.0,1285,25,['blanco cremoso'],12.4,18.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,yahualica,tlalchiyahualica,222.0,1432,24,['amarillo'],9.8,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,yahualica,tlalchiyahualica,222.0,1432,24,['blanco'],8,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,jardín del sur,631.0,970,24,['blanco cremoso'],9.56,17.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],11.4,15.08,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],12.8,18.66,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],10.6,18.73,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],11.4,19.13,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],11.2,18.53,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],11,20.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],11.8,20.65,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,guadalupe victoria,220.0,1493,24,['blanco cremoso'],11.6,18.68,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,paraje arroyo resina,920.0,923,23,['blanco cremoso'],9.5,16.33,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,jonotla,el arenal santa cruz,153.0,1870,24,['blanco cremoso'],11.4,16.18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,jonotla,el arenal santa cruz,153.0,1870,24,"['amarillo medio', 'amarillo naranja']",9.8,14.59,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,tlaltzintla,352.0,1554,23,"['amarillo', 'jaspeado']",10.4,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,san antonio galera,114.0,1215,24,['amarillo'],9.2,17.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,san antonio galera,114.0,1215,24,"['blanco', 'rojo naranja', 'blanco', 'rojo naranja']",10,17.6,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huasca de ocampo,tlaxocoyapan (tlaxocoyucan),2085.0,711,15,['blanco cremoso'],11.2,13.34,altas,fría,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,santa rosa cintepec,471.0,1705,23,['blanco cremoso'],11.6,17.45,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,santa rosa cintepec,471.0,1705,23,['blanco cremoso'],11.8,17.89,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,tecoanapa,saucito,626.0,1662,25,['blanco cremoso'],11.2,16.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,tanchinol,166.0,1476,24,"['amarillo', 'rojo naranja']",10,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,tanchinol,166.0,1476,24,['blanco'],9.2,19,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,tanchinol,166.0,1476,24,"['blanco', 'rojo naranja']",10,16.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,tanchinol,166.0,1476,24,"['amarillo', 'rojo naranja']",10,15.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,san francisco loxicha,448.0,1051,24,['blanco cremoso'],9.7,16.06,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,cintalapa,"san sebastián, (en la ranchería)",603.0,891,24,"['blanco', 'amarillo claro']",10,15.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"chuniapan de abajo, carretera el salto-abrevadero",91.0,1546,25,['amarillo medio'],10.2,17.11,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"cerca de chalahuiapa, en el ejido de chalahuayapan",261.0,1348,23,['blanco cremoso'],8.6,17.44,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,882.0,909,23,['blanco'],10.6,16.85,bajas,semi-caliente,abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,190.0,1912,24,"['amarillo medio', 'amarillo naranja']",10.6,15.86,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,190.0,1912,24,['blanco cremoso'],9.6,18.3,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,villa tierra,939.0,930,23,no disponible,9.75,19.76,bajas,semi-caliente,abundantes
+maíz raza olotillo,nuevo leon,linares,ex hacienda de guadalupe,294.0,690,23,"['blanco cremoso', 'amarillo claro', 'amarillo medio']",10.8,16,bajas,semi-caliente,intermedias
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,rivera el gavilán,754.0,930,23,['blanco'],9,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,rivera el gavilán,754.0,930,23,['amarillo claro'],9,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],12.8,17.11,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],12,20.38,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],12.2,18.29,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],11.2,19.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],11,18.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],11.4,20.62,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,coatzintla,rancho nuevo,280.0,1753,23,['blanco cremoso'],11.6,18.87,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"axochio, carretera san andrés tuxtla-tilapan desviación axochio",82.0,1506,25,['blanco cremoso'],11.2,17.54,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,río de león,1029.0,898,22,"['blanco', 'amarillo claro']",9.35,16.875,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"ricardo flores magón, carretera san andrés tuxtla-tilapan",158.0,1642,24,['blanco cremoso'],13,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"ricardo flores magón, carretera san andrés tuxtla-tilapan",158.0,1642,24,['blanco cremoso'],13.2,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,1245.0,907,22,['blanco cremoso'],9,17.17,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,1245.0,907,22,"['blanco cremoso', 'amarillo claro']",8.72,15.3,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,cerro peñasco,1025.0,977,23,['blanco cremoso'],12,14.145,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,los colorados,1101.0,936,22,"['blanco', 'amarillo claro']",9.9,15.55,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,ometepec,"cerca de zacualpan (zacoalpan, al nnw de la localidad)",224.0,1343,27,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,tabasco,tenosique,"ejido el bejucal, subregión de los ríos",118.0,2064,26,['blanco cremoso'],14,17.87,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,zapotitla,156.0,1356,24,['amarillo'],9.2,15,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,zapotitla,156.0,1356,24,['blanco'],8,14.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"polutla, comunidad polutla",157.0,1387,23,['blanco cremoso'],11.4,17.9,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"polutla, comunidad polutla",157.0,1387,23,['blanco cremoso'],12.8,20.27,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,arroyo del corazón,701.0,964,24,['blanco cremoso'],10,18.86,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,arroyo del corazón,701.0,964,24,['blanco cremoso'],9.8,18.57,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,arroyo del corazón,701.0,964,24,['blanco cremoso'],10.3,17.23,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,santa maría el platanar,458.0,1036,24,['blanco cremoso'],11,17.66,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,tzicatipa,563.0,1462,22,"['amarillo', 'blanco', 'amarillo naranja']",9.6,17.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,zoquiapan,amatlan,190.0,1912,24,"['amarillo medio', 'amarillo naranja']",10.2,13.17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,601.0,1023,24,no disponible,9.4,17.58,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,la trinitaria,las delicias,899.0,1342,22,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,yucatan,tunkas,tunkas,28.0,1145,25,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,yucatan,tunkas,tunkas,28.0,1145,25,no disponible,no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,yucatan,muna,muna,29.0,1086,25,['amarillo claro'],12,10.5,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,la union de isidoro montes de oca,cerca de la unión,47.0,962,27,['azul'],12.8,17.1,bajas,caliente,abundantes
+maíz raza olotillo,puebla,tenampulco,el saltillo,216.0,1747,24,['rojo oscuro'],10.8,16.24,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,villaflores,guadalupe victoria,785.0,1109,23,['amarillo naranja'],8,19,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de hueycotitla,312.0,1376,23,"['amarillo medio', 'amarillo naranja', 'naranja']",9.4,16.04,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa maria jacatepec,la joya,98.0,2249,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa maria jacatepec,la joya,98.0,2249,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa maria jacatepec,la joya,98.0,2249,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,"['amarillo', 'amarillo naranja']",8.4,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,['amarillo'],8.4,13,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,['blanco'],8,16.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,['amarillo'],9.2,15.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,['amarillo'],10,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,['blanco'],9.2,15.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,"['amarillo', 'rojo naranja']",10.4,15.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,el chote,168.0,1479,24,"['amarillo', 'amarillo']",10.8,16.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,san lucas,san lucas,677.0,948,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,san lucas,677.0,948,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,san lucas,677.0,948,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,643.0,974,24,['blanco'],7.95,18.61,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva luz,643.0,974,24,['blanco'],9.25,15.215,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,808.0,927,24,['amarillo medio'],10.5263157894737,18.1578947368421,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,808.0,927,24,"['blanco cremoso', 'amarillo claro']",10.3157894736842,15.2894736842105,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la nueva esperanza,808.0,927,24,['blanco cremoso'],9.85,14.45,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,ometepec,cerca de la ladrillera (al ene de la localidad),337.0,1410,26,no disponible,no disponible,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,cuayahual,93.0,1542,24,['amarillo'],10.4,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,cuayahual,93.0,1542,24,"['amarillo', 'rojo naranja', 'amarillo naranja', 'amarillo', 'rojo naranja', 'amarillo naranja']",9.6,15.4,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,cuayahual,93.0,1542,24,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",9.6,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,cuayahual,93.0,1542,24,['amarillo'],10.8,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,cuayahual,93.0,1542,24,"['amarillo', 'rojo naranja', 'blanco', 'amarillo', 'rojo naranja', 'blanco']",10.4,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,jaltocan,matachilillo,156.0,1479,24,['amarillo'],10.4,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,huixtla,aztlán (en el ejido aztlán),6.0,2766,28,['amarillo claro'],13,16.57,bajas,muy caliente,muy abundantes
+maíz raza olotillo,hidalgo,metztitlan,tlaxco,1703.0,527,17,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,poco abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,epazote,950.0,951,23,no disponible,9.7,16.725,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,alamo temapache,cerca de xoyotitla,125.0,1223,24,['blanco cremoso'],10.6,16.52,bajas,semi-caliente,abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,el rincón,1128.0,1199,21,"['blanco', 'amarillo claro']",9,18.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,el rincón,1128.0,1199,21,['amarillo claro'],9,18.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,michoacan de ocampo,coalcoman de vazquez pallares,el rincón,1128.0,1199,21,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,el tejocote,1047.0,900,22,['blanco cremoso'],10.16,15.74,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,san luis acatlan,yoloxochitl,617.0,1846,25,['blanco cremoso'],8,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,san luis acatlan,yoloxochitl,617.0,1846,25,['rojo'],10.8,15.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,la union de isidoro montes de oca,las cruces,65.0,966,27,['blanco cremoso'],10.4,16.3,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,678.0,985,24,no disponible,10.55,18.91,bajas,semi-caliente,abundantes
+maíz raza olotillo,michoacan de ocampo,tepalcatepec,iztanzuela,458.0,734,26,"['blanco', 'amarillo claro']",no disponible,no disponible,bajas,caliente,intermedias
+maíz raza olotillo,quintana roo,bacalar,ejido el naranjal,36.0,1264,25,['amarillo claro'],9,13.6,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,xochiatipan,ixtaczoquico,447.0,1488,23,"['amarillo', 'blanco', 'rojo naranja', 'amarillo', 'blanco', 'rojo naranja']",10.8,16.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,xochiatipan,ixtaczoquico,447.0,1488,23,"['blanco', 'blanco']",10,17,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,hidalgo,xochiatipan,ixtaczoquico,447.0,1488,23,"['blanco', 'blanco']",10,16.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,la cruz,244.0,1088,25,"['amarillo claro', 'azul']",10,17.475,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,la cruz,244.0,1088,25,"['blanco', 'azul oscuro']",11,17.025,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,piedra cuache,325.0,1051,25,['blanco cremoso'],9.84,15.932,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,piedra cuache,325.0,1051,25,"['blanco', 'amarillo claro']",10.55,17.75,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,general canuto a. neri,amates grandes,1282.0,1039,24,['blanco cremoso'],10.4,23.9,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,guerrero,general canuto a. neri,amates grandes,1282.0,1039,24,['blanco cremoso'],10,24.9,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,guerrero,general canuto a. neri,amates grandes,1282.0,1039,24,['amarillo claro'],10.4,19.7,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de la reforma,372.0,1533,23,['blanco cremoso'],9.2,14.66,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,142.0,1544,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,142.0,1544,24,"['blanco', 'naranja']",no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,142.0,1544,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,142.0,1544,24,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampacan,tampacán,142.0,1544,24,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,cerro espiga,1259.0,939,21,['blanco'],9.7,17.425,mediana altitud,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,alamo temapache,cerca de xoyotitla,125.0,1223,24,['blanco cremoso'],10.6,19.36,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,"los parajes, frente a la secundaria",131.0,1319,24,['blanco'],9.6,18.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,"los parajes, frente a la capilla",131.0,1319,24,"['amarillo', 'amarillo naranja', 'rojo naranja']",11.2,16.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,huejutla de reyes,"los parajes, barrio bajo",131.0,1319,24,"['azul', 'azul oscuro', 'azul', 'azul oscuro']",10,16.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,santiago de anaya,el nopalillo,2039.0,434,15,['blanco cremoso'],14,13.86,altas,fría,escasas
+maíz raza olotillo,oaxaca,san juan bautista tuxtepec,santa úrsula,29.0,2288,25,['blanco'],11,19,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,magdalena tequisistlan,magdalena tequisistlan,220.0,734,27,"['blanco', 'amarillo claro']",11,13.3,bajas,caliente,intermedias
+maíz raza olotillo,oaxaca,san juan cacahuatepec,cacahuatepec,411.0,1430,26,['azul oscuro'],10.1,13.5,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,mecayapan,"mecayapan, cabecera municipal",360.0,1619,24,['blanco cremoso'],12,20.41,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,mecayapan,"mecayapan, cabecera municipal",360.0,1619,24,['blanco cremoso'],10.6,20.43,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,morelos,atlatlahucan,san miguel tlaltililco,1716.0,1040,20,['blanco'],10,15.4,mediana altitud,templada,abundantes
+maíz raza olotillo,guerrero,xochistlahuaca,cerca de el santiago (al nw de la localidad),368.0,1443,27,no disponible,no disponible,no disponible,bajas,caliente,muy abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['amarillo claro'],9,15,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,"['amarillo claro', 'rojo']",no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,"['blanco', 'amarillo claro']",11,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,"['amarillo claro', 'azul oscuro']",9,13,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['blanco'],8,20,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,tuxtla gutierrez,"cerca de terán, en el ejido terán",637.0,943,25,['amarillo claro'],10,16.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,san felipe orizatlan,ejido 3 de marzo,220.0,1610,24,['amarillo medio'],10,16.3875,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"chuniapan de arriba, el salto-chuniapan de arriba",159.0,1632,24,"['amarillo medio', 'amarillo naranja']",11.8,17.15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,"cerca de chalahuiapa, en el ejido de chalahuayapan",269.0,1348,23,['blanco cremoso'],9.4,18.18,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,colonia san francisco,632.0,1120,25,['blanco'],10,18.9,bajas,semi-caliente,abundantes
+maíz raza olotillo,nayarit,santa maria del oro,san josé de mojarras,901.0,1094,22,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,arroyo arriba,541.0,1393,25,['blanco'],10,18.2,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,tataltepec de valdes,arroyo arriba,541.0,1393,25,['blanco'],10,17.8,bajas,caliente,muy abundantes
+maíz raza olotillo,puebla,cuetzalan del progreso,tepetitán,347.0,2160,23,['blanco cremoso'],11.2,19.1,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,san lucas,"san lucas, antes el zapotal, aledaño a los ejidos san lucas y el zapotal",677.0,948,25,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,"san lucas, antes el zapotal, aledaño a los ejidos san lucas y el zapotal",677.0,948,25,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,san lucas,"san lucas, antes el zapotal, aledaño a los ejidos san lucas y el zapotal",677.0,948,25,['azul oscuro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tanquian de escobedo,buenavista,31.0,1129,24,['blanco cremoso'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tanquian de escobedo,buenavista,31.0,1129,24,['amarillo naranja'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,santa martha loxicha,759.0,986,24,no disponible,9.9,16.175,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,380.0,1030,25,['blanco'],10,15.45,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,380.0,1030,25,['blanco cremoso'],10.2,15.85,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,rio grande,380.0,1030,25,"['blanco cremoso', 'amarillo claro']",9.8,15.13,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"la candelaria, carretera catemaco-juan díaz covarrubias",481.0,1730,23,['blanco cremoso'],11.2,17.43,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"la candelaria, carretera catemaco-juan díaz covarrubias",481.0,1730,23,['blanco cremoso'],9.8,15.59,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,frontera comalapa,"villa de guadalupe, al interior de terreno ejidal; junto a la localidad nicolás bravo, junto a nicolás bravo cerca de colonia sinaloa",732.0,1355,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,frontera comalapa,"villa de guadalupe, al interior de terreno ejidal; junto a la localidad nicolás bravo, junto a nicolás bravo cerca de colonia sinaloa",732.0,1355,24,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,copanatoyac,la concepción,2026.0,1073,18,['amarillo claro'],9.2,18.2,altas,templada,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,cerro gigante,1051.0,929,23,['blanco cremoso'],10.1,20.18,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,atlixtac,mesones,1881.0,956,19,['blanco cremoso'],11.2,16.9,altas,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tatahuicapan de juarez,"tatahuicapan, cabecera municipal",113.0,1767,25,['rojo oscuro'],10.6,18.96,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,el comején,1127.0,954,21,['blanco'],9.9,16.05,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,santa maría tepexipana,688.0,1039,24,['blanco cremoso'],9.4,17.96,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,santa maría tepexipana,688.0,1039,24,"['blanco cremoso', 'amarillo claro']",8.8,18.665,bajas,semi-caliente,abundantes
+maíz raza olotillo,san luis potosi,tampamolon corona,corona,98.0,1444,24,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampamolon corona,corona,98.0,1444,24,"['amarillo claro', 'rojo']",no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampamolon corona,corona,98.0,1444,24,no disponible,no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,tampamolon corona,corona,98.0,1444,24,['blanco'],12,17.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,zanja honda,204.0,1520,24,"['blanco', 'amarillo']",10,15,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,san luis potosi,san martin chalchicuautla,zanja honda,204.0,1520,24,"['amarillo', 'rojo naranja']",10,16,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san lucas ojitlan,san josé lagunas,84.0,2243,25,['blanco'],12,22,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,atoyac de alvarez,el cocuyachi,540.0,1360,24,['blanco cremoso'],10.8,19.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"la candelaria, carretera catemaco-juan díaz covarrubias",475.0,1730,23,['blanco cremoso'],11.8,17.27,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,"la candelaria, carretera catemaco-juan díaz covarrubias",475.0,1730,23,['blanco cremoso'],10.4,17.01,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,la lima,128.0,1174,24,['amarillo'],9.2,19.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,tantoyuca,la lima,128.0,1174,24,"['amarillo', 'amarillo naranja']",9.6,18.8,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,río machete,1118.0,1028,21,no disponible,10.15,15.5,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,río tejón,1024.0,988,23,no disponible,9.5,15.555,bajas,semi-caliente,abundantes
+maíz raza olotillo,guerrero,atoyac de alvarez,santiago de la unión,824.0,1582,23,['blanco cremoso'],11.2,18.88,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,la candelaria,459.0,1733,23,['amarillo claro'],no disponible,no disponible,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,chiapas,amatenango del valle,amatenango del valle,1817.0,1259,17,['amarillo claro'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,amatenango del valle,amatenango del valle,1817.0,1259,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,amatenango del valle,amatenango del valle,1817.0,1259,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,amatenango del valle,amatenango del valle,1817.0,1259,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,chiapas,amatenango del valle,amatenango del valle,1817.0,1259,17,['blanco'],no disponible,no disponible,altas,fría,abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,el ocote,969.0,930,23,['amarillo medio'],9.9,21.375,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san pedro amuzgos,san pedro amuzgos,514.0,1539,26,['amarillo naranja'],11,10.5,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro amuzgos,san pedro amuzgos,514.0,1539,26,['blanco'],9.9,17.6,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san pedro amuzgos,san pedro amuzgos,514.0,1539,26,['azul oscuro'],9,18.1,bajas,caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,santa rosa cintepec,467.0,1705,23,['blanco cremoso'],10,17.6,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,hueyapan de ocampo,"la esperanza, camino santa rosa cintepec-juan díaz cobarruvias",172.0,1556,25,['blanco cremoso'],12.6,18.92,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,chilpancingo de los bravo,mazatlan,1273.0,1063,22,['amarillo naranja'],10,16.7,mediana altitud,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,"magdalena loxicha, ladera del cerro aledaño",483.0,1031,25,['rojo oscuro'],10.6,14.92,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,"magdalena loxicha, ladera del cerro aledaño",483.0,1031,25,"['blanco', 'amarillo claro']",10.16,16.04,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san agustin loxicha,"magdalena loxicha, ladera del cerro aledaño",483.0,1031,25,['blanco cremoso'],9.9,15.15,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,el comején,1139.0,954,21,['amarillo medio'],9.25,14.38,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,526.0,1022,24,['blanco'],9.9,16.99,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de palma real,336.0,1529,23,['blanco cremoso'],9.4,16.27,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,puebla,ayotoxco de guerrero,gachupinate,210.0,1938,24,['amarillo claro'],9.75,14.7,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,la candelaria,493.0,1730,23,['blanco cremoso'],9.6,14.66,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,papantla,"benito juárez, comunidad benito juárez",196.0,1631,23,"['blanco cremoso', 'amarillo claro']",12,18.33,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,san baltazar loxicha,llano tezute,552.0,992,24,no disponible,9.7,18.35,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,576.0,1023,24,no disponible,8.8,16.425,bajas,semi-caliente,abundantes
+maíz raza olotillo,hidalgo,actopan,"huaxtho, el tablón",2010.0,424,16,['blanco cremoso'],10,18.62,altas,fría,escasas
+maíz raza olotillo,oaxaca,san bartolome loxicha,llano arena,973.0,993,22,['blanco'],9.4,11.685,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,cerca de sesaltitla,276.0,1323,23,['blanco cremoso'],9.4,16.27,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,tlatlapango chico,318.0,1447,23,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",10,17.8,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa cruz tututepec,412.0,1295,26,['blanco'],10,20,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa cruz tututepec,412.0,1295,26,['azul'],13,17.3,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa cruz tututepec,412.0,1295,26,['amarillo claro'],12,20.9,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa cruz tututepec,412.0,1295,26,['blanco'],9,18,bajas,caliente,abundantes
+maíz raza olotillo,oaxaca,villa de tututepec,santa cruz tututepec,412.0,1295,26,['blanco'],10,18.4,bajas,caliente,abundantes
+maíz raza olotillo,hidalgo,santiago de anaya,"hermosillo, monte noble (hermosillo), aledaño al ejido y amplación hermosillo",2090.0,445,15,['blanco cremoso'],12.8888888888889,16.9555555555556,altas,fría,escasas
+maíz raza olotillo,oaxaca,santa maria tonameca,san antonio,23.0,1050,26,['blanco'],12,16.7,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,eduardo neri,la laguna,1945.0,1259,18,['blanco cremoso'],10.8,19.4,altas,templada,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,benito juarez,cerca de palma real,347.0,1532,23,['blanco cremoso'],9.2,15.68,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,oaxaca,santa catarina loxicha,la tixca,466.0,989,25,['blanco'],9.4,16.1,bajas,semi-caliente,abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,186.0,1061,25,['amarillo claro'],10.7,16.125,bajas,caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,san andres tuxtla,"coyoltepec, camino ejidal tilapan-río tuxtla",50.0,1402,25,['blanco cremoso'],11.4,14.99,bajas,caliente,muy abundantes
+maíz raza olotillo,oaxaca,san bartolome loxicha,la chinilla,755.0,1037,22,['blanco cremoso'],9.88,17.36,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chicontepec,tenexco,223.0,1339,23,['blanco cremoso'],9,16.01,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el paraje ocozocoautla,826.0,964,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,el paraje ocozocoautla,826.0,964,23,"['blanco', 'amarillo claro']",10,23,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocozocoautla de espinosa,826.0,964,23,['blanco'],10,12.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocozocoautla de espinosa,826.0,964,23,no disponible,no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocozocoautla de espinosa,826.0,964,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocozocoautla de espinosa,826.0,964,23,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocozocoautla de espinosa,826.0,964,23,['blanco'],10,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,ocozocoautla de espinosa,ocozocoautla de espinosa,826.0,964,23,['rojo'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,ayahualulco,"cetlalpan, región capital",1463.0,1786,18,['blanco cremoso'],12,17.18,mediana altitud,fría,muy abundantes
+maíz raza olotillo,oaxaca,candelaria loxicha,barrio coyote,160.0,1049,26,['blanco cremoso'],9.8,16.7,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,venustiano carranza,768.0,1115,24,['blanco'],11,14.2,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,venustiano carranza,768.0,1115,24,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,venustiano carranza,768.0,1115,24,['blanco'],12,15,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,venustiano carranza,768.0,1115,24,"['blanco', 'amarillo claro']",10,15.7,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,venustiano carranza,768.0,1115,24,"['blanco', 'amarillo claro']",10,17,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,venustiano carranza,768.0,1115,24,"['amarillo claro', 'azul oscuro']",no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,campeche,calkini,calkini,14.0,1141,26,"['blanco', 'amarillo claro']",10,15.4,bajas,caliente,abundantes
+maíz raza olotillo,chiapas,villaflores,villa flores,559.0,1337,25,['blanco'],no disponible,no disponible,bajas,semi-caliente,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,la trinitaria,victorico r. grajales,1536.0,1376,18,['amarillo medio'],10,14,mediana altitud,templada,muy abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['amarillo claro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,no disponible,no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['negro'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,chiapas,venustiano carranza,aguacatenango,1741.0,1253,17,['blanco'],no disponible,no disponible,mediana altitud,fría,abundantes
+maíz raza olotillo,nuevo leon,montemorelos,ejido san agustín de los arroyos,285.0,715,22,"['blanco cremoso', 'amarillo claro']",12.64,16.916,bajas,semi-caliente,intermedias
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,san pedro coyutla,186.0,1395,24,['amarillo'],10.8,18,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,san pedro coyutla,186.0,1395,24,['blanco'],10,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,san pedro coyutla,186.0,1395,24,['blanco'],10,12,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,san pedro coyutla,186.0,1395,24,['blanco'],10,12.5,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,san pedro coyutla,186.0,1395,24,['amarillo'],10.8,16.2,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chalma,san pedro coyutla,186.0,1395,24,"['amarillo', 'amarillo']",10,20,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,catemaco,san juan seco de valencia,463.0,1729,23,['blanco cremoso'],9.8,16.28,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,alamo temapache,cerca de alfredo v. bonfil,185.0,1292,23,['blanco cremoso'],10.8,17.88,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,alamo temapache,cerca de alfredo v. bonfil,185.0,1292,23,['blanco cremoso'],9.8,17.85,bajas,semi-caliente,abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chiconamel,chiconamel,169.0,1419,24,"['amarillo', 'rojo naranja', 'amarillo', 'rojo naranja']",10,19,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,veracruz de ignacio de la llave,chiconamel,chiconamel,169.0,1419,24,['amarillo'],10,14,bajas,semi-caliente,muy abundantes
+maíz raza olotillo,guerrero,chilpancingo de los bravo,jaliaca de catalan,770.0,1284,24,['blanco cremoso'],12,16,bajas,semi-caliente,abundantes
+maíz raza olotillo,campeche,hopelchen,xmabén,139.0,1061,25,['blanco'],10.8,12.65,bajas,caliente,abundantes
+maíz raza olotillo,guerrero,arcelia,el nanche,415.0,1138,27,['blanco'],no disponible,no disponible,bajas,caliente,abundantes
+maíz raza olotillo,none,none,no disponible,nan,1138,27,['amarillo naranja'],16,8.5,altas,caliente,abundantes
+maíz raza olotillo,none,none,no disponible,nan,1138,27,['blanco'],14,14.3,altas,caliente,abundantes
+maíz raza olotillo,none,none,no disponible,nan,1138,27,"['blanco', 'rojo']",14,18,altas,caliente,abundantes
+maíz raza olotillo,none,none,no disponible,nan,1138,27,['amarillo claro'],12,18,altas,caliente,abundantes
+maíz raza olotillo,none,none,no disponible,nan,1138,27,['amarillo claro'],no disponible,no disponible,altas,caliente,abundantes
+maíz raza olotillo,none,none,no disponible,nan,1138,27,['naranja'],8,18,altas,caliente,abundantes
