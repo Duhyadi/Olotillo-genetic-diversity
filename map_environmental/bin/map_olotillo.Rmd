@@ -3,10 +3,10 @@ title: "Olotillo_map"
 output: html_document
 ---
 
-# Title: Plot map with maptools, rgeos and rgdal.
+# Title: Plot map.
 # Star date: October 2023 by Alicia Mastretta-Yanes.
-# Previous modification: Fri 10/Oct/2025. Versoix, Switzerland (16:28) by Duhyadi Oliva-García
-# Last modification: Mon 13/Oct/2025. Versoix, Switzerland (14:03) by Duhyadi Oliva-García.
+# Previous modification: Mon 13/Oct/2025. Versoix, Switzerland (14:03) by Duhyadi Oliva-García.
+# Last modification: Wed 22/Oct/2025. Versoix, Switzerland (13:57) by Duhyadi Oliva-García.
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
 
 ------------------------------------------------------------------------
@@ -32,22 +32,22 @@ library(sf)
 ```
 
 # LOAD DATA: read shape and points
+Occurrence points for Olotillo, were collected in the field for, 2018-2019: Duhyadi Oliva-García (Chiapas), Alicia Mastretta-Yanes(Chiapas), Bulmaro Coutiño-Estrada (Chiapas), Flavio Aragón-Cuevas (Oaxaca), Noé Orlando-Gómez (Guerrero), Víctor Antonio Vidal Martínez (Nayarit) and Hugo Perales-Rivera (Chiapas-different year). Also include samples from CIMMYTM.
 ```{r}
 # --- Load spatial layers and data -----------------------------------------
+# here::here. It's the safe way to call package here.
 mexico <- st_read(here::here("shape","destdv1gw" ,"destdv1gw.shp")) # Mexico shape
 distribution <- st_read(here::here("shape","oloti_7cgw" ,"oloti_7cgw.shp")) # Olotillo distribution shape
-olotillo.PGMN <- read.csv(here::here("meta","olotillo_PGMN_siagro.csv")) # Olotillo, Proyecto Global Maíces Nativos (PGMN)
-olotillo.points <- read.csv(here::here("meta", "olotillo_points_meta_clean.csv")) # Olotillo, Proyecto Doctoral Poblaciones Evolutivas
+olotillo.PGMN <- read.csv(here::here("meta","olotillo_PGMN_siagro.csv")) # Olotillo, Proyecto Global Maíces Nativos (PGMN), CONABIO.Global Maize Project (CONABIO, 2011).
+olotillo.points <- read.csv(here::here("meta", "olotillo_points_meta_clean.csv")) # Olotillo, Doctoral Project Evolutionary Populations
 ```
-Note #2: here::here. It's the safe way to call package here.
-Occurrence points for Olotillo, were collected in the field for, 2018-2019 : Duhyadi Oliva-García(Chiapas), Alicia Mastretta-Yanes(Chiapas), Bulmaro Coutiño-Estrada (Chiapas), Flavio Aragón-Cuevas (Oaxaca), Noé Orlando-Gómez (Guerrero), Víctor Antonio Vidal Martínez (Nayarit) and Hugo Perales-Rivera (Chiapas-different year). Also include samples from CIMMYTM.
 
 # PLOT
 ## MAP #1 
 ## ------------------------------------------------------------------
 ## 🗺️ Base map of Mexico with distribution...
 ## ------------------------------------------------------------------
-Distribution of olotillo according to Perales & Golicher (2014) + points for olotillo, from the Global Maize Project (CONABIO, 2011) + accessions sampled for this study by race.
+Distribution of Olotillo according to Perales & Golicher (2014) + points for Olotillo the Global Maize Project (CONABIO, 2011). + accessions sampled for this study by race.
 ```{r}
 # --- Create the map -----------------------------------------
 map1 <- ggplot() +
@@ -73,14 +73,14 @@ Climatic interpolation of Olotillo distribution according to Perales & Golicher 
 # --- Create the map -----------------------------------------
 map2 <- ggplot() +
   geom_sf(data = mexico, colour = "grey", fill = NA, linewidth = 0.3) + # base polygon of Mexico
-  geom_sf(data = distribution, colour = "purple", fill = NA, linewidth = 0.6) + # distribution polygon 
+  geom_sf(data = distribution, colour = "purple", fill = NA, linewidth = 0.6) + # distribution polygon Olotillo 
   geom_point(                          # points of PGMN
     data = olotillo.PGMN,
     aes(x = longitud, y = latitud),
     colour = "black",
     size = 0.8
   ) + 
-  theme_void()                        # general style of the map 
+  theme_void()                         
 # --- Show map -----------------------------------------
 map2
 ```
@@ -95,12 +95,12 @@ mexico_sf <- st_as_sf(mexico, region = "ENTIDAD")
 lapply(mexico_sf, class)
 print(mexico_sf)
 ```
-### Convert shape to data frame: extract coordinates and attributes in data.frame format
+### Convert shape to data frame: extract coordinates and attributes in data frame format
 ```{r}
 # ---- Extract coordinates and correctly join them with the attributes ---------------------
 coords <- st_coordinates(mexico) %>% as.data.frame()
 coords$ID <- as.numeric(rownames(coords))   # create temporary ID
-# ---- Convert geometries to data.frame (maintaining attributes) ---------------------------
+# ---- Convert geometries to data frame (maintaining attributes) ---------------------------
 mexico_df <- mexico %>%
   st_drop_geometry() %>%                    # delete geometry (maintains attributes)
   mutate(ID = row_number()) %>%             # create reference ID
