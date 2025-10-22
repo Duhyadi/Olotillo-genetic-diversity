@@ -1,0 +1,115 @@
+---
+title: "Olotillo_Weather"
+output: html_document
+date: "2023-11-07"
+---
+
+# Title: Olotillo weather.
+# Star date: October 2023 by Alicia Mastretta-Yanes.
+# Previous modification: 
+# Last modification: Wed 22/Oct/2025. Versoix, Switzerland (13:57) by Duhyadi Oliva-García.
+# Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
+
+------------------------------------------------------------------------
+This notebook explores the morphological and climatic diversity data of the olotillo, using data from the PGMN. The data were downloaded from the [https://app-siagro.conabio.gob.mx/id=79265ANGIO](https://app-siagro.conabio.gob.mx/id=79265ANGIO) abd [https://app-siagro.conabio.gob.mx/id=79238ANGIO](https://app-siagro.conabio.gob.mx/id=79238ANGIO).
+
+Morphological data come from the Global Native Maize Project, and climatic data come from:
+
+Annual precipitation period 2000:
+Value extracted from the cell where the site point falls in the rasters of Cuervo-Robayo A.P., C. Ureta, M.A. Gómez-Albores, A.K. Meneses-Mosquera, O. Téllez-Valdés, E. Martínez-Meyer, (27/08/2019). 'Bioclimas, periodo: 2000 (1980-2009)', edición: 1. Instituto de Biología, Universidad Nacional Autónoma de México. These maps are part of the publication: Cuervo-Robayo, A. P., Ureta, C., Gómez-Albores, M. A., Meneses-Mosquera, A. K., Téllez-Valdés, O., y E. Martínez-Meyer. (2020). One hundred years of climate change in Mexico. Plos One. https://doi.org/10.1371/ journal.pone.0209808
+
+Average annual temperature period 2000:
+Value extracted from the cell where the site point falls on the rasters of Cuervo-Robayo A.P., C. Ureta, M.A. Gómez-Albores, A.K. Meneses-Mosquera, O. Téllez-Valdés, E. Martínez-Meyer, (27/08/2019). 'Bioclimas, periodo: 2000 (1980-2009)', edición: 1. Instituto de Biología, Universidad Nacional Autónoma de México. These maps are part of the publication: Cuervo-Robayo, A. P., Ureta, C., Gómez-Albores, M. A., Meneses-Mosquera, A. K., Téllez-Valdés, O., y E. Martínez-Meyer. (2020). One hundred years of climate change in Mexico. Plos One. https://doi.org/10.1371/ journal.pone.0209808
+
+Altitude taken at the site at the time of collection (and reviewed by CONABIO).
+The range categories were made based on the ranges described in: Ruiz Corral, J.A., Durán Puga, N., Sánchez González, J.d.J., Ron Parra, J., González Eguiarte, D.R., Holland, J. and Medina García, G. (2008), Climatic Adaptation and Ecological Descriptors of 42 Mexican Maize Races . Crop Science, 48: 1502-1512. https://doi.org/10.2135/ cropsci2007.09.0518 
+
+# INITIAL PROJECT SETUP
+```{r setup, include=FALSE}
+# --- Load the package here (for reproducible routes) ----------------------
+if (requireNamespace("here", quietly = TRUE)) {
+  setwd(here::here())
+  message("📂  Working directory set to: ", getwd())
+} else {
+  stop("⚠️ The 'here' package is not installed. Execute install.packages('here')")
+}
+```
+
+------------------------------------------------------------------------
+
+# LOAD LIBRARIES
+```{r}
+library(ggplot2)
+library(viridis)
+library(dplyr)
+```
+
+# LOAD DATA
+```{r}
+# here::here. It's the safe way to call package here.
+olotillo <- read.csv(here::here("meta","olotillo_weather.csv")) 
+```
+
+## Distribution of temperature and precipitation data:
+```{r}
+olotillo %>% ggplot(aes(x=temperatura, y=precipitacion)) +
+             geom_point()
+```
+## Distribution of precipitation
+```{r}
+olotillo %>% ggplot(aes(precipitacion)) +
+             geom_density()
+```
+## Distribution of precipitation by categories
+```{r}
+olotillo %>% ggplot(aes(precipitacion, fill=cat_precipitacion)) +
+             geom_density(alpha=0.4)
+```
+## Distribution of temperature
+```{r}
+olotillo %>% ggplot(aes(temperatura)) +
+             geom_density()
+```
+## Distribution of temperature by categories
+```{r}
+olotillo %>% ggplot(aes(temperatura, fill=cat_temperatura)) +
+             geom_density(alpha=0.4)
+```
+## Violin plot: temperature points by precipitation categories. Spanish version.
+```{r}
+#check category names
+unique(olotillo$cat_precipitacion)
+
+# order categorias precipitation levels from less to more rain
+olotillo$cat_precipitacion <- factor(olotillo$cat_precipitacion, levels= c("escasas", "poco abundantes", "intermedias" , "abundantes", "muy abundantes"))
+ 
+# violin plot of temperature by categoria precipitacion
+p<- olotillo %>% ggplot(aes(x=cat_precipitacion, y=temperatura)) + 
+             geom_violin() +
+             # add points on top of violin
+             geom_jitter(shape=16, position=position_jitter(0.2), 
+                         aes(color=precipitacion)) +
+             scale_color_continuous(type= "viridis", direction=-1) +
+             theme_light()
+
+p
+```
+
+Versión en inglés:
+```{r}
+p + labs(color="Annual rainfall (mm)") +
+    ylab("Temperature (°C)") +
+    xlab("Precipitation category (mm annual rainfall)") +
+    scale_x_discrete(breaks=c("escasas", "poco abundantes", "intermedias" , "abundantes", "muy abundantes"),
+                     labels=c("<540", ">450-650", ">650-850" , ">850-1,360", ">1,360"))
+  
+  
+  
+  
+```
+
+
+
+
+
+

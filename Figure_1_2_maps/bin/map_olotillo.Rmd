@@ -13,7 +13,7 @@ output: html_document
 
 # INITIAL PROJECT SETUP  
 ```{r setup, include=FALSE}
-# --- Load the package here (for reproducible routes) ----------------------------------------
+# --- Load the package here (for reproducible routes) ----------------------
 if (requireNamespace("here", quietly = TRUE)) {
   setwd(here::here())
   message("📂  Working directory set to: ", getwd())
@@ -127,9 +127,9 @@ dim(pop.data)                                       # check n samples
 # --- Make vector of states excluding where we sampled olotillos --------------------------
 sampled.states<-unique(pop.data$state)
 sampled.states
-# to get a names in the data frame
-unique(mexico_sf$ENTIDAD) 
-# change to they way 
+# To get a names in the data frame
+unique(mexico_sf$ENTIDAD) # to get a names in the data frame
+# Change to they way 
 sampled.states<-c("CAMPECHE", "CHIAPAS", "GUERRERO", "HIDALGO",
                   "NAYARIT", "OAXACA", "QUINTANA ROO", "SAN LUIS POTOSI",
                   "VERACRUZ DE IGNACIO DE LA LLAVE")
