@@ -1,46 +1,47 @@
+
 # Title: Plot admixture with Pophelper 2.3.1.
+# Star date: Fri 8/February/2024. Coacalco, Mexico.
+# Previous modification: Wed 22/Oct/2025. Versoix, Switzerland (17:13 PM) by Duhyadi.   
+# Last modification: Thu 23/Oct/2025. Versoix, Switzerland (17:13 PM) by Duhyadi.   
 # Authors: Duhyadi Oliva García & Alicia Mastretta Yanes.
 
+#--------
 # Tutorial for pophelper: https://www.royfrancis.com/pophelper/articles/
 # Argument details: https://www.royfrancis.com/pophelper/reference/plotQ.html
 # Additional information: https://www.biostars.org/p/9481527/
+#--------
 
-
-setwd("/home/duhyadi/Documents/paper1")  
-
-
-#### Libraries
+#--------
+# LOAD LIBRARIES
 library(dplyr)
 library(ggplot2)
 library(cowplot)
 library(gridExtra)
-library(pophelper)
+library(pophelper) # processing output come from ADMIXTURE 
+## Note: the following form was used to installl pophelper,
+## with the new version of R, January 3, 2025:
+## remotes::install_github('royfrancis/pophelper')
+#--------
+getwd()
+#--------
+# --- Load the package here (for reproducible routes) ----------------------
+if (requireNamespace("here", quietly = TRUE)) {
+  setwd(here::here())
+  message("📂  Working directory set to: ", getwd())
+} else {
+  stop("⚠️ The 'here' package is not installed. Execute install.packages('here')")
+}
+#--------
 
-#la forma siguiente sirvió para instalar pophelper con la nueva versión de R, enero 3 de 2025. Ginebra, Suiza. 
-remotes::install_github('royfrancis/pophelper')
-
-
-### LOAD data
-
-### Load metadata files
-
-metaA <- read.csv("admixture/download_cluster/output/output2/admixture_meta.csv", header = T)
-
-# convert meta file from csv to txt extension
-write.table(metaA, "admixture_meta.txt", sep = "\t", row.names = FALSE)
-metaB <- read.table("admixture_meta.txt", header = T)
-# file fam
-oloPlinksamples <- read.table("admixture/download_cluster/files_plink/mixplates_filtered_2x.fam")
-
-## Load Adxmixture Q
-
-# read Q files
-olofiles <- list.files(path="admixture/download_cluster/output/output2", 
-                       pattern = "*.Q", full.names=T)
-# q list from Q files
-readQ(files=olofiles, filetype = 'auto')
-# object q list 
-ololist <- readQ(files=olofiles)
+# LOAD DATA
+# --- Load txt and fam data -----------------------------------------
+meta <- read.table("figure_4_admixture/meta/admixture_meta.txt", header = TRUE, sep = "\t")
+oloPlinksamples <- read.table("figure_4_admixture/file_plink/mixplates.fam") # file fam
+# --- Load admixture Q -----------------------------------------
+olofiles <- list.files(path="figure_4_admixture/file_plink/out_admixture2", 
+                       pattern = "*.Q", full.names=T) # read Q files
+readQ(files=olofiles, filetype = 'auto') # q list from Q files
+ololist <- readQ(files=olofiles) # object q list 
 
 ## CV, ESTIMATE OPTIMAL K
 
