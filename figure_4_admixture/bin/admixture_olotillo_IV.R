@@ -2,7 +2,7 @@
 # Title: Plot admixture with Pophelper 2.3.1.
 # Star date: Fri 8/February/2024. Coacalco, Mexico.
 # Previous modification: Wed 22/Oct/2025. Versoix, Switzerland (17:13 PM) by Duhyadi.   
-# Last modification: Thu 23/Oct/2025. Versoix, Switzerland (17:13 PM) by Duhyadi.   
+# Last modification: Thu 23/Oct/2025. Versoix, Switzerland (13:54 PM) by Duhyadi.   
 # Authors: Duhyadi Oliva García & Alicia Mastretta Yanes.
 
 #--------
@@ -22,7 +22,7 @@ library(pophelper) # processing output come from ADMIXTURE
 ## with the new version of R, January 3, 2025:
 ## remotes::install_github('royfrancis/pophelper')
 #--------
-getwd()
+
 #--------
 # --- Load the package here (for reproducible routes) ----------------------
 if (requireNamespace("here", quietly = TRUE)) {
@@ -33,60 +33,67 @@ if (requireNamespace("here", quietly = TRUE)) {
 }
 #--------
 
+#--------
 # LOAD DATA
 # --- Load txt and fam data -----------------------------------------
-meta <- read.table("figure_4_admixture/meta/admixture_meta.txt", header = TRUE, sep = "\t")
+meta <- read.table("figure_4_admixture/meta/admixture_meta.txt", 
+                   header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+class(meta)
 oloPlinksamples <- read.table("figure_4_admixture/file_plink/mixplates.fam") # file fam
 # --- Load admixture Q -----------------------------------------
 olofiles <- list.files(path="figure_4_admixture/file_plink/out_admixture2", 
                        pattern = "*.Q", full.names=T) # read Q files
 readQ(files=olofiles, filetype = 'auto') # q list from Q files
 ololist <- readQ(files=olofiles) # object q list 
+#--------
 
-## CV, ESTIMATE OPTIMAL K
-
-# read K error
-k.error <- read.delim ("admixture/download_cluster/output/olotillo_Kerror.txt", header = F, sep = ":")
+#--------
+# CV, ESTIMATE OPTIMAL K
+# Read K error
+k.error <- read.delim ("figure_4_admixture/file_plink/olotillo_Kerror.txt", header = F, sep = ":")
 rownames(k.error)<- c("k=1", "k=2", "k=3", "k=4", "k=5")
-# plot K error, from 1 to 5
+# Plot K error, from 1 to 5
 e.plot <- ggplot(data=k.error, aes(x=1:5, y=V2)) + geom_point() + geom_line()
 e.plot + xlab("k") + ylab("Error")
+#--------
 
+#--------
+# SORT SAMPLE NAME ACCORDING TO V2, IN METAC
+# Get order of V2 from oloPlinksamples and, 
+# apply that order to sample_name in meta
+order <- match(oloPlinksamples$V2, meta$sample_name)
+meta <- meta[order, ]
+class(meta)
+#--------
 
-### SORT SAMPLE NAME ACCORDING TO V2, IN METAC
-
-# get order of V2 from oloPlinksamples and 
-# apply that order to sample_name in metaB
-order <- match(oloPlinksamples$V2, metaB$sample_name)
-metaC <- metaB[order, ]
-
-#### ADD SCALE CATEGORY DEPENDING ON THE STATE OF ORIGIN TO METADATA
-
-metaC <- metaC %>%
+#--------
+# ADD SCALE CATEGORY DEPENDING ON THE STATE OF ORIGIN TO METADATA
+meta <- meta %>%
   mutate(scale = ifelse(grepl("^CAM_E", sample_name), "national", scale))
-# the following from Chiapas by hand, one by one 
+# The following from Chiapas by hand, one by one 
 # CHIS_E9_1  + CHIS_E10_1 = regional      # origin, Hugo Perales. R. 
-# CHIS_E23_1 + CHIS_E24_1 = regional      #origin, Hugo Perales. R.
-metaC$scale[metaC$sample_name == 'CHIS_E9_1'  ]  <- 'regional'
-metaC$scale[metaC$sample_name == 'CHIS_E10_1' ]  <- 'regional'
-metaC$scale[metaC$sample_name == 'CHIS_E23_1' ]  <- 'regional'
-metaC$scale[metaC$sample_name == 'CHIS_E24_1' ]  <- 'regional'
-# update the "scale" variable for inputs starting 
+# CHIS_E23_1 + CHIS_E24_1 = regional      # origin, Hugo Perales. R.
+meta$scale[meta$sample_name == 'CHIS_E9_1'  ]  <- 'regional'
+meta$scale[meta$sample_name == 'CHIS_E10_1' ]  <- 'regional'
+meta$scale[meta$sample_name == 'CHIS_E23_1' ]  <- 'regional'
+meta$scale[meta$sample_name == 'CHIS_E24_1' ]  <- 'regional'
+# Update the "scale" variable for inputs starting, 
 # with "ROO_E", "SLP_E", "HGO_E" y "VER_E"
-metaC$scale[grepl("^(ROO|SLP|HGO|VER)_E", metaC$sample_name)] <- 'national'
-# replace all instances of "_" with local, regional and national 
+meta$scale[grepl("^(ROO|SLP|HGO|VER)_E", meta$sample_name)] <- 'national'
+# Replace all instances of "_" with local, regional and national 
 # in the column scale.
-metaC$scale <- gsub("_L", "local"   , metaC$scale)
-metaC$scale <- gsub("_R", "regional", metaC$scale)
-metaC$scale <- gsub("_N", "national", metaC$scale)
-# change the capital letter at the beginning
-metaC$scale <- gsub("Local"   , "local"   , metaC$scale)
-metaC$scale <- gsub("Regional", "regional", metaC$scale)
-metaC$scale <- gsub("National", "national", metaC$scale)
+meta$scale <- gsub("_L", "local"   , meta$scale)
+meta$scale <- gsub("_R", "regional", meta$scale)
+meta$scale <- gsub("_N", "national", meta$scale)
+# Change the capital letter at the beginning
+meta$scale <- gsub("Local"   , "local"   , meta$scale)
+meta$scale <- gsub("Regional", "regional", meta$scale)
+meta$scale <- gsub("National", "national", meta$scale)
+#--------
 
-##### ADD BETTER SAMPLE NAMES TO QLIST ADMIXTURE DATA
-
-# the rownames of ‘qlist’ can also be modified 
+#--------
+# ADD BETTER SAMPLE NAMES TO QLIST ADMIXTURE DATA
+# The rownames of ‘qlist’ can also be modified 
 # by the user by, adding custom individual labels,  
 # add indlab to one run
 rownames(ololist[[1]]) <- metaC$sample_name
