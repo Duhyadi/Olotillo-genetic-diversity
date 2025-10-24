@@ -23,7 +23,7 @@ library(ggplot2)
 #----------------
 
 #----------------
-# LOAD AND CONVERT VCF TO GDS FORMAT 
+# LOAD DATA: CONVERT VCF TO GDS FORMAT 
 snpgdsVCF2GDS("data/mixplates_cleaned.vcf.gz", # the SNPRelate function snpgdsVCF2GDS is used to convert VCF (Variant Call Format) files into the GDS (Genomic Data Structure) format
               "data/mixplates_cleaned.gds",
               method = "biallelic.only")
@@ -173,19 +173,19 @@ mixplate$country <- "México"
 write.csv(mixplate, "pca8ene24_meta_mixplate", row.names = FALSE)
 #----------------
 
-## ORDER, SAMPLES NAMES
-
+#----------------
+# ORDER, SAMPLES NAMES
 ## Sample names follow are the same in metada and genofile, 
 ## but they are in different order:
 ## Genofile
 sample.id
 ## Metadata
 mixplate$sample_name
-## **Note**:The metadata will be used later to color-code the PCA plot, 
+## Note: The metadata will be used later to color-code the PCA plot, 
 ## so the labels must be the same in both the genofile and metadata.
+#----------------
 
-----------------
-
+#----------------
 # PCA
 ## Run PCA
 pcaMix<- snpgdsPCA(genofileMix, num.thread=2)
@@ -213,6 +213,9 @@ p <- ggplot(data = pcametaMix, aes(x=PC1, y=PC2)) + geom_point(size = 1) +
   ylab(paste0("eigenvector 2 explaining ", round(pc.percent, 2)[1], "%")) +
   xlab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[2], "%"))
 p
+#----------------
+
+#----------------
 ## Without the samples CHIS_L43, sequencing error in this sample  
 ## PCA by Race and scale
 p.PCA.A <-pcametaMix %>% 
@@ -236,6 +239,9 @@ p.PCA.A <-pcametaMix %>%
   xlab(paste0("eigenvector 1 explaining ", round(pc.percent, 2)[2], "%")) +
   theme_bw()
 p.PCA.A
+#----------------
+
+#----------------
 ## Replace all instances of "_" and "Extra" with "Local", Regional 
 ## and National in the column 'scale'.
 pcametaMix$scale <- gsub("_L", "Local"       , pcametaMix$scale)
@@ -246,6 +252,9 @@ pcametaMix$scale <- gsub("_E", "National"    , pcametaMix$scale)
 ## Filter pcametaMix
 df_filtrada <- pcametaMix %>%
   filter(!scale %in% c("_F", "_X"))
+#----------------
+
+#----------------
 ## PCA by Race and scale 
 p.PCA.B = df_filtrada %>% 
   filter(accession_ID != "CHIS_L43") %>%
