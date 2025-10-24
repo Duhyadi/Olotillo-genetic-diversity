@@ -1,29 +1,29 @@
-##############################
+ 
+# Title: PCA.
+# Star date: October 2023 by Duhyadi Oliva-García.
+# Previous modification: Sat 28/Jun/2025. Richmond, London (17:00) by Duhyadi Oliva-García.
+# Last modification: Wed 22/Oct/2025. Versoix, Switzerland (13:57) by Duhyadi Oliva-García.
+# Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
+#----------------
 
-# SÁBADO 28 DE JUNIO EN CASA DE SHARON COMPASS.BRENFORD, LondON. 
-
-----------------
-
+#----------------
 #📁 CHECK AND CHANGE WORKING DIRECTORY 
-
 getwd()
 setwd("/home/duhyadi/Documents/paper1_final_tipodryad")
 getwd()
+#----------------
 
-----------------
-
+#----------------
 # LOAD LIBRARIES
-
 library(tidyverse)
 library(gdsfmt) # useful tool for reading, writing and manipulating genetic data stored in GDS format
 library(SNPRelate) # a library in R that is used for the analysis and visualization of genetic data
 library(dplyr)
 library(ggplot2)
+#----------------
 
-----------------
-
+#----------------
 # LOAD AND CONVERT VCF TO GDS FORMAT 
-
 snpgdsVCF2GDS("data/mixplates_cleaned.vcf.gz", # the SNPRelate function snpgdsVCF2GDS is used to convert VCF (Variant Call Format) files into the GDS (Genomic Data Structure) format
               "data/mixplates_cleaned.gds",
               method = "biallelic.only")
@@ -36,20 +36,17 @@ read.gdsn(index.gdsn(genofileMix, "sample.id")) # check sample.ids
 ## Save sample names to an object: obtain the name of the samples from the gdsn
 sample.id <- read.gdsn(index.gdsn(genofileMix, "sample.id"))
 sample.id
+#----------------
 
-----------------
-
+#----------------
 # METADATA
-# Get metadata #1
-## 1.1. Join meta of the plate 1 and 2. 
-## 1.2. Add column race. 
-## 1.3. Delete blank for plate 1 and 2.
 
+# Get metadata #1
 ## 1.1. Join fullmeta for plate 1 and plate2 
 placa1 <- read.csv("meta/plate1_fullmeta.txt", sep='\t')
 placa2 <- read.csv("meta/plate2_fullmeta.txt", sep='\t')
 mixplate <- rbind(placa1, placa2)
-## ** Note**: the previous txt files (plate1_fulllmeta.txt and plate2_fullmeta.txt),
+## Note: the previous txt files (plate1_fulllmeta.txt and plate2_fullmeta.txt),
 ## lost the race column, we believe they should have it, when creating them. 
 ## 1.2. Add the race column and name all rows as Olotillo.
 mixplate <- mixplate %>%
@@ -58,14 +55,14 @@ mixplate <- mixplate %>%
 mixplate <- mixplate %>%
   filter(sample_name != "BLANK")
 
-## Get metadata #2: 
+# Get metadata #2: 
 ## The accession name is changed to the extra samples, 
 ## these are those with the letter E (Extra). 
 ## These samples should not include the letter E, as the label of 
 ## the accessions was constructed according to the number of field collections. 
 ## Field collections being #47. The additional accessions were named as extras when 
 ## they were sent for sequencing. 
-## **Note**: this change allows the unique function to be used 
+## Note: this change allows the unique function to be used 
 ## to account for different accessions. In addition, 
 ## this change allows the corresponding race name to be added: 
 ## for not everything is Olotillo. There is Mix, Dzit-bacal and Tuxpeño.  
@@ -136,7 +133,7 @@ mixplate$accession_ID[mixplate$sample_name == 'VER_E18_1'] <- 'VER_E56'
 mixplate$accession_ID[mixplate$sample_name == 'VER_E19_1'] <- 'VER_E57'
 mixplate$accession_ID[mixplate$sample_name == 'VER_E20_1'] <- 'VER_E57'
 
-## Get metadata #3:
+# Get metadata #3:
 ## Change race in some samples
 mixplate$Race[mixplate$accession_ID == 'CHIS_L38'] <- 'Mix'
 mixplate$Race[mixplate$accession_ID == "ROO_E53" ] <- 'Dzit-bacal'
@@ -145,7 +142,7 @@ mixplate$Race[mixplate$accession_ID == "CAM_E55" ] <- 'Dzit-bacal'
 mixplate$Race[mixplate$accession_ID == "CAM_E58" ] <- 'Tuxpeño'
 mixplate$Race[mixplate$accession_ID == "CAM_E60" ] <- 'Tuxpeño'
 
-## Get metadata #4: 
+# Get metadata #4: 
 ## Add the state
 
 ## CAMPECHE
@@ -166,16 +163,15 @@ mixplate$state[chis_rows] <- "Chiapas"
 vera_rows <- grep("VER", mixplate$accession_ID)
 mixplate$state[vera_rows] <- "Veracruz"
 
-## Get metadata #5: 
+# Get metadata #5: 
 ## Add Mexico for all rows in country variable
 mixplate$country <- "México"
+#----------------
 
-----------------
-
+#----------------
 # CONVERT METADATA TO CSV 
 write.csv(mixplate, "pca8ene24_meta_mixplate", row.names = FALSE)
-
-----------------
+#----------------
 
 ## ORDER, SAMPLES NAMES
 

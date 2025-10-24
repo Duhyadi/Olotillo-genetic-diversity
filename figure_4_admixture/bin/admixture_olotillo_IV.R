@@ -138,21 +138,20 @@ rownames(ololist[[1]])
 # The F samples would be analyses at a different stage in another paper.
 #--------
 
-
-
-## Which are the evolutionary pops samples? The ones labelled with _F 
-## in scale:
+#--------
+# Which are the evolutionary pops samples? The ones labelled with _F 
+# in scale:
 metab[metab$scale=="_F", ]
-# we can see they also all start with GAV. Lets create an object 
+# We can see they also all start with GAV. Lets create an object 
 # whit those samples
-to_remove<- metab[metab$scale=="_F", 1] # keep only 1st column, where the samples are
+to_remove <- metab[metab$scale=="_F", 1] # keep only 1st column, where the samples are
 to_remove
-# how many?
+# How many?
 length(to_remove)
-# since in the df from the list of admixture results the sample names are 
+# Since in the df from the list of admixture results the sample names are 
 # in the rownames (hence not a df variable), 
 # get the indexes (which number of row are they)
-to_remove_indexes<-match(to_remove, rownames(ololist[[1]]))
+to_remove_indexes <-match(to_remove, rownames(ololist[[1]]))
 # delete samples based on index
 # example with one of the df to show how it works in a single df
 y <- (ololist[[1]]) # save the list 2 into an object as a single df
@@ -162,26 +161,21 @@ nrow(y2) # how how many rows we had now. It should be the orignal number - the n
 nrow(y) - length(to_remove_indexes) # this number should be the same than nrow(y2)
 # delete rows with samples to_remove in all dfs within the list of results
 ololist_filtered_evol <- lapply(ololist, function(x) {x<-x[-to_remove_indexes, ]})
-
 ## Check sample names, are GAV* samples removed?
 rownames(ololist_filtered_evol[[2]])
 # how many samples remained? 
 nrow((ololist_filtered_evol[[2]]))
-
-## We also need to create a new dataframe with the metadata excluding the _F samples
+# We also need to create a new dataframe with the metadata excluding the _F samples
 metab_filtered_evol<-metab[-to_remove_indexes, ] # we can use the same indexes since samples are in the same order
 # check sample names
 metab_filtered_evol$sample_name
-
-
+#--------
 ###### DELETE OTHER RACES, KEEP ONLY OLOTILLO
 ## Here we filter similarly than above, but instead of removing 
 ## what we dont want, we will keep what we want (Olotillo)
-
 # df of only olotillo samples
 to_keep <- metab[metab_filtered_evol$race=="Olotillo", ]  # , means keep all columns
 to_keep
-
 # we need to also exlude _F and keep only the list of samples
 to_keep <- to_keep[to_keep$scale!="_F", 1] # , 1 keep only 1st column, where the samples are
 to_keep
@@ -195,7 +189,6 @@ nrow(ololist_only_olotillo[[2]]) # n rows should be equal to number of esamples 
 metab_only_olotillo<-metab[to_keep_indexes, ] # we can use the same indexes since samples are in the same order
 # check sample names
 metab_only_olotillo$sample_name
-
 # add row names again
 ololist_only_olotillo[[1]]<-as.data.frame(ololist_only_olotillo[[1]]) #this is needed because the 1st matrix is converted to numeric in the previous step for some reason, thus not having rownames
 rownames(ololist_only_olotillo[[1]]) <- metab_only_olotillo$sample_name
@@ -203,11 +196,10 @@ if(length(unique(sapply(ololist_only_olotillo,nrow)))==1)
   ololist_only_olotillo <- lapply(ololist_only_olotillo,"rownames<-",metab_only_olotillo$sample_name)
 # check 
 rownames(ololist_only_olotillo[[1]])
-
+#--------
 
 
 ##### PLOTS for paper
-
 
 #### A sortind = "all" (nicer order of the colors), but remove ALL individual labels. 
 # This will show the differences in gen cluster structure within each race.
@@ -264,7 +256,7 @@ pA <- plotQ(ololist_filtered_evol[c(2,3,4)], # 2,3,4 means we want to see k 2,3,
 
 ## Create groups for plotting 
 # state
-state <- metaC_only_olotillo$state
+state <- metab_only_olotillo$state
 state <- as.data.frame(state)
 # shorter name for San Luis Potosí
 state[state$state=="San Luis Potosí", ] <-"SLP"
