@@ -36,8 +36,8 @@ if (requireNamespace("here", quietly = TRUE)) {
 #--------
 # LOAD DATA
 # --- Load txt and fam data -----------------------------------------
-meta <- read.table("figure_4_admixture/meta/admixture_meta.txt", 
-                   header = TRUE, sep = "\t", stringsAsFactors = FALSE)
+meta <- read.csv("figure_4_admixture/meta/admixture_meta.csv", 
+                 stringsAsFactors = FALSE)
 class(meta)
 oloPlinksamples <- read.table("figure_4_admixture/file_plink/mixplates.fam") # file fam
 # --- Load admixture Q -----------------------------------------
@@ -61,34 +61,35 @@ e.plot + xlab("k") + ylab("Error")
 # SORT SAMPLE NAME ACCORDING TO V2, IN METAC
 # Get order of V2 from oloPlinksamples and, 
 # apply that order to sample_name in meta
-order <- match(oloPlinksamples$V2, meta$sample_name)
-meta <- meta[order, ]
 class(meta)
+order <- match(oloPlinksamples$V2, meta$sample_name)
+metab <- meta[order, ]
+class(metab)
 #--------
 
 #--------
 # ADD SCALE CATEGORY DEPENDING ON THE STATE OF ORIGIN TO METADATA
-meta <- meta %>%
+metab <- metab %>%
   mutate(scale = ifelse(grepl("^CAM_E", sample_name), "national", scale))
 # The following from Chiapas by hand, one by one 
 # CHIS_E9_1  + CHIS_E10_1 = regional      # origin, Hugo Perales. R. 
 # CHIS_E23_1 + CHIS_E24_1 = regional      # origin, Hugo Perales. R.
-meta$scale[meta$sample_name == 'CHIS_E9_1'  ]  <- 'regional'
-meta$scale[meta$sample_name == 'CHIS_E10_1' ]  <- 'regional'
-meta$scale[meta$sample_name == 'CHIS_E23_1' ]  <- 'regional'
-meta$scale[meta$sample_name == 'CHIS_E24_1' ]  <- 'regional'
+metab$scale[metab$sample_name == 'CHIS_E9_1'  ]  <- 'regional'
+metab$scale[metab$sample_name == 'CHIS_E10_1' ]  <- 'regional'
+metab$scale[metab$sample_name == 'CHIS_E23_1' ]  <- 'regional'
+metab$scale[metab$sample_name == 'CHIS_E24_1' ]  <- 'regional'
 # Update the "scale" variable for inputs starting, 
 # with "ROO_E", "SLP_E", "HGO_E" y "VER_E"
-meta$scale[grepl("^(ROO|SLP|HGO|VER)_E", meta$sample_name)] <- 'national'
+metab$scale[grepl("^(ROO|SLP|HGO|VER)_E", metab$sample_name)] <- 'national'
 # Replace all instances of "_" with local, regional and national 
 # in the column scale.
-meta$scale <- gsub("_L", "local"   , meta$scale)
-meta$scale <- gsub("_R", "regional", meta$scale)
-meta$scale <- gsub("_N", "national", meta$scale)
+metab$scale <- gsub("_L", "local"   , metab$scale)
+metab$scale <- gsub("_R", "regional", metab$scale)
+metab$scale <- gsub("_N", "national", metab$scale)
 # Change the capital letter at the beginning
-meta$scale <- gsub("Local"   , "local"   , meta$scale)
-meta$scale <- gsub("Regional", "regional", meta$scale)
-meta$scale <- gsub("National", "national", meta$scale)
+metab$scale <- gsub("Local"   , "local"   , metab$scale)
+metab$scale <- gsub("Regional", "regional", metab$scale)
+metab$scale <- gsub("National", "national", metab$scale)
 #--------
 
 #--------
@@ -96,58 +97,55 @@ meta$scale <- gsub("National", "national", meta$scale)
 # The rownames of ‘qlist’ can also be modified 
 # by the user by, adding custom individual labels,  
 # add indlab to one run
-rownames(ololist[[1]]) <- metaC$sample_name
-# if all runs are equal length, add indlab to all runs
+rownames(ololist[[1]]) <- metab$sample_name
+# If all runs are equal length, add indlab to all runs
 if(length(unique(sapply(ololist,nrow)))==1) 
-  ololist <- lapply(ololist,"rownames<-",metaC$sample_name)
-# show row names of all runs and all samples
+  ololist <- lapply(ololist,"rownames<-", metab$sample_name)
+# Show row names of all runs and all samples
 lapply(ololist, rownames)[1:5]
-
-##### DELETE XXXXX SAMPLE DUE TO INCOMPLETE METADATA
-# sample to remove
-metaC[metaC$sample_name=="XXX_XXX_14", ]
-
-# id to remove
-to_remove<- metaC[metaC$sample_name=="XXX_XXX_14", 1] # keep only 1st column, where the sample is
+# Sample to remove: delete sample due to incomplete metadata
+metab[metab$sample_name=="XXX_XXX_14", ]
+# Id to remove
+to_remove <- metab[metab$sample_name=="XXX_XXX_14", 1] # keep only 1st column, where the sample is
 to_remove
-# since in the df from the list of admixture results the sample names are 
+# Since in the df from the list of admixture results the sample names are 
 # in the rownames (hence not a df variable), 
 # get the index (which number of row is it)
-to_remove_indexes<-match(to_remove, rownames(ololist[[1]]))
-
-# delete rows with sample to_remove in all dfs within the list of results
-ololist<- lapply(ololist, function(x) {x<-x[-to_remove_indexes, ]})
-
-# how many samples remained? (most be -1 than original nrow)
+to_remove_indexes <-match(to_remove, rownames(ololist[[1]]))
+# Delete rows with sample to_remove in all dfs within the list of results
+ololist <- lapply(ololist, function(x) {x<-x[-to_remove_indexes, ]})
+# How many samples remained? (most be -1 than original nrow)
 nrow((ololist[[2]]))
-
-## We also need to create a new dataframe with the metadata excluding the "XXX_XXX_14" sample
-metaC<-metaC[-to_remove_indexes, ] # we can use the same indexes since samples are in the same order
+# We also need to create a new dataframe with the metadata excluding the "XXX_XXX_14" sample
+metab <-metab[-to_remove_indexes, ] # we can use the same indexes since samples are in the same order
 # check sample names
-metaC
-
-# add row names again
-ololist[[1]]<-as.data.frame(ololist[[1]]) #this is needed because the 1st matrix is converted to numeric in the previous step for some reason, thus not having rownames
-rownames(ololist[[1]]) <- metaC$sample_name
+metab
+# Add row names again
+ololist[[1]] <-as.data.frame(ololist[[1]]) #this is needed because the 1st matrix is converted to numeric in the previous step for some reason, thus not having rownames
+rownames(ololist[[1]]) <- metab$sample_name
 if(length(unique(sapply(ololist,nrow)))==1) 
-  ololist <- lapply(ololist,"rownames<-",metaC$sample_name)
-# check 
+  ololist <- lapply(ololist,"rownames<-",metab$sample_name)
+# Check 
 rownames(ololist[[1]])
+#--------
 
-###### DELETE EVOLUTIONARY POPULATIONS
+#--------
+# DELETE EVOLUTIONARY POPULATIONS
+# These are the samples representing the F1 of the evolutionary 
+# populations.
+# We are deleting them because the objective of this paper is 
+# describing the distribution of genetic diversity within Olotillo.
+# The F samples would be analyses at a different stage in another paper.
+#--------
 
-## These are the samples representing the F1 of the evolutionary 
-## populations.
-## We are deleting them because the objective of this paper is 
-## describing the distribution of genetic diversity within Olotillo.
-## The F samples would be analyses at a different stage in another paper.
+
 
 ## Which are the evolutionary pops samples? The ones labelled with _F 
 ## in scale:
-metaC[metaC$scale=="_F", ]
+metab[metab$scale=="_F", ]
 # we can see they also all start with GAV. Lets create an object 
 # whit those samples
-to_remove<- metaC[metaC$scale=="_F", 1] # keep only 1st column, where the samples are
+to_remove<- metab[metab$scale=="_F", 1] # keep only 1st column, where the samples are
 to_remove
 # how many?
 length(to_remove)
@@ -171,9 +169,9 @@ rownames(ololist_filtered_evol[[2]])
 nrow((ololist_filtered_evol[[2]]))
 
 ## We also need to create a new dataframe with the metadata excluding the _F samples
-metaC_filtered_evol<-metaC[-to_remove_indexes, ] # we can use the same indexes since samples are in the same order
+metab_filtered_evol<-metab[-to_remove_indexes, ] # we can use the same indexes since samples are in the same order
 # check sample names
-metaC_filtered_evol$sample_name
+metab_filtered_evol$sample_name
 
 
 ###### DELETE OTHER RACES, KEEP ONLY OLOTILLO
@@ -181,7 +179,7 @@ metaC_filtered_evol$sample_name
 ## what we dont want, we will keep what we want (Olotillo)
 
 # df of only olotillo samples
-to_keep <- metaC[metaC_filtered_evol$race=="Olotillo", ]  # , means keep all columns
+to_keep <- metab[metab_filtered_evol$race=="Olotillo", ]  # , means keep all columns
 to_keep
 
 # we need to also exlude _F and keep only the list of samples
@@ -194,15 +192,15 @@ to_keep_indexes<-match(to_keep, rownames(ololist[[1]]))
 ololist_only_olotillo<-lapply(ololist, function(x) {x<-x[to_keep_indexes, ]}) # the difference with the other way we did it is that here we dont add a "-"
 nrow(ololist_only_olotillo[[2]]) # n rows should be equal to number of esamples in to_keep
 # We also need meta of olotillo only
-metaC_only_olotillo<-metaC[to_keep_indexes, ] # we can use the same indexes since samples are in the same order
+metab_only_olotillo<-metab[to_keep_indexes, ] # we can use the same indexes since samples are in the same order
 # check sample names
-metaC_only_olotillo$sample_name
+metab_only_olotillo$sample_name
 
 # add row names again
 ololist_only_olotillo[[1]]<-as.data.frame(ololist_only_olotillo[[1]]) #this is needed because the 1st matrix is converted to numeric in the previous step for some reason, thus not having rownames
-rownames(ololist_only_olotillo[[1]]) <- metaC_only_olotillo$sample_name
+rownames(ololist_only_olotillo[[1]]) <- metab_only_olotillo$sample_name
 if(length(unique(sapply(ololist_only_olotillo,nrow)))==1) 
-  ololist_only_olotillo <- lapply(ololist_only_olotillo,"rownames<-",metaC_only_olotillo$sample_name)
+  ololist_only_olotillo <- lapply(ololist_only_olotillo,"rownames<-",metab_only_olotillo$sample_name)
 # check 
 rownames(ololist_only_olotillo[[1]])
 
@@ -215,7 +213,7 @@ rownames(ololist_only_olotillo[[1]])
 # This will show the differences in gen cluster structure within each race.
 
 ## Create groups for plotting 
-race <- metaC_filtered_evol$race
+race <- metab_filtered_evol$race
 race <- as.data.frame(race)
 
 # Plot 
