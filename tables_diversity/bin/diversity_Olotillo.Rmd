@@ -7,7 +7,7 @@ output: html_document
 # R was used to display the results of vcftools. 
 # Start date: August 2023.
 # Previous modification: Wed 08/Oct/2025. Verxoix, Switzerland (10:00 AM).   
-# Last modification:     Mon 27/Oct/2025. Verxoix, Switzerland (16:00 PM). 
+# Last modification:     Mon 27/Oct/2025. Verxoix, Switzerland (15:00 PM). 
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
 --------
 
@@ -17,7 +17,7 @@ output: html_document
 
 # WORKING DIRECTORY 
 ```{r setup, include=FALSE}
-knitr::opts_knit$set(root.dir = "/home/duhyadi/Documents/paper1_mayo2025/for_Alicia_2024/het_vcf/" )
+knitr::opts_knit$set(root.dir = "/home/duhyadi/Documents/paper1_final_tipodryad")
 ```
 
 # LIBRARIES
@@ -33,9 +33,8 @@ library(readr)
 The file mixxII.het  was obtained by vcftools with the following code: vcftools --gzvcf $mixplates --het --out $out/${project}. The file was mixplates_filtered_2x.vcf.gz
 The above script is made in bash.
 ```{r}
-het <- read.delim("../het_vcf/mixII.het", header = TRUE, sep = "\t", col.names = c("IND", "O(HOM)","E(HOM)","N_SITES", "F"))
+het <- read.delim("tables_diversity/data/mixII.het", header = TRUE, sep = "\t", col.names = c("IND", "O(HOM)","E(HOM)","N_SITES", "F"))
 ```
-
 ## Add state to the data frame het 
 ```{r}
 # Add state column with pure NA
@@ -88,15 +87,13 @@ xxx_rows
 
 # META FILE
 ```{r}
-# The meta file was obtained from a meta used to perform the PCA, the file was obtained on January 8, 2024
-data <- read.csv("pca8ene24_meta_mixplate.csv", sep = ",")
+# The meta file was obtained from a meta used to perform the PCA, the file was obtained on January 8, 2024. Variables containing personal data, such as the name of the researcher on the plate sent for sequencing, as well as the producers' data, were subsequently deleted (Duhyadi oct/27/25)
+data <- read.csv("tables_diversity/meta/pca8_oct27_25_meta_mixplate.csv", sep = ",")
 ```
-
 ## Rename the IND variable in het to sample_name
 ```{r}
 colnames(het)[colnames(het) == "IND"] <- "sample_name"
 ```
-
 ## Join the het data frame with the meta data
 ```{r}
 # join by sample_name
@@ -104,7 +101,6 @@ data_merged <- merge(het, data, by = 'sample_name')
 # keep only the variables sample_name, accession_ID, scale and Race along with the diversity values
 data_merged2 <- merge(het, data[, c('sample_name', "accession_ID", 'scale', 'Race')], by = 'sample_name', all.x = TRUE)
 ```
-
 ## Change inputs scale in data_merged2
 ```{r}
 data_merged2 <- mutate(data_merged2, scale = ifelse(scale == "_L", "Local", scale))
@@ -118,13 +114,11 @@ Hugo's Chiapas samples: HUGO PERALES RIVERA CHIAPAS ALTOS 19 OLOTILLO. They appe
 In data_merged2 they are in sample_name:
 CHIS_E10_1
 CHIS_E9_1
-
 ### Change to National scale to Regional 
 ```{r}
 data_merged2$scale[data_merged2$sample_name == 'CHIS_E9_1'] <- 'Regional'
 data_merged2$scale[data_merged2$sample_name == 'CHIS_E10_1'] <- 'Regional'
 ```
-
 ### Count by Local, Regional and National in Olotillo
 ```{r}
 # filter the data frame for Race "Olotillo"
@@ -143,7 +137,6 @@ print(olotillo_counts)
 --------------------------------------------
 --------------------------------------------
 
-
 ###*******************************************###
     **F, INBREEDING COEFFICIENT**
 ###*******************************************###
@@ -153,30 +146,25 @@ print(olotillo_counts)
 het_F <- ggplot(data_merged2, aes(F)) + geom_density(fill = "cyan", colour= "black", alpha = 0.3)
 het_F + theme_light()
 ```
-
 ### Plot histogram for F 
 ```{r}
 het_F <- ggplot(data_merged2, aes(F)) + geom_histogram(fill = "deeppink2", colour= "black", alpha = 0.3)
  het_F + theme_light()
 ```
-
 ### Summary, F
 ```{r}
 summary(data_merged2$F)
 mean(data_merged2$F)
 sd(data_merged2$F)
 ```
-
 ### Other path for calculate mean and sd, for F
 ```{r}
 sprintf("Media: %.2f, Desviación Estándar: %.2f", mean(het$F), sd(data_merged2$F))
 ```
-
 ### Summary by race, F ~ Race
 ```{r}
 summary_by_race <- summaryBy(F ~ Race, data=data_merged2, FUN=c(mean, median, sd, min, max))
 ```
-
 ### Round out by race, F ~ Race
 ```{r}
 # Function to round all numeric columns of summary_by_race to 2 decimal places
@@ -188,12 +176,10 @@ round_df <- function(summary_by_race, digits) {
 # Apply the function to the summary_by_scale object
 summary_by_race_rounded <- round_df(summary_by_race, 2)
 ```
-
-
+### Summary by race, F ~ scale
 ```{r}
 Fscale <- summaryBy(F ~ scale, data=data_merged2, FUN=c(mean, median, sd, min, max))
 ```
-
 ### Summary by accession, F ~ accession_ID
 ```{r}
 # Calculate the average of F for each accession_ID
@@ -212,7 +198,6 @@ promedios <- data_merged2 %>%
 het_O.HOM. <-ggplot(data_merged2, aes(O.HOM.)) + geom_density(fill = "cyan", colour= "black", alpha = 0.3)
 het_O.HOM. + theme_light()
 ```
-
 ### Plot histogram for O.HOM
 ```{r}
 het_O.HOM. <-ggplot(data_merged2, aes(O.HOM.)) + geom_histogram(fill = "deeppink2", colour= "black", alpha = 0.3)
@@ -228,13 +213,11 @@ het_O.HOM. + theme_light()
 het_E.HOM. <- ggplot(data_merged2, aes(E.HOM.)) + geom_density(fill = "cyan", colour= "black", alpha = 0.3)
 het_E.HOM. + theme_light()
 ```
-
 ### Plot histogram for E.HOM
 ```{r}
 het_E.HOM. <- ggplot(data_merged2, aes(E.HOM.)) + geom_histogram(fill = "deeppink2", colour= "black", alpha = 0.3)
 het_E.HOM. + theme_light()
 ```
-
 ### Summary, E.HOM
 ```{r}
 summary(data_merged2$E.HOM.)
@@ -293,24 +276,20 @@ data_merged2$E.HET. <- data_merged2$N_SITES - data_merged2$E.HOM.
 ```{r}
 data_merged2$HETob <- data_merged2$O.HET. / data_merged2$N_SITES
 ```
-
 ### Summary, HETob 
 ```{r}
 summary(data_merged2$HETob)
 mean(data_merged2$HETob)
 sd(data_merged2$HETob)
 ```
-
 ### Other path for calculate mean and sd, HETob
 ```{r}
 sprintf("Media: %.2f, Desviación Estándar: %.2f", mean(data_merged2$HETob), sd(data_merged2$HETob))
 ```
-
 ### Summary by Race, HETob ~ Race
 ```{r}
 summary_by_race <- summaryBy(HETob ~ Race, data=data_merged2, FUN=c(mean, median, sd, min, max))
 ```
-
 ### Round out by race, HETob ~ Race
 ```{r}
 # Function to round all numeric columns of summary_by_race to 2 decimal places
@@ -322,17 +301,14 @@ round_df <- function(summary_by_race, digits) {
 # Apply the function to the summary_by_scale object
 summary_by_race_rounded <- round_df(summary_by_race, 2)
 ```
-
 ### Summary by scale, HETob ~ scale
 ```{r}
 summary_by_scale <- summaryBy(HETob ~ scale, data=data_merged2, FUN=c(mean, median, sd, min, max))
 ```
-
 ### Summary by state, HETob ~ state
 ```{r}
 summary_by_state <- aggregate(HETob ~ state,data_merged2 , summary)
 ```
-
 ### Plot density distribution for HETob
 ```{r}
 het_HETob <- ggplot(data_merged2, aes(HETob)) + geom_density(fill = "orange", colour= "black", alpha = 0.3)
@@ -357,30 +333,25 @@ het_HETob + theme_light()
 ```{r}
 data_merged2$HETex <- data_merged2$E.HET. / data_merged2$N_SITES
 ```
-
 ### Summary, HETex
 ```{r}
 summary(data_merged2$HETex)
 mean(data_merged2$HETex)
 sd(data_merged2$HETex)
 ```
-
 ### Other path for calculate mean and sd, HETex
 ```{r}
 sprintf("Media: %.2f, Desviación Estándar: %.2f", mean(data_merged2$HETex), sd(data_merged2$HETex))
 ```
-
 ### Plot density distribution for HETex
 ```{r}
 HETex <-ggplot(data_merged2, aes(HETex)) + geom_density(fill = "orange", colour= "black", alpha = 0.3)
 HETex + theme_light()
 ```
-
 ### Summary by Race, HETex ~ Race
 ```{r}
 summary_by_race <- summaryBy(HETex ~ Race, data=data_merged2, FUN=c(mean, median, sd, min, max))
 ```
-
 ### Round out by race, HETex ~ Race
 ```{r}
 # Function to round all numeric columns of summary_by_race to 2 decimal places
@@ -392,12 +363,10 @@ round_df <- function(summary_by_race, digits) {
 # Apply the function to the summary_by_scale object
 summary_by_race_rounded <- round_df(summary_by_race, 2)
 ```
-
 ### Summary by scale, HETex ~ scale
 ```{r}
 summary_by_scale <- summaryBy(HETex ~ scale, data=data_merged2, FUN=c(mean, median, sd, min, max))
 ```
-
 ### Summary by state for HETex, HETex ~ state 
 ```{r}
 summary_by_state <- aggregate(HETex ~ state,data_merged2, summary)
@@ -421,12 +390,11 @@ summary_by_state <- aggregate(HETex ~ state,data_merged2, summary)
 ```{r}
 data_merged2$HOMex <- 1 - data_merged2$HETex
 ```
-
-## WAKERHUST 12 DE AGOSTO DEL 2025
-## HASTA AQUI PUEDO ESTAR SEGURA DE OBETENER EL CSV DE LOS DATOS DE DIVERSIDAD, POR LO QUE PODRIA CORRER TODO LO ANTERIOR SIN PROBLEMA  YA SE PARA TODAS LA VARIABLES DE DIVERSIDAD DE DATAMERGED2 O INCLUSO CON LOS PLOTS DE DISTRIBUCION 
+### CSV for diversity data
+All previous chunks can be moved at once up to this point. By running all of the above, you can obtain the csv with the diversity data (Duhyadi 27/oct/25).
 ```{r}
 # convertir data_merged2 a csv 
-write.csv(data_merged2, "data_diversity_ago2025", row.names = FALSE)
+write.csv(data_merged2, "tables_diversity/meta/data_diversity_ago2025", row.names = FALSE)
 ```
 
 
