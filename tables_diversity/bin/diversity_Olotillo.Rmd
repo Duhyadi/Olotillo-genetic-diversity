@@ -7,7 +7,7 @@ output: html_document
 # R was used to display the results of vcftools. 
 # Start date: August 2023.
 # Previous modification: Wed 08/Oct/2025. Verxoix, Switzerland (10:00 AM).   
-# Last modification:     Fri 24/Oct/2025. Verxoix, Switzerland (16:00 PM). 
+# Last modification:     Mon 27/Oct/2025. Verxoix, Switzerland (16:00 PM). 
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
 --------
 
@@ -114,7 +114,7 @@ data_merged2 <- mutate(data_merged2, scale = ifelse(scale == "_E", "Extra", scal
 data_merged2 <- mutate(data_merged2, scale = ifelse(scale == "Extra", "National", scale))
 ```
 But not everything extra is national:
-Hugo's Chiapas samples: HUGO PERALES RIVERA CHIAPAS ALTOS 19 OLOTILLO. They appear with National in scale, because they are extra samples, It's good that I remembered! (Duhyadi abr19-24).
+Hugo's Chiapas samples: HUGO PERALES RIVERA CHIAPAS ALTOS 19 OLOTILLO. They appear with National in scale, because they are extra samples, It's good that I remembered! (Duhyadi oct-27-25).
 In data_merged2 they are in sample_name:
 CHIS_E10_1
 CHIS_E9_1
