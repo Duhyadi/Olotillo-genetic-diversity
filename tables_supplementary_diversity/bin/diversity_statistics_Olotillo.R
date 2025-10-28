@@ -1,31 +1,45 @@
-# LIBRERÍAS
 
+# Title: Nonparametric tests for genetic diversity data in Olotillo.
+# Start date: Frebruary 2025.
+# Previous modification: Wed 08/Oct/2025. Verxoix, Switzerland (10:00 AM).   
+# Last modification:     Mon 28/Oct/2025. Verxoix, Switzerland (14:50 PM). 
+# Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
+#--------
+
+#--------
+# WORKING DIRECTORY
+getwd()
+setwd("/home/duhyadi/Documents/paper1_final_tipodryad")
+#--------
+
+#--------
+# LIBRARIES
 library(ggstatsplot)
 library(dplyr)
 library(ggplot2)
+#--------
 
------------
-# DIRECTORIO DE TRABAJO 
-getwd()
-setwd("/home/duhyadi/Documents/paper1_mayo2025/diversity")
-
------------
-# DATA 
-  
-# Cargar CSV desde una ruta local
-data <- read.csv("data_olotillo_mayo_2025.csv") # path
-# Verificar los primeros registros, data
+#--------
+# LOAD FILE
+data <- read.csv("tables_supplementary_diversity/meta/data_olotillo_mayo_2025.csv") # path
 head(data)
-# Asegurar el orden de los grupos
+# Ensure the order of the groups
 data$scale <- factor(data$scale, levels = c("Local", "Regional", "National"))
------------
+#-----------
+
+
+
+#-----------
 # VIOLIN PLOT   
 # Box/Violin plots for between-subjects comparisons
+#-----------
 
----------------------------
-#### NO PARAMÉTRICA ####
----------------------------  
-# F, ENDOGAMIA
+#---------------------------
+#### NONPARAMETRIC TEST ####
+#---------------------------  
+
+#-----------
+# F, INBREEDING
 
 ggsave(# guardar en PNG
     filename = "F_Npar.png", 
