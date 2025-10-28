@@ -4,6 +4,12 @@ output: html_document
 date: "2025-08-12"
 ---
 
+# Title: Supplementary Table 3.
+# Start date: August 2025.
+# Previous modification: Wed 08/Oct/2025. Verxoix, Switzerland (10:00 AM).   
+# Last modification:     Mon 27/Oct/2025. Verxoix, Switzerland (15:00 PM). 
+# Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
+
 #WAKERHUST 12 DE AGOSTO DEL 2025, EN MI RECAMARA 7:52 AM 
 # PARA RESPONDER A LOS REVISORES DE LA REVISTA 
 # DATA DE LOS VALORES DE DIVERSIDAD GENETICA
