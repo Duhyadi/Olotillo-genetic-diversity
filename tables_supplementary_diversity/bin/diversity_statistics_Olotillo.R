@@ -1,6 +1,6 @@
 
 # Title: Nonparametric tests for genetic diversity data in Olotillo.
-# Start date: Frebruary 2025.
+# Start date: Frebruary 2025 by Duhyai Oliva-García.
 # Previous modification: Wed 08/Oct/2025. Verxoix, Switzerland (10:00 AM).   
 # Last modification:     Mon 28/Oct/2025. Verxoix, Switzerland (14:50 PM). 
 # Authors: Duhyadi Oliva-García & Alicia Mastretta-Yanes.
@@ -27,8 +27,6 @@ head(data)
 data$scale <- factor(data$scale, levels = c("Local", "Regional", "National"))
 #-----------
 
-
-
 #-----------
 # VIOLIN PLOT   
 # Box/Violin plots for between-subjects comparisons
@@ -41,7 +39,7 @@ data$scale <- factor(data$scale, levels = c("Local", "Regional", "National"))
 #-----------
 # F, INBREEDING
 
-ggsave(# guardar en PNG
+ggsave( # save to PNG
     filename = "F_Npar.png", 
     ggbetweenstats(
       data = data,
@@ -53,15 +51,14 @@ ggsave(# guardar en PNG
       pairwise.display = "all",
       var.equal = FALSE
     ),
-    width = 6, # ancho imagen
-    height = 6,# alto  imagen
-    dpi = 300  # pixel imagen
+    width = 6,  # width image
+    height = 6, # high  image
+    dpi = 300   # pixel image
   )
------------ 
-# Asegurar el orden de los grupos
-# data$scale <- factor(data$scale, levels = c("Local", "Regional", "National"))
+#----------- 
 
-# Crear y guardar el gráfico
+#-----------
+# Create and save the plot 
 ggsave(
   filename = "FIS_Npar_custom.png",
   plot = ggbetweenstats(
@@ -74,29 +71,29 @@ ggsave(
     pairwise.display = "all",
     var.equal = FALSE,
     
-    # Solo personalizar colores de los puntos
+    # Customize the scale by colors
     ggplot.component = ggplot2::scale_color_manual(
       values = c("Local" = "purple", "Regional" = "green", "National" = "dodgerblue")
     ),
   
-  # Etiquetas personalizadas
+   # Custom labels
     xlab = "Scale",
-    ylab = expression(bold(F)[bold(italic(IS))]),  # F con subíndices "IS"
+    ylab = expression(bold(F)[bold(italic(IS))]),  # F with subíndices "IS"
     title = expression(bold("Comparison of ") * bold(F)[bold(italic(IS))] * bold(" between scales")),
     caption = expression("Note: " * F[italic(IS)] * " represents the inbreeding coefficient.")
   ),
-  width = 6,
-  height = 6,
-  dpi = 300
+  width = 6,   # width image
+  height = 6,  # high  image
+  dpi = 300    # pixel image
 )  
  
------------ 
-# HETob, HETEROCIGOSIS OBSERVADA 
+#----------- 
+# HETob, OBSERVED HETEROZYGOSIS
   
-ggsave(# guardar en PNG
+ggsave(# save to PNG
     filename = "HETob_Npar.png", 
     ggbetweenstats(
-      data = data_limpia,
+      data = data,
       x    = scale,
       y    = HETob,
       outlier.tagging = T,
@@ -105,13 +102,12 @@ ggsave(# guardar en PNG
       pairwise.display = "all",
       var.equal = FALSE
     ),
-    width = 6, # ancho imagen
-    height = 6,# alto  imagen
-    dpi = 300  # pixel imagen
+    width = 6,  # width image
+    height = 6, # high  image
+    dpi = 300   # pixel image
   )
 -----------
-# Asegurar el orden de los grupos
-#data$scale <- factor(data$scale, levels = c("Local", "Regional", "National"))
+
 
 # Crear y guardar el gráfico
 ggsave(
