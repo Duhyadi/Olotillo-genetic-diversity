@@ -32,17 +32,17 @@ map_&environmental_conditions/
 
 ---
 
-## ⚙️ Requisitos del sistema
+## ⚙️ System requirements
 
 - **R** ≥ 4.2  
-- **RStudio** ≥ 2023.06 (recomendado)
-- Sistema operativo: Ubuntu 22.04 LTS o compatible (Windows/Mac también soportado)
+- **RStudio** ≥ 2023.06 (recommended)
+- Operating system: Ubuntu 22.04 LTS or compatible (Windows/Mac also supported)
 
 ---
 
-## 📦 Dependencias R
+## 📦 R Dependencies
 
-Instalar los paquetes necesarios con:
+Install the necessary packages with:
 
 ```r
 install.packages(c(
@@ -53,21 +53,21 @@ install.packages(c(
   "terra"
 ))
 
-Estos paquetes permiten manejar datos espaciales, generar mapas y asegurar rutas reproducibles.
+These packages allow you to handle spatial data, generate maps, and ensure reproducible routes.
 
-🚀 Cómo ejecutar el análisis
+🚀 How to run the analysis
 
-Clonar el repositorio o descargar el paquete del proyecto.
+Clone the repository or download the project package.
 
-Abrir el archivo map_&_environmental_conditions.Rproj en RStudio.
+Open the file map_&_environmental_conditions.Rproj in RStudio.
 
-Al iniciar, el archivo .Rprofile configurará automáticamente las rutas con here::here().
+Upon startup, the .Rprofile file will automatically configure paths using here::here().
 
-Abrir y ejecutar el script principal:
+Open and run the main script:
 
 rmarkdown::render("bin/map_olotillo.Rmd")
 
-Esto generará los resultados y visualizaciones descritas en el artículo.
+This will generate the results and visualizations described in the article.
 
 
 🧩 Uso de rutas reproducibles
