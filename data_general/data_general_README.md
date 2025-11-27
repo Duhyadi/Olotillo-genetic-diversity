@@ -21,5 +21,7 @@ SNPs were filtered based on the distribution of key variant calling metrics usin
 --minDP 2
 --maxDP 4
 `
+
 A total of **89,810** SNPs were retained from **4,959,703** called variants.
+
 **Format:** gzipped VCF file.
