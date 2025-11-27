@@ -1,21 +1,21 @@
 # Map & Environmental Conditions
 
-**Autor:** Duhyadi  
-**Proyecto:** paper1_final_tipodryad  
-**Lenguaje:** R (versión ≥ 4.2)  
-**Última actualización:** Octubre 2025  
+**Author:** Duhyadi  
+**Project:** paper1_final_tipodryad  
+**Language:** R (versión ≥ 4.2)  
+**Latest update:** Octubre 2025  
 
 ---
 
-## 🧭 Descripción general
+## 🧭 Overview
 
-Este repositorio contiene el código, datos y scripts necesarios para reproducir los análisis espaciales y ambientales utilizados en el proyecto **_Map & Environmental Conditions_**.
+This repository contains the code, data, and scripts necessary to reproduce the spatial and environmental analyses used in the project **_Map & Environmental Conditions_**.
 
-Los análisis se centran en el procesamiento, visualización y análisis de datos espaciales y climáticos utilizando R, con un enfoque reproducible basado en rutas relativas y control de versiones.
+The analyses focus on the processing, visualization, and analysis of spatial and climatic data using R, with a reproducible approach based on relative paths and version control.
 
 ---
 
-## 📂 Estructura del proyecto
+## 📂 Project structure
 
 map_&environmental_conditions/
 ├── map&_environmental_conditions.Rproj # Archivo de proyecto R
