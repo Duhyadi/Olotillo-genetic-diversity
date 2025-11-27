@@ -17,13 +17,14 @@ The analyses focus on the processing, visualization, and analysis of spatial and
 
 ## 📂 Project structure
 
+```markdown
 📂 Project structure
 │
 ├── map_&_environmental_conditions/
 │   ├── map&_environmental_conditions.Rproj    # Archivo de proyecto R
 │   └── .Rprofile                              # Configuración automática del entorno (here)
 │
-├── bin/                                       # Scripts y RMarkdowns
+├── bin/                                       # Scripts y RMarkowns
 │
 ├── map_olotillo.Rmd                           # Script principal de análisis
 │
@@ -35,6 +36,7 @@ The analyses focus on the processing, visualization, and analysis of spatial and
 └── shape/                                     # Capas vectoriales (shapefiles)
     ├── destdv1gw.shp
     └── oloti_7cgw.prj
+```
 
 
 ---
