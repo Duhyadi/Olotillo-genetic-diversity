@@ -70,12 +70,11 @@ rmarkdown::render("bin/map_olotillo.Rmd")
 This will generate the results and visualizations described in the article.
 
 
-🧩 Uso de rutas reproducibles
+🧩 Use of reproducible routes
 
-Este proyecto utiliza el paquete here
- para asegurar que las rutas a los archivos de datos sean consistentes en cualquier entorno.
+This project uses the here package to ensure that the paths to the data files are consistent in any environment.
 
-Ejemplo de lectura de datos:
+Example of data reading:
 
 library(sf)
 library(here)
@@ -83,22 +82,22 @@ library(here)
 Mexico <- st_read(here("shape", "destdv1gw.shp"))
 meta_points <- read.csv(here("meta", "olotillo_points_meta_clean.csv"))
 
-📜 Cita recomendada
+📜 Recommended quote
 
-Si utilizas este código o datos, por favor cita:
+If you use this code or data, please cite:
 
 Duhyadi (2025). Map & Environmental Conditions.
-Repositorio: [GitHub o Dryad URL aquí]
-DOI: (añadir si aplica)
+Repository: [GitHub or Dryad URL aquí]
+DOI: (add if applicable)
 
 
-🧠 Notas finales
+🧠 Final Notes
 
-Los archivos .Rproj y .Rprofile permiten que el proyecto sea completamente reproducible.
+The .Rproj and .Rprofile files allow the project to be fully reproducible.
 
-Las rutas se construyen de manera relativa usando here::here().
+Routes are constructed relatively using here::here().
 
-Los scripts fueron probados bajo Ubuntu 22.04 con R 4.5.0.
+The scripts were tested under Ubuntu 22.04 with R 4.5.0.
 
 
 
