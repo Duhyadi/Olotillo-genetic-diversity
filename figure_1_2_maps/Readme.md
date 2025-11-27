@@ -21,19 +21,19 @@ The analyses focus on the processing, visualization, and analysis of spatial and
 📂 Project structure
 │
 ├── map_&_environmental_conditions/
-│   ├── map&_environmental_conditions.Rproj    # Archivo de proyecto R
-│   └── .Rprofile                              # Configuración automática del entorno (here)
+│   ├── map&_environmental_conditions.Rproj    # R project file
+│   └── .Rprofile                              # Automatic environment configuration (here)
 │
-├── bin/                                       # Scripts y RMarkowns
+├── bin/                                       # Scripts
 │
-├── map_olotillo.Rmd                           # Script principal de análisis
+├── map_olotillo.Rmd                           # Main analysis script
 │
-├── meta/                                      # Datos tabulares asociados
+├── meta/                                      # Associated tabular data
 │   ├── olotillo_PGMN_siagro.csv
 │   ├── olotillo_points_meta_clean.csv
 │   └── pca_meta_mixplate.csv
 │
-└── shape/                                     # Capas vectoriales (shapefiles)
+└── shape/                                     # Vector layers (shapefiles)
     ├── destdv1gw.shp
     └── oloti_7cgw.prj
 ```
