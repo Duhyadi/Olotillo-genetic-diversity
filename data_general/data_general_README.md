@@ -13,4 +13,11 @@ Raw sequencing reads were quality-checked with **FastQC**, and demultiplexed usi
 
 SNPs were filtered based on the distribution of key variant calling metrics using **VCFtools v0.1.16**. The filtering parameters were:
 
-`code`
+`--maf 0.05
+--max-alleles 2
+--max-missing 0.80
+--min-meanDP 0.5
+--max-meanDP 4
+--minDP 2
+--maxDP 4
+`
