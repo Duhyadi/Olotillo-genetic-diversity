@@ -21,27 +21,27 @@ This dataset includes taxonomic, geographic, and collection metadata for Zea may
 - **fuente:** source of the record or material (e.g., herbarium, project, collection).
 May contain “NaN” when not provided.
 
-**proyecto:** project code or identifier under which the sample was collected or processed.
+- **proyecto:** project code or identifier under which the sample was collected or processed.
 
-**procedencia:** origin of the sample, typically whether it was collected, observed, or another classification.
+- **procedencia:** origin of the sample, typically whether it was collected, observed, or another classification.
 
-**fecha_colecta_observacion:** date of collection or observation. Format: YYYY-MM-DD/XXXX (second value may represent missing or updated date).
+- **fecha_colecta_observacion:** date of collection or observation. Format: YYYY-MM-DD/XXXX (second value may represent missing or updated date).
 
-**colector_observador:** name(s) of the collector or observer responsible for obtaining the specimen.
+- **colector_observador:** name(s) of the collector or observer responsible for obtaining the specimen.
 
-**determinador:** name of the taxonomist or expert who identified/determined the specimen.
+- **determinador:** name of the taxonomist or expert who identified/determined the specimen.
 
-**id:** unique alphanumeric identifier assigned to the record (e.g., internal database UUID).
+- **id:** unique alphanumeric identifier assigned to the record (e.g., internal database UUID).
 
-**estado:** mexican state where the specimen was collected.
+- **estado:** mexican state where the specimen was collected.
 
-**municipio:** municipality corresponding to the collection location.
+- **municipio:** municipality corresponding to the collection location.
 
-**localidad:** locality name within the municipality where the sample was obtained.
+- **localidad:** locality name within the municipality where the sample was obtained.
 
-**latitud:** latitude of the sampling location. Format: decimal degrees (°).
+- **latitud:** latitude of the sampling location. Format: decimal degrees (°).
 
-**longitud:** longitude of the sampling location. Format: decimal degrees (°).
+- **longitud:** longitude of the sampling location. Format: decimal degrees (°).
 
-**altitud:** elevation at the sampling location. Unit: meters above sea level (m a.s.l.).
+- **altitud:** elevation at the sampling location. Unit: meters above sea level (m a.s.l.).
 
