@@ -4,7 +4,7 @@
 
 **Variable Description (Short version)**
 
-This dataset includes taxonomic, geographic, and collection metadata for Zea mays race Olotillo accessions. Variables include taxon identifiers (``taxon_id``, ``id``), taxonomic classification (``taxon``, ``genero``, ``especie``, ``subespecie``, ``raza``), project and collection metadata (``proyecto``, ``procedencia``, ``fecha_colecta_observacion``, ``colector_observador``, ``determinador``, ``fuente``), and geographic coordinates (``estado``, ``municipio``, ``localidad``, ``latitud``, ``longitud``, ``altitud``). Elevation is reported in meters, and coordinates in decimal degrees. Below is the complete description of all variables included in the file **olotillo_PGMN_siagro.csv.** Variable names are shown in Spanish (original), with English definitions.
+This dataset includes taxonomic, geographic, and collection metadata for *Zea mays* race *Olotillo* accessions, belonging to [Proyecto Global de Maíces Nativos](https://www.biodiversidad.gob.mx/diversidad/proyectoMaices).  Variables include taxon identifiers (``taxon_id``, ``id``), taxonomic classification (``taxon``, ``genero``, ``especie``, ``subespecie``, ``raza``), project and collection metadata (``proyecto``, ``procedencia``, ``fecha_colecta_observacion``, ``colector_observador``, ``determinador``, ``fuente``), and geographic coordinates (``estado``, ``municipio``, ``localidad``, ``latitud``, ``longitud``, ``altitud``). Elevation is reported in meters, and coordinates in decimal degrees. Below is the complete description of all variables included in the file **olotillo_PGMN_siagro.csv.** Variable names are shown in Spanish (original), with English definitions.
 
 - **taxon_id:** unique identifier assigned to the taxon record in the database.
 
