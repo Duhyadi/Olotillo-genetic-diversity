@@ -54,7 +54,7 @@ This dataset contains geographic, taxonomic, and field-collection metadata for *
 - **sampled_by:** name of the person who collected the sample in the field.
 
 - **source:** origin of the material.
-- 
+
 - **accession_bank:** accession number or identifier in a germplasm bank, when available.
 It may contain missing values when the material does not come from a bank.
 
