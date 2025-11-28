@@ -47,16 +47,16 @@ May contain “NaN” when not provided.
 
 ## **olotillo_points_meta_clean.csv**
 
+This dataset contains geographic, taxonomic, and field-collection metadata for *Zea mays* ssp. *mays*, for the race *Olotillo* populations sampled in Chiapas, Mexico. Variables include population identifiers (``population_ID``), collector information (``sampled_by``, ``source``), accession bank data (``accession_bank``), and ``collection year``. Geographic attributes include ``state``, ``municipality``,`` locality``, ``latitude``, ``longitude``, and ``altitude`` (meters above sea level). Additional descriptors include species identity, kernel ``colour``, maize race classification (``race``), and population type (``type``).
+
 - **population_ID:** unique alphanumeric identifier for each sampled population.
 
 - **sampled_by:** name of the person who collected the sample in the field.
 
 - **source:** origin of the material.
-
-- **typical** values: "field" (sampled directly from farmers' fields).
-
+- 
 - **accession_bank:** accession number or identifier in a germplasm bank, when available.
-May contain missing values when the material does not come from a bank.
+It may contain missing values when the material does not come from a bank.
 
 - **collection_year:** year in which the sample was collected. Format: YYYY.
 
@@ -76,7 +76,7 @@ May contain missing values when the material does not come from a bank.
 
 - **colour:** kernel color category of the maize sample (e.g., white, various).
 
-- **race:** Maize race classification based on morphological and ethnobotanical characteristics (e.g., Olotillo, Mix).
+- **race:** Maize race classification based on morphological and ethnobotanical characteristics (e.g., *Olotillo*, *Mix*).
 
-- **type:** classification describing the population's origin type. Typical values: "local" (restricted to a single locality, Ocozocuatla). "Regional" (municipalities surrounding Ocozocutla) and "national" collections belonging to other states.
+- **type:** classification describing the population's origin type. Typical values: "local" (restricted to a single locality, Ocozocuatla) and "regional" (municipalities surrounding Ocozocuatla).
 
