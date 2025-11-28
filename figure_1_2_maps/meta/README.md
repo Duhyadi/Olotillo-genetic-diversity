@@ -58,28 +58,25 @@ May contain “NaN” when not provided.
 - **accession_bank:** accession number or identifier in a germplasm bank, when available.
 May contain missing values when the material does not come from a bank.
 
-collection_year: year in which the sample was collected. Format: YYYY.
+- **collection_year:** year in which the sample was collected. Format: YYYY.
 
-state: mexican state where the population was sampled.
+- **state:** mexican state where the population was sampled.
 
-municipality: the municipality where the sampling location is located.
+- **municipality:** the municipality where the sampling location is located.
 
-locality: locality or community name of the sampling site.
+- **locality:** locality or community name of the sampling site.
 
-latitude: latitude of the sampling location.Unit: decimal degrees (°).
+- **latitude:** latitude of the sampling location.Unit: decimal degrees (°).
 
-longitude: longitude of the sampling location. Unit: decimal degrees (°).
+- **longitude:** longitude of the sampling location. Unit: decimal degrees (°).
 
-altitude: elevation of the sampling site above sea level. Unit: meters (m a.s.l.).
+- **altitude:** elevation of the sampling site above sea level. Unit: meters (m a.s.l.).
 
-species: taxonomic species name of the material. Example: Zea mays ssp. mays.
+- **species:** taxonomic species name of the material. Example: Zea mays ssp. mays.
 
-colour: kernel color category of the maize sample (e.g., white, various).
+- **colour:** kernel color category of the maize sample (e.g., white, various).
 
-race: Maize race classification based on morphological and ethnobotanical characteristics (e.g., Olotillo, Mix).
+- **race:** Maize race classification based on morphological and ethnobotanical characteristics (e.g., Olotillo, Mix).
 
-type (type)
-
-Classification describing the population's origin type.
-Typical values: "regional" (circulation across communities) or "local" (restricted to a single locality).
+- **type:** classification describing the population's origin type. Typical values: "local" (restricted to a single locality, Ocozocuatla). "Regional" (municipalities surrounding Ocozocutla) and "national" collections belonging to other states.
 
