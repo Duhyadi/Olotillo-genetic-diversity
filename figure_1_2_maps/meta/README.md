@@ -2,8 +2,6 @@
 
 ## **olotillo_PGMN_siagro.csv**
 
-**Variable Description (Short version)**
-
 This dataset includes taxonomic, geographic, and collection metadata for *Zea mays* race *Olotillo* accessions, belonging to [Proyecto Global de Maíces Nativos](https://www.biodiversidad.gob.mx/diversidad/proyectoMaices).  Variables include taxon identifiers (``taxon_id``, ``id``), taxonomic classification (``taxon``, ``genero``, ``especie``, ``subespecie``, ``raza``), project and collection metadata (``proyecto``, ``procedencia``, ``fecha_colecta_observacion``, ``colector_observador``, ``determinador``, ``fuente``), and geographic coordinates (``estado``, ``municipio``, ``localidad``, ``latitud``, ``longitud``, ``altitud``). Elevation is reported in meters, and coordinates in decimal degrees. Below is the complete description of all variables included in the file **olotillo_PGMN_siagro.csv.** Variable names are shown in Spanish (original), with English definitions.
 
 - **taxon_id:** unique identifier assigned to the taxon record in the database.
@@ -79,4 +77,49 @@ It may contain missing values when the material does not come from a bank.
 - **race:** Maize race classification based on morphological and ethnobotanical characteristics (e.g., *Olotillo*, *Mix*).
 
 - **type:** classification describing the population's origin type. Typical values: "local" (restricted to a single locality, Ocozocuatla) and "regional" (municipalities surrounding Ocozocuatla).
+
+## **olotillo_weather.csv**
+
+This dataset contains environmental, climatic, and phenotypic descriptors associated with populations of the *Olotillo* maize race in Mexico. Variables include geographic location (``state``, ``municipality``, ``locality``, ``altitude``), mean annual climatic conditions (``precipitation`` and ``temperature``), kernel colour categories, and quantitative ear traits (``number of kernel`` rows``, and ``average ear length``). Environmental variables are also summarized into categorical classes of altitude, temperature, and precipitation. Variable names are shown in Spanish (original), with English definitions.
+
+- **raza:** maize race associated with the observation. In this dataset, all records correspond to maíz raza *Olotillo*.
+
+- **estado:** mexican state where the population or observation is located.
+
+- **municipio:** municipality corresponding to the geographic location of the observation.
+
+- **localidad:** locality or community name associated with the record.
+
+- **altitud:** elevation of the locality above sea level. Unit: meters (m a.s.l.).
+
+- **precipitación:** mean annual precipitation at the locality. Unit: millimeters per year (mm/year).
+
+-**temperatura:** mean annual temperature of the locality.Unit: degrees Celsius (°C).
+
+-**color_grano:** Kernel color categories reported for the population.
+Values may include one or multiple color descriptors (e.g., white, blue, yellow), or may be unavailable.
+
+hileras_mazorca (hileras de la mazorca)
+
+Average number of kernel rows per ear observed in the population.
+
+longitud_promedio (longitud promedio)
+
+Average ear length measured for the population.
+Unit: centimeters (cm).
+
+cat_altitud (categoría de altitud)
+
+Categorical classification of altitude based on elevation ranges
+(e.g., bajas, medias, altas).
+
+cat_temperatura (categoría de temperatura)
+
+Categorical classification of temperature regime
+(e.g., semi-caliente, templado, frío).
+
+cat_precipitacion (categoría de precipitación)
+
+Categorical classification of precipitation regime
+(e.g., muy abundantes, abundantes, moderadas).
 
