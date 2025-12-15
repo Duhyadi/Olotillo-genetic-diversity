@@ -109,3 +109,48 @@ This dataset contains environmental, climatic, and phenotypic descriptors associ
 
 - **cat_precipitacion:** categorical classification of precipitation regime (e.g., muy abundantes, abundantes, moderadas).
 
+## **pca_meta_mixplate.csv**
+
+This dataset contains laboratory, geographic, and taxonomic metadata for maize samples included in the PCA and genotyping plate design. Variables describe plate and well positions, sample and accession identifiers, DNA concentration and yield measurements, and geographic origin (``country``, ``state``, ``municipality``, ``locality``, ``latitude``, ``longitude``, and ``altitude``). Additional descriptors include maize race classification and sampling scale information. Below is the complete description of all variables included in this CSV.
+
+- **plate_name**: name or identifier of the genotyping or PCR plate in which the sample was processed.
+
+- **well**: Well position of the sample within the plate (e.g., A1, B1, C1).
+
+- **sample_name**: unique sample identifier used during laboratory processing.
+
+- **accession_ID**: accession identifier corresponding to the biological sample.
+
+- **concentration**: measured DNA concentration of the sample. Unit: nanograms per microliter (ng/µL).
+
+- **volume**: volume of DNA solution used for downstream processing. Unit: microliters (µL).
+
+- **DNA_yield**: total DNA yield obtained for the sample. Unit: nanograms (ng).
+
+- **accession_label:** numeric or categorical label assigned to the accession for internal tracking or analysis.
+
+- **country:** country of origin of the sample.
+
+- **state:**: state or administrative region where the sample was collected.
+
+- **municipality:** municipality corresponding to the sampling location.
+
+- **locality:** locality or community name associated with the sample.
+
+- **latitude:** latitude of the sampling location. Unit: decimal degrees (°).
+
+- **longitude:** longitude of the sampling location.Unit: decimal degrees (°).
+
+- **altitude:** elevation of the sampling location above sea level. Unit: meters (m a.s.l.).
+
+- **source:** source of the biological material (e.g., field collection, germplasm bank). May contain missing values.
+
+- **scale:** spatial or sampling scale associated with the accession (e.g., local, regional).
+
+- **Race:** maize race classification of the accession (e.g., Olotillo).
+
+
+
+
+
+
