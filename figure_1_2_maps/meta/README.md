@@ -149,6 +149,10 @@ This dataset contains laboratory, geographic, and taxonomic metadata for maize s
 
 - **Race:** maize race classification of the accession (e.g., Olotillo).
 
+## **plate1_fullmeta.txt**
+
+This dataset contains the same laboratory, geographic, and taxonomic metadata described for pca_meta_mixplate.csv, corresponding to maize samples included in the genotyping plate olotillo_plate1. The file differs only in format (TXT instead of CSV) and contains identical variables describing plate and well positions, sample identifiers, DNA concentration and yield measurements, geographic origin, and sampling scale.
+
 
 
 
