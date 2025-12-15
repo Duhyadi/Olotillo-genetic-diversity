@@ -94,32 +94,18 @@ This dataset contains environmental, climatic, and phenotypic descriptors associ
 
 - **precipitación:** mean annual precipitation at the locality. Unit: millimeters per year (mm/year).
 
--**temperatura:** mean annual temperature of the locality.Unit: degrees Celsius (°C).
+- **temperatura:** mean annual temperature of the locality.Unit: degrees Celsius (°C).
 
--**color_grano:** Kernel color categories reported for the population.
-Values may include one or multiple color descriptors (e.g., white, blue, yellow), or may be unavailable.
+- **color_grano:** kernel color categories reported for the population. Values may include one or multiple color descriptors (e.g., white, blue, yellow) or may be unavailable.
 
-hileras_mazorca (hileras de la mazorca)
+- **hileras_mazorca:** average number of kernel rows per ear observed in the population.
 
-Average number of kernel rows per ear observed in the population.
+- **longitud_promedio:** average ear length measured for the population. Unit: centimeters (cm).
 
-longitud_promedio (longitud promedio)
-
-Average ear length measured for the population.
-Unit: centimeters (cm).
-
-cat_altitud (categoría de altitud)
-
-Categorical classification of altitude based on elevation ranges
+- **cat_altitud:** categorical classification of altitude based on elevation ranges
 (e.g., bajas, medias, altas).
 
-cat_temperatura (categoría de temperatura)
+- **cat_temperatura:** categorical classification of temperature regime (e.g., semi-caliente, templado, frío).
 
-Categorical classification of temperature regime
-(e.g., semi-caliente, templado, frío).
-
-cat_precipitacion (categoría de precipitación)
-
-Categorical classification of precipitation regime
-(e.g., muy abundantes, abundantes, moderadas).
+- **cat_precipitacion:** categorical classification of precipitation regime (e.g., muy abundantes, abundantes, moderadas).
 
