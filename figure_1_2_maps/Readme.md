@@ -1,12 +1,12 @@
 # Map & Environmental Conditions
 
-**Project:** Olotillo genetic diversity
+**Project:** Olotillo genetic diversity.
 
 **Associated article:** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
 
-**Language:** R (versión ≥ 4.2)  
+**Language:** R (versión ≥ 4.2).  
 
-**Latest update:** Octubre 2025  
+**Latest update:** Octubre 2025. 
 
 ---
 
