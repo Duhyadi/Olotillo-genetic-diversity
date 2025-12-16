@@ -1,8 +1,7 @@
-Figure 3 – PCA Analysis
+# PCA Olotillo
 
-Author: Duhyadi
-Project: Olotillo genetic diversity
-Associated article: Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales
+**Project:** Olotillo genetic diversity
+Associated article: Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
 Language: R
 Last update: October 2025
 
