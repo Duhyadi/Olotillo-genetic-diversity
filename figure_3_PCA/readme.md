@@ -78,6 +78,51 @@ The script assumes relative paths and a fixed directory structure as provided in
 
 - Operating system: Ubuntu 22.04 LTS or compatible (Windows/Mac also supported).
 
+📦 R dependencies
+
+The following R packages are required to run the PCA analysis:
+
+install.packages(c(
+  "vcfR",
+  "adegenet",
+  "ggplot2",
+  "dplyr",
+  "tidyr"
+))
+
+Additional dependencies may be loaded within PCA.R as needed for data handling and visualization.
+
+🚀 How to run the analysis
+
+Clone the repository or download the project files.
+
+Set the working directory to figure_3_PCA/.
+
+Open R or RStudio.
+
+Run the PCA script:
+
+source("bin/PCA.R")
+
+This will reproduce the PCA results and generate the visualization used in Figure 3 of the manuscript.
+
+📌 Notes on reproducibility
+
+All file paths are defined relative to the figure_3_PCA directory.
+
+The analysis was tested under Ubuntu 22.04 with R 4.5.0.
+
+Results depend on the filtered SNP dataset provided and the associated metadata files.
+
+📖 Citation
+
+If you use this code or data, please cite:
+
+Duhyadi (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+Repository: GitHub / Dryad
+DOI: (to be added upon publication)
+
+
 
 
 
