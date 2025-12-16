@@ -94,33 +94,35 @@ install.packages(c(
 
 Additional dependencies may be loaded within PCA.R as needed for data handling and visualization.
 
-🚀 How to run the analysis
+## 🚀 How to run the analysis
 
-Clone the repository or download the project files.
+- **1.** Clone the repository or download the project files.
 
-Set the working directory to figure_3_PCA/.
+- **2.** Set the working directory to figure_3_PCA/.
 
-Open R or RStudio.
+- **3.** Open R or RStudio.
 
-Run the PCA script:
+- **4.** Run the PCA script:
 
+```r
 source("bin/PCA.R")
+```
 
-This will reproduce the PCA results and generate the visualization used in Figure 3 of the manuscript.
+This will reproduce the PCA results and generate the visualization used in **Figure 3** of the manuscript.
 
-📌 Notes on reproducibility
+## 📌 Notes on reproducibility
 
-All file paths are defined relative to the figure_3_PCA directory.
+- All file paths are defined relative to the figure_3_PCA directory.
 
-The analysis was tested under Ubuntu 22.04 with R 4.5.0.
+- The analysis was tested under Ubuntu 22.04 with R 4.5.0.
 
-Results depend on the filtered SNP dataset provided and the associated metadata files.
+- Results depend on the filtered SNP dataset provided and the associated metadata files.
 
-📖 Citation
+## 📖 Citation
 
 If you use this code or data, please cite:
 
-Duhyadi (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+Oliva-García et al (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
 Repository: GitHub / Dryad
 DOI: (to be added upon publication)
 
