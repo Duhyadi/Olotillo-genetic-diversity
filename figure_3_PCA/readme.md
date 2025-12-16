@@ -1,9 +1,12 @@
 # PCA Olotillo
 
 **Project:** Olotillo genetic diversity
-Associated article: Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
-Language: R
-Last update: October 2025
+
+**Associated article:** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+
+**Language:** R (versión ≥ 4.2).
+
+**Last update:** October 2025.
 
 
 🧭 Overview
