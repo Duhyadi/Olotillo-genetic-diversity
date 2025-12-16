@@ -78,10 +78,11 @@ The script assumes relative paths and a fixed directory structure as provided in
 
 - Operating system: Ubuntu 22.04 LTS or compatible (Windows/Mac also supported).
 
-📦 R dependencies
+## 📦 R dependencies
 
 The following R packages are required to run the PCA analysis:
 
+```r
 install.packages(c(
   "vcfR",
   "adegenet",
