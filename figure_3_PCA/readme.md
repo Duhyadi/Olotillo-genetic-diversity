@@ -17,6 +17,8 @@ The workflow integrates filtered SNP data in VCF format with laboratory and geog
 
 ## 📁 Directory structure
 
+```markdown
+📂 Directory structure
 figure_3_PCA/
 │
 ├── bin/
@@ -31,6 +33,8 @@ figure_3_PCA/
 │   └── plate2_fullmeta.txt       # Sample metadata for genotyping plate 2
 │
 └── README.md                     # This file
+```
+
 
 🧬 Data description
 Genomic data
