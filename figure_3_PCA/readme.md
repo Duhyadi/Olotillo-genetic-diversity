@@ -122,9 +122,11 @@ This will reproduce the PCA results and generate the visualization used in **Fig
 
 If you use this code or data, please cite:
 
-Oliva-García et al (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
-Repository: GitHub / Dryad
-DOI: (to be added upon publication)
+**Oliva-García et al (2025)** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+
+**Repository:** GitHub / Dryad
+
+**DOI:** (to be added upon publication)
 
 
 
