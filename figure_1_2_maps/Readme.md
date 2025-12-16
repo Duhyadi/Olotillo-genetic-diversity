@@ -18,7 +18,7 @@ The analyses focus on the processing, visualization, and analysis of spatial and
 
 ---
 
-## 📂 Project structure
+## 📂 Directory structure
 
 ```markdown
 📂 Project structure
