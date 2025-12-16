@@ -56,20 +56,21 @@ The structure and variables are identical to those in plate1_fullmeta.txt; only 
 
 ## 📊 Script description
 
-PCA.R
+``### PCA.R``
+
 R script used to:
 
-Load filtered SNP data from the VCF file
+- Load filtered SNP data from the VCF file.
 
-Integrate sample metadata from both genotyping plates
+- Integrate sample metadata from both genotyping plates.
 
-Perform Principal Component Analysis
+- Perform Principal Component Analysis.
 
-Generate the PCA plot corresponding to Figure 3 in the manuscript
+- Generate the PCA plot corresponding to Figure 3 in the manuscript.
 
-The script assumes relative paths and a fixed directory structure as provided in this repository.
+- The script assumes relative paths and a fixed directory structure as provided in this repository.
 
-⚙️ System requirements
+## ⚙️ System requirements
 
 R ≥ 4.2
 
