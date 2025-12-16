@@ -21,7 +21,7 @@ The analyses focus on the processing, visualization, and analysis of spatial and
 ## 📂 Directory structure
 
 ```markdown
-📂 Project structure
+📂 Directory structure
 │
 ├── map_&_environmental_conditions/
 │   ├── map&_environmental_conditions.Rproj    # R project file
