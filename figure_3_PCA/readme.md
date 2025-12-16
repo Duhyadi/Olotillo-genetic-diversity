@@ -1,6 +1,6 @@
 # PCA Olotillo
 
-**Project:** Olotillo genetic diversity
+**Project:** *Olotillo* genetic diversity
 
 **Associated article:** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
 
@@ -9,14 +9,13 @@
 **Last update:** October 2025.
 
 
-🧭 Overview
+## 🧭 Overview
 
-This directory contains the data, metadata, and scripts required to reproduce the Principal Component Analysis (PCA) presented in Figure 3 of the associated manuscript.
-The analysis focuses on population genetic structure inferred from genome-wide SNP data obtained from genotyping-by-sequencing (GBS) of Zea mays race Olotillo.
+This directory contains the data, metadata, and scripts required to reproduce the Principal Component Analysis (PCA) presented in Figure 3 of the associated manuscript. The analysis focuses on population genetic structure inferred from genome-wide SNP data obtained from genotyping-by-sequencing (GBS) of *Zea mays* race *Olotillo*.
 
 The workflow integrates filtered SNP data in VCF format with laboratory and geographic metadata to generate PCA visualizations used for comparative population analyses.
 
-📁 Directory structure
+## 📁 Directory structure
 
 figure_3_PCA/
 │
