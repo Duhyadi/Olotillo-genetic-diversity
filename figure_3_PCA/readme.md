@@ -22,40 +22,39 @@ The workflow integrates filtered SNP data in VCF format with laboratory and geog
 figure_3_PCA/
 │
 ├── bin/
-│   └── PCA.R                     # R script to run PCA and generate Figure 3
+│   └── PCA.R                         # R script to run PCA and generate Figure 3
 │
 ├── data/
-│   └── mixplates_filtered_2x.vcf.gz
-│                                # Filtered SNP dataset (VCF format)
+│   └── mixplates_filtered_2x.vcf.gz  # Filtered SNP dataset (VCF format)
+│                                   
 │
 ├── meta/
-│   ├── plate1_fullmeta.txt       # Sample metadata for genotyping plate 1
-│   └── plate2_fullmeta.txt       # Sample metadata for genotyping plate 2
+│   ├── plate1_fullmeta.txt           # Sample metadata for genotyping plate 1
+│   └── plate2_fullmeta.txt           # Sample metadata for genotyping plate 2
 │
-└── README.md                     # This file
+└── README.md                         # This file
 ```
 
 
-🧬 Data description
-Genomic data
+##  Data description
+### 🧬Genomic data
 
-mixplates_filtered_2x.vcf.gz
+``mixplates_filtered_2x.vcf.gz``
 Final filtered SNP dataset derived from GBS data.
-SNP calling and filtering were performed as described in the Methods section of the manuscript.
-This file contains biallelic SNPs retained after quality filtering and is used as input for the PCA analysis.
+SNP calling and filtering were performed as described in the Methods section of the manuscript. This file contains biallelic SNPs retained after quality filtering and is used as input for the PCA analysis.
 
-Metadata
+### 🗺️Metadata
 
-plate1_fullmeta.txt
+``plate1_fullmeta.txt``
 Laboratory, geographic, and sampling metadata for samples processed in genotyping plate 1.
 This file includes plate and well positions, sample identifiers, DNA concentration and yield measurements, geographic origin, data source, and sampling scale.
-A full data dictionary and variable descriptions are provided in the main repository README.
+A full data dictionary and variable descriptions are provided in the meta readme.
 
-plate2_fullmeta.txt
+``plate2_fullmeta.txt``
 Metadata corresponding to samples processed in genotyping plate 2.
-The structure and variables are identical to those in plate1_fullmeta.txt; only the plate assignment differs. Variable definitions are therefore not repeated.
+The structure and variables are identical to those in plate1_fullmeta.txt; only the plate assignment differs. 
 
-📊 Script description
+## 📊 Script description
 
 PCA.R
 R script used to:
