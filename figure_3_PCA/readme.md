@@ -90,6 +90,7 @@ install.packages(c(
   "dplyr",
   "tidyr"
 ))
+```
 
 Additional dependencies may be loaded within PCA.R as needed for data handling and visualization.
 
