@@ -68,15 +68,15 @@ R script used to:
 
 - Generate the PCA plot corresponding to Figure 3 in the manuscript.
 
-- The script assumes relative paths and a fixed directory structure as provided in this repository.
+The script assumes relative paths and a fixed directory structure as provided in this repository.
 
 ## ⚙️ System requirements
 
-R ≥ 4.2
+- **R** ≥ 4.2
 
-RStudio ≥ 2023.06 (recommended)
+- **RStudio** ≥ 2023.06 (recommended).
 
-Operating system: Linux (Ubuntu 22.04 LTS recommended), Windows or macOS also supported
+- Operating system: Ubuntu 22.04 LTS or compatible (Windows/Mac also supported).
 
 
 
