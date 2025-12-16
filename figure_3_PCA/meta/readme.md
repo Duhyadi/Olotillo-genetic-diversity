@@ -40,4 +40,10 @@ May contain missing values.
 
 - **scale:** spatial or sampling scale associated with each accession. Typical values include Local, Regional, National, and Extra.
 
+## **plate2_fullmeta.txt**
+
+This dataset contains the same laboratory, geographic, and sampling metadata described for plate1_fullmeta.txt, but corresponds to samples processed in genotyping plate 2. The file includes identical variables and structure, differing only in the plate assignment. For this reason, variable definitions are not repeated here; please refer to the Data Dictionary provided for plate1_fullmeta.txt for detailed descriptions, units, and interpretation keys.
+
+
+
 
