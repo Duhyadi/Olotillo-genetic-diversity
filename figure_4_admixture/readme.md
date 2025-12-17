@@ -92,13 +92,33 @@ Additional external tools such as **PLINK** and **ADMIXTURE** are required for g
 
 ## 🚀 How to run the analysis
 
-*1.*Clone the repository or download the project files.
+**1.** Clone the repository or download the project files.
 
-Set the working directory to figure_4_admixture/.
+**2.** Set the working directory to ``figure_4_admixture/``.
 
-Ensure PLINK and ADMIXTURE are available in your system path.
+**3.** Ensure PLINK and ADMIXTURE are available in your system path.
 
-Run the scripts in the bin/ directory following their internal instructions (order and parameters are specified within each script).
+**4.** Run the scripts in the ``bin/`` directory following their internal instructions (order and parameters are specified within each script).
 
-This workflow will reproduce the admixture results and visualizations presented in Figure 4 of the manuscript.
+This workflow will reproduce the admixture results and visualizations presented in **Figure 4** of the manuscript.
+
+## 📌 Notes on reproducibility
+
+- All paths are defined relative to the figure_4_admixture directory.
+
+- The analysis was tested under **Ubuntu 22.04**.
+
+- Results depend on the filtered SNP dataset and the choice of K values evaluated.
+
+## 📖 Citation
+
+If you use this code or data, please cite:
+
+Duhyadi (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+
+Repository: GitHub / Dryad
+
+DOI: (to be added upon publication)
+
+
 
