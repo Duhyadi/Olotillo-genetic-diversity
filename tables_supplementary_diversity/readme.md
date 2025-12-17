@@ -36,14 +36,14 @@ tables_supplementary_diversity/
 
 ## Data description
 
-Input data
+### Input data
 
 The `` data/`` directory contains the genomic or summary datasets used to calculate genetic diversity metrics.These files typically include population-level summaries derived from filtered SNP datasets and are consistent with the genomic data used in PCA and admixture analyses elsewhere in the repository.
 
-Metadata
+### 🗺️Metadata
 
 The ``meta/`` directory includes sample and population metadata used to group accessions and interpret diversity results.
 Metadata variables describe geographic origin, population classification, and sampling scale, and are consistent with metadata files used throughout the project.
 
-Detailed variable definitions are provided in the main repository documentation.
+
 
