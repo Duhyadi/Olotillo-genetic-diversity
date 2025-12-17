@@ -1,4 +1,4 @@
-# PCA Olotillo
+# PCA *Olotillo*
 
 **Project:** *Olotillo* genetic diversity
 
