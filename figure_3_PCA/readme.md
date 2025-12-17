@@ -98,7 +98,7 @@ Additional dependencies may be loaded within PCA.R as needed for data handling a
 
 - **1.** Clone the repository or download the project files.
 
-- **2.** Set the working directory to figure_3_PCA/.
+- **2.** Set the working directory to ``figure_3_PCA/``.
 
 - **3.** Open R or RStudio.
 
