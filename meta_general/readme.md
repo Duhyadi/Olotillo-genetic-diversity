@@ -2,18 +2,13 @@
 
 ## 🗺️ ``meta_Olotillo.xlsx``
 
-## Relationship among metadata files
+## Relationship and harmonization among metadata files
 
-The file `meta_Olotillo.xlsx` serves as the master metadata table for the project.
-All other metadata files represent subsets or transformations of this file,
-created for specific analyses.
+The file `meta_Olotillo.xlsx` serves as the master metadata table for the project Olotillo genetic diversity. It integrates sample identifiers, geographic information, population classification, and sampling scale, and provides the reference framework used across all genomic and statistical analyses.
 
-- Geographic variables (state, municipality, locality, latitude, longitude, altitude)
-  are consistent across all metadata files.
-- Population identifiers are shared across PCA, admixture, and diversity analyses.
-- Sampling scale (`type` / `scale`) is preserved across datasets.
+All other metadata files included in the repository represent **subsets**, **reformatted versions**, or **analysis-specific derivatives** of this master table, created to support particular workflows (PCA, admixture, diversity analyses, and spatial analyses).
 
-This spreadsheet provides consolidated metadata for *Olotillo* maize samples. Variable names are kept as in the original file, with English definitions and units where applicable.
+Geographic variables (state, municipality, locality, latitude, longitude, and altitude) and population identifiers are consistent across metadata files, enabling direct integration of genomic, environmental, and spatial information.
 
 - **sample_ID:** unique identifier assigned to each biological sample.
 
@@ -38,6 +33,23 @@ This spreadsheet provides consolidated metadata for *Olotillo* maize samples. Va
 - **type:** population type indicating the spatial scale of circulation. Typical values include Local, Regional, National, or Extra.
 
 - **source:** origin of the sample or data provenance (e.g., field collection, germplasm bank, institutional source).
+
+## Variable harmonization across metadata files
+
+| Conceptual variable      | meta_Olotillo.xlsx | olotillo_points_meta_clean.csv | plate*_fullmeta.txt | pca_meta_mixplate.csv |
+|--------------------------|--------------------|--------------------------------|---------------------|-----------------------|
+| Sample identifier        | sample_ID          | population_ID                  | sample_name         | sample_name           |
+| Population identifier   | population_ID      | population_ID                  | accession_ID        | accession_ID          |
+| State                    | state              | state                          | state               | state                 |
+| Municipality             | municipality       | municipality                   | municipality        | municipality          |
+| Locality                 | locality           | locality                       | locality            | locality              |
+| Latitude                 | latitude            | latitude                       | latitude            | latitude              |
+| Longitude                | longitude           | longitude                      | longitude           | longitude             |
+| Altitude                 | altitude            | altitude                       | altitude            | altitude              |
+| Sampling scale           | type               | type                           | scale               | scale                 |
+| Maize race               | Race               | Race                           | –                   | Race                  |
+
+
 
 ## 📌 Notes
 
