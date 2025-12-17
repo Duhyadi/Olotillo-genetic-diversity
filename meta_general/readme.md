@@ -36,6 +36,8 @@ Geographic variables (state, municipality, locality, latitude, longitude, and al
 
 ## Variable harmonization across metadata files
 
+The table below summarizes the correspondence among variables shared across the main metadata files in the repository:
+
 | Conceptual variable      | meta_Olotillo.xlsx | olotillo_points_meta_clean.csv | plate*_fullmeta.txt | pca_meta_mixplate.csv |
 |--------------------------|--------------------|--------------------------------|---------------------|-----------------------|
 | Sample identifier        | sample_ID          | population_ID                  | sample_name         | sample_name           |
@@ -49,6 +51,8 @@ Geographic variables (state, municipality, locality, latitude, longitude, and al
 | Sampling scale           | type               | type                           | scale               | scale                 |
 | Maize race               | Race               | Race                           | –                   | Race                  |
 
+
+All metadata files can be linked using population- or accession-level identifiers, ensuring consistency across genomic, spatial, and environmental analyses.
 
 
 ## 📌 Notes
