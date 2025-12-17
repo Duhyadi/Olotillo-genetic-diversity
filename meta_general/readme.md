@@ -2,8 +2,7 @@
 
 ## ``meta_Olotillo.xlsx``
 
-This spreadsheet provides consolidated metadata for Olotillo maize samples.
-Variable names are kept as in the original file, with English definitions and units where applicable.
+### This spreadsheet provides consolidated metadata for Olotillo maize samples. Variable names are kept as in the original file, with English definitions and units where applicable.
 
 sample_ID (sample_ID)
 
