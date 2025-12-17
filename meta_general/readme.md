@@ -2,7 +2,18 @@
 
 ## 🗺️ ``meta_Olotillo.xlsx``
 
-### This spreadsheet provides consolidated metadata for Olotillo maize samples. Variable names are kept as in the original file, with English definitions and units where applicable.
+## Relationship among metadata files
+
+The file `meta_Olotillo.xlsx` serves as the master metadata table for the project.
+All other metadata files represent subsets or transformations of this file,
+created for specific analyses.
+
+- Geographic variables (state, municipality, locality, latitude, longitude, altitude)
+  are consistent across all metadata files.
+- Population identifiers are shared across PCA, admixture, and diversity analyses.
+- Sampling scale (`type` / `scale`) is preserved across datasets.
+
+This spreadsheet provides consolidated metadata for *Olotillo* maize samples. Variable names are kept as in the original file, with English definitions and units where applicable.
 
 - **sample_ID:** unique identifier assigned to each biological sample.
 
