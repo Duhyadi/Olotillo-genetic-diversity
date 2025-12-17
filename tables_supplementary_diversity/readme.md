@@ -1,10 +1,12 @@
 # Genetic Diversity Analyses *Olotillo*
 
-Project: Olotillo genetic diversity
+**Project:** Olotillo genetic diversity
 
-Associated article: Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales
-Language: R / Bash
-Last update: October 2025
+**Associated article:** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales
+
+**Language:** R / Bash
+
+**Last update:** October 2025
 
 ## 🧭 Overview
 
@@ -53,4 +55,23 @@ The ``bash/`` directory contains command-line script used for:
 
 - Calculate genetic diversity statistics (e.g., heterozygosity, or related metrics).
 
+**R scripts** **(``bin/``)**
+
+Scripts in the ``bin/`` directory are used to:
+
+- Summarize diversity measures at the population or group level.
+
+- Generate formatted tables used as supplementary material in the manuscript.
+
+- Execution of **nonparametric statistical tests**.
+
+## ⚙️ System requirements
+
+- **R ≥ 4.2**
+
+- **RStudio ≥ 2023.06** (recommended)
+
+- Bash shell (Linux/macOS)
+
+- Operating system: Linux (Ubuntu 22.04 LTS recommended); Windows supported via compatible environments
 
