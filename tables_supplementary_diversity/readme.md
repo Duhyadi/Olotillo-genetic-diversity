@@ -75,3 +75,28 @@ Scripts in the ``bin/`` directory are used to:
 
 - Operating system: Linux (Ubuntu 22.04 LTS recommended); Windows supported via compatible environments
 
+## 📦 R dependencies
+
+Typical R packages required for diversity analyses and table generation include:
+
+```r
+install.packages(c(
+  "dplyr",
+  "tidyr",
+  "ggplot2",
+  "readr"
+))
+```
+
+Additional packages may be loaded within individual scripts as required.
+
+## 🚀 How to run the analysis
+
+- **1.** Clone the repository or download the project files.
+- **2.** Set the working directory to ``tables_supplementary_diversity/``.
+    
+
+
+
+
+
