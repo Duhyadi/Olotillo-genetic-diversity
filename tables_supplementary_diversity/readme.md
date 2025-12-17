@@ -45,5 +45,12 @@ The `` data/`` directory contains the genomic or summary datasets used to calcul
 The ``meta/`` directory includes sample and population metadata used to group accessions and interpret diversity results.
 Metadata variables describe geographic origin, population classification, and sampling scale, and are consistent with metadata files used throughout the project.
 
+## 📊 Script description
+
+**Bash script** **(``bash/``)**
+
+The ``bash/`` directory contains command-line script used for:
+
+- Calculate genetic diversity statistics (e.g., heterozygosity, or related metrics).
 
 
