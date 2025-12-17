@@ -4,56 +4,29 @@
 
 ### This spreadsheet provides consolidated metadata for Olotillo maize samples. Variable names are kept as in the original file, with English definitions and units where applicable.
 
-sample_ID (sample_ID)
+- **sample_ID:** unique identifier assigned to each biological sample.
 
-Unique identifier assigned to each biological sample.
-Used to link genomic data with metadata across analyses.
+- **population_ID:** identifier of the population to which the sample belongs.
 
-population_ID (population_ID)
+- **accession_ID:** accession or collection code associated with the sample.
 
-Identifier of the population to which the sample belongs.
+- **state:** Mexican state where the sample was collected.
 
-accession_ID (accession_ID)
+- **municipality:** municipality corresponding to the sampling location.
 
-Accession or collection code associated with the sample.
+- **locality:** locality or community name of the sampling site.
 
-state (state)
+- **latitude:** latitude of the sampling location.
 
-Mexican state where the sample was collected.
+- **longitude:** longitude of the sampling location.
 
-municipality (municipality)
+- **altitude:** elevation of the sampling location above sea level. Unit: meters (m a.s.l.).
 
-Municipality corresponding to the sampling location.
+- **Race:** maize race classification of the sample (e.g., *Olotillo*).
 
-locality (locality)
+- **type:** population type indicating the spatial scale of circulation. Typical values include Local, Regional, National, or Extra.
 
-Locality or community name of the sampling site.
-
-latitude (latitude)
-
-Latitude of the sampling location.
-Unit: decimal degrees (°).
-
-longitude (longitude)
-
-Longitude of the sampling location.
-Unit: decimal degrees (°).
-
-altitude (altitude)
-
-Elevation of the sampling location above sea level.
-Unit: meters (m a.s.l.).
-
-Race (Race)
-
-Maize race classification of the sample (e.g., Olotillo).
-
-type (type)
-
-Population type indicating the spatial scale of circulation.
-Typical values include Local, Regional, National, or Extra.
-
-source (source)
+- source (source)
 
 Origin of the sample or data provenance (e.g., field collection, germplasm bank, institutional source).
 
