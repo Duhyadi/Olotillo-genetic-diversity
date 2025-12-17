@@ -94,8 +94,28 @@ Additional packages may be loaded within individual scripts as required.
 
 - **1.** Clone the repository or download the project files.
 - **2.** Set the working directory to ``tables_supplementary_diversity/``.
-    
+- **3.** Run preprocessing from the ``bash/`` directory if required.
+- **4.** Execute the R scripts in the ``bin/`` directory to generate the nonparametric test and supplementary table. 
 
+The resulting outputs correspond to the supplementary diversity graphs and tables reported in the manuscript.
+    
+## 📌 Notes on reproducibility
+
+- All scripts use relative paths within the tables_supplementary_diversity directory.
+
+- Analyses were tested under **Ubuntu 22.04**.
+
+- Results depend on the filtered SNP datasets and metadata provided in the repository.
+
+## 📖 Citation
+
+If you use this code or data, please cite:
+
+Duhyadi (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+
+Repository: GitHub / Dryad
+
+DOI: (to be added upon publication)
 
 
 
