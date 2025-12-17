@@ -75,3 +75,30 @@ Scripts assume relative paths and the directory structure provided in this repos
 - ADMIXTURE (or equivalent software)
 
 - Operating system: Linux (Ubuntu 22.04 LTS recommended); Windows/macOS supported where compatible
+
+## 📦 R and software dependencies
+
+Typical R packages used for post-processing and visualization include:
+
+```r
+install.packages(c(
+  "ggplot2",
+  "dplyr",
+  "tidyr",
+  "readr"
+))
+```
+Additional external tools such as **PLINK** and **ADMIXTURE** are required for genotype processing and ancestry estimation.
+
+## 🚀 How to run the analysis
+
+*1.*Clone the repository or download the project files.
+
+Set the working directory to figure_4_admixture/.
+
+Ensure PLINK and ADMIXTURE are available in your system path.
+
+Run the scripts in the bin/ directory following their internal instructions (order and parameters are specified within each script).
+
+This workflow will reproduce the admixture results and visualizations presented in Figure 4 of the manuscript.
+
