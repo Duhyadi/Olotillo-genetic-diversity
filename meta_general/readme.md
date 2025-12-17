@@ -26,14 +26,12 @@
 
 - **type:** population type indicating the spatial scale of circulation. Typical values include Local, Regional, National, or Extra.
 
-- source (source)
+- **source:** origin of the sample or data provenance (e.g., field collection, germplasm bank, institutional source).
 
-Origin of the sample or data provenance (e.g., field collection, germplasm bank, institutional source).
+## 📌 Notes
 
-📌 Notes
+- This file acts as the ***central metadata reference** for the entire repository.
 
-This file acts as the central metadata reference for the entire repository.
-
-It is used to annotate results in Figure 3 (PCA), Figure 4 (Admixture), and supplementary diversity tables.
+- It is used to annotate results in **Figure 3 (PCA)**,** Figure 4 (Admixture)**, and **supplementary diversity tables**.
 
 Variable definitions are consistent with those used in other metadata files in the project.
