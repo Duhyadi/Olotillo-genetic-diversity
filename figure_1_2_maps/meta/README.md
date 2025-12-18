@@ -131,7 +131,7 @@ This dataset contains laboratory, geographic, and taxonomic metadata for maize s
 
 - **country:** country of origin of the sample.
 
-- **state:**: state or administrative region where the sample was collected.
+- **state:** state or administrative region where the sample was collected.
 
 - **municipality:** municipality corresponding to the sampling location.
 
