@@ -1,21 +1,21 @@
 #!/bin/bash
 
-# Definir la ruta al archivo de entrada .bed
-mixplates="/home/duhyadi/Documents/paper1/admixture/file_plink/mixplates.bed"
+# Define the path to the input file .bed
+mixplates="../figure_4_admixture/data/mixplates.bed" 
 
 
-# Definir la carpeta de salida
-out_dir="/home/duhyadi/Documents/paper1/admixture/file_plink/out_admixture4"
+# Define the output folder
+out_dir="../figure_4_admixture/data/out_admixture4"
 
 
-# Ejecutar admixture para K=4 10 veces
+# Run admixture for K=4 10 times
 for i in {1..10}; do
-  echo "Ejecución $i para K=4"
+  echo "Execution $i for K=4"
 
-  # Correr admixture para K=4
+# Run admixture for K=4
   admixture --cv $mixplates 4 | tee $out_dir/log_K4_run${i}.out
   
-  # Renombrar los archivos .P y .Q para evitar que se sobrescriban
+# Rename the .P and .Q files to prevent them from being overwritten
   mv mixplates.4.P $out_dir/mixplates_run${i}.4.P
   mv mixplates.4.Q $out_dir/mixplates_run${i}.4.Q
 done
