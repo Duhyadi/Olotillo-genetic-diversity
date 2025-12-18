@@ -80,34 +80,34 @@ It may contain missing values when the material does not come from a bank.
 
 ## **olotillo_weather.csv**
 
-This dataset contains environmental, climatic, and phenotypic descriptors associated with populations of the *Olotillo* maize race in Mexico. Variables include geographic location (``state``, ``municipality``, ``locality``, ``altitude``), mean annual climatic conditions (``precipitation`` and ``temperature``), kernel colour categories, and quantitative ear traits (``number of kernel`` rows``, and ``average ear length``). Environmental variables are also summarized into categorical classes of altitude, temperature, and precipitation. Variable names are shown in Spanish (original), with English definitions.
+This dataset contains environmental, climatic, and phenotypic descriptors associated with populations of the *Olotillo* maize race in Mexico. Variables include geographic location (``state``, ``municipality``, ``locality``, ``altitude``), mean annual climatic conditions (``precipitation`` and ``temperature``), kernel colour categories, and quantitative ear traits (``number of kernel`` rows``, and ``average ear length``). Environmental variables are also summarized into categorical classes of altitude, temperature, and precipitation. 
 
-- **raza:** maize race associated with the observation. In this dataset, all records correspond to maíz raza *Olotillo*.
+- **race:** maize race associated with the observation. In this dataset, all records correspond to maíz raza *Olotillo*.
 
-- **estado:** mexican state where the population or observation is located.
+- **state:** mexican state where the population or observation is located.
 
-- **municipio:** municipality corresponding to the geographic location of the observation.
+- **municipality:** municipality corresponding to the geographic location of the observation.
 
-- **localidad:** locality or community name associated with the record.
+- **locality:** locality or community name associated with the record.
 
-- **altitud:** elevation of the locality above sea level. Unit: meters (m a.s.l.).
+- **altitude:** elevation of the locality above sea level. Unit: meters (m a.s.l.).
 
-- **precipitación:** mean annual precipitation at the locality. Unit: millimeters per year (mm/year).
+- **precipitation:** mean annual precipitation at the locality. Unit: millimeters per year (mm/year).
 
-- **temperatura:** mean annual temperature of the locality.Unit: degrees Celsius (°C).
+- **temperature:** mean annual temperature of the locality.Unit: degrees Celsius (°C).
 
-- **color_grano:** kernel color categories reported for the population. Values may include one or multiple color descriptors (e.g., white, blue, yellow) or may be unavailable.
+- **grain_color:** kernel color categories reported for the population. Values may include one or multiple color descriptors (e.g., white, blue, yellow) or may be unavailable.
 
-- **hileras_mazorca:** average number of kernel rows per ear observed in the population.
+- **rows_ear:** average number of kernel rows per ear observed in the population.
 
-- **longitud_promedio:** average ear length measured for the population. Unit: centimeters (cm).
+- **average_length:** average ear length measured for the population. Unit: centimeters (cm).
 
-- **cat_altitud:** categorical classification of altitude based on elevation ranges
+- **altitude_cat:** categorical classification of altitude based on elevation ranges
 (e.g., bajas, medias, altas).
 
-- **cat_temperatura:** categorical classification of temperature regime (e.g., semi-caliente, templado, frío).
+- **temperature_cat:** categorical classification of temperature regime (e.g., semi-caliente, templado, frío).
 
-- **cat_precipitacion:** categorical classification of precipitation regime (e.g., muy abundantes, abundantes, moderadas).
+- **precipitation_cat:** categorical classification of precipitation regime (e.g., muy abundantes, abundantes, moderadas).
 
 ## **pca_meta_mixplate.csv**
 
