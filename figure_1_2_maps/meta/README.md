@@ -2,46 +2,46 @@
 
 ## **olotillo_PGMN_siagro.csv**
 
-This dataset includes taxonomic, geographic, and collection metadata for *Zea mays* race *Olotillo* accessions, belonging to [Proyecto Global de Maíces Nativos](https://www.biodiversidad.gob.mx/diversidad/proyectoMaices).  Variables include taxon identifiers (``taxon_id``, ``id``), taxonomic classification (``taxon``, ``genero``, ``especie``, ``subespecie``, ``raza``), project and collection metadata (``proyecto``, ``procedencia``, ``fecha_colecta_observacion``, ``colector_observador``, ``determinador``, ``fuente``), and geographic coordinates (``estado``, ``municipio``, ``localidad``, ``latitud``, ``longitud``, ``altitud``). Elevation is reported in meters, and coordinates in decimal degrees. Below is the complete description of all variables included in the file **olotillo_PGMN_siagro.csv.** Variable names are shown in Spanish (original), with English definitions.
+This dataset includes taxonomic, geographic, and collection metadata for *Zea mays* race *Olotillo* accessions, belonging to [Proyecto Global de Maíces Nativos](https://www.biodiversidad.gob.mx/diversidad/proyectoMaices).  Variables include taxon identifiers (``taxon_id``, ``id``), taxonomic classification (``taxon``, ``genus``, ``species``, ``subspecies``, ``race``), project and collection metadata (``project``, ``origin``, ``collection_date_observation``, ``observer_collector``, ``determiner``, ``source``), and geographic coordinates (``state``, ``municipality``, ``locality``, ``latitude``, ``longitude``, ``altitude``). Elevation is reported in meters, and coordinates in decimal degrees. Below is the complete description of all variables included in the file **olotillo_PGMN_siagro.csv.** 
 
 - **taxon_id:** unique identifier assigned to the taxon record in the database.
 
 - **taxon:** full taxonomic name of the sample, including genus, species, subspecies, and race.
 
-- **genero:** genus of the specimen (*Zea*).
+- **genus:** genus of the specimen (*Zea*).
 
-- **especie:** species of the specimen (*mays*).
+- **species:** species of the specimen (*mays*).
 
-- **subespecie:** ubspecies designation (*mays*).
+- **subspecies:** ubspecies designation (*mays*).
 
-- **raza:** maize race to which the specimen belongs (Example: *Olotillo*). 
+- **race:** maize race to which the specimen belongs (Example: *Olotillo*). 
 
-- **fuente:** source of the record or material (e.g., herbarium, project, collection).
+- **source:** source of the record or material (e.g., herbarium, project, collection).
 May contain “NaN” when not provided.
 
-- **proyecto:** project code or identifier under which the sample was collected or processed.
+- **project:** project code or identifier under which the sample was collected or processed.
 
-- **procedencia:** origin of the sample, typically whether it was collected, observed, or another classification.
+- **origin:** origin of the sample, typically whether it was collected, observed, or another classification.
 
-- **fecha_colecta_observacion:** date of collection or observation. Format: YYYY-MM-DD/XXXX (second value may represent missing or updated date).
+- **collection_date_observation:** date of collection or observation. Format: YYYY-MM-DD/XXXX (second value may represent missing or updated date).
 
-- **colector_observador:** name(s) of the collector or observer responsible for obtaining the specimen.
+- **observer_collector:** name(s) of the collector or observer responsible for obtaining the specimen.
 
-- **determinador:** name of the taxonomist or expert who identified/determined the specimen.
+- **determiner:** name of the taxonomist or expert who identified/determined the specimen.
 
 - **id:** unique alphanumeric identifier assigned to the record (e.g., internal database UUID).
 
-- **estado:** mexican state where the specimen was collected.
+- **state:** mexican state where the specimen was collected.
 
-- **municipio:** municipality corresponding to the collection location.
+- **municipality:** municipality corresponding to the collection location.
 
-- **localidad:** locality name within the municipality where the sample was obtained.
+- **locality:** locality name within the municipality where the sample was obtained.
 
-- **latitud:** latitude of the sampling location. Format: decimal degrees (°).
+- **latitude:** latitude of the sampling location. Format: decimal degrees (°).
 
-- **longitud:** longitude of the sampling location. Format: decimal degrees (°).
+- **longitude:** longitude of the sampling location. Format: decimal degrees (°).
 
-- **altitud:** elevation at the sampling location. Unit: meters above sea level (m a.s.l.).
+- **altitude:** elevation at the sampling location. Unit: meters above sea level (m a.s.l.).
 
 ## **olotillo_points_meta_clean.csv**
 
