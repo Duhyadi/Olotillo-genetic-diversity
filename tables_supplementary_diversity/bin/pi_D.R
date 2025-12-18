@@ -1,11 +1,9 @@
 
-# Nuevo script en mi computadora, porque era obvio que un día
-# ya no iba a poder trabajar en el cluster de la CONABIO
 # Title: pi & D with vcftools. R was used to display the results of vcftools.
 # Star date: Thu 11/Mars/2025. Verxoix, Switzerland (11:16 AM) by Duhyadi. 
-# Previous modification: Thu 11/Mars/2025. Verxoix, Switzerland (11:16 AM) by Duhyadi.
-# Last modification: Thu 03/Apr/2025. Verxoix, Switzerland (11:16 AM) by Duhyadi.   
-# Authors: Duhyadi Oliva García, solo yo porque estoy repitiendo esto en mi computadora 
+# Previous modification: Thu 03/Apr/2025. Verxoix, Switzerland (11:16 AM) by Duhyadi.
+# Last modification: Thu 18/Dec/2025. Granada, Spain (15:58 PM) by Duhyadi.   
+# Authors: Duhyadi Oliva-García and Alicia Mastretta-Yanes 
 # Used file: "mixplates_filtered_2x.vcf.gz"
 
 
