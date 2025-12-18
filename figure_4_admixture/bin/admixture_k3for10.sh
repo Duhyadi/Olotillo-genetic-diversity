@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Definir la ruta al archivo de entrada .bed
-mixplates="/home/duhyadi/Documents/paper1/admixture/file_plink/mixplates.bed"
+# Define the path to the input file .bed
+mixplates="../figure_4_admixture/data/mixplates.bed" 
 
 
 # Definir la carpeta de salida
