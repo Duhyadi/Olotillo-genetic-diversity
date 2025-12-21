@@ -6,13 +6,8 @@
 # Authors: Duhyadi Oliva-García and Alicia Mastretta-Yanes 
 # Used file: "mixplates_filtered_2x.vcf.gz"
 
-
-#*********************************************************#
-            #**pi mean and median by race**#
-#*********************************************************#
-  
 getwd()
-setwd("/home/duhyadi/Documents/paper1_mayo2025/")
+setwd("/set_workingdirectory/")
 
 ## LIBRARIES 
 library(ggplot2)
@@ -22,17 +17,20 @@ library(ggplot2)
 library(car)
 library(ggstatsplot)
 
-## jueves 22 de mayo, quiero llorar pero estoy sobreviviendo. Para
-## calcular las medianas de pi x raza para la tabla 2, para que todo
-## esté homogéneo 
+
+#*********************************************************#
+            #**pi mean and median by race**#
+#*********************************************************#
+
+# Calculate the medians of pi x race for Table 2
 
 # Dzitbacal
-# mediana dzitbacal pi 
-pi.dzi <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_dzitbacal.windowed.pi",header=T)
-# summary con st sin notación científica 
+# median Dzitbacal pi 
+pi.dzi <- read.table("../mixII_all_samples_10kb_dzitbacal.windowed.pi",header=T)
+# summary with st without scientific notation
 summary(pi.dzi$PI)
 sd(pi.dzi$PI, na.rm = TRUE) 
-# summary con st en notación científica
+# summary with st in scientific notation
 summary_stats <- c(
   summary(pi.dzi$PI),
   DesviacionEstandar = format(sd(pi.dzi$PI, na.rm = TRUE), scientific = TRUE)
@@ -40,12 +38,12 @@ summary_stats <- c(
 print(summary_stats)
 
 # Mix
-# mediana mix pi 
-pi.mix <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_mix.windowed.pi",header=T)
-# summary con st sin notación científica 
+# median Mix pi 
+pi.mix <- read.table("../mixII_all_samples_10kb_mix.windowed.pi",header=T)
+# summary with st without scientific notation
 summary(pi.mix$PI)
 sd(pi.mix$PI, na.rm = TRUE) 
-# summary con st en notación científica
+# summary with st in scientific notation
 summary_stats <- c(
   summary(pi.mix$PI),
   DesviacionEstandar = format(sd(pi.mix$PI, na.rm = TRUE), scientific = TRUE)
@@ -53,26 +51,26 @@ summary_stats <- c(
 print(summary_stats)
 
 # Olotillo
-# mediana olotillo pi
-pi.olo <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_olotillo.windowed.pi",header=T)
-# summary con st sin notación científica 
+# median Olotillo pi
+pi.olo <- read.table("../mixII_all_samples_10kb_olotillo.windowed.pi",header=T)
+# summary with st without scientific notation 
 summary(pi.olo$PI)
 sd(pi.olo$PI, na.rm = TRUE) 
 
 # Tuxpeño
-# mediana tuxpeño pi
-pi.tux <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
-# summary con st sin notación científica 
+# mediann Tuxpeño pi
+pi.tux <- read.table("../mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
+# summary with st without scientific notation 
 summary(pi.tux$PI)
 sd(pi.tux$PI, na.rm = TRUE) 
 
-## domingo 25 de mayo, ya no quiero llorar pero estoy sobreviviendo. Para
-## calcular las medianas de pi x scale para la tabla 3, para que todo
-## esté homogéneo. Ayer fue el día de cavas abiertas de Ginebra
+
 #*********************************************************#
          #**pi mean and median by scale**#
 #*********************************************************#
-# esto se hizo el domingo 25 de mayo de 2025 
+
+# Calculate the medians of pi x race for Table 2
+
 # local
 # local pi 
 local <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_local.windowed.pi",header=T)
