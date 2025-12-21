@@ -53,14 +53,14 @@ print(summary_stats)
 # Olotillo
 # median Olotillo pi
 pi.olo <- read.table("../mixII_all_samples_10kb_olotillo.windowed.pi",header=T)
-# summary with st without scientific notation 
+# summary with, without scientific notation 
 summary(pi.olo$PI)
 sd(pi.olo$PI, na.rm = TRUE) 
 
 # Tuxpeño
 # mediann Tuxpeño pi
-pi.tux <- read.table("../mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
-# summary with st without scientific notation 
+pi.tux <- read.table("../meta/mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
+# summary with st, without scientific notation 
 summary(pi.tux$PI)
 sd(pi.tux$PI, na.rm = TRUE) 
 
@@ -71,24 +71,24 @@ sd(pi.tux$PI, na.rm = TRUE)
 
 # Calculate the medians of pi x race for Table 2
 
-# local
+# Local
 # local pi 
-local <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_local.windowed.pi",header=T)
-# summary con st sin notación científica 
+local <- read.table("../mixII_all_samples_10kb_local.windowed.pi",header=T)
+# summary with st, without scientific notation 
 summary(local$PI)
 sd(local$PI, na.rm = TRUE) 
 
-# regional
+# Regional
 # regional pi 
-regional <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_regional.windowed.pi",header=T)
-# summary con st sin notación científica 
+regional <- read.table("../meta/mixII_all_samples_10kb_regional.windowed.pi",header=T)
+# summary with st, without scientific notation 
 summary(regional$PI)
 sd(regional$PI, na.rm = TRUE) 
 
-# national 
+# National 
 # regional pi 
-national <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_national.windowed.pi",header=T)
-# summary con st sin notación científica 
+national <- read.table("../mixII_all_samples_10kb_national.windowed.pi",header=T)
+# summary with st, without scientific notation 
 summary(national$PI)
 sd(national$PI, na.rm = TRUE) 
 
@@ -98,13 +98,13 @@ sd(national$PI, na.rm = TRUE)
             #**D mean and median by race**#
 #*********************************************************#
 # Dzitbacal
-# mediana dzitbacal Tajima, D. 
-d.dzi <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_dzitbacal.Tajima.D",header=T)
-# summary con st sin notación científica 
+# median Dzitbacal Tajima, D. 
+d.dzi <- read.table("../mixII_all_samples_10kb_dzitbacal.Tajima.D",header=T)
+# summary with st, without scientific notation 
 summary(d.dzi$TajimaD)
 sd(d.dzi$TajimaD, na.rm = TRUE) 
 
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(d.dzi$TajimaD),
   DesviacionEstandar = format(sd(d.dzi$TajimaD, na.rm = TRUE), scientific = TRUE)
@@ -112,12 +112,12 @@ summary_stats <- c(
 print(summary_stats)
 
 # Mix
-# mediana mix Tajima, D. 
+# Median Mix Tajima, D. 
 d.mix <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_mix.Tajima.D",header=T)
-# summary con st sin notación científica 
+# summary with st, without scientific notation
 summary(d.mix$TajimaD)
 sd(d.mix$TajimaD, na.rm = TRUE)
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(d.mix$TajimaD),
   DesviacionEstandar = format(sd(d.mix$TajimaD, na.rm = TRUE), scientific = TRUE)
@@ -125,12 +125,12 @@ summary_stats <- c(
 print(summary_stats)
 
 # Olotillo
-# mediana Olotillo Tajima, D. 
+# median Olotillo Tajima, D. 
 d.olo <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_olotillo.Tajima.D",header=T)
-# summary con st sin notación científica 
+# summary with st, without scientific notation 
 summary(d.olo$TajimaD)
 sd(d.olo$TajimaD, na.rm = TRUE)
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(d.olo$TajimaD),
   DesviacionEstandar = format(sd(d.olo$TajimaD, na.rm = TRUE), scientific = TRUE)
@@ -138,86 +138,80 @@ summary_stats <- c(
 print(summary_stats)
 
 # Tuxpeño
-# mediana Tuxpeño Tajima, D. 
-d.tux <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_tuxpeño.Tajima.D",header=T)
-# summary con st sin notación científica 
-summary(d.tux$TajimaD)
+# median Tuxpeño Tajima, D. 
+d.tux <- read.table("../mixII_all_samples_10kb_tuxpeño.Tajima.D",header=T)
+# summary with st, without scientific notation
+ summary(d.tux$TajimaD)
 sd(d.tux$TajimaD, na.rm = TRUE)
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(d.tux$TajimaD),
   DesviacionEstandar = format(sd(d.tux$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
-# para sacar la media global de pi y d de la tabla 2 art1,
-# solo es para verificar 
+# Global average pi
 # pi
-all.pi <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb.windowed.pi",header=T)
-# summary con st sin notación científica 
+all.pi <- read.table("../mixII_all_samples_10kb.windowed.pi",header=T)
+# summary with st, without scientific notation
 summary(all.pi$PI)
 sd(all.pi$PI, na.rm = TRUE)
 # D
 all.D <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb.Tajima.D",header=T)
-# summary con st sin notación científica 
+# summary with st, without scientific notation 
 summary(all.D$TajimaD)
 sd(all.D$TajimaD, na.rm = TRUE)
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(all.D$TajimaD),
   DesviacionEstandar = format(sd(all.D$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
-## domingo 25 de mayo, ya no quiero llorar pero estoy sobreviviendo. Para
-## calcular las medianas de pi x scale para la tabla 3, para que todo
-## esté homogéneo. Ayer fue el día de cavas abiertas de Ginebra
+
 #*********************************************************#
              #**D mean and median by scale**#
 #*********************************************************#
-# local
-# mediana local Tajima, D. 
+# Local
+# median local Tajima, D. 
 local <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_local.Tajima.D",header=T)
-# summary con st sin notación científica 
+# summary with st, without scientific notation
 summary(local$TajimaD)
 sd(local$TajimaD, na.rm = TRUE) 
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(local$TajimaD),
   DesviacionEstandar = format(sd(local$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
-# regional
+# Regional
 # mediana regional Tajima, D. 
 regional <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_regional.Tajima.D",header=T)
-# summary con st sin notación científica 
+# summary with st, without scientific notation
 summary(regional$TajimaD)
 sd(regional$TajimaD, na.rm = TRUE) 
 
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(regional$TajimaD),
   DesviacionEstandar = format(sd(regional$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
-# national
-# mediana regional Tajima, D. 
-national <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_national.Tajima.D",header=T)
-# summary con st sin notación científica 
+# National
+# median Regional Tajima, D. 
+national <- read.table("../mixII_all_samples_10kb_national.Tajima.D",header=T)
+# summary with st, without scientific notation
 summary(national$TajimaD)
 sd(national$TajimaD, na.rm = TRUE)
-
-# summary con st en notación científica
+# summary with st, in scientific notation
 summary_stats <- c(
   summary(national$TajimaD),
   DesviacionEstandar = format(sd(national$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
-############################OTROOOOMAYO22-2025
-
-## pi.all
+# pi.all
 pi.all <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb.windowed.pi",header=T)
 
 #The file mixxII_all_samples_10kb.windowed.pi was obtained 
@@ -226,13 +220,13 @@ pi.all <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb.window
 
 ## pi by races
 # pi Olotillo
-pi.olotillo <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_olotillo.windowed.pi",header=T)
+pi.olotillo <- read.table("../mixII_all_samples_10kb_olotillo.windowed.pi",header=T)
 # pi Tuxpeño
-pi.tuxpeño <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
+pi.tuxpeño <- read.table("../mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
 # pi Dzit-bacal
-pi.dzitbacal <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_dzitbacal.windowed.pi",header=T)
+pi.dzitbacal <- read.table("../mixII_all_samples_10kb_dzitbacal.windowed.pi",header=T)
 # pi Mix
-pi.mix <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_mix.windowed.pi",header=T)
+pi.mix <- read.table("../mixII_all_samples_10kb_mix.windowed.pi",header=T)
 
 ### Plot density distribution for pi.all
 pi <-ggplot(pi.all, aes(PI)) + geom_density(fill = "cyan", colour= "black", alpha = 0.3)
@@ -289,13 +283,13 @@ dev.off()
 ## pi by scales 
 ## changes head scales 
 # pi local
-pi.local <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_local.windowed.pi",header=T)
+pi.local <- read.table("../mixII_all_samples_10kb_local.windowed.pi",header=T)
 colnames(pi.local) <- c("chromL", "binstarL", "binendL", "nvariantsL", "piL")
 # pi regional
-pi.regional <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_regional.windowed.pi",header=T)
+pi.regional <- read.table("../mixII_all_samples_10kb_regional.windowed.pi",header=T)
 colnames(pi.regional) <- c("chromR", "binstarR", "binendR", "nvariantsR", "piR")
 # pi national 
-pi.national <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_national.windowed.pi",header=T)
+pi.national <- read.table("../mixII_all_samples_10kb_national.windowed.pi",header=T)
 colnames(pi.national) <- c("chromN", "binstarN", "binendN", "nvariantsN", "piN")
 
 # Local 
