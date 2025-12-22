@@ -379,10 +379,10 @@ ggplot(pi.long, aes(sample = pi, color = scale)) +
 ggplot(pi.long, aes(x = pi, fill = scale)) +
   geom_histogram(bins = 30, alpha = 0.7, color = "black") +
   scale_fill_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) +
-  facet_wrap(~scale, scales = "free") +  # Divide la imagen en subgráficos por 'scale'
-  labs(title = "Histograma de pi por Escala", 
-       x = "Valor de pi", 
-       y = "Frecuencia") +
+  facet_wrap(~scale, scales = "free") +  # divide the image into sub-graphs by 'scale'
+  labs(title = "Histogram pi by scale", 
+       x = "value of pi", 
+       y = "frequency") +
   theme_minimal()
 
 #
@@ -390,27 +390,26 @@ ggplot(pi.long, aes(x = pi, fill = scale, color = scale)) +
   geom_density(alpha = 0.4, linewidth = 1.2) +  # Densidad con transparencia y líneas gruesas
   scale_fill_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) +
   scale_color_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) +
-  labs(title = "Distribución de Densidad de pi por Escala", 
-       x = "Valor de pi", 
-       y = "Densidad",
-       fill = "Escala", 
-       color = "Escala") +
+  labs(title = "Pi Density Distribution by Scale", 
+       x = "value of pi", 
+       y = "density",
+       fill = "scale", 
+       color = "scale") +
   theme_minimal()
------------
-# Código para la prueba de normalidad  Kolmogorov-Smirnov 
+#-----------
 
+# Code for the Kolmogorov-Smirnov normality test
 ks_test <- ks.test(pi.long$pi, "pnorm", mean(pi.long$pi, na.rm = TRUE), sd(pi.long$pi, na.rm = TRUE))
-
-# Mostrar resultado
+# Show result
 ks_test
-
-# Aplicar la prueba de Levene
+# Apply Levene's test
 levene_test <- leveneTest(pi ~ scale, data = pi.long)
-# Mostrar el resultado
+# Show result 
 levene_test
 
------------
-  ggsave(# guardar en PNG
+#-----------
+
+ggsave(# save as PNG
   filename = "pi_Npar.png", 
   ggbetweenstats(
     data = pi.long,
@@ -422,16 +421,17 @@ levene_test
       pairwise.display = "all",
       var.equal = FALSE
     ),
-    width = 6, # ancho imagen
-    height = 6,# alto  imagen
-    dpi = 300  # pixel imagen
+    width  =   6,  # image width
+    height =   6,  # high image
+    dpi    = 300   # pixel image
   )
 
------------
-# Asegurar el orden de los grupos
-  pi.long$scale <- factor(pi.long$scale, levels = c("local", "regional", "national"))
-  
-# Crear y guardar el gráfico
+#-----------
+
+# Ensure the order of the groups
+pi.long$scale <- factor(pi.long$scale, levels = c("local", "regional", "national"))
+
+# Create and save the chart
   ggsave(
     filename = "pi_Npar_custom.png",   
     plot = ggbetweenstats(
@@ -444,12 +444,12 @@ levene_test
       pairwise.display = "all",
       var.equal = FALSE,
       
-      # Solo personalizar colores de los puntos
-      ggplot.component = ggplot2::scale_color_manual(
+# Customize dot colors
+ggplot.component = ggplot2::scale_color_manual(
         values = c("local" = "purple", "regional" = "green", "national" = "dodgerblue")
       ),
-      
-      # Etiquetas personalizadas (sin expresión(), porque no hay símbolos matemáticos)
+
+# Custom labels (without expression(), because there are no mathematical symbols)
       xlab = "Scale",
       ylab = expression(pi),
       title = expression("Comparison of " * pi* " between scales" ),
