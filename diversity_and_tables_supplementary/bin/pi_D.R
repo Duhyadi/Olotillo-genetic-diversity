@@ -293,71 +293,67 @@ pi.national <- read.table("../mixII_all_samples_10kb_national.windowed.pi",heade
 colnames(pi.national) <- c("chromN", "binstarN", "binendN", "nvariantsN", "piN")
 
 # Local 
-pi.local$chromL <- as.character(pi.local$chromL)  # CHROM como carácter
-pi.local$binstarL <- as.numeric(pi.local$binstarL)  # BIN_START como número
-pi.local$binendL <- as.numeric(pi.local$binendL)  # BIN_END como número
-pi.local$nvariantsL <- as.numeric(pi.local$nvariantsL)  # N_VARIANTS como número
-pi.local$piL <- as.numeric(pi.local$piL)  # PI como número (con decimales y exponentes si los hay)
+pi.local$chromL <- as.character(pi.local$chromL)  # CHROM as a character
+pi.local$binstarL <- as.numeric(pi.local$binstarL)  # BIN_START as a number
+pi.local$binendL <- as.numeric(pi.local$binendL)  # BIN_END as a number 
+pi.local$nvariantsL <- as.numeric(pi.local$nvariantsL)  # N_VARIANTS as a number 
+pi.local$piL <- as.numeric(pi.local$piL)  # PI as a number (with decimals and exponents if any)
   
 
 # Regional  
-pi.regional$chromR <- as.character(pi.regional$chromR)  # CHROM como carácter
-pi.regional$binstarR <- as.numeric(pi.regional$binstarR)  # BIN_START como número
-pi.regional$binendR <- as.numeric(pi.regional$binendR)  # BIN_END como número
-pi.regional$nvariantsR <- as.numeric(pi.regional$nvariantsR)  # N_VARIANTS como número
-pi.regional$piR <- as.numeric(pi.regional$piR)  # PI como número (con decimales y exponentes si los hay)
+pi.regional$chromR <- as.character(pi.regional$chromR) # CHROM as a character
+pi.regional$binstarR <- as.numeric(pi.regional$binstarR) # BIN_START as a number
+pi.regional$binendR <- as.numeric(pi.regional$binendR)   # BIN_END as a number
+pi.regional$nvariantsR <- as.numeric(pi.regional$nvariantsR) # N_VARIANTS as a number
+pi.regional$piR <- as.numeric(pi.regional$piR) # PI as a number (with decimals and exponents if any) 
  
 # National 
-pi.national$chromN <- as.character(pi.national$chromN)  # CHROM como carácter
-pi.national$binstarN <- as.numeric(as.character(pi.national$binstarN))  # BIN_START como número
-pi.national$binendN <- as.numeric(as.character(pi.national$binendN))  # BIN_END como número
-pi.national$nvariantsN <- as.numeric(as.character(pi.national$nvariantsN))  # N_VARIANTS como número
-pi.national$piN <- as.numeric(as.character(pi.national$piN))  # PI como número (con decimales y exponentes si los hay)
+pi.national$chromN <- as.character(pi.national$chromN)  # CHROM as a character
+pi.national$binstarN <- as.numeric(as.character(pi.national$binstarN)) # BIN_START as a number 
+pi.national$binendN <- as.numeric(as.character(pi.national$binendN))  # BIN_END as a number
+pi.national$nvariantsN <- as.numeric(as.character(pi.national$nvariantsN)) # N_VARIANTS as a number 
+pi.national$piN <- as.numeric(as.character(pi.national$piN)) # PI as a number (with decimals and exponents if any) 
 
-
-# Unir pi.local y pi.regional
+# Join pi.local y pi.regional
 pi.merged <- full_join(pi.local, pi.regional, 
                        by = c("chromL" = "chromR", "binstarL" = "binstarR", "binendL" = "binendR"))
 
-# Unir con pi.national
+# Join with pi.national
 pi.total <- full_join(pi.merged, pi.national, 
                       by = c("chromL" = "chromN", "binstarL" = "binstarN", "binendL" = "binendN"))
 
-# Verificar la estructura final
+# Verify the final structure
 str(pi.total)
 
-# Mostrar las primeras filas
+# Show first rows
 head(pi.total)
 
 
------------ 
-# Convertir de formato ancho a largo
+#----------- 
+# Convert from wide format to long format
 pi.long <- pi.total %>%
-pivot_longer(cols = c(piL, piR, piN),  # Seleccionar las columnas a convertir
-               names_to = "scale",       # Nueva columna que indica la escala
-               values_to = "pi")         # Nueva columna con los valores de pi
-
-# Reemplazar los nombres en la columna scale
+pivot_longer(cols = c(piL, piR, piN),    # select the columns to convert
+               names_to = "scale",       # new column indicating the scale
+               values_to = "pi")         # new column with the pi values
+# Replace the names in the scale column
 pi.long <- pi.long %>%
   mutate(scale = dplyr::recode(as.character(scale), 
                                "piL" = "Local",
                                "piR" = "Regional",
                                "piN" = "National"))
-
-# Verificar la estructura final
+# Verify the final structure
 str(pi.long)
-
-# Mostrar las primeras filas
+# Show first rows
 head(pi.long)
 
 
------------
-# PRUEBA DE NORMALIDAD PI
------------  
+#--------------------------
+# NORMALITY TEST, PI
+#--------------------------
   
-  ggplot(pi.long, aes(x = pi, fill = scale)) +
+ggplot(pi.long, aes(x = pi, fill = scale)) +
   geom_histogram(bins = 30, alpha = 0.7, position = "identity") +
-  labs(title = "Histograma de pi", x = "Valor de pi", y = "Frecuencia") +
+  labs(title = "Histogram of pi", x = "value of pi", y = "frequency") +
   scale_fill_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) +
   theme_minimal()  
 
@@ -365,7 +361,7 @@ head(pi.long)
 ggplot(pi.long, aes(sample = pi, color = scale)) +
   stat_qq() +
   stat_qq_line() +
-  labs(title = "Gráfica Q-Q de pi", x = "Cuantiles teóricos", y = "Cuantiles de pi") +
+  labs(title = "Q-Q graph of pi", x = "theoretical quantiles", y = "quantiles of pi") +
   theme_minimal()  
 
 #
@@ -373,13 +369,11 @@ ggplot(pi.long, aes(sample = pi, color = scale)) +
   stat_qq() +
   stat_qq_line() +
   scale_color_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) + 
-  labs(title = "Gráfica Q-Q de pi", 
-       x = "Cuantiles teóricos", 
-       y = "Cuantiles de pi", 
-       color = "Escala") +  # Etiqueta para la leyenda
+  labs(title = "Q-Q graph of pi", 
+       x = "theoretical quantiles", 
+       y = "quantiles of pi", 
+       color = "scale") +  # Etiqueta para la leyenda
   theme_minimal()
-
-
 
 #
 ggplot(pi.long, aes(x = pi, fill = scale)) +
