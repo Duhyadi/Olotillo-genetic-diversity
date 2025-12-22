@@ -186,7 +186,7 @@ print(summary_stats)
 
 # Regional
 # mediana regional Tajima, D. 
-regional <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_regional.Tajima.D",header=T)
+regional <- read.table("../mixII_all_samples_10kb_regional.Tajima.D",header=T)
 # summary with st, without scientific notation
 summary(regional$TajimaD)
 sd(regional$TajimaD, na.rm = TRUE) 
@@ -387,7 +387,7 @@ ggplot(pi.long, aes(x = pi, fill = scale)) +
 
 #
 ggplot(pi.long, aes(x = pi, fill = scale, color = scale)) +
-  geom_density(alpha = 0.4, linewidth = 1.2) +  # Densidad con transparencia y líneas gruesas
+  geom_density(alpha = 0.4, linewidth = 1.2) +  # density with transparency and thick lines
   scale_fill_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) +
   scale_color_manual(values = c("local" = "purple", "regional" = "green", "national" = "blue")) +
   labs(title = "Pi Density Distribution by Scale", 
@@ -464,200 +464,184 @@ ggplot.component = ggplot2::scale_color_manual(
                     #**D**#
 #*********************************************************#
 
-## Plotting Tajima’s D
-taj.all <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb.Tajima.D",header=T)    
-  
+# Plotting Tajima’s D
+taj.all <- read.table("../mixII_all_samples_10kb.Tajima.D",header=T)    
 taj <-ggplot(taj.all, aes(TajimaD)) + geom_density(fill = "purple", colour= "black", alpha = 0.3)
 taj + theme_light()  
   
-### D by races 
+# D by races 
 
 # D Dzit-bacal
-taj.dzitbacal <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_dzitbacal.Tajima.D",header=T)
+taj.dzitbacal <- read.table("../mixII_all_samples_10kb_dzitbacal.Tajima.D",header=T)
 
 # D Mix
-taj.mix <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_mix.Tajima.D",header=T)
+taj.mix <- read.table("../mixII_all_samples_10kb_mix.Tajima.D",header=T)
 
 # D olotillo 
-taj.olotillo <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_olotillo.Tajima.D",header=T)
+taj.olotillo <- read.table("../mixII_all_samples_10kb_olotillo.Tajima.D",header=T)
 
 # D Tuxpeño
-taj.tuxpeño <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_tuxpeño.Tajima.D",header=T)
+taj.tuxpeño <- read.table("../mixII_all_samples_10kb_tuxpeño.Tajima.D",header=T)
 
-### Summary all
+# Summary all
 summary(taj.all$TajimaD)
 
-### D Dzit-bacal
+# D Dzit-bacal
 summary(taj.dzitbacal$TajimaD)
 
-### Mix 
+# Mix 
 summary(taj.mix$TajimaD)
 
-### Olotillo
+# Olotillo
 summary(taj.olotillo$TajimaD)
 
-### Tuxpeño
+# Tuxpeño
 summary(taj.tuxpeño$TajimaD)
 
-
-### D by scale
+# D by scale
 
 # D local
-taj.local <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_local.Tajima.D",header=T)
+taj.local <- read.table("../mixII_all_samples_10kb_local.Tajima.D",header=T)
 
 # D regional
-taj.regional <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_regional.Tajima.D",header=T)
+taj.regional <- read.table("../mixII_all_samples_10kb_regional.Tajima.D",header=T)
 
 # D national
-taj.national <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_national.Tajima.D",header=T)
+taj.national <- read.table("../mixII_all_samples_10kb_national.Tajima.D",header=T)
 
-
-### local
+# local
 summary(taj.local$TajimaD)
-
-### regional
+# regional
 summary(taj.regional$TajimaD)
-
-### national
+# national
 summary(taj.national$TajimaD)
 
-
 hist(taj.all$TajimaD,br=20)
-
-
-
 taj.chr10 <- subset(taj.all, CHROM == "chr10")
-
 taj.chr2 <- subset(taj.all, CHROM == "chr2")
-
 png("chr10T.png", width = 800, height = 600) 
 plot(taj.chr10$BIN_START,taj.chr10$TajimaD,xlab="position",ylab="Tajima's D")
 dev.off()
-
-
 png("chr2T.png", width = 800, height = 600) 
 plot(taj.chr2$BIN_START,taj.chr2$TajimaD,xlab="position",ylab="Tajima's D")
 dev.off()
 
 ########################
-##la unión mayo 29 del 2025#############
+########JOIN############
 
-## changes head scales 
-# vuelvo a cargar nomás
+# Changes head scales 
+
 # D local
-taj.local <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_local.Tajima.D",header=T)
+taj.local <- read.table("../mixII_all_samples_10kb_local.Tajima.D",header=T)
 colnames(taj.local) <- c("chromL", "binstarL", "nSNPSL", "tajimaDL")
 
-# vuelvo a cargar nomás
+# Reload
 # D regional
-taj.regional <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_regional.Tajima.D",header=T)
+taj.regional <- read.table("../mixII_all_samples_10kb_regional.Tajima.D",header=T)
 colnames(taj.regional) <- c("chromR", "binstarR", "nSNPSR", "tajimaDR")
 
 # D national
-taj.national <- read.table("cluster_conabio_2024/out60g7/mixII_all_samples_10kb_national.Tajima.D",header=T)
+taj.national <- read.table("../mixII_all_samples_10kb_national.Tajima.D",header=T)
 colnames(taj.national) <- c("chromN", "binstarN", "nSNPSN", "tajimaDN")
 
 # Local 
-taj.local$chromL <- as.character(taj.local$chromL)  # CHROM como carácter
-taj.local$binstarL <- as.numeric(taj.local$binstarL)  # BIN_START como número
-taj.local$nSNPSL <- as.numeric(taj.local$nSNPSL)  #  como número
-taj.local$tajimaDL <- as.numeric(taj.local$tajimaDL)  # Tajima D como número (con decimales y exponentes si los hay)
+taj.local$chromL <- as.character(taj.local$chromL)  # CHROM as a character
+taj.local$binstarL <- as.numeric(taj.local$binstarL)  # BIN_START as a number
+taj.local$nSNPSL <- as.numeric(taj.local$nSNPSL)  # as a number
+taj.local$tajimaDL <- as.numeric(taj.local$tajimaDL)  # Tajima D as a number (with decimals and exponents if any)
 
 
 # Regional 
-taj.regional$chromR <- as.character(taj.regional$chromR)  # CHROM como carácter
-taj.regional$binstarR <- as.numeric(taj.regional$binstarR)  # BIN_START como número
-taj.regional$nSNPSR <- as.numeric(taj.regional$nSNPSR)  #  como número
-taj.regional$tajimaDR <- as.numeric(taj.regional$tajimaDR)  # Tajima D como número (con decimales y exponentes si los hay)
+taj.regional$chromR <- as.character(taj.regional$chromR)    # CHROM as a character 
+taj.regional$binstarR <- as.numeric(taj.regional$binstarR)  # BIN_START as a number
+taj.regional$nSNPSR <- as.numeric(taj.regional$nSNPSR)      # as a number
+taj.regional$tajimaDR <- as.numeric(taj.regional$tajimaDR)  # Tajima D as a number (with decimals and exponents if any)
 
 # National 
-taj.national$chromN <- as.character(taj.national$chromN)  # CHROM como carácter
-taj.national$binstarN <- as.numeric(taj.national$binstarN)  # BIN_START como número
-taj.national$nSNPSN <- as.numeric(taj.national$nSNPSN)  #  como número
-taj.national$tajimaDN <- as.numeric(taj.national$tajimaDN)  # Tajima D como número (con decimales y exponentes si los hay)
+taj.national$chromN <- as.character(taj.national$chromN)    # CHROM as a character
+taj.national$binstarN <- as.numeric(taj.national$binstarN)  # BIN_START as a number
+taj.national$nSNPSN <- as.numeric(taj.national$nSNPSN)      # as a number  
+taj.national$tajimaDN <- as.numeric(taj.national$tajimaDN)  # Tajima D as a number (with decimals and exponents if any)
 
-
-# Unir pi.local y pi.regional
+# Join taj.local and taj.regional
 taj.merged <- full_join(taj.local, taj.regional, 
                        by = c("chromL" = "chromR", "binstarL" = "binstarR", "nSNPSL" = "nSNPSR"))
 
-# Unir con pi.national
+# Join with taj.national
 taj.total <- full_join(taj.merged, taj.national, 
                       by = c("chromL" = "chromN", "binstarL" = "binstarN", "nSNPSL" = "nSNPSN"))
 
-# Convertir de formato ancho a largo
+# Convert from wide format to long format
 taj.long <- taj.total %>%
-  pivot_longer(cols = c(tajimaDL, tajimaDR, tajimaDN),  # Seleccionar las columnas a convertir
-               names_to = "scale",       # Nueva columna que indica la escala
-               values_to = "tajimaD")         # Nueva columna con los valores de tajimaD
+  pivot_longer(cols = c(tajimaDL, tajimaDR, tajimaDN),  # select the columns to convert
+               names_to = "scale",                      # new column indicating the scale
+               values_to = "tajimaD")                   # new column with the values of tajimaD
 
-
-# Reemplazar los nombres en la columna scale
+# Replace the names in the scale column
 taj.long <- taj.long %>%
   mutate(scale = dplyr::recode(as.character(scale), 
                                "tajimaDL" = "Local",
                                "tajimaDR" = "Regional",
                                "tajimaDN" = "National"))
 
------------
-  # PRUEBA DE NORMALIDAD TAJIMA, D
-  -----------  
+#----------------------------------
+  # NORMALITY TEST, TAJIMA D
+#----------- ---------------------- 
   
-  ggplot(taj.long, aes(x = tajimaD, fill = scale)) +
+ggplot(taj.long, aes(x = tajimaD, fill = scale)) +
   geom_histogram(bins = 30, alpha = 0.7, position = "identity") +
-  labs(title = "Histograma D", x = "Valor D", y = "Frecuencia") +
+  labs(title = "Histogram D", x = "value D", y = "frequency") +
   scale_fill_manual(values = c("Local" = "purple", "Regional" = "green", "National" = "blue")) +
   theme_minimal()  
 
-#Gráfica Q-Q de Tajima  
+# Tajima Q-Q graph 
 ggplot(taj.long, aes(sample = tajimaD, color = scale)) +
   stat_qq() +
   stat_qq_line() +
-  labs(title = "Gráfica Q-Q de Tajima", x = "Cuantiles teóricos", y = "Cuantiles de pi") +
+  labs(title = "Tajima Q-Q graph", x = "theoretical quantiles", y = "quantiles of pi") +
   theme_minimal()  
 
-#Gráfica Q-Q de Tajima a color 
+# Tajima's Q-Q graph in color
 ggplot(taj.long, aes(sample = tajimaD, color = scale)) +
   stat_qq() +
   stat_qq_line() +
   scale_color_manual(values = c("Local" = "purple", "Regional" = "green", "National" = "blue")) + 
-  labs(title = "Gráfica Q-Q de Tajima, D", 
-       x = "Cuantiles teóricos", 
-       y = "Cuantiles de Tajima, D", 
-       color = "Escala") +  # Etiqueta para la leyenda
+  labs(title = "Tajima's Q-Q graph, D", 
+       x = "theoretical quantiles", 
+       y = "Tajima quantiles, D", 
+       color = "scale") +  # label for legend
   theme_minimal()
 
 #
 ggplot(taj.long, aes(x = tajimaD, fill = scale)) +
   geom_histogram(bins = 30, alpha = 0.7, color = "black") +
   scale_fill_manual(values = c("Local" = "purple", "Regional" = "green", "National" = "blue")) +
-  facet_wrap(~scale, scales = "free") +  # Divide la imagen en subgráficos por 'scale'
-  labs(title = "Histograma de Tajima por Escala", 
-       x = "Valor de Tajima", 
-       y = "Frecuencia") +
+  facet_wrap(~scale, scales = "free") +  # Divide the image into sub-graphs by 'scale'
+  labs(title = "Tajima Histogram by Scale", 
+       x = "tajima Value", 
+       y = "frequency") +
   theme_minimal()
 
 
 #
 ggplot(taj.long, aes(x = tajimaD, fill = scale, color = scale)) +
-  geom_density(alpha = 0.4, linewidth = 1.2) +  # Densidad con transparencia y líneas gruesas
+  geom_density(alpha = 0.4, linewidth = 1.2) +  # density with transparency and thick lines
   scale_fill_manual(values = c("Local" = "purple", "Regional" = "green", "National" = "blue")) +
   scale_color_manual(values = c("Local" = "purple", "Regional" = "green", "National" = "blue")) +
-  labs(title = "Distribución de Densidad de Tajima por Escala", 
-       x = "Valor de Tajima", 
-       y = "Densidad",
-       fill = "Escala", 
-       color = "Escala") +
+  labs(title = "Tajima Density Distribution by Scale", 
+       x = "tajima value", 
+       y = "density",
+       fill = "scale", 
+       color = "scale") +
   theme_minimal()
 
-# Código para la prueba de normalidad  Kolmogorov-Smirnov 
+# Code for the Kolmogorov-Smirnov normality test
 ks_test <- ks.test(taj.long$tajimaD, "pnorm", mean(taj.long$tajimaD, na.rm = TRUE), sd(taj.long$tajimaD, na.rm = TRUE))
-# Mostrar resultado
+# Show result
 ks_test
-
-# Aplicar la prueba de Levene
+# Apply Levene's test
 levene_test <- leveneTest(tajimaD ~ scale, data = taj.long)
-# Mostrar el resultado
+# Show result
 levene_test
 
 
