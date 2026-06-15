@@ -11,7 +11,7 @@ The vector layer in shapefile format consists of four files that are essential f
 - **prj:** file with the coordinate system information of the layer.
 
 
-Note: To open the geospatial layer in vector format, use a program compatible with shapefile (SHP) files.
+**Note:** To open the geospatial layer in vector format, use a program compatible with shapefile (SHP) files.
 
   - A file with the metadata in xml format,
   - A file with the metadata in html format,
