@@ -271,12 +271,12 @@ plot(pi.chr10$BIN_START,pi.chr10$PI,xlab="position",ylab="diversity")
 dev.off()
 
 ### Plot chr1
-png("chr1.png", width = 800, height = 600)  # Ajusta el tamaño
+png("chr1.png", width = 800, height = 600)  # adjust the size
 plot(pi.chr1$BIN_START,pi.chr1$PI,xlab="position",ylab="diversity")
 dev.off()
 
 ### Plot chr2
-png("chr2.png", width = 800, height = 600)  # Ajusta el tamaño
+png("chr2.png", width = 800, height = 600)  # adjust the size
 plot(pi.chr2$BIN_START,pi.chr2$PI,xlab="position",ylab="diversity")
 dev.off()
 
