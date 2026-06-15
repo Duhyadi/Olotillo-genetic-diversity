@@ -1,6 +1,6 @@
 # 🧬 Olotillo Genetic Diversity
 
-This repository contains the data, scripts, and analyses associated with the article:  
+This repository contains the data and scripts associated with the article:  
 **“Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.”**
 
 ## 📂 Repository Structure
