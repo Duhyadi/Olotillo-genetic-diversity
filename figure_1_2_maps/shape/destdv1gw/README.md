@@ -2,13 +2,13 @@ It contains the files that make up the geospatial layer in vector format, the me
 
 The vector layer in shapefile format consists of four files that are essential for opening the map:﻿
 
-**shp:** main file that stores the geometry of the entity.
+- **shp:** main file that stores the geometry of the entity.
 
-**shx:** file that stores the geometry index of the entity.
+- **shx:** file that stores the geometry index of the entity.
 
-**dbf:** dBASE table that stores the attribute information of the entities.
+- **dbf:** dBASE table that stores the attribute information of the entities.
 
-**prj:** file with the coordinate system information of the layer.
+- **prj:** file with the coordinate system information of the layer.
 
 
 Note: To open the geospatial layer in vector format, use a program compatible with shapefile (SHP) files.
