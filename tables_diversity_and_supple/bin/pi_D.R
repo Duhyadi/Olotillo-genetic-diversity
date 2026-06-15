@@ -616,7 +616,7 @@ ggplot(taj.long, aes(sample = tajimaD, color = scale)) +
 ggplot(taj.long, aes(x = tajimaD, fill = scale)) +
   geom_histogram(bins = 30, alpha = 0.7, color = "black") +
   scale_fill_manual(values = c("Local" = "purple", "Regional" = "green", "National" = "blue")) +
-  facet_wrap(~scale, scales = "free") +  # Divide the image into sub-graphs by 'scale'
+  facet_wrap(~scale, scales = "free") +  # divide the image into sub-graphs by 'scale'
   labs(title = "Tajima Histogram by Scale", 
        x = "tajima Value", 
        y = "frequency") +
