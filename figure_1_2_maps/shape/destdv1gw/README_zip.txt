@@ -16,5 +16,4 @@ Note: To open the geospatial layer in vector format, use a program compatible wi
   - A file with the metadata in xml format,
   - A file with the metadata in html format,
   - Two files with the preview image in png format.
-
-  - Puede contener otros archivos de referencias o complementarios, para estos se recomienda leer el metadato de la capa geoespacial.
+  - It may contain other reference or supplementary files; for these, it is recommended to read the geospatial layer metadata.
