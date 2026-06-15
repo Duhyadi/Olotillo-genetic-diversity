@@ -266,7 +266,7 @@ mean(pi.chr10$PI)
 sd(pi.chr10$PI)
 
 ### Plot chr10
-png("chr10.png", width = 800, height = 600)  # Ajusta el tamaño
+png("chr10.png", width = 800, height = 600)  # adjust the size
 plot(pi.chr10$BIN_START,pi.chr10$PI,xlab="position",ylab="diversity")
 dev.off()
 
