@@ -58,7 +58,7 @@ summary(pi.olo$PI)
 sd(pi.olo$PI, na.rm = TRUE) 
 
 # Tuxpeño
-# mediann Tuxpeño pi
+# median Tuxpeño pi
 pi.tux <- read.table("../meta/mixII_all_samples_10kb_tuxpeño.windowed.pi",header=T)
 # summary with st, without scientific notation 
 summary(pi.tux$PI)
