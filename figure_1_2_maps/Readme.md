@@ -12,7 +12,7 @@
 
 ## 🧭 Overview
 
-This repository contains the code, data, and scripts necessary to reproduce the spatial and environmental analyses used in the project **_Map & Environmental Conditions_**.
+This repository contains the data and scripts necessary to reproduce the spatial and environmental analyses used in the project **_Map & Environmental Conditions_**.
 
 The analyses focus on the processing, visualization, and analysis of spatial and climatic data using R, with a reproducible approach based on relative paths and version control.
 
