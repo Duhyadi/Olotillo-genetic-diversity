@@ -93,7 +93,3 @@ vcftools --gzvcf path/to/mixplates_filtered_2x.vcf.gz --het --out path/to/output
 * To reproduce the analysis in another system, update the paths for the input VCF file and output directory.
 * The output file `mixII.het` can be used for downstream analyses of individual homozygosity, heterozygosity, and inbreeding patterns in the Olotillo maize dataset.
 
-## Citation
-
-If you use these scripts or output files, please cite the associated project, manuscript, repository, and Dryad dataset when available.
-
