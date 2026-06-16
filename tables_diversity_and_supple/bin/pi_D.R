@@ -33,7 +33,7 @@ sd(pi.dzi$PI, na.rm = TRUE)
 # summary with st in scientific notation
 summary_stats <- c(
   summary(pi.dzi$PI),
-  DesviacionEstandar = format(sd(pi.dzi$PI, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(pi.dzi$PI, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -46,7 +46,7 @@ sd(pi.mix$PI, na.rm = TRUE)
 # summary with st in scientific notation
 summary_stats <- c(
   summary(pi.mix$PI),
-  DesviacionEstandar = format(sd(pi.mix$PI, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(pi.mix$PI, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -107,7 +107,7 @@ sd(d.dzi$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(d.dzi$TajimaD),
-  DesviacionEstandar = format(sd(d.dzi$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(d.dzi$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -120,7 +120,7 @@ sd(d.mix$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(d.mix$TajimaD),
-  DesviacionEstandar = format(sd(d.mix$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(d.mix$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -133,7 +133,7 @@ sd(d.olo$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(d.olo$TajimaD),
-  DesviacionEstandar = format(sd(d.olo$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(d.olo$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -146,7 +146,7 @@ sd(d.tux$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(d.tux$TajimaD),
-  DesviacionEstandar = format(sd(d.tux$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(d.tux$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 # Global average pi
@@ -163,7 +163,7 @@ sd(all.D$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(all.D$TajimaD),
-  DesviacionEstandar = format(sd(all.D$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(all.D$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -180,7 +180,7 @@ sd(local$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(local$TajimaD),
-  DesviacionEstandar = format(sd(local$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(local$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -194,7 +194,7 @@ sd(regional$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(regional$TajimaD),
-  DesviacionEstandar = format(sd(regional$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(regional$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
@@ -207,7 +207,7 @@ sd(national$TajimaD, na.rm = TRUE)
 # summary with st, in scientific notation
 summary_stats <- c(
   summary(national$TajimaD),
-  DesviacionEstandar = format(sd(national$TajimaD, na.rm = TRUE), scientific = TRUE)
+  StandardDeviation = format(sd(national$TajimaD, na.rm = TRUE), scientific = TRUE)
 )
 print(summary_stats)
 
