@@ -26,6 +26,19 @@ meta/
 | `mixII_all_samples_10kb_tuxpeño.windowed.pi`  | Window-based nucleotide diversity estimates calculated for the Tuxpeño-related sample set.                                    |
 | `pca8_oct27_25_meta_mixplate.csv`             | Metadata table associated with PCA results for the `mixplate` dataset.                                                        |
 
+## Metadata files
+
+The `.csv` files contain sample-level and analysis-level metadata used to organize individuals, accessions, maize races, geographic information, and genetic diversity estimates.
+
+These files can be used for:
+
+* summarizing individual-level genetic diversity;
+* comparing diversity metrics among maize races;
+* comparing diversity metrics among states or sampling groups;
+* linking sample metadata with heterozygosity and inbreeding estimates;
+* preparing supplementary tables;
+* generating figures and statistical analyses.
+
 ## `data_diversity_ago2025.csv`
 
 The file `data_diversity_ago2025.csv` contains individual-level metadata and genetic diversity estimates for the *Olotillo* genetic diversity project.
@@ -76,19 +89,6 @@ HETex = E.HET. / N_SITES
 ```text
 HOMex = E.HOM. / N_SITES
 ```
-
-## Metadata files
-
-The `.csv` files contain sample-level and analysis-level metadata used to organize individuals, accessions, maize races, geographic information, and genetic diversity estimates.
-
-These files can be used for:
-
-* summarizing individual-level genetic diversity;
-* comparing diversity metrics among maize races;
-* comparing diversity metrics among states or sampling groups;
-* linking sample metadata with heterozygosity and inbreeding estimates;
-* preparing supplementary tables;
-* generating figures and statistical analyses.
 
 ## Nucleotide diversity files
 
