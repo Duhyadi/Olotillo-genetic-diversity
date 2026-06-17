@@ -100,7 +100,4 @@ These files can be used to:
 * The file `tableS3` does not include a file extension. If needed for downstream analyses, it can be read as a comma-separated table.
 * When reusing these files, keep the original file names to preserve consistency with scripts and supplementary materials.
 
-## Citation
-
-If you use these genetic diversity data tables, please cite the associated project, manuscript, GitHub repository, and Dryad dataset when available.
 
