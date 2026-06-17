@@ -98,7 +98,7 @@ This table combines information from sample metadata with homozygosity, heterozy
 
 ## `pca8_oct27_25_meta_mixplate.csv`
 
-The file `pca8_oct27_25_meta_mixplate.csv` contains metadata for the samples included in the sequencing plates used in the Olotillo genetic diversity project.
+The file `pca8_oct27_25_meta_mixplate.csv` contains metadata for the samples included in the sequencing plates used in the *Olotillo* genetic diversity project.
 
 This table includes information about the sequencing plate layout, sample identifiers, DNA concentration and volume, estimated DNA yield, accession information, geographic origin, sampling scale, and maize race classification. The file can be used to link sequencing plate information with downstream genetic diversity and population structure analyses.
 
