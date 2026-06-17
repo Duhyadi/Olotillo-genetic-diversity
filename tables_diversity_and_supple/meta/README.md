@@ -77,8 +77,6 @@ HETex = E.HET. / N_SITES
 HOMex = E.HOM. / N_SITES
 ```
 
-The `F` column represents the individual inbreeding coefficient estimated from homozygosity patterns.
-
 ## Metadata files
 
 The `.csv` files contain sample-level and analysis-level metadata used to organize individuals, accessions, maize races, geographic information, and genetic diversity estimates.
