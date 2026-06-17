@@ -10,7 +10,7 @@ The files in this directory include sample-level metadata, genetic diversity sum
 meta/
 ├── README.md
 ├── data_diversity_ago2025.csv
-├── data_*Olotillo*_mayo_2025.csv
+├── data_Olotillo_mayo_2025.csv
 ├── mixII_all_samples_10kb_regional.windowed.pi
 ├── mixII_all_samples_10kb_tuxpeño.windowed.pi
 └── pca8_oct27_25_meta_mixplate.csv
@@ -21,7 +21,7 @@ meta/
 | File                                          | Description                                                                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | `data_diversity_ago2025.csv`                  | Main metadata and genetic diversity table used for downstream analyses of individual-level diversity in the *Olotillo* dataset. |
-| `data_*Olotillo*_mayo_2025.csv`                 | Sample metadata table for the *Olotillo* dataset.                                                                               |
+| `data_Olotillo_mayo_2025.csv`                 | Sample metadata table for the *Olotillo* dataset.                                                                               |
 | `mixII_all_samples_10kb_regional.windowed.pi` | Window-based nucleotide diversity estimates calculated for the regional sample set.                                           |
 | `mixII_all_samples_10kb_tuxpeño.windowed.pi`  | Window-based nucleotide diversity estimates calculated for the Tuxpeño-related sample set.                                    |
 | `pca8_oct27_25_meta_mixplate.csv`             | Metadata table associated with PCA results for the `mixplate` dataset.                                                        |
