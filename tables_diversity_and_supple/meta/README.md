@@ -173,7 +173,4 @@ These files can be used to:
 * When reusing these files, keep the original file names to preserve consistency with scripts and downstream analyses in the repository.
 * If the files are reused in another environment, check that column names match the scripts used for downstream analyses.
 
-## Citation
-
-If you use these metadata tables or nucleotide diversity files, please cite the associated project, manuscript, GitHub repository, and Dryad dataset when available.
 
