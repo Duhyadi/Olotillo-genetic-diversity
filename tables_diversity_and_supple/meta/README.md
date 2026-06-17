@@ -96,6 +96,44 @@ The file `data_Olotillo_mayo_2025.csv` contains individual-level metadata and ge
 
 This table combines information from sample metadata with homozygosity, heterozygosity, and inbreeding estimates derived from SNP genotype data. It can be used for downstream statistical analyses, summary tables, and figure generation. The description of the variables is the same as for `data_diversity_ago2025.csv`, so they did not describe them again.
 
+## `pca8_oct27_25_meta_mixplate.csv`
+
+The file `pca8_oct27_25_meta_mixplate.csv` contains metadata for the samples included in the sequencing plates used in the Olotillo genetic diversity project.
+
+This table includes information about the sequencing plate layout, sample identifiers, DNA concentration and volume, estimated DNA yield, accession information, geographic origin, sampling scale, and maize race classification. The file can be used to link sequencing plate information with downstream genetic diversity and population structure analyses.
+
+The dataset contains 190 samples and 17 variables.
+
+### Variables
+
+| Variable          | Description                                                                                                                                                          |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `plate_name`      | Name or identifier of the sequencing plate in which the sample was included. In this file, samples are assigned to `olotillo_plate1` or `olotillo_plate2`.           |
+| `well`            | Well position of the sample within the sequencing plate, for example `A1`, `B1`, or `C1`.                                                                            |
+| `sample_name`     | Unique sample identifier used for the sequenced individual.                                                                                                          |
+| `accession_ID`    | Accession identifier associated with the sample. Multiple individual samples may belong to the same accession.                                                       |
+| `concentration`   | DNA concentration of the sample prior to sequencing. The unit should be verified from the laboratory protocol, commonly reported as ng/µL.                           |
+| `volume`          | DNA volume included or available for the sequencing plate preparation. The unit should be verified from the laboratory protocol, commonly reported as µL.            |
+| `DNA_yield`       | Estimated DNA yield for the sample, calculated from DNA concentration and volume. The unit should be verified from the laboratory protocol, commonly reported as ng. |
+| `accession_label` | Numeric or short label associated with the accession.                                                                                                                |
+| `country`         | Country of origin of the sample or accession.                                                                                                                        |
+| `state`           | State of origin of the sample or accession.                                                                                                                          |
+| `municipality`    | Municipality of origin of the sample or accession.                                                                                                                   |
+| `locality`        | Locality or collection site associated with the sample or accession.                                                                                                 |
+| `latitude`        | Latitude coordinate of the collection site.                                                                                                                          |
+| `longitude`       | Longitude coordinate of the collection site.                                                                                                                         |
+| `altitude`        | Altitude of the collection site. The unit should be verified from the metadata source, commonly reported in meters above sea level.                                  |
+| `scale`           | Sampling or classification scale assigned to the accession or sample, such as local, regional, national, or extra categories.                                        |
+| `Race`            | Maize race classification assigned to the sample or accession. In this file, the observed categories include `Olotillo`, `Dzit-bacal`, `Tuxpeño`, and `Mix`.         |
+
+### Notes
+
+* This file represents sequencing-plate metadata and should be used to track the relationship between sample identifiers, plate positions, DNA input information, and biological/geographic metadata.
+* Some geographic fields may contain missing values, especially coordinates, altitude, municipality, or locality.
+* Units for `concentration`, `volume`, `DNA_yield`, and `altitude` should be confirmed using the original laboratory or metadata records before publication.
+* The variable `Race` uses an uppercase initial letter in this file. If other files use `race`, check column names carefully when joining tables in R, Python, or other analysis environments.
+
+
 ## Nucleotide diversity files
 
 The files with the `.windowed.pi` extension contain nucleotide diversity estimates calculated in genomic windows.
