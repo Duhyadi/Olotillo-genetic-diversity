@@ -124,7 +124,7 @@ The dataset contains 190 samples and 17 variables.
 | `longitude`       | Longitude coordinate of the collection site.                                                                                                                         |
 | `altitude`        | Altitude of the collection site. The unit should be verified from the metadata source, commonly reported in meters above sea level.                                  |
 | `scale`           | Sampling or classification scale assigned to the accession or sample, such as local, regional, national, or extra categories.                                        |
-| `Race`            | Maize race classification assigned to the sample or accession. In this file, the observed categories include `Olotillo`, `Dzit-bacal`, `Tuxpeño`, and `Mix`.         |
+| `Race`            | Maize race classification assigned to the sample or accession. In this file, the observed categories include *Olotillo*, *Dzit-bacal*, *Tuxpeño*, and *Mix*.         |
 
 ### Notes
 
