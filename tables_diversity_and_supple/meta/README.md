@@ -20,7 +20,7 @@ meta/
 
 | File                                          | Description                                                                                                                   |
 | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `data_diversity_ago2025.csv`                  | Main metadata and genetic diversity table used for downstream analyses of individual-level diversity in *Olotillo*, *Dzit-bacal*, *Tuxéño* and *Mix* dataset. |
+| `data_diversity_ago2025.csv`                  | Main metadata and genetic diversity table used for downstream analyses of individual-level diversity in *Olotillo*, *Dzit-bacal*, *Tuxpeño* and *Mix* dataset. |
 | `data_Olotillo_mayo_2025.csv`                 | Main metadata and genetic diversity table used for downstream analyses of individual-level diversity only for *Olotillo* dataset.                            |
 | `mixII_all_samples_10kb_regional.windowed.pi` | Window-based nucleotide diversity estimates calculated for the regional sample set.                                           |
 | `mixII_all_samples_10kb_tuxpeño.windowed.pi`  | Window-based nucleotide diversity estimates calculated for the Tuxpeño-related sample set.                                    |
@@ -41,7 +41,7 @@ These files can be used for:
 
 ## `data_diversity_ago2025.csv`
 
-The file `data_diversity_ago2025.csv` contains individual-level metadata and genetic diversity estimates for the *Olotillo* genetic diversity project.
+The file `data_diversity_ago2025.csv` contains individual-level metadata and genetic diversity estimates for *Olotillo*, *Dzit-bacal*, *Tuxpeño* and *Mix* dataset.
 
 This table combines information from sample metadata with homozygosity, heterozygosity, and inbreeding estimates derived from SNP genotype data. It can be used for downstream statistical analyses, summary tables, and figure generation.
 
