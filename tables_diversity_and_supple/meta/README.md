@@ -89,7 +89,12 @@ HETex = E.HET. / N_SITES
 ```text
 HOMex = E.HOM. / N_SITES
 ```
+
 ## `data_Olotillo_mayo_2025.csv`
+
+The file `data_Olotillo_mayo_2025.csv` contains individual-level metadata and genetic diversity estimates for *Olotillo* dataset.
+
+This table combines information from sample metadata with homozygosity, heterozygosity, and inbreeding estimates derived from SNP genotype data. It can be used for downstream statistical analyses, summary tables, and figure generation. The description of the variables is the same as for `data_diversity_ago2025.csv`, so they did not describe them again.
 
 ## Nucleotide diversity files
 
