@@ -61,15 +61,6 @@ Main analyses were conducted using **R (≥ 4.3)** and the following key package
 
 Some analyses require **bash** and **ADMIXTURE** to reproduce population structure results.
 
-## 📜 Citation
-
-If you use this repository or its contents, please cite the following publication:
-
-> **Oliva-García, D., Coutiño-Estrada, B., Rojas-Barrera, I.C., Perales, H., Piñero, D., Wegier, A., & Mastretta-Yanes, A.** (2025).  
-> *Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.*  
-> **Genetic Resources and Crop Evolution.**  
-> [Accepted version]
-
 
 ## 📧 Contact
 
