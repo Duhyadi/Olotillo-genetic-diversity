@@ -18,7 +18,6 @@ Filtered SNP data were converted into formats suitable for admixture inference, 
 
 ```markdown
 📂 Directory structure
-## Directory structure
 
 ```text
 05_figure_4_admixture/
