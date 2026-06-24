@@ -1,5 +1,6 @@
-# Structure
+## Structure
 
+```text
 03_figure_1_2_maps/
 ├── Readme.md
 ├── map_&_environmental_conditions.Rproj
@@ -35,7 +36,7 @@
         ├── oloti_7cgw.shx
         ├── oloti_7cgw.xml
         └── oloti_7cgw_s.png
-
+```
 
 
 # Map & Environmental Conditions
