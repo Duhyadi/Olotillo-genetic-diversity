@@ -1,3 +1,42 @@
+# Structure
+03_figure_1_2_maps/
+├── Readme.md
+├── map_&_environmental_conditions.Rproj
+├── bin/
+│   ├── .Rprofile
+│   ├── map_olotillo.Rmd
+│   └── olotillo_weather.Rmd
+├── meta/
+│   ├── README.md
+│   ├── olotillo_PGMN_siagro.csv
+│   ├── olotillo_points_meta_clean.csv
+│   ├── olotillo_weather.csv
+│   ├── pca_meta_mixplate.csv
+│   └── plate1_fullmeta.txt
+└── shape/
+    ├── destdv1gw/
+    │   ├── README.md
+    │   ├── destdv1gw.dbf
+    │   ├── destdv1gw.html
+    │   ├── destdv1gw.png
+    │   ├── destdv1gw.prj
+    │   ├── destdv1gw.shp
+    │   ├── destdv1gw.shx
+    │   ├── destdv1gw.xml
+    │   └── destdv1gw_s.png
+    └── oloti_7cgw/
+        ├── README.md
+        ├── oloti_7cgw.dbf
+        ├── oloti_7cgw.html
+        ├── oloti_7cgw.png
+        ├── oloti_7cgw.prj
+        ├── oloti_7cgw.shp
+        ├── oloti_7cgw.shx
+        ├── oloti_7cgw.xml
+        └── oloti_7cgw_s.png
+
+
+
 # Map & Environmental Conditions
 
 **Project:** *Olotillo* genetic diversity.
