@@ -3,6 +3,9 @@
 This repository contains the data and scripts associated with the article:  
 **“Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.”**
 
+Oliva-García D., Coutiño-Estrada B., Rojas-Barrera I., Perales H., Piñero D., Wegier A., Mastretta-Yanes A Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales. Genetic Resources and Crop Evolution. Genetic Resources and Crop Evolution, 73: 73. [LInk] (https://doi.org/10.1007/s10722-025-02682-8) https://doi.org/10.1007/s10722-025-02682-8 
+
+
 ## 📂 Repository Structure
 
 ```
