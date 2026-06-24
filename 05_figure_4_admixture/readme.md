@@ -110,15 +110,5 @@ This workflow will reproduce the admixture results and visualizations presented 
 
 - Results depend on the filtered SNP dataset and the choice of K values evaluated.
 
-## 📖 Citation
-
-If you use this code or data, please cite:
-
-Duhyadi (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
-
-Repository: GitHub / Dryad
-
-DOI: (to be added upon publication)
-
 
 
