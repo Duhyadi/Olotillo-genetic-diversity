@@ -1,5 +1,11 @@
 ## Structure
 
+The 03_figure_1_2_maps/ directory contains the files used to generate maps and environmental-condition analyses for the Olotillo genetic diversity project.
+
+The folder is organized into three main subdirectories. The bin/ folder contains the R Markdown scripts used for map generation and environmental analyses. The meta/ folder contains tabular metadata, including sample information, geographic coordinates, weather data, and sequencing plate metadata. The shape/ folder contains the spatial vector layers used for mapping, including shapefile components, metadata files, and preview images.
+
+The main directory also includes the RStudio project file (map_&_environmental_conditions.Rproj) and the main Readme.md file documenting the workflow and folder organization.
+
 ```text
 03_figure_1_2_maps/
 ├── Readme.md
