@@ -1,11 +1,32 @@
-## Structure
+
+# Map & Environmental Conditions
+
+**Project:** *Olotillo* genetic diversity.
+
+**Associated article:** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
+
+**Language:** R (version ≥ 4.2).  
+
+**Latest update:** October 2025. 
+
+---
+
+## 🧭 Overview
+
+This repository contains the data and scripts necessary to reproduce the spatial and environmental analyses used in the project **_Map & Environmental Conditions_**.
+
+The analyses focus on the processing, visualization, and analysis of spatial and climatic data using R, with a reproducible approach based on relative paths and version control.
+
+---
+
+## 📂 Directory structure
 
 The 03_figure_1_2_maps/ directory contains the files used to generate maps and environmental-condition analyses for the Olotillo genetic diversity project.
 
 The folder is organized into three main subdirectories. The bin/ folder contains the R Markdown scripts used for map generation and environmental analyses. The meta/ folder contains tabular metadata, including sample information, geographic coordinates, weather data, and sequencing plate metadata. The shape/ folder contains the spatial vector layers used for mapping, including shapefile components, metadata files, and preview images.
 
 The main directory also includes the RStudio project file (map_&_environmental_conditions.Rproj) and the main Readme.md file documenting the workflow and folder organization.
-
+ 
 ```text
 03_figure_1_2_maps/
 ├── Readme.md
@@ -43,51 +64,6 @@ The main directory also includes the RStudio project file (map_&_environmental_c
         ├── oloti_7cgw.xml
         └── oloti_7cgw_s.png
 ```
-
-
-# Map & Environmental Conditions
-
-**Project:** *Olotillo* genetic diversity.
-
-**Associated article:** Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
-
-**Language:** R (version ≥ 4.2).  
-
-**Latest update:** October 2025. 
-
----
-
-## 🧭 Overview
-
-This repository contains the data and scripts necessary to reproduce the spatial and environmental analyses used in the project **_Map & Environmental Conditions_**.
-
-The analyses focus on the processing, visualization, and analysis of spatial and climatic data using R, with a reproducible approach based on relative paths and version control.
-
----
-
-## 📂 Directory structure
-
-```markdown
-📂 Directory structure
-│
-├── map_&_environmental_conditions/
-│   ├── map&_environmental_conditions.Rproj    # R project file
-│   └── .Rprofile                              # Automatic environment configuration (here)
-│
-├── bin/                                       # Scripts
-│
-├── map_olotillo.Rmd                           # Main analysis script
-│
-├── meta/                                      # Associated tabular data
-│   ├── olotillo_PGMN_siagro.csv
-│   ├── olotillo_points_meta_clean.csv
-│   └── pca_meta_mixplate.csv
-│
-└── shape/                                     # Vector layers (shapefiles)
-    ├── destdv1gw.shp
-    └── oloti_7cgw.prj
-```
-
 
 ---
 
