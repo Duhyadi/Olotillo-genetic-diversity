@@ -19,7 +19,6 @@ Filtered SNP data were converted into formats suitable for admixture inference, 
 ```markdown
 📂 Directory structure
 
-```text
 05_figure_4_admixture/
 ├── readme.md                         # Main documentation for the ADMIXTURE analysis
 ├── bin/                              # Scripts used to run ADMIXTURE and generate Figure 4
