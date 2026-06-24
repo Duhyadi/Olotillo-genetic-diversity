@@ -19,7 +19,7 @@ The workflow integrates filtered SNP data in VCF format with laboratory and geog
 
 ```markdown
 📂 Directory structure
-figure_3_PCA/
+04_figure_3_PCA/
 │
 ├── bin/
 │   └── PCA.R                         # R script to run PCA and generate Figure 3
