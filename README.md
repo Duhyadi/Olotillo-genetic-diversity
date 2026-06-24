@@ -8,38 +8,51 @@ Oliva-García D., Coutiño-Estrada B., Rojas-Barrera I., Perales H., Piñero D.,
 
 ## 📂 Repository Structure
 
-```
-├── data_general/                       # General genomic dataset
-│   ├── data_general_README.md          # Description of data sources and formats
-│   └── mixplates_filtered_2x.vcf.gz    # Filtered VCF file containing genotype data
+```text
+Olotillo-genetic-diversity/
+├── 01_data_general_SNPs/                     # General genomic SNP dataset
+│   ├── data_general_README.md                # Description of the genomic data source and file format
+│   └── mixplates_filtered_2x.vcf.gz          # Filtered VCF file containing SNP genotype data
 │
-├── figure_1_2_maps/                    # Scripts and data for geographic and environmental maps
-│   ├── bin/                            # R scripts for spatial analysis and visualization
-│   ├── map_&_environmental_conditions.Rproj
-│   ├── meta/                           # Metadata associated with geographic information
-│   ├── shape/                          # Shapefiles used for map creation
-│   └── Readme.md                       # Detailed documentation for Figure 1 and 2
+├── 02_meta_general/                          # General project metadata
+│   └── meta_Olotillo.xlsx                    # Metadata describing samples, accessions, localities, and traits
 │
-├── figure_3_PCA/                       # Principal Component Analysis (PCA) results and scripts
-│   ├── bin/                            # R scripts for PCA computation and plotting
-│   ├── data/                           # PCA-related datasets
-│   └── meta/                           # Metadata for sample groups and populations
+├── 03_figure_1_2_maps/                       # Scripts and input files for Figures 1 and 2
+│   ├── Readme.md                             # Documentation for maps and environmental-condition analyses
+│   ├── map_&_environmental_conditions.Rproj  # RStudio project file for map and environmental analyses
+│   ├── bin/                                  # R Markdown scripts for spatial and environmental analyses
+│   │   ├── .Rprofile                         # R project startup configuration file
+│   │   ├── map_olotillo.Rmd                  # R Markdown script for generating Olotillo distribution maps
+│   │   └── olotillo_weather.Rmd              # R Markdown script for environmental and weather analyses
+│   ├── meta/                                 # Metadata used for mapping and environmental analyses
+│   │   ├── README.md                         # Description of metadata files in this folder
+│   │   ├── olotillo_PGMN_siagro.csv          # Occurrence and passport data from PGMN/SIAGRO sources
+│   │   ├── olotillo_points_meta_clean.csv    # Cleaned geographic point metadata for mapping
+│   │   ├── olotillo_weather.csv              # Weather and environmental metadata for Olotillo localities
+│   │   ├── pca_meta_mixplate.csv             # Sequencing plate and sample metadata used across analyses
+│   │   └── plate1_fullmeta.txt               # Full metadata table for sequencing plate 1
+│   └── shape/                                # Spatial vector layers used for map generation
+│       ├── destdv1gw/                        # Shapefile layer and auxiliary files for environmental/geographic mapping
+│       └── oloti_7cgw/                       # Shapefile layer and auxiliary files for Olotillo geographic mapping
 │
-├── figure_4_admixture/                 # Admixture and ancestry analyses
-│   ├── bin/                            # R and bash scripts for ADMIXTURE runs and plots
-│   ├── data/                           # Q files and outputs
-│   └── meta/                           # Sample and population metadata
+├── 04_figure_3_PCA/                          # Files associated with Principal Component Analysis (PCA)
+│   ├── bin/                                  # R scripts for PCA computation and visualization
+│   ├── data/                                 # PCA output files and related datasets
+│   └── meta/                                 # Metadata used to annotate samples and groups in PCA plots
 │
-├── meta_general/                       # General metadata
-│   └── meta_Olotillo.xlsx              # Metadata describing samples, localities, and traits
+├── 05_figure_4_admixture/                    # Files associated with ADMIXTURE and ancestry analyses
+│   ├── bin/                                  # R and bash scripts for ADMIXTURE runs and visualization
+│   ├── data/                                 # ADMIXTURE output files, including Q matrices and related results
+│   └── meta/                                 # Sample and population metadata used for ADMIXTURE plots
 │
-├── tables_supplementary_diversity/     # Supplementary diversity tables and supporting scripts
-│   ├── bash/                           # Bash scripts for processing summary statistics
-│   ├── bin/                            # R scripts for diversity analyses
-│   ├── data/                           # Resulting data tables
-│   └── meta/                           # Metadata for supplementary tables
+├── 06_tables_diversity_and_supple/           # Genetic diversity and supplementary table files
+│   ├── bash/                                 # Bash scripts for diversity metrics calculated with VCFtools
+│   ├── bin/                                  # R scripts for processing and summarizing diversity analyses
+│   ├── data/                                 # Genetic diversity output tables and supplementary data
+│   └── meta/                                 # Metadata and diversity-related tables used in downstream analyses
 │
-└── README.md                           # Main project overview (this file)
+├── .gitignore                                # Git ignore rules for files that should not be tracked
+└── README.md                                 # Main project overview and repository documentation
 ```
 
 ## 🧠 Project Overview
