@@ -1,4 +1,5 @@
 # Structure
+
 03_figure_1_2_maps/
 ├── Readme.md
 ├── map_&_environmental_conditions.Rproj
