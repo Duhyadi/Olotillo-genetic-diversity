@@ -18,21 +18,117 @@ Filtered SNP data were converted into formats suitable for admixture inference, 
 
 ```markdown
 📂 Directory structure
-figure_4_admixture/
-│
-├── bin/
-│   └── (scripts for admixture analysis and visualization)
-│
-├── data/
-│   └── (filtered SNP datasets and derived files)
-│       ├── VCF files (filtered SNPs)
-│       ├── PLINK files (.bed, .bim, .fam)
-│       └── Admixture output files (Q matrices, logs)
-│
-├── meta/
-│   └── (sample metadata files)
-│
-└── README.md                     # This file
+## Directory structure
+
+```text
+05_figure_4_admixture/
+├── readme.md                         # Main documentation for the ADMIXTURE analysis
+├── bin/                              # Scripts used to run ADMIXTURE and generate Figure 4
+│   ├── admixture.sh                  # Bash script for running ADMIXTURE
+│   ├── admixture_k2for10.sh          # Bash script for running ADMIXTURE with K = 2 across 10 runs
+│   ├── admixture_k3for10.sh          # Bash script for running ADMIXTURE with K = 3 across 10 runs
+│   ├── admixture_k4for10.sh          # Bash script for running ADMIXTURE with K = 4 across 10 runs
+│   └── admixture_olotillo.R          # R script for processing and visualizing ADMIXTURE results
+├── data/                             # Genotype input files and ADMIXTURE output files
+│   ├── mixplates_filtered_2x.vcf.gz  # Filtered VCF file containing SNP genotype data
+│   ├── mixplates.bed                 # PLINK binary genotype file used as ADMIXTURE input
+│   ├── mixplates.bim                 # PLINK variant information file
+│   ├── mixplates.fam                 # PLINK sample information file
+│   ├── out_admixture2/               # ADMIXTURE results for K = 2
+│   │   ├── log_K2_run1.out           # ADMIXTURE log file for K = 2, run 1
+│   │   ├── log_K2_run2.out           # ADMIXTURE log file for K = 2, run 2
+│   │   ├── log_K2_run3.out           # ADMIXTURE log file for K = 2, run 3
+│   │   ├── log_K2_run4.out           # ADMIXTURE log file for K = 2, run 4
+│   │   ├── log_K2_run5.out           # ADMIXTURE log file for K = 2, run 5
+│   │   ├── log_K2_run6.out           # ADMIXTURE log file for K = 2, run 6
+│   │   ├── log_K2_run7.out           # ADMIXTURE log file for K = 2, run 7
+│   │   ├── log_K2_run8.out           # ADMIXTURE log file for K = 2, run 8
+│   │   ├── log_K2_run9.out           # ADMIXTURE log file for K = 2, run 9
+│   │   ├── log_K2_run10.out          # ADMIXTURE log file for K = 2, run 10
+│   │   ├── mixplates_run1.2.P        # Allele frequency estimates for K = 2, run 1
+│   │   ├── mixplates_run1.2.Q        # Individual ancestry proportions for K = 2, run 1
+│   │   ├── mixplates_run2.2.P        # Allele frequency estimates for K = 2, run 2
+│   │   ├── mixplates_run2.2.Q        # Individual ancestry proportions for K = 2, run 2
+│   │   ├── mixplates_run3.2.P        # Allele frequency estimates for K = 2, run 3
+│   │   ├── mixplates_run3.2.Q        # Individual ancestry proportions for K = 2, run 3
+│   │   ├── mixplates_run4.2.P        # Allele frequency estimates for K = 2, run 4
+│   │   ├── mixplates_run4.2.Q        # Individual ancestry proportions for K = 2, run 4
+│   │   ├── mixplates_run5.2.P        # Allele frequency estimates for K = 2, run 5
+│   │   ├── mixplates_run5.2.Q        # Individual ancestry proportions for K = 2, run 5
+│   │   ├── mixplates_run6.2.P        # Allele frequency estimates for K = 2, run 6
+│   │   ├── mixplates_run6.2.Q        # Individual ancestry proportions for K = 2, run 6
+│   │   ├── mixplates_run7.2.P        # Allele frequency estimates for K = 2, run 7
+│   │   ├── mixplates_run7.2.Q        # Individual ancestry proportions for K = 2, run 7
+│   │   ├── mixplates_run8.2.P        # Allele frequency estimates for K = 2, run 8
+│   │   ├── mixplates_run8.2.Q        # Individual ancestry proportions for K = 2, run 8
+│   │   ├── mixplates_run9.2.P        # Allele frequency estimates for K = 2, run 9
+│   │   ├── mixplates_run9.2.Q        # Individual ancestry proportions for K = 2, run 9
+│   │   ├── mixplates_run10.2.P       # Allele frequency estimates for K = 2, run 10
+│   │   └── mixplates_run10.2.Q       # Individual ancestry proportions for K = 2, run 10
+│   ├── out_admixture3/               # ADMIXTURE results for K = 3
+│   │   ├── log_K3_run1.out           # ADMIXTURE log file for K = 3, run 1
+│   │   ├── log_K3_run2.out           # ADMIXTURE log file for K = 3, run 2
+│   │   ├── log_K3_run3.out           # ADMIXTURE log file for K = 3, run 3
+│   │   ├── log_K3_run4.out           # ADMIXTURE log file for K = 3, run 4
+│   │   ├── log_K3_run5.out           # ADMIXTURE log file for K = 3, run 5
+│   │   ├── log_K3_run6.out           # ADMIXTURE log file for K = 3, run 6
+│   │   ├── log_K3_run7.out           # ADMIXTURE log file for K = 3, run 7
+│   │   ├── log_K3_run8.out           # ADMIXTURE log file for K = 3, run 8
+│   │   ├── log_K3_run9.out           # ADMIXTURE log file for K = 3, run 9
+│   │   ├── log_K3_run10.out          # ADMIXTURE log file for K = 3, run 10
+│   │   ├── mixplates_run1.3.P        # Allele frequency estimates for K = 3, run 1
+│   │   ├── mixplates_run1.3.Q        # Individual ancestry proportions for K = 3, run 1
+│   │   ├── mixplates_run2.3.P        # Allele frequency estimates for K = 3, run 2
+│   │   ├── mixplates_run2.3.Q        # Individual ancestry proportions for K = 3, run 2
+│   │   ├── mixplates_run3.3.P        # Allele frequency estimates for K = 3, run 3
+│   │   ├── mixplates_run3.3.Q        # Individual ancestry proportions for K = 3, run 3
+│   │   ├── mixplates_run4.3.P        # Allele frequency estimates for K = 3, run 4
+│   │   ├── mixplates_run4.3.Q        # Individual ancestry proportions for K = 3, run 4
+│   │   ├── mixplates_run5.3.P        # Allele frequency estimates for K = 3, run 5
+│   │   ├── mixplates_run5.3.Q        # Individual ancestry proportions for K = 3, run 5
+│   │   ├── mixplates_run6.3.P        # Allele frequency estimates for K = 3, run 6
+│   │   ├── mixplates_run6.3.Q        # Individual ancestry proportions for K = 3, run 6
+│   │   ├── mixplates_run7.3.P        # Allele frequency estimates for K = 3, run 7
+│   │   ├── mixplates_run7.3.Q        # Individual ancestry proportions for K = 3, run 7
+│   │   ├── mixplates_run8.3.P        # Allele frequency estimates for K = 3, run 8
+│   │   ├── mixplates_run8.3.Q        # Individual ancestry proportions for K = 3, run 8
+│   │   ├── mixplates_run9.3.P        # Allele frequency estimates for K = 3, run 9
+│   │   ├── mixplates_run9.3.Q        # Individual ancestry proportions for K = 3, run 9
+│   │   ├── mixplates_run10.3.P       # Allele frequency estimates for K = 3, run 10
+│   │   └── mixplates_run10.3.Q       # Individual ancestry proportions for K = 3, run 10
+│   └── out_admixture4/               # ADMIXTURE results for K = 4
+│       ├── log_K4_run1.out           # ADMIXTURE log file for K = 4, run 1
+│       ├── log_K4_run2.out           # ADMIXTURE log file for K = 4, run 2
+│       ├── log_K4_run3.out           # ADMIXTURE log file for K = 4, run 3
+│       ├── log_K4_run4.out           # ADMIXTURE log file for K = 4, run 4
+│       ├── log_K4_run5.out           # ADMIXTURE log file for K = 4, run 5
+│       ├── log_K4_run6.out           # ADMIXTURE log file for K = 4, run 6
+│       ├── log_K4_run7.out           # ADMIXTURE log file for K = 4, run 7
+│       ├── log_K4_run8.out           # ADMIXTURE log file for K = 4, run 8
+│       ├── log_K4_run9.out           # ADMIXTURE log file for K = 4, run 9
+│       ├── log_K4_run10.out          # ADMIXTURE log file for K = 4, run 10
+│       ├── mixplates_run1.4.P        # Allele frequency estimates for K = 4, run 1
+│       ├── mixplates_run1.4.Q        # Individual ancestry proportions for K = 4, run 1
+│       ├── mixplates_run2.4.P        # Allele frequency estimates for K = 4, run 2
+│       ├── mixplates_run2.4.Q        # Individual ancestry proportions for K = 4, run 2
+│       ├── mixplates_run3.4.P        # Allele frequency estimates for K = 4, run 3
+│       ├── mixplates_run3.4.Q        # Individual ancestry proportions for K = 4, run 3
+│       ├── mixplates_run4.4.P        # Allele frequency estimates for K = 4, run 4
+│       ├── mixplates_run4.4.Q        # Individual ancestry proportions for K = 4, run 4
+│       ├── mixplates_run5.4.P        # Allele frequency estimates for K = 4, run 5
+│       ├── mixplates_run5.4.Q        # Individual ancestry proportions for K = 4, run 5
+│       ├── mixplates_run6.4.P        # Allele frequency estimates for K = 4, run 6
+│       ├── mixplates_run6.4.Q        # Individual ancestry proportions for K = 4, run 6
+│       ├── mixplates_run7.4.P        # Allele frequency estimates for K = 4, run 7
+│       ├── mixplates_run7.4.Q        # Individual ancestry proportions for K = 4, run 7
+│       ├── mixplates_run8.4.P        # Allele frequency estimates for K = 4, run 8
+│       ├── mixplates_run8.4.Q        # Individual ancestry proportions for K = 4, run 8
+│       ├── mixplates_run9.4.P        # Allele frequency estimates for K = 4, run 9
+│       ├── mixplates_run9.4.Q        # Individual ancestry proportions for K = 4, run 9
+│       ├── mixplates_run10.4.P       # Allele frequency estimates for K = 4, run 10
+│       └── mixplates_run10.4.Q       # Individual ancestry proportions for K = 4, run 10
+└── meta/                             # Metadata used to annotate and interpret ADMIXTURE results
+    └── admixture_meta.csv            # Sample metadata associated with ADMIXTURE analyses and plots
 ```
 
 ## Data description
