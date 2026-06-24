@@ -107,15 +107,7 @@ The resulting outputs correspond to the supplementary diversity graphs and table
 
 - Results depend on the filtered SNP datasets and metadata provided in the repository.
 
-## 📖 Citation
 
-If you use this code or data, please cite:
-
-Duhyadi (2025). Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales.
-
-Repository: GitHub / Dryad
-
-DOI: (to be added upon publication)
 
 
 
