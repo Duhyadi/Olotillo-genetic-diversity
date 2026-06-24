@@ -27,10 +27,6 @@ The folder is organized into three main subdirectories. The bin/ folder contains
 
 The main directory also includes the RStudio project file (map_&_environmental_conditions.Rproj) and the main Readme.md file documenting the workflow and folder organization.
  
-## Directory structure
-
-
-## Structure
 
 ```text
 03_figure_1_2_maps/
