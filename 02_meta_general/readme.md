@@ -26,7 +26,7 @@ Geographic variables (state, municipality, locality, latitude, longitude, and al
 
 - **longitude:** longitude of the sampling location.
 
-- **altitude:** elevation of the sampling location above sea level. Unit: meters (m a.s.l.).
+- **altitude:** elevation of the sampling location above sea level. Unit: meters (m.a.s.l.).
 
 - **Race:** maize race classification of the sample (e.g., *Olotillo*).
 
