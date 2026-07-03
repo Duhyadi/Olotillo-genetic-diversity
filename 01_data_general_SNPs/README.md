@@ -108,31 +108,3 @@ The bioinformatic workflow used to generate the final SNP dataset is summarized 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-`--maf 0.05
---max-alleles 2
---max-missing 0.80
---min-meanDP 0.5
---max-meanDP 4
---minDP 2
---maxDP 4
-`
-
