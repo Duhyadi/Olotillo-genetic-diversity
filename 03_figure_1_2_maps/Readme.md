@@ -27,8 +27,6 @@ The folder is organized into three main subdirectories. The bin/ folder contains
 
 The main directory also includes the RStudio project file (map_&_environmental_conditions.Rproj) and the main Readme.md file documenting the workflow and folder organization.
 
-## 📂 Directory structure
-
 ```text
 03_figure_1_2_maps/                       # Scripts, metadata, and spatial layers for Figures 1 and 2
 ├── Readme.md                             # Documentation for this directory
@@ -96,13 +94,13 @@ These packages allow you to handle spatial data, generate maps, and ensure repro
 
 ## 🚀 How to run the analysis
 
-1. Clone the repository or download the project package.
+**1.** Clone the repository or download the project package.
 
-2. Open the file map_&_environmental_conditions.Rproj in RStudio.
+**2.** Open the file map_&_environmental_conditions.Rproj in RStudio.
 
-3. Upon startup, the .Rprofile file will automatically configure paths using here::here().
+**3.** Upon startup, the .Rprofile file will automatically configure paths using here::here().
 
-4. Open and run the main script:
+**4.** Open and run the main script:
 
 ```
 rmarkdown::render("bin/map_olotillo.Rmd")
