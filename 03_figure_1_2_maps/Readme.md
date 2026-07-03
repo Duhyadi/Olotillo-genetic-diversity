@@ -96,15 +96,17 @@ These packages allow you to handle spatial data, generate maps, and ensure repro
 
 ## 🚀 How to run the analysis
 
-Clone the repository or download the project package.
+1. Clone the repository or download the project package.
 
-Open the file map_&_environmental_conditions.Rproj in RStudio.
+2. Open the file map_&_environmental_conditions.Rproj in RStudio.
 
-Upon startup, the .Rprofile file will automatically configure paths using here::here().
+3. Upon startup, the .Rprofile file will automatically configure paths using here::here().
 
-Open and run the main script:
+4. Open and run the main script:
 
+```
 rmarkdown::render("bin/map_olotillo.Rmd")
+```
 
 This will generate the results and visualizations described in the article.
 
