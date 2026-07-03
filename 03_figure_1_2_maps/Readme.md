@@ -28,41 +28,41 @@ The folder is organized into three main subdirectories. The bin/ folder contains
 The main directory also includes the RStudio project file (map_&_environmental_conditions.Rproj) and the main Readme.md file documenting the workflow and folder organization.
 
  ```text
-03_figure_1_2_maps/                       # Scripts, metadata, and spatial layers for Figures 1 and 2
-├── Readme.md                             # Documentation for this directory
-├── map_&_environmental_conditions.Rproj  # RStudio project file for map and environmental analyses
-├── bin/                                  # R scripts and project configuration files
-│   ├── .Rprofile                         # R startup configuration file
-│   ├── map_olotillo.Rmd                  # R Markdown script for generating Olotillo maps
-│   └── olotillo_weather.Rmd              # R Markdown script for environmental/weather analyses
-├── meta/                                 # Metadata used for mapping and environmental analyses
-│   ├── README.md                         # Documentation for metadata files
-│   ├── olotillo_PGMN_siagro.csv          # Occurrence and passport data from PGMN/SIAGRO sources
-│   ├── olotillo_points_meta_clean.csv    # Cleaned geographic point metadata
-│   ├── olotillo_weather.csv              # Weather and environmental metadata
-│   ├── pca_meta_mixplate.csv             # Sample and sequencing plate metadata
-│   └── plate1_fullmeta.txt               # Full metadata table for sequencing plate 1
-└── shape/                                # Spatial vector layers used for mapping
-    ├── destdv1gw/                        # Shapefile layer for environmental/geographic mapping
-    │   ├── README.md                     # Documentation for this shapefile layer
-    │   ├── destdv1gw.dbf                 # Attribute table for the shapefile
-    │   ├── destdv1gw.html                # HTML metadata file
-    │   ├── destdv1gw.png                 # Preview image
-    │   ├── destdv1gw.prj                 # Coordinate reference system file
-    │   ├── destdv1gw.shp                 # Main shapefile geometry file
-    │   ├── destdv1gw.shx                 # Shapefile index file
-    │   ├── destdv1gw.xml                 # XML metadata file
-    │   └── destdv1gw_s.png               # Supplementary preview image
-    └── oloti_7cgw/                       # Shapefile layer for Olotillo geographic mapping
-        ├── README.md                     # Documentation for this shapefile layer
-        ├── oloti_7cgw.dbf                # Attribute table for the shapefile
-        ├── oloti_7cgw.html               # HTML metadata file
-        ├── oloti_7cgw.png                # Preview image
-        ├── oloti_7cgw.prj                # Coordinate reference system file
-        ├── oloti_7cgw.shp                # Main shapefile geometry file
-        ├── oloti_7cgw.shx                # Shapefile index file
-        ├── oloti_7cgw.xml                # XML metadata file
-        └── oloti_7cgw_s.png              # Supplementary preview image
+03_figure_1_2_maps/                        # Scripts, metadata, and spatial layers for Figures 1 and 2
+├── Readme.md                              # Documentation for this directory
+├── map_&_environmental_conditions.Rproj   # RStudio project file for map and environmental analyses
+├── bin/                                   # R scripts and project configuration files
+│   ├── .Rprofile                          # R startup configuration file
+│   ├── map_olotillo.Rmd                   # R Markdown script for generating Olotillo maps
+│   └── olotillo_weather.Rmd               # R Markdown script for environmental/weather analyses
+├── meta/                                  # Metadata used for mapping and environmental analyses
+│   ├── README.md                          # Documentation for metadata files
+│   ├── olotillo_PGMN_siagro.csv           # Occurrence and passport data from PGMN/SIAGRO sources
+│   ├── olotillo_points_meta_clean.csv     # Cleaned geographic point metadata
+│   ├── olotillo_weather.csv               # Weather and environmental metadata
+│   ├── pca_meta_mixplate.csv              # Sample and sequencing plate metadata
+│   └── plate1_fullmeta.txt                # Full metadata table for sequencing plate 1
+└── shape/                                 # Spatial vector layers used for mapping
+    ├── destdv1gw/                         # Shapefile layer for environmental/geographic mapping
+    │   ├── README.md                      # Documentation for this shapefile layer
+    │   ├── destdv1gw.dbf                  # Attribute table for the shapefile
+    │   ├── destdv1gw.html                 # HTML metadata file
+    │   ├── destdv1gw.png                  # Preview image
+    │   ├── destdv1gw.prj                  # Coordinate reference system file
+    │   ├── destdv1gw.shp                  # Main shapefile geometry file
+    │   ├── destdv1gw.shx                  # Shapefile index file
+    │   ├── destdv1gw.xml                  # XML metadata file
+    │   └── destdv1gw_s.png                # Supplementary preview image
+    └── oloti_7cgw/                        # Shapefile layer for Olotillo geographic mapping
+        ├── README.md                      # Documentation for this shapefile layer
+        ├── oloti_7cgw.dbf                 # Attribute table for the shapefile
+        ├── oloti_7cgw.html                # HTML metadata file
+        ├── oloti_7cgw.png                 # Preview image
+        ├── oloti_7cgw.prj                 # Coordinate reference system file
+        ├── oloti_7cgw.shp                 # Main shapefile geometry file
+        ├── oloti_7cgw.shx                 # Shapefile index file
+        ├── oloti_7cgw.xml                 # XML metadata file
+        └── oloti_7cgw_s.png               # Supplementary preview image
 ```
 
 ---
