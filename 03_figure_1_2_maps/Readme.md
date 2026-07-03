@@ -116,12 +116,13 @@ This project uses the here package to ensure that the paths to the data files ar
 
 Example of data reading:
 
+```
 library(sf)
 library(here)
 
 Mexico <- st_read(here("shape", "destdv1gw.shp"))
 meta_points <- read.csv(here("meta", "olotillo_points_meta_clean.csv"))
-
+```
 
 ## 🧠 Final Notes
 
