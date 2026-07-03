@@ -1,10 +1,10 @@
 # Data Dictionary
 
-## 🗺️ ``meta_*****Olotillo*****.xlsx``
+## 🗺️ ``meta_Olotillo.xlsx``
 
 ## Relationship and harmonization among metadata files
 
-The file `meta_*****Olotillo*****.xlsx` serves as the master metadata table for the project *****Olotillo***** genetic diversity. It integrates sample identifiers, geographic information, population classification, and sampling scale, and provides the reference framework used across all genomic and statistical analyses.
+The file `meta_Olotillo.xlsx` serves as the master metadata table for the project *Olotillo* genetic diversity. It integrates sample identifiers, geographic information, population classification, and sampling scale, and provides the reference framework used across all genomic and statistical analyses.
 
 All other metadata files included in the repository represent **subsets**, **reformatted versions**, or **analysis-specific derivatives** of this master table, created to support particular workflows (PCA, admixture, diversity analyses, and spatial analyses).
 
@@ -28,7 +28,7 @@ Geographic variables (state, municipality, locality, latitude, longitude, and al
 
 - **altitude:** elevation of the sampling location above sea level. Unit: meters (m.a.s.l.).
 
-- **Race:** maize race classification of the sample (e.g., ******Olotillo******).
+- **Race:** maize race classification of the sample (e.g., *Olotillo*).
 
 - **type:** population type indicating the spatial scale of circulation. Typical values include Local, Regional, National, or Extra.
 
@@ -38,7 +38,7 @@ Geographic variables (state, municipality, locality, latitude, longitude, and al
 
 The table below summarizes the correspondence among variables shared across the main metadata files in the repository:
 
-| Conceptual variable      | meta_*****Olotillo*****.xlsx | *****Olotillo*****_points_meta_clean.csv | plate*_fullmeta.txt | pca_meta_mixplate.csv |
+| Conceptual variable      | meta_Olotillo.xlsx | Olotillo_points_meta_clean.csv | plate*_fullmeta.txt | pca_meta_mixplate.csv |
 |--------------------------|--------------------|--------------------------------|---------------------|-----------------------|
 | Sample identifier        | sample_ID          | population_ID                  | sample_name         | sample_name           |
 | Population identifier   | population_ID      | population_ID                  | accession_ID        | accession_ID          |
