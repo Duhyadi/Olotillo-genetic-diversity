@@ -91,6 +91,7 @@ install.packages(c(
 
 These packages allow you to handle spatial data, generate maps, and ensure reproducible routes.
 ```
+
 ---
 
 ## 🚀 How to run the analysis
