@@ -27,8 +27,9 @@ The folder is organized into three main subdirectories. The bin/ folder contains
 
 The main directory also includes the RStudio project file (map_&_environmental_conditions.Rproj) and the main Readme.md file documenting the workflow and folder organization.
 
- ```text
-📂 Directory structure
+## 📂 Directory structure
+
+```text
 03_figure_1_2_maps/                       # Scripts, metadata, and spatial layers for Figures 1 and 2
 ├── Readme.md                             # Documentation for this directory
 ├── map_&_environmental_conditions.Rproj  # RStudio project file for map and environmental analyses
@@ -65,7 +66,6 @@ The main directory also includes the RStudio project file (map_&_environmental_c
         ├── oloti_7cgw.xml                # XML metadata file
         └── oloti_7cgw_s.png              # Supplementary preview image
 ```
-
 ---
 
 ## ⚙️ System requirements
