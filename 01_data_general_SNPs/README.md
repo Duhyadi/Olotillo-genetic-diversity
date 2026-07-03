@@ -12,11 +12,11 @@ The dataset corresponds to the final filtered SNP matrix generated from genotypi
 
 ```text
 01_data_general_SNPs/
-├── README.md
-├── mixplates_filtered_2x.vcf.gz
-└── images/
-    ├── pipeline1.png
-    └── pipeline2.png
+├── README.md                    # Documentation for this folder
+├── mixplates_filtered_2x.vcf.gz # Final filtered SNP dataset in compressed VCF format
+└── images/                      # Workflow images for the bioinformatic pipeline
+    ├── pipeline1.png            # First section of the bioinformatic pipeline
+    └── pipeline2.png            # Second section of the bioinformatic pipeline
 ```
 
 ---
