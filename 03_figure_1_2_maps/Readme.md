@@ -91,8 +91,9 @@ install.packages(c(
 
 These packages allow you to handle spatial data, generate maps, and ensure reproducible routes.
 ```
+---
 
-🚀 How to run the analysis
+## 🚀 How to run the analysis
 
 Clone the repository or download the project package.
 
@@ -106,8 +107,9 @@ rmarkdown::render("bin/map_olotillo.Rmd")
 
 This will generate the results and visualizations described in the article.
 
+---
 
-🧩 Use of reproducible routes
+## 🧩 Use of reproducible routes
 
 This project uses the here package to ensure that the paths to the data files are consistent in any environment.
 
@@ -119,16 +121,8 @@ library(here)
 Mexico <- st_read(here("shape", "destdv1gw.shp"))
 meta_points <- read.csv(here("meta", "olotillo_points_meta_clean.csv"))
 
-📜 Recommended quote
 
-If you use this code or data, please cite:
-
-Duhyadi (2025). Map & Environmental Conditions.
-Repository: [GitHub or Dryad URL aquí]
-DOI: (add if applicable)
-
-
-🧠 Final Notes
+## 🧠 Final Notes
 
 The .Rproj and .Rprofile files allow the project to be fully reproducible.
 
