@@ -47,17 +47,6 @@ SNPs were filtered according to the distribution of key variant-calling metrics 
 
 The filtering parameters were:
 
-```bash
---maf 0.05 \
---max-alleles 2 \
---max-missing 0.80 \
---min-meanDP 0.5 \
---max-meanDP 4 \
---minDP 2 \
---maxDP 4
-```
-
-
 `--maf 0.05
 --max-alleles 2
 --max-missing 0.80
