@@ -70,7 +70,8 @@ Analyses combine **genomic**, **environmental**, and **geographic** information 
 ## ⚙️ Requirements
 
 Main analyses were conducted using **R (≥ 4.3)** and the following key packages:
-- `dplyr`, `ggplot2`, `sf`, `raster`, `cowplot`, `pophelper`, `adegenet`, `vcfR`
+
+ `dplyr`, `ggplot2`, `sf`, `raster`, `cowplot`, `pophelper`, `adegenet`, `vcfR`
 
 Some analyses require **bash** and **ADMIXTURE** to reproduce population structure results.
 
