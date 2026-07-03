@@ -38,7 +38,7 @@ Geographic variables (state, municipality, locality, latitude, longitude, and al
 
 The table below summarizes the correspondence among variables shared across the main metadata files in the repository:
 
-| Conceptual variable      | meta_Olotillo.xlsx | Olotillo_points_meta_clean.csv | plate*_fullmeta.txt | pca_meta_mixplate.csv |
+| Conceptual variable      | meta_Olotillo.xlsx | Olotillo_points_meta_clean.csv | plate_fullmeta.txt | pca_meta_mixplate.csv |
 |--------------------------|--------------------|--------------------------------|---------------------|-----------------------|
 | Sample identifier        | sample_ID          | population_ID                  | sample_name         | sample_name           |
 | Population identifier   | population_ID      | population_ID                  | accession_ID        | accession_ID          |
@@ -59,6 +59,6 @@ All metadata files can be linked using population- or accession-level identifier
 
 - This file acts as the **central metadata reference** for the entire repository.
 
-- It is used to annotate results in **Figure 3 (PCA)**,**Figure 4 (Admixture)**, and **Supplementary Diversity Tables**.
+- It is used to annotate results in **Figure 3 (PCA)**, **Figure 4 (Admixture)**, and **Supplementary Diversity Tables**.
 
 Variable definitions are consistent with those used in other metadata files in the project.
