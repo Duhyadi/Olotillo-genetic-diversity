@@ -55,6 +55,7 @@ The filtering parameters were:
 --minDP 2
 --maxDP 4
 `
+
 After filtering, **89,810 SNPs** were retained from **4,959,703 called variants**.
 
 ---
