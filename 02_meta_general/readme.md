@@ -57,8 +57,8 @@ All metadata files can be linked using population- or accession-level identifier
 
 ## 📌 Notes
 
-- This file acts as the ***central metadata reference** for the entire repository.
+- This file acts as the **central metadata reference** for the entire repository.
 
-- It is used to annotate results in **Figure 3 (PCA)**,** Figure 4 (Admixture)**, and **supplementary diversity tables**.
+- It is used to annotate results in **Figure 3 (PCA)**,**Figure 4 (Admixture)**, and **Supplementary Diversity Tables**.
 
 Variable definitions are consistent with those used in other metadata files in the project.
