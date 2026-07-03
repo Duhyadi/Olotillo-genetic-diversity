@@ -57,6 +57,15 @@ The filtering parameters were:
 --maxDP 4
 ```
 
+
+`--maf 0.05
+--max-alleles 2
+--max-missing 0.80
+--min-meanDP 0.5
+--max-meanDP 4
+--minDP 2
+--maxDP 4
+`
 After filtering, **89,810 SNPs** were retained from **4,959,703 called variants**.
 
 ---
@@ -125,8 +134,6 @@ The bioinformatic workflow used to generate the final SNP dataset is summarized 
 
 
 
-**mixplates_filtered_2x.vcf.gz**
-Final filtered SNP dataset generated from GBS data after variant calling and quality control.
 
 
 
