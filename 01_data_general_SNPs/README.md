@@ -10,7 +10,8 @@ The dataset corresponds to the final filtered SNP matrix generated from genotypi
 
 ## 📂 Directory structure
 
-```text
+```markdown
+📂 Directory structure
 01_data_general_SNPs/
 ├── README.md                    # Documentation for this folder
 ├── mixplates_filtered_2x.vcf.gz # Final filtered SNP dataset in compressed VCF format
