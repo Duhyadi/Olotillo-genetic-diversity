@@ -7,7 +7,7 @@ Oliva-García D., Coutiño-Estrada B., Rojas-Barrera I., Perales H., Piñero D.,
 
 ## 🟢 Dryad 
 
-Data dryad for Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales. [published Jul 14, 2026 on Dryad,  https://doi.org/10.5061/dryad.44j0zpcv6](https://datadryad.org/dataset/doi:10.5061/dryad.44j0zpcv6)
+Data dryad for Diversity and genetic structure within a Mexican maize race reveal consistent biocultural processes across geographic scales: [published Jul 14, 2026 on Dryad,  https://doi.org/10.5061/dryad.44j0zpcv6](https://datadryad.org/dataset/doi:10.5061/dryad.44j0zpcv6)
 
 
 ## 📂 Repository Structure
